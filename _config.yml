@@ -1,5 +1,5 @@
 ---
-title: House House Designs
+title: House House Design
 timezone: UTC
 collections:
   posts:
@@ -8,9 +8,9 @@ collections:
   uploads:
     title: Uploads
     output: true
-description: 'House House is a multidisciplinary design practice in Vancouver, Canada
+description: House House is a multidisciplinary design practice in Vancouver, Canada
   — a joint production between Ben Groulx and Sean Durfee. You can hire us to help
-  you connect with your audience in ways that will enrich their lives. '
+  you connect with your audience in ways that will enrich their lives.
 baseurl: 
 url: http://househouse.design
 markdown: kramdown
