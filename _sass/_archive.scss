@@ -1,13 +1,52 @@
 // DO NOT ADD MORE HERE. ALL OF THESE STYLES SHOULD BE MOVED TO AN APPROPRIATE
 // LOCATION, I.E. UTILITIE / COMPONENTS / TEMPLATES
 
-.shifting-background {
-    // animation-name: shifting-background;
-    // animation-iteration-count: infinite;
-    // animation-duration: 5s;
-    background-image: linear-gradient(to bottom, $beige, $light-blue);
-    background-size: 100%;
+.shifting-bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+
+    width: 100vw;
+    height: 100%;
+    // animation-name: shifting;
+
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes shifting {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .75;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.bg-first {
+    background-image: linear-gradient(to bottom, #efe8d8, #cfe4eb);
+}
+
+.bg-second {
+    background-image: linear-gradient(to bottom, #efe8d8, #f3c9dd);
+
+    animation-delay: 5s;
+}
+
+// .bg-thrid {
+//  -webkit-animation-delay: 20s;
+//  background-image: linear-gradient(to bottom, #efe8d8, #d3e8e1)
+// }
 
 
 h1 {
@@ -25,6 +64,8 @@ p {
 }
 
 .container {
+    z-index: 10000;
+
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -77,12 +118,12 @@ p {
 .about {
     justify-content: flex-start;
     width: 100%;
-    margin-top: 4*$spacing-unit;
+    margin-top: 4*$unit;
 }
 
 .paragraph {
     max-width: 38rem;
-    margin: 0 $spacing-unit $spacing-unit;
+    margin: 0 $unit $unit;
 
     text-align: left;
 }
