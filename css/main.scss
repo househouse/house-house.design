@@ -10,7 +10,7 @@ $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+$spacing-unit:             30px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
@@ -53,13 +53,27 @@ $on-laptop:        800px;
   box-sizing: border-box;
 }
 
-html, body {
-  background-color: #efe8d8;
+body {
   color: #3c485d;
+  font-family: "Pt mono", mono;
+}
+
+.shifting-background {
+  // animation-name: shifting-background;
+  // animation-iteration-count: infinite;
+  // animation-duration: 5s;
+  background-image: linear-gradient(to bottom, #efe8d8, #CFE4EB);
+  background-size: 100%;
+}
+
+
+h1 {
+  font-size: 2rem;
+  font-weight: 800;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 800;
 }
 
@@ -67,56 +81,64 @@ p {
   font-size: 18px;
 }
 
-.home {
+.container {
   display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+.home {
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   justify-content: center;
-  background-color: none;
-  align-items: flex-end;
+  transition: all 1s ease-in-out;
+  opacity: 0;
+  &.load-in {
+    opacity: 1;
+  }
+  &.shrink {
+    height: 60vh;
+  }
+}
+
+.first-house {
+  transform: translate(-100%, 0);
+
+  .together & {
+    transform: translate(-18.5%, 0);
+  }
+}
+
+.second-house {
+  transform: translate(100%, 0);
+  .together & {
+    transform: translate(18.5%, 0);
+  }
 }
 
 .househouse {
   position: absolute;
-  align-self: center;
+  // align-self: center;
   transform-origin: 50% 50%;
-  transition: all 0.4s ease-out;
+  transition: all 1.5s ease-in-out;
   z-index: 100;
-  cursor: pointer;
-
-  &:hover {
-    transform: scale(0.9);
-    border: 10px solid #3c485d;
-    padding: 20px;
-    translate-origin: 50% 100%;
-  }
-
-  &.shrink-ray {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: scale(0.2) !important;
-    border: none !important;
-  }
-}
-
-.copy {
-  position: absolute;
-  top: 210px;
-  left: 342px;
-  font-size: 110px;
-  font-weight: 900;
-  opacity: 0;
-  transition: all 0.4s ease-in-out;
-  transform: translate(0, 50px);
-
-  &.fadein {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
 }
 
 .about {
-  width: 38rem;
-  margin: 0 auto;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 4*$spacing-unit;
 }
+
+.paragraph {
+  max-width: 38rem;
+  margin: 0 $spacing-unit $spacing-unit $spacing-unit;
+  text-align: left;
+}
+.big-text {
+  
+  p { 
+    font-size: 1.5rem;
+  }
+}
+
