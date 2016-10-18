@@ -1,0 +1,12 @@
+// Component: Hero
+// ===
+
+.c-hero {
+    &.c--animate-shrink {
+        height: 15vh;
+
+        opacity: 0.25;
+
+        transition: all 1s ease-in-out;
+    }
+}

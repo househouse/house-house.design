@@ -1,12 +1,12 @@
 //= require jquery3
 //= require jquery_ujs
 
+// Animation #1
 $(function() {
-    $('.t-home').addClass('load-in together');
+    $('.c-logo').addClass('c--animate-fade-in c--animate-together');
 });
 
-var loadIn = $('.t-home').removeClass('load-in');
-
+// Animation #2
 setTimeout(function(){
-    loadIn.addClass('shrink');
+    $('.c-hero').addClass('c--animate-shrink');
 }, 3000);

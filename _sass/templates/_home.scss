@@ -1,16 +1,6 @@
 // Template: Home
 // ===
 
-.hero {
-    opacity: 0;
+.t-home {
 
-    transition: all 1s ease-in-out;
-
-    .load-in & {
-        opacity: 1;
-    }
-
-    .shrink & {
-        height: 60vh;
-    }
 }

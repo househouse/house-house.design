@@ -12,8 +12,8 @@ body {
     overflow-y: scroll;
 
     background: $beige;
-    color: $dark-blue;
 
+    color: $dark-blue;
     font-family: $base-font-family;
     font-weight: $base-font-weight;
     font-size: $base-font-size;
@@ -123,6 +123,12 @@ nav,
 section,
 main {
     display: block;
+}
+
+svg {
+    color: inherit;
+
+    fill: currentColor;
 }
 
 table {

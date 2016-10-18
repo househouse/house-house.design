@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+    {% include head.html %}
 
-  <body>
+    {% capture layout %}
+        {% if page.layout %}
+            t-{{ page.layout }}
+        {% endif %}
+    {% endcapture %}
 
-    {% include header.html %}
+    <body class="{{layout}}">
 
-    <div class="page-content">
-      <div class="wrapper">
         {{ content }}
-      </div>
-    </div>
 
-    {% include footer.html %}
-
-  </body>
+    </body>
 
 </html>

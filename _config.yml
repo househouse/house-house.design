@@ -15,8 +15,10 @@ description:
 baseurl:
 url: http://house-house.design
 markdown: kramdown
+env: production
 gems:
 - jekyll-coffeescript
 - jekyll-watch
 - jekyll-assets
 - autoprefixer-rails
+- octopress-minify-html
