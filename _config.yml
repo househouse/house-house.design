@@ -19,7 +19,6 @@ url: http://yourdomain.com
 twitter_username: jekyllrb
 github_username: jekyll
 markdown: kramdown
-
 gems:
 - jekyll-coffeescript
 - jekyll-watch
