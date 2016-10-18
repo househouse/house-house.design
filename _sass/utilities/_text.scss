@@ -1,0 +1,87 @@
+// Utilities: Text
+// ===
+
+
+// Text Sizing
+// ---
+
+.u-text-size-normal {
+    font-size: $base-font-size;
+}
+
+.u-text-size-large {
+    font-size: $large-font-size;
+}
+
+.u-text-size-small {
+    font-size: $small-font-size;
+}
+
+.u-text-size-very-large {
+    font-size: $very-large-font-size;
+}
+
+.u-text-size-very-small {
+    font-size: $very-small-font-size;
+}
+
+
+// Text Style
+// ---
+
+.u-text-weight-normal {
+    font-weight: $base-font-weight;
+}
+
+.u-bold {
+    font-weight: $bold-font-weight;
+}
+
+.u-italic {
+    font-style: italic;
+}
+
+
+
+// Text Alignment
+// ---
+
+.u-text-left {
+    text-align: left;
+}
+
+.u-text-center {
+    text-align: center;
+}
+
+.u-text-right {
+    text-align: right;
+}
+
+
+// Text Casing
+// ---
+
+.u-text-uppercase {
+    text-transform: uppercase;
+}
+
+.u-text-lowercase {
+    text-transform: lowercase;
+}
+
+.u-text-capitalize {
+    text-transform: capitalize;
+}
+
+
+// Text Clipping
+// ---
+
+.u-text-clip {
+    overflow: hidden;
+
+    color: transparent;
+    white-space: nowrap;
+    text-indent: 100%;
+}

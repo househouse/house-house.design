@@ -1,0 +1,78 @@
+// Utilities: Layout
+// ---
+
+.u-context {
+    position: relative;
+}
+
+.u-position {
+    position: absolute;
+}
+
+.u-fixed {
+    position: fixed;
+}
+
+
+// X & Y Index Positioning
+// ---
+
+.u-center {
+    @extend %x-center;
+}
+
+
+// X & Y Index Positioning
+// ---
+
+.u-t-0 {
+    top: 0;
+}
+
+.u-t-50p {
+    top: 50%;
+}
+
+.u-l-0 {
+    left: 0;
+}
+
+.u-l-50p {
+    left: 50%;
+}
+
+.u-b-0 {
+    bottom: 0;
+}
+
+.u-b-50p {
+    bottom: 50%;
+}
+
+.u-r-0 {
+    right: 0;
+}
+
+.u-r-50p {
+    right: 50%;
+}
+
+
+// Z Index Positioning
+// ---
+
+.u-z1 {
+    z-index: $z1-depth;
+}
+
+.u-z2 {
+    z-index: $z2-depth;
+}
+
+.u-z3 {
+    z-index: $z3-depth;
+}
+
+.u-z4 {
+    z-index: $z4-depth;
+}

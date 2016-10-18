@@ -1,0 +1,33 @@
+// Extends
+// ===
+//
+// Use caution with extends! Extends should only ever be used as a placeholder
+// item. (i.e. use a `%` instead of a `.` class.)
+
+
+// Cover
+// ---
+//
+// Pull an element all the way to every edge. Use in conjuction with a layout
+// utility, such as .u-fixed.
+
+%x-cover {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+// Cover
+// ---
+//
+// Vertically and horizontally center an item in its parent. Use in conjuction
+// with a layout utility, such as .u-fixed.
+
+%x-center {
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}

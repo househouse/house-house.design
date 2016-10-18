@@ -1,0 +1,29 @@
+// Global Typographic Styles
+// ===
+
+ol,
+ul {
+    list-style: none;
+}
+
+q,
+blockquote {
+    quotes: none;
+
+    &::before,
+    &::after {
+        content: '';
+    }
+}
+
+a {
+    outline: none;
+
+    color: inherit;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+        outline: none;
+    }
+}
