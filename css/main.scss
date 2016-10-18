@@ -1,144 +1,100 @@
 ---
+# Front matter comment to ensure Jekyll properly reads file.
 ---
-
-@charset "utf-8";
-
-// Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:             30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
+// Styles
+// ===
+//
+// Oh, hello. I didn’t see you there. Welcome to the beautiful, happy wonderland
+// that is this stylesheet. Our CSS follows the following rules / philosophies:
+//
+//  1. Write CSS as if someone is using it to learn how code; it needs to be
+//     sensible and learnable for our new front-end developers (and, eventually,
+//     any other designers that joined our team), who would be making use of it
+//     as well.
+//  2. Aim for writing content-agnostic classes. In other words, content should
+//     not be dictacting style. That’s why we
+//  3. Write your HTML separately from your CSS; when these styles are turned
+//     off, content should be formatted and arranged in a hierarchy that is
+//     logical and semantic.
 
 
+// Settings
+// ---
+//
+// Code that does not output CSS styles directly. This includes CSS custom
+// properties, custom media queries, etc. Things like brand colours, modular
+// spacing increments, and breakpoints are defined as variables here.
 
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (min-width: $device) {
-        @content;
-    }
-}
+@import 'settings/variables';
+@import 'settings/extends';
+@import 'settings/mixins';
+@import 'settings/syntax-highlighting';
 
 
+// Base
+// ---
+//
+// Styles that target bare HTML elements. This mostly consists of a mixture of
+// normalize.css and reset.css, and core typographic styles for things like
+// headings, body text, and links which will rarely, if ever, change. No classes
+// are defined here.
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "syntax-highlighting"
-;
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  color: #3c485d;
-  font-family: "Pt mono", mono;
-}
-
-.shifting-background {
-  // animation-name: shifting-background;
-  // animation-iteration-count: infinite;
-  // animation-duration: 5s;
-  background-image: linear-gradient(to bottom, #efe8d8, #CFE4EB);
-  background-size: 100%;
-}
+@import 'base/general';
+@import 'base/typography';
 
 
-h1 {
-  font-size: 2rem;
-  font-weight: 800;
-}
+// Utilities
+// ---
+//
+// The bread and butter of our CSS. These are single-purpose, highly-reusable
+// classes that do one thing extremely well. We have utilities for things like
+// margins, padding, text alignment, display properties, positioning properties,
+// and more. Utility classes use a u- namespace, e.g. u-bg-black.
 
-h2 {
-  font-size: 1.75rem;
-  font-weight: 800;
-}
+@import 'utilities/appearance';
+@import 'utilities/background';
+@import 'utilities/color';
+@import 'utilities/display';
+@import 'utilities/flex';
+@import 'utilities/layout';
+@import 'utilities/margin';
+@import 'utilities/padding';
+@import 'utilities/text';
 
-p {
-  font-size: 18px;
-}
 
-.container {
-  display: flex;
-  align-items: center;
-  flex-flow: column;
-}
+// Components
+// ---
+//
+// Content-specific classes that generate distinct UI appearances. This is
+// largely limited to buttons and (lightly styled) custom form inputs. Component
+// classes use a c- namespace, e.g. c-button.
+//
+// @import 'components/container';
 
-.home {
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
-  transition: all 1s ease-in-out;
-  opacity: 0;
-  &.load-in {
-    opacity: 1;
-  }
-  &.shrink {
-    height: 60vh;
-  }
-}
 
-.first-house {
-  transform: translate(-100%, 0);
+// Templates
+// ---
+//
+// ⚠️ USE WITH EXTREME CAUTION: Sometimes, there are times that we need to write
+// template overrides, or classes that are linked directly to the page on which
+// they appear. These styles should be used as a last resort only!
 
-  .together & {
-    transform: translate(-18.5%, 0);
-  }
-}
+@import 'templates/home';
 
-.second-house {
-  transform: translate(100%, 0);
-  .together & {
-    transform: translate(18.5%, 0);
-  }
-}
 
-.househouse {
-  position: absolute;
-  // align-self: center;
-  transform-origin: 50% 50%;
-  transition: all 1.5s ease-in-out;
-  z-index: 100;
-}
+// Third-Party Plugins
+// ---
+//
+// Third-party integrations and plugins often do not let us control their
+// settings, or require us to override how they work. Toss those styles into
+// individual partials below.
+//
+// @import 'third-party/flickity';
 
-.about {
-  justify-content: flex-start;
-  width: 100%;
-  margin-top: 4*$spacing-unit;
-}
 
-.paragraph {
-  max-width: 38rem;
-  margin: 0 $spacing-unit $spacing-unit $spacing-unit;
-  text-align: left;
-}
-.big-text {
-  
-  p { 
-    font-size: 1.5rem;
-  }
-}
+// Temporary Styles
+// ---
+//
+// Don’t add anything more here! These styles should be moved out eventually
 
+@import 'archive';

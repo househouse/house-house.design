@@ -1,0 +1,22 @@
+// Utilities: Padding
+// ===
+
+.u-padding {
+    padding: $unit;
+}
+
+.u-padding-top {
+    padding-top: $unit;
+}
+
+.u-padding-bottom {
+    padding-bottom: $unit;
+}
+
+.u-padding-start {
+    padding-left: $unit;
+}
+
+.u-padding-end {
+    padding-right: $unit;
+}

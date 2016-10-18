@@ -1,0 +1,94 @@
+// DO NOT ADD MORE HERE. ALL OF THESE STYLES SHOULD BE MOVED TO AN APPROPRIATE
+// LOCATION, I.E. UTILITIE / COMPONENTS / TEMPLATES
+
+.shifting-background {
+    // animation-name: shifting-background;
+    // animation-iteration-count: infinite;
+    // animation-duration: 5s;
+    background-image: linear-gradient(to bottom, $beige, $light-blue);
+    background-size: 100%;
+}
+
+
+h1 {
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 1.75rem;
+}
+
+p {
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.home {
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+
+    opacity: 0;
+
+    transition: all 1s ease-in-out;
+
+    &.load-in {
+        opacity: 1;
+    }
+
+    &.shrink {
+        height: 60vh;
+    }
+}
+
+.first-house {
+    transform: translate(-100%, 0);
+
+    .together & {
+        transform: translate(-18.5%, 0);
+    }
+}
+
+.second-house {
+    transform: translate(100%, 0);
+
+    .together & {
+        transform: translate(18.5%, 0);
+    }
+}
+
+.househouse {
+    position: absolute;
+    z-index: 100;
+    // align-self: center;
+
+    transform-origin: 50% 50%;
+
+    transition: all 1.5s ease-in-out;
+}
+
+.about {
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 4*$spacing-unit;
+}
+
+.paragraph {
+    max-width: 38rem;
+    margin: 0 $spacing-unit $spacing-unit;
+
+    text-align: left;
+}
+
+.big-text {
+    p {
+        font-size: 1.5rem;
+    }
+}

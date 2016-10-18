@@ -1,0 +1,42 @@
+// Utilities: Shape
+// ---
+
+
+// Shape
+// ---
+
+.u-circle {
+    border-radius: 100%;
+}
+
+.u-rounded {
+    border-radius: $border-radius;
+}
+
+
+// Opacity
+// ---
+
+.u-half-transparent {
+    opacity: 0.5;
+}
+
+
+// Bleed
+// --
+
+.u-bleed-top {
+    margin-top: -$unit;
+}
+
+.u-bleed-bottom {
+    margin-bottom: -$unit;
+}
+
+.u-bleed-start {
+    margin-left: -$unit;
+}
+
+.u-bleed-end {
+    margin-right: -$unit;
+}

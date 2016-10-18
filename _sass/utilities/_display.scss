@@ -1,0 +1,46 @@
+// Utilities: Display
+// ===
+
+
+// Display
+// ---
+
+.u-block {
+    display: block;
+}
+
+.u-inline-block {
+    display: inline-block;
+}
+
+.u-clip {
+    overflow: hidden;
+}
+
+
+// Sizes
+// ---
+
+.u-full-width {
+    width: 100%;
+}
+
+.u-half-width {
+    width: 50%;
+}
+
+.u-full-height {
+    height: 100%;
+}
+
+.u-half-height {
+    height: 50%;
+}
+
+.u-full-vw {
+    width: 100vw;
+}
+
+.u-full-vh {
+    height: 100vh;
+}
