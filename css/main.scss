@@ -29,7 +29,7 @@
 @import 'settings/variables';
 @import 'settings/extends';
 @import 'settings/mixins';
-@import 'settings/syntax-highlighting';
+// @import 'settings/syntax-highlighting';
 
 
 // Base
@@ -69,8 +69,12 @@
 // Content-specific classes that generate distinct UI appearances. This is
 // largely limited to buttons and (lightly styled) custom form inputs. Component
 // classes use a c- namespace, e.g. c-button.
-//
-// @import 'components/container';
+
+@import 'components/container';
+@import 'components/content';
+@import 'components/heading';
+@import 'components/logo';
+@import 'components/overlay';
 
 
 // Templates

@@ -2,11 +2,11 @@
 //= require jquery_ujs
 
 $(function() {
-  $('.home').addClass('load-in together');
+    $('.t-home').addClass('load-in together');
 });
 
-var loadIn = $('.home').removeClass('load-in');
+var loadIn = $('.t-home').removeClass('load-in');
 
 setTimeout(function(){
-  loadIn.addClass('shrink');
-}, 5000);
+    loadIn.addClass('shrink');
+}, 3000);

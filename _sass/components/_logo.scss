@@ -1,0 +1,34 @@
+// Component: Logo
+// ===
+
+
+// Component variables
+// ---
+
+$logo--nudge: 18.5%;
+
+
+// Component Root
+// ---
+
+.c-logo {
+    transform-origin: 50% 50%;
+
+    transition: all 1.5s ease-in-out;
+
+    &.c--first-item {
+        transform: translate(-100%, 0);
+
+        .together & {
+            transform: translate(-$logo--nudge, 0);
+        }
+    }
+
+    &.c--second-item {
+        transform: translate(100%, 0);
+
+        .together & {
+            transform: translate($logo--nudge, 0);
+        }
+    }
+}

@@ -1,0 +1,8 @@
+// Component: Text Content
+// ===
+
+.c-text-content {
+    > * {
+        margin-bottom: $unit;
+    }
+}
