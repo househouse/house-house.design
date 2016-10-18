@@ -1,0 +1,1 @@
+jQuery(document).ready(function($){$(".househouse").on("click",function(){return $(this).addClass("shrink-ray"),$(".copy").addClass("fadein"),!1})});
