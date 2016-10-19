@@ -14,11 +14,19 @@
 }
 
 
-// X & Y Index Positioning
+// Center In Parent
 // ---
 
 .u-center {
     @extend %x-center;
+}
+
+
+// Cover Parent
+// ---
+
+.u-cover {
+    @extend %x-cover;
 }
 
 

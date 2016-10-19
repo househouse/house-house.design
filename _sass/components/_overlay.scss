@@ -1,0 +1,50 @@
+// Component: Overlay
+// ===
+
+
+// Component variables
+// ---
+
+$overlay--time: 5s;
+
+
+// Component Root
+// ---
+
+.c-overlay {
+    z-index: -1;
+
+    opacity: 0;
+
+    animation: shifting ($overlay--time * 3) infinite;
+
+    &.c--first {
+        background-image: linear-gradient(to bottom, $beige, $pastel-blue);
+
+        animation-delay: ($overlay--time * 1);
+    }
+
+    &.c--second {
+        background-image: linear-gradient(to bottom, $beige, $pastel-pink);
+
+        animation-delay: ($overlay--time * 2);
+    }
+
+    &.c--third {
+        background-image: linear-gradient(to bottom, $beige, $pastel-green);
+
+        animation-delay: ($overlay--time * 3);
+    }
+}
+
+@keyframes shifting {
+    0%,
+    66%,
+    100% {
+        opacity: 0;
+    }
+
+    33% {
+        opacity: 0.75;
+    }
+}

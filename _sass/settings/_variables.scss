@@ -20,8 +20,7 @@ $base-font-size: $unit;
 $large-font-size: $unit*1.25;
 $very-large-font-size: $unit*1.5;
 
-$base-line-height: 1;
-$paragraph-line-height: $base-line-height*1.5;
+$base-line-height: 1.6;
 
 $base-font-weight: 300;
 $bold-font-weight: 700;
@@ -30,16 +29,23 @@ $bold-font-weight: 700;
 // Colour Variables
 // ---
 
+// Neutrals
 $black: #111;
 $white: #fff;
+
+// Defaults
 $beige: #efe8d8;
 $dark-blue: #3c485d;
-$light-blue: #cfe4eb;
+
+// Pastels
+$pastel-blue: #cfe4eb;
+$pastel-pink: #f3c9dd;
+$pastel-green: #d3e8e1;
 
 
 // Width of the content area
 // ---
-$content-width: 800px;
+$content-width: 40rem;
 $on-palm: 600px;
 $on-laptop: 800px;
 
