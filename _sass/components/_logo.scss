@@ -5,7 +5,7 @@
 // Component variables
 // ---
 
-$logo--nudge: 18.5%;
+$logo--nudge: 31.5%;
 
 
 // Component Root
@@ -25,18 +25,18 @@ $logo--nudge: 18.5%;
     }
 
     &.c--first-item {
-        transform: translate(-100%, 0);
+        transform: translate(-50%, 0);
 
         &.c--animate-together {
-            transform: translate(-$logo--nudge, 0);
+            transform: translate($logo--nudge, 0);
         }
     }
 
     &.c--second-item {
-        transform: translate(100%, 0);
+        transform: translate(50%, 0);
 
         &.c--animate-together {
-            transform: translate($logo--nudge, 0);
+            transform: translate(-$logo--nudge, 0);
         }
     }
 }

@@ -56,6 +56,7 @@
 @import 'utilities/color';
 @import 'utilities/display';
 @import 'utilities/flex';
+@import 'utilities/headings';
 @import 'utilities/layout';
 @import 'utilities/margin';
 @import 'utilities/padding';
@@ -67,11 +68,12 @@
 //
 // Content-specific classes that generate distinct UI appearances. This is
 // largely limited to buttons and (lightly styled) custom form inputs. Component
-// classes use a c- namespace, e.g. c-button.
+// styles should also generally be tied to specific markup; if it is not
+// directly related to any HTML, js, or JSX, it should be considered a utility
+// class. (Or series of classes.) Components use the c- namespace, e.g. c-button.
 
 @import 'components/container';
 @import 'components/content';
-@import 'components/heading';
 @import 'components/hero';
 @import 'components/logo';
 @import 'components/overlay';
