@@ -12,7 +12,11 @@ $sub-unit: $unit / 2;
 // Type Variables
 // ---
 
-$base-font-family: 'PT Mono', monospace;
+$emoji-font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+$sans-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+$mono-font-family: 'PT Mono', monospace;
+
+$base-font-family: $mono-font-family, $emoji-font-family;
 
 $very-small-font-size: $unit*0.5;
 $small-font-size: $unit*0.75;
