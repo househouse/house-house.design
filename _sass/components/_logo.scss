@@ -21,7 +21,7 @@ $logo--nudge: 18.5%;
     &.c--animate-fade-in {
         opacity: 1;
 
-        transition: all 1.5s ease-in-out;
+        transition: opacity 1.5s ease-in-out, transform 1s 0.5s ease-in-out;
     }
 
     &.c--first-item {

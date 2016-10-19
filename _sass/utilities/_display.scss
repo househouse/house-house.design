@@ -18,7 +18,7 @@
 }
 
 
-// Sizes
+// Fluid Sizes
 // ---
 
 .u-full-width {
@@ -29,6 +29,10 @@
     width: 50%;
 }
 
+.u-quarter-width {
+    width: 25%;
+}
+
 .u-full-height {
     height: 100%;
 }
@@ -36,6 +40,14 @@
 .u-half-height {
     height: 50%;
 }
+
+.u-quarter-height {
+    height: 25%;
+}
+
+
+// Viewport Sizes
+// ---
 
 .u-full-vw {
     width: 100vw;

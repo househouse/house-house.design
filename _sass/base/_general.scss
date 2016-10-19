@@ -125,6 +125,11 @@ main {
     display: block;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 svg {
     color: inherit;
 
