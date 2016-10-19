@@ -19,19 +19,19 @@ $overlay--time: 5s;
     animation: shifting ($overlay--time * 3) infinite;
 
     &.c--first {
-        background-image: linear-gradient(to bottom, $beige, $pastel-blue);
+        background-image: linear-gradient(to bottom, $pastel-blue, rgba($pastel-blue, 0));
 
         animation-delay: ($overlay--time * 1);
     }
 
     &.c--second {
-        background-image: linear-gradient(to bottom, $beige, $pastel-pink);
+        background-image: linear-gradient(to bottom, $pastel-pink, rgba($pastel-pink, 0));
 
         animation-delay: ($overlay--time * 2);
     }
 
     &.c--third {
-        background-image: linear-gradient(to bottom, $beige, $pastel-green);
+        background-image: linear-gradient(to bottom, $pastel-green, rgba($pastel-green, 0));
 
         animation-delay: ($overlay--time * 3);
     }
