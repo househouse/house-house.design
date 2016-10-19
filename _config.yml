@@ -1,6 +1,6 @@
 ---
 title: House House Design
-timezone: UTC
+timezone: America/Los_Angeles
 collections:
   posts:
     title: Posts
@@ -14,10 +14,8 @@ description: House House is a multidisciplinary design practice in Vancouver, Ca
 baseurl: 
 url: http://house-house.design
 markdown: kramdown
-env: production
 gems:
 - jekyll-coffeescript
 - jekyll-watch
 - jekyll-assets
 - autoprefixer-rails
-- octopress-minify-html
