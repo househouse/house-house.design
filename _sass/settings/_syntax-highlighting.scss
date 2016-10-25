@@ -1,11 +1,11 @@
-/**
- * Syntax highlighting styles
- */
+// Syntax highlighting styles
+// ===
+
 .highlight {
-    background: #fff;
+    background: $white;
 
     .highlighter-rouge & {
-      background: #eef;
+        background: #fff;
     }
 
     .c     { color: #998; font-style: italic } // Comment

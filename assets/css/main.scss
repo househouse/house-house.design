@@ -1,6 +1,5 @@
 ---
 ---
-
 // Styles
 // ===
 //
@@ -68,11 +67,10 @@
 // Components
 // ---
 //
-// Content-specific classes that generate distinct UI appearances. This is
-// largely limited to buttons and (lightly styled) custom form inputs. Component
-// styles should also generally be tied to specific markup; if it is not
-// directly related to any HTML, js, or JSX, it should be considered a utility
-// class. (Or series of classes.) Components use the c- namespace, e.g. c-button.
+// Content-specific classes that generate distinct UI appearances. Component
+// styles should also (generally) be coupled to specific markup; if it is not
+// directly related to any HTML, JS, or JSX, it should be considered a utility
+// class (or series of classes.) Components use the c- namespace, e.g. c-logo.
 
 @import 'components/content';
 @import 'components/hero';
