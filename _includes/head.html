@@ -6,6 +6,7 @@
     <meta name="MobileOptimized" content="320" />
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="theme-color" content="#3c485d" />
 
     <!-- SITE/PAGE INFO -->
     <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
@@ -14,7 +15,7 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
     <!-- STYLING -->
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}" />
 
     <!-- SCRIPING -->
     <script src="http://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="   crossorigin="anonymous"></script>
@@ -32,5 +33,17 @@
     <meta name="twitter:creator" content="" />
     <meta name="twitter:site" content="" />
     <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+
+    <!-- TOUCH ICONS -->
+    <link rel="icon" sizes="192x192" href="{{ '/assets/icons/touch-icon-192.png' | prepend: site.baseurl }}" />
+    <link rel="icon" sizes="128x128" href="{{ '/assets/icons/touch-icon-128.png' | prepend: site.baseurl }}" />
+    <link rel="icon" sizes="32x32" href="{{ '/assets/icons/favicon-32.png' | prepend: site.baseurl }}" />
+    <link rel="icon" sizes="16x16" href="{{ '/assets/icons/favicon-16.png' | prepend: site.baseurl }}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/icons/touch-icon-180.png' | prepend: site.baseurl }}" />
+    <link rel="apple-touch-icon" sizes="128x128" href="{{ '/assets/icons/touch-icon-128.png' | prepend: site.baseurl }}" />
+    <link rel="mask-icon" href="{{ '/assets/icons/safari-pinned-tab.svg' | prepend: site.baseurl }}" color="#3c485c" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#efe8d8" />
+    <meta name="msapplication-TileImage" content="{{ '/assets/icons/touch-icon-144.png' | prepend: site.baseurl }}" />
 
 </head>
