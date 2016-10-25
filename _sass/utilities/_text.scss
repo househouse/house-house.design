@@ -6,24 +6,21 @@
 // ---
 
 .u-text-size-normal {
-    font-size: $base-font-size;
-}
-
-.u-text-size-large {
-    font-size: $large-font-size;
-}
-
-.u-text-size-small {
-    font-size: $small-font-size;
+    @extend %type-copy;
 }
 
 .u-text-size-very-large {
-    font-size: $very-large-font-size;
+    @extend %type-headline;
 }
 
-.u-text-size-very-small {
-    font-size: $very-small-font-size;
+.u-text-size-large {
+    @extend %type-subheadline;
 }
+
+.u-text-size-small {
+    @extend %type-small;
+}
+
 
 
 // Text Style
