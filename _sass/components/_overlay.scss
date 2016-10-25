@@ -12,7 +12,7 @@ $overlay--time: 5s;
 // ---
 
 .c-overlay {
-    z-index: -1;
+    z-index: $z0-depth;
 
     opacity: 0;
 

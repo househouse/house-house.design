@@ -32,6 +32,16 @@ h6 {
     @extend %type-subtitle;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: $font-weight--base;
+    line-height: $line-height--tight;
+}
+
 ol,
 ul {
     list-style: none;

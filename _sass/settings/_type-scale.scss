@@ -11,7 +11,7 @@
 // Type Scale Variables
 // ---
 
-$type-scale--base: $base-font-size;
+$type-scale--base: $font-size--base;
 $type-scale--ratio: 1.125;
 
 $type-scale--step-1: $type-scale--ratio * $type-scale--base;
