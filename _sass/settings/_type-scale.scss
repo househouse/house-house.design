@@ -11,7 +11,6 @@
 // Type Scale Variables
 // ---
 
-
 $type-scale--base: $base-font-size;
 $type-scale--ratio: 1.125;
 
@@ -79,7 +78,7 @@ $type-scale--step-7: $type-scale--ratio * $type-scale--step-6;
     font-size: $type-scale--base;
 
     @include media-query($content-area--medium) {
-        font-size: calc(#{$type-scale--base} * 0.5vw);
+        font-size: calc(#{$type-scale--base} + 3 * (100vw - #{$content-area--medium}) / 400)
     }
 }
 
