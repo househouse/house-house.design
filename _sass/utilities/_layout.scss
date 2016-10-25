@@ -69,6 +69,10 @@
 // Z Index Positioning
 // ---
 
+.u-z0 {
+    z-index: $z0-depth;
+}
+
 .u-z1 {
     z-index: $z1-depth;
 }

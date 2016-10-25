@@ -12,28 +12,28 @@ $overlay--time: 5s;
 // ---
 
 .c-overlay {
-    z-index: $z0-depth;
+    > * {
+        opacity: 0;
 
-    opacity: 0;
+        animation: shifting ($overlay--time * 3) infinite;
 
-    animation: shifting ($overlay--time * 3) infinite;
+        &:nth-child(1) {
+            background-image: linear-gradient(to bottom, $pastel-blue, rgba($pastel-blue, 0));
 
-    &.c--first {
-        background-image: linear-gradient(to bottom, $pastel-blue, rgba($pastel-blue, 0));
+            animation-delay: ($overlay--time * 1);
+        }
 
-        animation-delay: ($overlay--time * 1);
-    }
+        &:nth-child(2) {
+            background-image: linear-gradient(to bottom, $pastel-pink, rgba($pastel-pink, 0));
 
-    &.c--second {
-        background-image: linear-gradient(to bottom, $pastel-pink, rgba($pastel-pink, 0));
+            animation-delay: ($overlay--time * 2);
+        }
 
-        animation-delay: ($overlay--time * 2);
-    }
+        &:nth-child(3) {
+            background-image: linear-gradient(to bottom, $pastel-green, rgba($pastel-green, 0));
 
-    &.c--third {
-        background-image: linear-gradient(to bottom, $pastel-green, rgba($pastel-green, 0));
-
-        animation-delay: ($overlay--time * 3);
+            animation-delay: ($overlay--time * 3);
+        }
     }
 }
 
