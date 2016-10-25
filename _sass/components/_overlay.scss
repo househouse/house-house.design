@@ -6,6 +6,8 @@
 // ---
 
 $overlay--time: 5s;
+$overlay--fade-up: 0.25;
+$overlay--fade-down: 0.05;
 
 
 // Component Root
@@ -18,21 +20,19 @@ $overlay--time: 5s;
         animation: shifting ($overlay--time * 3) infinite;
 
         &:nth-child(1) {
-            background-image: linear-gradient(to bottom, $pastel-blue, rgba($pastel-blue, 0));
+            background-image: linear-gradient(to bottom, $pastel-blue, rgba($pastel-blue, $overlay--fade-down));
+        }
+
+        &:nth-child(2) {
+            background-image: linear-gradient(to bottom, $pastel-pink, rgba($pastel-pink, $overlay--fade-down));
 
             animation-delay: ($overlay--time * 1);
         }
 
-        &:nth-child(2) {
-            background-image: linear-gradient(to bottom, $pastel-pink, rgba($pastel-pink, 0));
+        &:nth-child(3) {
+            background-image: linear-gradient(to bottom, $pastel-green, rgba($pastel-green, $overlay--fade-down));
 
             animation-delay: ($overlay--time * 2);
-        }
-
-        &:nth-child(3) {
-            background-image: linear-gradient(to bottom, $pastel-green, rgba($pastel-green, 0));
-
-            animation-delay: ($overlay--time * 3);
         }
     }
 }
@@ -45,6 +45,6 @@ $overlay--time: 5s;
     }
 
     33% {
-        opacity: 0.75;
+        opacity: $overlay--fade-up;
     }
 }
