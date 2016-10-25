@@ -67,4 +67,11 @@ a {
     &:focus {
         outline: none;
     }
+
+    &:hover {
+        background: $dark-blue;
+
+        color: $beige;
+        text-decoration: none;
+    }
 }
