@@ -18,6 +18,9 @@ $type-scale--step-1: $type-scale--ratio * $type-scale--base;
 $type-scale--step-2: $type-scale--ratio * $type-scale--step-1;
 $type-scale--step-3: $type-scale--ratio * $type-scale--step-2;
 $type-scale--step-4: $type-scale--ratio * $type-scale--step-3;
+$type-scale--step-5: $type-scale--ratio * $type-scale--step-4;
+$type-scale--step-6: $type-scale--ratio * $type-scale--step-5;
+$type-scale--step-7: $type-scale--ratio * $type-scale--step-6;
 
 
 // Type Size Options
@@ -25,18 +28,50 @@ $type-scale--step-4: $type-scale--ratio * $type-scale--step-3;
 
 %type-headline {
     font-size: $type-scale--step-4;
+
+    @include media-query($on-palm) {
+      font-size: $type-scale--step-5;
+    }
+
+    @include media-query($on-laptop) {
+      font-size: $type-scale--step-6;
+    }
 }
 
 %type-subheadline {
     font-size: $type-scale--step-2;
+
+    @include media-query($on-palm) {
+      font-size: $type-scale--step-3;
+    }
+
+    @include media-query($on-laptop) {
+      font-size: $type-scale--step-4;
+    }
 }
 
 %type-title {
     font-size: $type-scale--step-3;
+    
+    @include media-query($on-palm) {
+      font-size: $type-scale--step-4;
+    }
+
+    @include media-query($on-laptop) {
+      font-size: $type-scale--step-5;
+    }
 }
 
 %type-subtitle {
     font-size: $type-scale--step-1;
+
+    @include media-query($on-palm) {
+      font-size: $type-scale--step-2;
+    }
+
+    @include media-query($on-laptop) {
+      font-size: $type-scale--step-3;
+    }
 }
 
 %type-copy {
