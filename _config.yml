@@ -22,3 +22,5 @@ gems:
 - jekyll-assets
 - octopress-autoprefixer
 - autoprefixer-rails
+exclude:
+- patterns
