@@ -4,10 +4,10 @@ layout: default
 
 <div class="c-hero u-flexbox u-align-middle u-justify-middle u-full-vh u-clip">
     <div class="c-logo c--first-item">
-        {% include logo.html %}
+        {% include components/logo.html %}
     </div>
     <div class="c-logo c--second-item">
-        {% include logo.html %}
+        {% include components/logo.html %}
     </div>
 </div>
 
@@ -31,8 +31,4 @@ layout: default
     </article>
 </div>
 
-<div class="c-overlay" role="presentation">
-    <div class="u-fixed u-cover u-z0"></div>
-    <div class="u-fixed u-cover u-z0"></div>
-    <div class="u-fixed u-cover u-z0"></div>
-</div>
+{% include components/overlay.html %}
