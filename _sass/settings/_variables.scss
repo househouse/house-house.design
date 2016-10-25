@@ -45,9 +45,10 @@ $pastel-green: #d3e8e1;
 
 // Width of the content area
 // ---
-$content-width: 40rem;
-$on-palm: 600px;
-$on-laptop: 800px;
+
+$content-area--small: 30em;
+$content-area--medium: 45em;
+$content-area--large: 60em;
 
 
 // Style Variables

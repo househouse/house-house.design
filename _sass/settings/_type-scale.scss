@@ -11,6 +11,7 @@
 // Type Scale Variables
 // ---
 
+
 $type-scale--base: $base-font-size;
 $type-scale--ratio: 1.125;
 
@@ -29,53 +30,57 @@ $type-scale--step-7: $type-scale--ratio * $type-scale--step-6;
 %type-headline {
     font-size: $type-scale--step-4;
 
-    @include media-query($on-palm) {
-      font-size: $type-scale--step-5;
+    @include media-query($content-area--medium) {
+        font-size: $type-scale--step-5;
     }
 
-    @include media-query($on-laptop) {
-      font-size: $type-scale--step-6;
+    @include media-query($content-area--large) {
+        font-size: $type-scale--step-6;
     }
 }
 
 %type-subheadline {
     font-size: $type-scale--step-2;
 
-    @include media-query($on-palm) {
-      font-size: $type-scale--step-3;
+    @include media-query($content-area--medium) {
+        font-size: $type-scale--step-3;
     }
 
-    @include media-query($on-laptop) {
-      font-size: $type-scale--step-4;
+    @include media-query($content-area--large) {
+        font-size: $type-scale--step-4;
     }
 }
 
 %type-title {
     font-size: $type-scale--step-3;
-    
-    @include media-query($on-palm) {
-      font-size: $type-scale--step-4;
+
+    @include media-query($content-area--medium) {
+        font-size: $type-scale--step-4;
     }
 
-    @include media-query($on-laptop) {
-      font-size: $type-scale--step-5;
+    @include media-query($content-area--large) {
+        font-size: $type-scale--step-5;
     }
 }
 
 %type-subtitle {
     font-size: $type-scale--step-1;
 
-    @include media-query($on-palm) {
-      font-size: $type-scale--step-2;
+    @include media-query($content-area--medium) {
+        font-size: $type-scale--step-2;
     }
 
-    @include media-query($on-laptop) {
-      font-size: $type-scale--step-3;
+    @include media-query($content-area--large) {
+        font-size: $type-scale--step-3;
     }
 }
 
 %type-copy {
     font-size: $type-scale--base;
+
+    @include media-query($content-area--medium) {
+        font-size: calc(#{$type-scale--base} * 0.5vw);
+    }
 }
 
 %type-small {
