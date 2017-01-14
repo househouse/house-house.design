@@ -1,0 +1,17 @@
+{
+    "name": "house-house-design-official",
+    "version": "1.0.0",
+    "homepage": "http://house-house.design/",
+    "description": "House House Design",
+    "author": "Ben Groulx & Sean Durfee",
+    "private": true,
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/househouse/house-house.design"
+    },
+    "scripts": {
+        "dev": "harp server public/ & browser-sync start --proxy 'localhost:9000' --files '*.jade, *.scss'"
+    },
+    "dependencies": {
+    }
+}

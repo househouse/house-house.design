@@ -1,0 +1,132 @@
+include /includes/components/_card
+
+section.u-context.u-margin-bottom-xl.u-clip
+    != partial('/includes/partials/_video')
+
+section.u-margin-bottom-xl.u-padding-left-md.u-padding-right-md
+    script var weekdays = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+    div.c-text-content.u-measure-medium.u-margin-bottom-xl.u-align-center
+        h3 You have an audience. We respect them.
+        p Hi there, and happy #[script document.write(weekdays[new Date().getDay()]);]! We’re House House, a multidisciplinary design studio from Canada that collaborates with people all over the world. We’re very excited to collaborate with you and #[a(href='#') make something] together.
+        
+div.u-margin-bottom-xl.u-padding-bottom-xs.u-width-1of4.u-block.u-measure-narrow.a-back-forth.u-squiggle
+
+section.u-margin-bottom-xl.u-padding-left-md.u-padding-right-md
+    div.c-text-content.u-measure-medium.u-margin-bottom-xl
+        p We work differently than the last agency you hired; Many design shops would prefer to shoehorn your business into their process, instead of listening to what you have to say and expanding outwards from that. We, too, can go on and on about design, but we would much rather listen to you: our adoration and grasp of what design is, and how it works, is a given… not a selling feature.
+        p We listen to uncover not only who you are, but who is listening to you. When you work with us, you will see us put in the time and energy to uncover an understanding of your audience. We’ll work tirelessly until we truly know them. Until we feel we can connect your goals to their needs in a way that is seamless, accessible, intelligent. Until we can have them come away saying, “of course.”
+        p Because, you see, we love how design can help people. We’re not interested in adding to the noise — that doesn’t help anyone. We’re here to cut through the cacophony and design and build flexible, engaging websites, apps, and static design that looks great and functions in a myriad of contexts.
+        p You’ve got a visionary idea or you wouldn’t be here right now. Let’s start a conversation to see if our values jive with yours. If our approach fits your needs. If our solution-focused, scalable work meshes with your vision.
+        p So hire us.
+
+div.u-margin-bottom-xl.u-padding-bottom-xs.u-width-1of4.u-block.u-measure-narrow.a-back-forth.u-squiggle
+
+section.u-margin-bottom-xl.u-padding-left-md.u-padding-right-md
+    div.u-measure-medium.u-align-center
+        h3.u-margin-bottom-lg We can help you with…
+        ul(style='columns:3;column-gap:0;')
+            li 📝 Art Direction 
+            li 🌄 Brand Identity  
+            li 📚 Graphic Design
+            li 💻 Responsive Websites
+            li ⌨️ Front-End Dev
+            li 🚚 Product Design
+            li 📦 Packaging Design 
+            li 📱 Progressive Web Apps
+            li 🎬 Film Editing
+            li 🌀 Motion Design 
+            li 📰 Editorial Design 
+            li 🗺 Environmental Design
+
+div.u-margin-bottom-xl.u-padding-bottom-xs.u-width-1of4.u-block.u-measure-narrow.a-back-forth.u-squiggle
+
+section.u-margin-bottom-xl.u-padding-left-md.u-padding-right-md.u-clip
+    div.u-measure-medium.u-margin-bottom-lg.u-align-center 
+        h3 Lately, we’ve been working on…
+    div.u-flexbox--small-up.u-flex-wrap
+        div.u-float-start.u-width-1of2--small-up.u-max-width-1of4--medium-up.u-margin-bottom-md
+            div.u-bg-dark.u-height-full.u-margin-right-md--small-up
+                +card(
+                    'housecss',
+                    'Front-End Development',
+                    '/assets/img/housecss.jpg',
+                    '#')
+        div.u-float-start.u-width-1of2--small-up.u-max-width-1of4--medium-up.u-margin-bottom-md
+            div.u-bg-dark.u-height-full.u-margin-right-md--medium-up
+                +card(
+                    'Kost',
+                    'Product Design',
+                    '/assets/img/kost.jpg',
+                    '#')
+        div.u-float-start.u-width-1of2--small-up.u-max-width-1of4--medium-up.u-margin-bottom-md
+            div.u-bg-dark.u-height-full.u-margin-right-md--small-up
+                +card(
+                    'Bitchpop',
+                    'Film & Brand Design',
+                    '/assets/img/bitchpop.jpg',
+                    '#')
+        div.u-float-start.u-width-1of2--small-up.u-max-width-1of4--medium-up.u-margin-bottom-md
+            div.u-bg-dark.u-height-full
+                +card(
+                    'Stanford',
+                    'Responsive Web Design',
+                    '/assets/img/stanford.jpg',
+                    '#')
+
+div.u-margin-bottom-xl.u-padding-bottom-xs.u-width-1of4.u-block.u-measure-narrow.a-back-forth.u-squiggle
+
+section.u-margin-bottom-xl.u-padding-left-md.u-padding-right-md.u-clip
+    div.u-measure-medium
+        h3.u-margin-bottom-lg.u-align-center It’s great to meet you
+
+        div.u-clip.u-margin-bottom-md
+            figure.u-context.u-noise.u-float-left.u-width-1of4.u-margin-right-md.u-clip
+                img.u-block(src='assets/img/animated-2.gif')
+            div.c-text-content
+                h4.u-italic Ben Groulx
+                ul
+                    li.u-inline-block.u-margin-right-md
+                        a(href='#') Website
+                    li.u-inline-block.u-margin-right-md
+                        a(href='#') Twitter
+                    li.u-inline-block.u-margin-right-md
+                        a(href='#') GitHub
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. A vel excepturi minima recusandae dolor obcaecati optio, expedita velit iusto quos sapiente ipsam nisi incidunt at, mollitia beatae et dolore reprehenderit! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+        div.u-clip.u-margin-bottom-md
+            figure.u-context.u-noise.u-float-left.u-width-1of4.u-margin-right-md.u-clip
+                img.u-block(src='assets/img/animated-1.gif')
+            div.c-text-content
+                h4.u-italic Sean Durfee
+                ul
+                    li.u-inline-block.u-margin-right-md
+                        a(href='#') Website
+                    li.u-inline-block.u-margin-right-md
+                        a(href='#') GitHub
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. A vel excepturi minima recusandae dolor obcaecati optio, expedita velit iusto quos sapiente ipsam nisi incidunt at, mollitia beatae et dolore reprehenderit! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+        div.u-clip.u-margin-bottom-md
+            figure.u-context.u-noise.u-float-left.u-width-1of4.u-margin-right-md.u-clip
+                img.u-block(src='assets/img/animated-3.gif')
+            div.c-text-content
+                h4.u-italic Caitlin Farquharson
+                ul
+                    li.u-inline-block.u-margin-right-md
+                        a(href='#') LinkedIn
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. A vel excepturi minima recusandae dolor obcaecati optio, expedita velit iusto quos sapiente ipsam nisi incidunt at, mollitia beatae et dolore reprehenderit! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+div.u-margin-bottom-xl.u-padding-bottom-xs.u-width-1of4.u-block.u-measure-narrow.a-back-forth.u-squiggle
+
+section.u-margin-bottom-xl.u-padding-left-md.u-padding-right-md.u-clip
+    div.c-text-content.u-measure-medium.u-align-center
+        h3 Let’s work together
+        ul.u-text-size-small
+            li.u-inline-block.u-margin-right-md
+                a(href='#') Slack
+            li.u-inline-block.u-margin-right-md
+                a(href='#') GitHub
+            li.u-inline-block
+                a(href='#') Twitter
+        p contact info + form here
+
+div.u-margin-bottom-xl.u-padding-bottom-xs.u-width-1of4.u-block.u-measure-narrow.a-back-forth.u-squiggle

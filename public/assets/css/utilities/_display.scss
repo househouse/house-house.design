@@ -1,0 +1,230 @@
+// Utilities: Display
+// ============================================================================
+
+.u-block {
+    display: block;
+
+    @include --small-only {
+        &--small-only {
+            display: block;
+        }
+    }
+
+    @include --small-up {
+        &--small-up {
+            display: block;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            display: block;
+        }
+    }
+}
+
+.u-inline-block {
+    display: inline-block;
+
+    @include --small-only {
+        &--small-only {
+            display: inline-block;
+        }
+    }
+
+    @include --small-up {
+        &--small-up {
+            display: inline-block;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            display: inline-block;
+        }
+    }
+}
+
+
+// Visibility
+// ---
+
+.u-hidden,
+%u-hidden {
+    display: none;
+
+    @include --small-only {
+        &--small-only {
+            display: none;
+        }
+    }
+
+    @include --small-up {
+        &--small-up {
+            display: none;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            display: none;
+        }
+    }
+}
+
+[hidden] {
+    @extend %u-hidden;
+}
+
+.u-visually-hidden {
+    position: absolute;
+
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+}
+
+
+// Fluid Sizes
+// ---
+
+@each $dimensions-name, $dimensions-value in $dimensions-map {
+    .u-width-#{$dimensions-name} {
+        width: $dimensions-value;
+
+        @include --small-only {
+            &--small-only {
+                width: $dimensions-value;
+            }
+        }
+
+        @include --small-up {
+            &--small-up {
+                width: $dimensions-value;
+            }
+        }
+
+        @include --medium-up {
+            &--medium-up {
+                width: $dimensions-value;
+            }
+        }
+    }
+}
+
+@each $dimensions-name, $dimensions-value in $dimensions-map {
+    .u-max-width-#{$dimensions-name} {
+        max-width: $dimensions-value;
+
+        @include --small-only {
+            &--small-only {
+                width: $dimensions-value;
+            }
+        }
+
+        @include --small-up {
+            &--small-up {
+                max-width: $dimensions-value;
+            }
+        }
+
+        @include --medium-up {
+            &--medium-up {
+                max-width: $dimensions-value;
+            }
+        }
+    }
+}
+
+@each $dimensions-name, $dimensions-value in $dimensions-map {
+    .u-height-#{$dimensions-name} {
+        height: $dimensions-value;
+
+        @include --small-only {
+            &--small-only {
+                width: $dimensions-value;
+            }
+        }
+
+        @include --small-up {
+            &--small-up {
+                width: $dimensions-value;
+            }
+        }
+
+        @include --medium-up {
+            &--medium-up {
+                width: $dimensions-value;
+            }
+        }
+    }
+}
+
+
+// Viewport Sizes
+// ---
+
+.u-full-vw {
+    width: 100vw;
+
+    @include --small-only {
+        &--small-only {
+            width: 100vw;
+        }
+    }
+
+    @include --small-up {
+        &--small-up {
+            width: 100vw;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            width: 100vw;
+        }
+    }
+}
+
+.u-full-vh {
+    height: 100vh;
+
+    @include --small-only {
+        &--small-only {
+            height: 100vh;
+        }
+    }
+
+    @include --small-up {
+        &--small-up {
+            height: 100vh;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            height: 100vh;
+        }
+    }
+}
+
+
+// Bleed
+// --
+
+@each $direction in $directions-map {
+    .u-bleed-#{$direction} {
+        margin-#{$direction}: -$base-space;
+    }
+}
+
+
+// Overflow
+// ---
+
+.u-clip {
+    overflow: hidden;
+}
