@@ -138,14 +138,23 @@ table {
     border-collapse: collapse;
 }
 
+button {
+    cursor: pointer;
+}
+
 input,
 select,
 textarea {
+    font-family: $code-font;
     resize: none;
 
     &:focus,
     &:active,
     &:valid {
         z-index: $z3-depth;
+    }
+
+    &:invalid {
+        z-index: auto;
     }
 }

@@ -3,9 +3,9 @@ include /includes/components/_card
 section.u-context.u-margin-bottom-xl.u-clip
     != partial('/includes/partials/_video')
     div.u-position.u-stack-basic.u-top-halfway.u-realign-center-vert.u-measure-medium.u-hidden--small-only
-        h4.u-padding-left-xl--small-up.u-bold(style='line-height:2.5;')
+        h1.u-text-size-large.u-padding-left-md--small-up.u-padding-left-xl--medium-up.u-bold(style='line-height:2.5;')
             span.u-bg-light.u-padding-top-sm.u-padding-bottom-sm
-                | Wherever you are, #[span.u-color-primary design] will help you better communicate with your audience. #[span.u-color-primary We can help.]
+                | Wherever you are, #[span.u-color-primary design] can help you better communicate with purpose. #[span.u-color-primary(style='white-space:nowrap;') We can help.]
 
 section.u-margin-bottom-xl.u-padding-left-md.u-padding-right-md#who-we-are
     script var weekdays = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
@@ -135,20 +135,20 @@ section.u-margin-bottom-xl.u-padding-left-md.u-padding-right-md.u-clip#contact-u
     div.u-measure-medium#form
         div.u-flexbox--small-up.u-clip
             div.u-context.u-border-left-dark.u-border-bottom-dark.u-width-full--small-only.u-width-1of2--small-up.u-float-left.u-margin-right-md--small-up.u-margin-bottom-md(style='height:3rem;')
-                label.u-position.u-top-halfway.u-realign-center-vert.u-text-size-small.u-color-primary.u-padding-left-md.u-stack-basic(for='form_name')
+                label.u-position.u-top-halfway.u-realign-center-vert.u-text-size-small.u-color-primary.u-padding-left-md.u-stack-basic(for='form_name', style='pointer-events:none;')
                     | Your Name
                 input.u-position.u-top-0.u-left-0.u-right-0.u-bottom-0.u-width-full.u-border-0.u-text-size-small.u-padding-left-md#form_name(required='')
             div.u-context.u-border-left-dark.u-border-bottom-dark.u-width-full--small-only.u-width-1of2--small-up.u-float-left.u-margin-bottom-md(style='height:3rem;')
-                label.u-position.u-top-halfway.u-realign-center-vert.u-text-size-small.u-color-primary.u-padding-left-md.u-stack-basic(for='form_email')
+                label.u-position.u-top-halfway.u-realign-center-vert.u-text-size-small.u-color-primary.u-padding-left-md.u-stack-basic(for='form_email', style='pointer-events:none;')
                     | Your Email
                 input.u-position.u-top-0.u-left-0.u-right-0.u-bottom-0.u-width-full.u-border-0.u-text-size-small.u-padding-left-md#form_email(required='')
         div.u-flexbox--small-up.u-clip
             div.u-context.u-border-left-dark.u-border-bottom-dark.u-width-full.u-float-left.u-margin-bottom-md(style='height:10rem;')
-                label.u-position.u-bottom-0.u-text-size-small.u-color-primary.u-padding-left-md.u-padding-bottom-md.u-stack-basic(for='form_message')
+                label.u-position.u-bottom-0.u-text-size-small.u-color-primary.u-padding-left-md.u-padding-bottom-md.u-stack-basic(for='form_message' style='pointer-events:none;')
                     | Your Message
-                textarea.u-position.u-top-0.u-left-0.u-right-0.u-bottom-0.u-width-full.u-border-0.u-text-size-small.u-padding-left-md.u-padding-top-md.u-padding-bottom-md.u-padding-right-md#form_message(required='')
+                textarea.u-position.u-top-0.u-left-0.u-right-0.u-bottom-0.u-width-full.u-border-0.u-text-size-small.u-padding-left-md.u-padding-top-md.u-padding-bottom-md.u-padding-right-md#form_message(required='', placeholder='Hello, House House! I have a problem that I need help with. My budget is $6,000, and I need a solution in 5 weeks. I think I may need a designer!')
         div.u-flexbox--small-up.u-clip
-            button.u-bg-primary.u-border-0.u-width-1of4.u-text-size-small.u-color-light.u-padding-top-md.u-padding-bottom-md.u-float-right(style='cursor:pointer;')
+            button.u-bg-primary.u-border-0.u-width-1of4.u-text-size-small.u-color-light.u-padding-top-md.u-padding-bottom-md.u-float-right
                 | Send
 
 div.u-margin-bottom-xl.u-padding-bottom-xs.u-width-1of4.u-block.u-measure-narrow.a-back-forth.u-squiggle
