@@ -79,5 +79,5 @@ $type-scale--step-7: $type-scale--ratio * $type-scale--step-6;
 }
 
 %type-small {
-    font-size: $type-scale--base / $type-scale--ratio;
+    font-size: $type-scale--base / ($type-scale--ratio * $type-scale--ratio);
 }
