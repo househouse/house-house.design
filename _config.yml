@@ -11,15 +11,17 @@ collections:
 description: House House is a multidisciplinary design practice in Vancouver, Canada
   — a joint production between Ben Groulx and Sean Durfee. You can hire us to help
   you connect with your audience in ways that will enrich their lives.
-baseurl:
+baseurl: 
 url: http://house-house.design
 markdown: kramdown
 sass:
   style: compressed
 gems:
-- jekyll-coffeescript
-- jekyll-watch
+- autoprefixer-rails
 - jekyll-assets
+- jekyll-coffeescript
+- jekyll-seo-tag
+- jekyll-watch
 - octopress-autoprefixer
 - autoprefixer-rails
 exclude:
