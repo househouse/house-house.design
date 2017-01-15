@@ -139,9 +139,13 @@ table {
 }
 
 input,
-select {
+select,
+textarea {
+    resize: none;
+
     &:focus,
-    &:active {
+    &:active,
+    &:valid {
         z-index: $z3-depth;
     }
 }
