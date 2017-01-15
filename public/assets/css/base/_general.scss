@@ -137,3 +137,11 @@ table {
     border-spacing: 0;
     border-collapse: collapse;
 }
+
+input,
+select {
+    &:focus,
+    &:active {
+        z-index: $z3-depth;
+    }
+}
