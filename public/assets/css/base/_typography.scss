@@ -102,6 +102,6 @@ a {
     &:hover {
         @extend %a-back-forth;
 
-        color: $accent-color;
+        color: $primary-color;
     }
 }
