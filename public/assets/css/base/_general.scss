@@ -140,6 +140,10 @@ table {
 
 button {
     cursor: pointer;
+
+    &:hover {
+        opacity: $half-transparent;
+    }
 }
 
 input,

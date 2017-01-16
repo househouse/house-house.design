@@ -59,14 +59,14 @@
         }
     }
 
-    @include --small-up {
-        &--small-up {
+    @include --medium-only {
+        &--medium-only {
             display: none;
         }
     }
 
-    @include --medium-up {
-        &--medium-up {
+    @include --small-up {
+        &--small-up {
             display: none;
         }
     }

@@ -25,20 +25,6 @@
     opacity: $fully-transparent;
 }
 
-.u-gradient {
-    &::after {
-        content: '';
-
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-
-        background: linear-gradient(to bottom, rgba($black, 0), $black);
-    }
-}
-
 .u-squiggle,
 %u-squiggle {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 4'%3E%3Cpath fill='none' stroke='#{$accent-color}' stroke-width='1' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
@@ -47,13 +33,31 @@
     background-size: auto 3px;
 }
 
-.u-noise {
-    &::before {
-        @extend %a-noise;
 
+// Overlays
+// ---
+//
+// 1. Remove click events so if there are elements undeneath, they can still be
+//    targeted by a mouse or finger.
+// 2. Use both before/after pseudos so that both overlays can be placed on an
+//    element simultaneously.
+
+.u-noise,
+.u-gradient {
+    &::before,
+    &::after {
         content: '';
 
         position: absolute;
+    }
+}
+
+.u-noise {
+    // 1
+
+    &::before {
+        @extend %a-noise;
+
         top: -50%;
         left: -50%;
         z-index: $z3-depth;
@@ -62,5 +66,18 @@
         height: 200%;
 
         background-image: url('../img/noise.png');
+    }
+}
+
+.u-gradient {
+    // 2
+
+    &::after {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        background: linear-gradient(to bottom, rgba($black, 0), $black);
     }
 }
