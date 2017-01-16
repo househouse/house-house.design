@@ -13,7 +13,7 @@
         "compile": "harp compile local/ public/",
         "deploy": "harp compile local/ public/ && git add . && git commit -a -m 'Deploy' && git push origin master",
         "dev": "harp server public/ && browser-sync start --proxy 'localhost:9000' --files '*.jade, *.scss'",
-        "lint": "sass-lint -c .sass-lint.yml 'app/**/*.scss' -v",
+        "lint": "sass-lint -c .sass-lint.yml 'app/**/*.scss' -v"
     },
     "dependencies": {
         "browser-sync": "^2.18.6",
