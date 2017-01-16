@@ -10,7 +10,8 @@
         "url": "https://github.com/househouse/house-house.design"
     },
     "scripts": {
-        "dev": "harp server public/ & browser-sync start --proxy 'localhost:9000' --files '*.jade, *.scss'"
+        "dev": "harp server public/ && browser-sync start --proxy 'localhost:9000' --files '*.jade, *.scss'",
+        "deploy": "harp compile public/ compile/ && git add compile/ && git commit -a -m 'Deploy' && git push origin public"
     },
     "dependencies": {
     }

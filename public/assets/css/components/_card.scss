@@ -9,15 +9,13 @@
         transition: all 0.125s ease-out;
     }
 
-    @include --small-up {
-        &:hover {
-            .c-card__image {
-                transform: scale(1.1) rotate(-1deg);
-            }
+    &:hover {
+        .c-card__image {
+            transform: scale(1.1) rotate(-1deg);
+        }
 
-            .u-squiggle {
-                @extend %a-back-forth;
-            }
+        .u-squiggle {
+            @extend %a-back-forth;
         }
     }
 }
