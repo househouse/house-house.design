@@ -1,6 +1,6 @@
 {
     "name": "house-house-design-studio",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "homepage": "http://house-house.design/",
     "description": "House House Design",
     "author": "Ben Groulx & Sean Durfee",
@@ -15,5 +15,7 @@
         "compile": "harp compile local/ public/"
     },
     "dependencies": {
+        "harp": "^0.20.3",
+        "browser-sync": "^2.18.6"
     }
 }
