@@ -1,6 +1,8 @@
 {
     "globals": {
-        "title": "House House • A Design Studio",
-        "description": "House House is a multidisciplinary design studio from Canada that can help you with art direction, front-end development, web design, and more."
+        "site_name": "House House",
+        "site_title": "House House • A Design Studio",
+        "site_description": "House House is a multidisciplinary design studio that can help you with art direction, front-end development, web design, and more.",
+        "site_image": "assets/img/glitch.jpg"
     }
 }

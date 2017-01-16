@@ -4,11 +4,12 @@ head
 
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
+
+    title #{site_title}
+    meta(name='description' content='#{site_description}')
     meta(name='viewport', content='width=device-width,initial-scale=1.0')
-    meta(name='google-site-verification', content='xxxxx')
-    meta(name='description' content='#{description}')
     meta(name='author', content='Ben Groulx & Sean Durfee')
-    title #{title}
+    meta(name='google-site-verification', content='XQrarlvRzShmAo5O_AzT_Wuinw1JiNI4IXWGltMtxkA')
 
     noscript#deferred-styles
         link(rel='stylesheet' href='assets/css/main.css')
@@ -16,16 +17,23 @@ head
     script.
         var loadDeferredStyles=function(){var a=document.getElementById('deferred-styles'),b=document.createElement('div');b.innerHTML=a.textContent,document.body.appendChild(b),a.parentElement.removeChild(a)},raf=requestAnimationFrame||mozRequestAnimationFrame||webkitRequestAnimationFrame||msRequestAnimationFrame;raf?raf(function(){window.setTimeout(loadDeferredStyles,0)}):window.addEventListener('load',loadDeferredStyles);
 
-    meta(name='twitter:card', content='summary')
     meta(name='twitter:site', content='XXXX')
-    meta(name='twitter:title', content='#{title}')
-    meta(name='twitter:image', content='assets/img/XXXX')
-    meta(name='twitter:creator', content='XXXX')
-    meta(name='twitter:image:alt', content='XXXX')
-    meta(name='twitter:description', content='#{description}')
+    meta(name='twitter:card', content='summary_large_image')
+    meta(name='twitter:title', content='#{site_title}')
+    meta(name='twitter:image', content='#{site_image}')
+    meta(name='twitter:image:alt', content='#{site_description}')
+    meta(name='twitter:creator', content='@bengroulx, @durfeee')
+    meta(name='twitter:description', content='#{site_description}')
+
+    meta(name='og:url', content='http://house-house.design')
+    meta(name='og:type', content='website')
+    meta(name='og:title', content='#{title}')
+    meta(name='og:image', content='#{site_image}')
+    meta(name='og:site_name', content='#{site_name}')
+    meta(name='og:description', content='#{site_description}')
 
     meta(name='apple-mobile-web-app-capable', content='yes')
-    meta(name='apple-mobile-web-app-title', content='House House')
+    meta(name='apple-mobile-web-app-title', content='#{site_name}')
     link(rel='apple-touch-icon', sizes='57x57', href='assets/startup/apple-icon-57.png')
     link(rel='apple-touch-icon', sizes='60x60', href='assets/startup/apple-icon-60.png')
     link(rel='apple-touch-icon', sizes='72x72', href='assets/startup/apple-icon-72.png')
