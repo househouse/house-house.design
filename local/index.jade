@@ -1,0 +1,154 @@
+include includes/components/_card
+
+section.u-context.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-clip
+    != partial('/includes/partials/_video')
+    div.u-position.u-stack-basic.u-top-halfway.u-realign-center-vert.u-measure-medium.u-hidden--small-only
+        h1.u-text-size-large.u-padding-left-md--small-up.u-padding-left-xl--medium-up.u-bold(style='line-height:2.5;')
+            span.u-bg-light.u-padding-top-sm.u-padding-bottom-sm
+                | Wherever you are, #[span.u-color-primary design] can help you better communicate with purpose. #[span.u-color-primary(style='white-space:nowrap;') We can help.]
+
+section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-left-md.u-padding-right-md#who-we-are
+    script var weekdays = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+    div.c-text-content.u-measure-medium.u-align-center
+        h3 You have an audience. We respect them.
+        p Hi there, and happy #[script document.write(weekdays[new Date().getDay()]);]#[noscript day]! We’re House House, a multidisciplinary design studio from Canada that collaborates with people all over the world. We’re very excited to collaborate with you and #[a(href='#our-work') make something] together.
+        
+div.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-bottom-xs.u-width-1of4.u-measure-narrow.a-back-forth.u-squiggle
+
+section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-left-md.u-padding-right-md
+    div.c-text-content.u-measure-medium
+        h3.u-visually-hidden House House is a multidisciplinary design studio from Canada that can help you with art direction, front-end development, web design, and more.
+        p We work differently than the last agency you hired; Many design shops would prefer to shoehorn your business into their process, instead of listening to what you have to say and expanding outwards from that. We, too, can go on and on about design, but we would much rather listen to you: our adoration and grasp of what design is, and how it works, is a given… not a selling feature.
+        p We listen to uncover not only who you are, but who is listening to you. When you work with us, you will see us put in the time and energy to uncover an understanding of your audience. We’ll work tirelessly until we truly know them. Until we feel we can connect your goals to their needs in a way that is seamless, accessible, intelligent. Until we can have them come away saying, “of course.”
+        p Because, you see, we love how design can help people. We’re not interested in adding to the noise — that doesn’t help anyone. We’re here to cut through the cacophony and design and build flexible, engaging websites, apps, and static design that looks great and functions in a myriad of contexts.
+        p You’ve got a visionary idea or you wouldn’t be here right now. Let’s start a conversation to see if our values jive with yours. If our approach fits your needs. If our solution-focused, scalable work meshes with your vision.
+        p We love approaching challenges: You should hire us and we should talk. 🤘🏽
+
+div.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-bottom-xs.u-width-1of4.u-measure-narrow.a-back-forth.u-squiggle
+
+section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-left-md.u-padding-right-md#our-work
+    div.u-measure-medium.u-align-center
+        h3.u-margin-bottom-lg What do you need done?
+        div.u-flexbox--medium-up
+            div.u-flex
+                span.u-block 📝 Art Direction 
+                span.u-block 🌄 Brand Identity  
+                span.u-block 📚 Graphic Design
+                span.u-block 💻 Responsive Websites
+            div.u-flex
+                span.u-block ⌨️ Front-End Dev
+                span.u-block 🚚 Product Design
+                span.u-block 📦 Packaging Design 
+                span.u-block 📱 Progressive Web Apps
+            div.u-flex
+                span.u-block 🎬 Film Editing
+                span.u-block 🌀 Motion Design 
+                span.u-block 📰 Editorial Design 
+                span.u-block 🗺 Environmental Design
+
+div.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-bottom-xs.u-width-1of4.u-measure-narrow.a-back-forth.u-squiggle
+
+section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-left-md.u-padding-right-md.u-clip
+    div.u-measure-medium.u-margin-bottom-lg.u-align-center 
+        h3 What have we been working on lately?
+    div.u-flexbox--small-up.u-flex-wrap
+        div.u-float-start.u-width-1of2--small-up.u-max-width-1of4--medium-up.u-margin-bottom-md
+            div.u-bg-dark.u-height-full.u-margin-right-md--small-up
+                +card(
+                    'housecss',
+                    'Front-End Development',
+                    'assets/img/housecss.jpg',
+                    'https://github.com/househouse/housecss')
+        div.u-float-start.u-width-1of2--small-up.u-max-width-1of4--medium-up.u-margin-bottom-md
+            div.u-bg-dark.u-height-full.u-margin-right-md--medium-up
+                +card(
+                    'Kost',
+                    'Product Design',
+                    'assets/img/kost.jpg',
+                    '#')
+        div.u-float-start.u-width-1of2--small-up.u-max-width-1of4--medium-up.u-margin-bottom-md
+            div.u-bg-dark.u-height-full.u-margin-right-md--small-up
+                +card(
+                    'Bitchpop',
+                    'Film & Brand Design',
+                    'assets/img/bitchpop.jpg',
+                    'http://bitchpopproductions.com')
+        div.u-float-start.u-width-1of2--small-up.u-max-width-1of4--medium-up.u-margin-bottom-md
+            div.u-bg-dark.u-height-full
+                +card(
+                    'Stanford',
+                    'Responsive Web Design',
+                    'assets/img/stanford.jpg',
+                    'https://stanford.edu/')
+
+div.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-bottom-xs.u-width-1of4.u-measure-narrow.a-back-forth.u-squiggle
+
+section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-left-md.u-padding-right-md.u-clip
+    div.u-measure-medium
+        h3.u-margin-bottom-lg.u-align-center It’s a pleasure to meet you!
+        div.u-clip.u-margin-bottom-lg
+            figure.u-context.u-float-left.u-width-1of3.u-margin-right-md.u-clip
+                img.u-block(src='assets/img/-ben-groulx.gif', alt='Illustrated portrait of Ben Groulx')
+            div.c-text-content
+                h4.u-text-size-base.u-bold Ben Groulx 🐙
+                ul
+                    li.u-inline-block.u-margin-right-md
+                        a(href='https://linkedin.com/in/bengroulx') LinkedIn
+                    li.u-inline-block
+                        a(href='http://bengroulx.com') Website
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. A vel excepturi minima recusandae dolor obcaecati optio, expedita velit iusto quos sapiente ipsam nisi incidunt at, mollitia beatae et dolore reprehenderit!
+        div.u-clip.u-margin-bottom-lg
+            figure.u-context.u-float-left.u-width-1of3.u-margin-right-md.u-clip
+                img.u-block(src='assets/img/-sean-durfee.gif', alt='Illustrated portrait of Sean Durfee')
+            div.c-text-content
+                h4.u-text-size-base.u-bold Sean Durfee 🚀
+                ul
+                    li.u-inline-block.u-margin-right-md
+                        a(href='https://linkedin.com/in/sean-durfee-ba393b5a') LinkedIn
+                    li.u-inline-block
+                        a(href='http://durfee.me/') Website
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. A vel excepturi minima recusandae dolor obcaecati optio, expedita velit iusto quos sapiente ipsam nisi incidunt at, mollitia beatae et dolore reprehenderit!
+        div.u-clip
+            figure.u-context.u-float-left.u-width-1of3.u-margin-right-md.u-clip
+                img.u-block(src='assets/img/-caitlin-farquharson.gif', alt='Illustrated portrait of Caitlin Farquharson')
+            div.c-text-content
+                h4.u-text-size-base.u-bold Caitlin Farquharson 💅🏼
+                ul
+                    li.u-inline-block.u-margin-right-md
+                        a(href='https://linkedin.com/in/caitlinfarquharson') LinkedIn
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. A vel excepturi minima recusandae dolor obcaecati optio, expedita velit iusto quos sapiente ipsam nisi incidunt at, mollitia beatae et dolore reprehenderit!
+
+div.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-bottom-xs.u-width-1of4.u-measure-narrow.a-back-forth.u-squiggle
+
+section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-left-md.u-padding-right-md.u-clip#contact-us
+    div.c-text-content.u-measure-medium.u-align-center.u-margin-bottom-xl
+        h3 Can we work together?
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi, officiis repellat fugit voluptatem reiciendis ipsa nobis cupiditate id facere, adipisci assumenda qui dolore perspiciatis nemo eum harum obcaecati, aut.
+        p Current availability with status indicator (like a little green/red dot?)
+        ul
+            li.u-inline-block.u-margin-right-md
+                a(href='https://househouse-hq.slack.com/') Slack
+            li.u-inline-block.u-margin-right-md
+                a(href='https://github.com/househouse/') GitHub
+            li.u-inline-block
+                a(href='https://twitter.com/house-house/') Twitter
+    div.u-measure-medium#form
+        div.u-flexbox--small-up.u-clip
+            div.u-context.u-border-left-dark.u-border-bottom-dark.u-width-full--small-only.u-width-1of2--small-up.u-float-left.u-margin-right-md--small-up.u-margin-bottom-md(style='height:3rem;')
+                label.u-position.u-top-halfway.u-realign-center-vert.u-text-size-small.u-color-primary.u-padding-left-md.u-stack-basic(for='form_name', style='pointer-events:none;')
+                    | Your Name
+                input.u-position.u-top-0.u-left-0.u-right-0.u-bottom-0.u-width-full.u-border-0.u-text-size-small.u-padding-left-md#form_name(required='', type='text', autocorrect='off')
+            div.u-context.u-border-left-dark.u-border-bottom-dark.u-width-full--small-only.u-width-1of2--small-up.u-float-left.u-margin-bottom-md(style='height:3rem;')
+                label.u-position.u-top-halfway.u-realign-center-vert.u-text-size-small.u-color-primary.u-padding-left-md.u-stack-basic(for='form_email', style='pointer-events:none;')
+                    | Your Email
+                input.u-position.u-top-0.u-left-0.u-right-0.u-bottom-0.u-width-full.u-border-0.u-text-size-small.u-padding-left-md#form_email(required='', type='text')
+        div.u-flexbox--small-up.u-clip
+            div.u-context.u-border-left-dark.u-border-bottom-dark.u-width-full.u-float-left.u-margin-bottom-md(style='height:10rem;')
+                label.u-position.u-bottom-0.u-text-size-small.u-color-primary.u-padding-left-md.u-padding-bottom-md.u-stack-basic.u-bg-light(for='form_message' style='pointer-events:none;')
+                    | Your Message
+                textarea.u-position.u-top-0.u-left-0.u-right-0.u-bottom-0.u-width-full.u-border-0.u-text-size-small.u-padding-left-md.u-padding-top-md.u-padding-bottom-md.u-padding-right-md#form_message(required='', placeholder='e.g. Hello, House House! I have a problem with __________ that I need some direction on – I think I may need a designer! My budget is $__,____ and I would like a solution in ____ weeks. Can you help?')
+        div.u-flexbox--small-up.u-clip
+            button.u-bg-primary.u-border-0.u-width-1of4.u-text-size-small.u-color-light.u-padding-top-md.u-padding-bottom-md.u-float-right
+                | Send
+
+div.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-bottom-xs.u-width-1of4.u-measure-narrow.a-back-forth.u-squiggle

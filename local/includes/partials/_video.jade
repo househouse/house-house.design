@@ -1,0 +1,30 @@
+div.u-context.u-noise(style='height:0;padding-bottom:40%;background-color:#000;')
+    div.u-position.u-top-halfway.u-left-0.u-realign-center-vert.u-width-full.a-fade-in--mid-forwards.u-hidden--small-only.u-hidden--medium-only.u-stack-basic#video_player
+    img.u-position.u-top-halfway.u-left-0.u-realign-center-vert.u-width-full(src='assets/img/glitch.jpg', alt='Wherever you are, design can help you better communicate with purpose. We can help.')
+    script(async='', defer='', src='https://www.youtube.com/iframe_api')
+    script.
+        function onYouTubeIframeAPIReady() {
+            var player;
+            player = new YT.Player('video_player', {
+                videoId: 'PofN_Ou3As8', // YouTube Video ID
+                width: 1920,             // Player width (in px)
+                height: 1080,            // Player height (in px)
+                playerVars: {
+                    autoplay: 1,        // Auto-play the video on load
+                    controls: 0,        // Show pause/play buttons in player
+                    showinfo: 0,        // Hide the video title
+                    modestbranding: 1,  // Hide the Youtube Logo
+                    loop: 1,            // Run the video in a loop
+                    fs: 0,              // Hide the full screen button
+                    cc_load_policy: 0,  // Hide closed captions
+                    iv_load_policy: 3,  // Hide the Video Annotations
+                    autohide: 1,        // Hide video controls when playing
+                    playlist: 'PofN_Ou3As8'
+                },
+                events: {
+                    onReady: function(e) {
+                        e.target.mute();
+                    }
+                }
+            });
+        }

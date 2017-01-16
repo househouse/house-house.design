@@ -11,7 +11,8 @@
     },
     "scripts": {
         "dev": "harp server public/ && browser-sync start --proxy 'localhost:9000' --files '*.jade, *.scss'",
-        "deploy": "harp compile public/ compile/ && git add compile/ && git commit -a -m 'Deploy' && git push origin public"
+        "deploy": "harp compile local/ public/ && git add . && git commit -a -m 'Deploy' && git push origin master",
+        "compile": "harp compile local/ public/"
     },
     "dependencies": {
     }

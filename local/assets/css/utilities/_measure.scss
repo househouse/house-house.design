@@ -1,0 +1,31 @@
+// Utilities: Measure
+// ============================================================================
+
+@each $content-area-name, $content-area-width in $content-area-map {
+    .u-measure-#{$content-area-name} {
+        max-width: calc(#{$content-area-width} - (#{$base-space} * 5));
+
+        @include --small-only {
+            &--small-only {
+                max-width: calc(#{$content-area-width} - (#{$base-space} * 5));
+            }
+        }
+
+        @include --small-up {
+            &--small-up {
+                max-width: calc(#{$content-area-width} - (#{$base-space} * 5));
+            }
+        }
+
+        @include --medium-up {
+            &--medium-up {
+                max-width: calc(#{$content-area-width} - (#{$base-space} * 5));
+            }
+        }
+    }
+}
+
+[class*='u-measure'] {
+    margin-right: auto;;
+    margin-left: auto;
+}
