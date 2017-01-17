@@ -1,0 +1,23 @@
+{
+    "name": "house-house-design-studio",
+    "version": "2.0.0",
+    "homepage": "http://house-house.design/",
+    "description": "House House Design",
+    "author": "Ben Groulx & Sean Durfee",
+    "private": true,
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/househouse/house-house.design"
+    },
+    "scripts": {
+        "compile": "harp compile local/ public/",
+        "deploy": "harp compile local/ public/ && git add . && git commit -a -m 'Deploy' && git push origin master",
+        "dev": "harp server local/ & browser-sync start --proxy 'localhost:9000' --files '*.jade, *.scss'",
+        "lint": "sass-lint -c .sass-lint.yml 'app/**/*.scss' -v"
+    },
+    "dependencies": {
+        "browser-sync": "^2.18.6",
+        "harp": "^0.20.3",
+        "sass-lint": "1.8.2"
+    }
+}
