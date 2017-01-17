@@ -11,7 +11,7 @@ section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-le
     script var weekdays = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
     div.c-text-content.u-measure-medium.u-align-center
         h3 You have an audience. We respect them.
-        p Hi there, and happy #[script document.write(weekdays[new Date().getDay()]);]#[noscript day]! We’re House House, a multidisciplinary design studio from Canada that collaborates with people all over the world. We’re very excited to collaborate with you and #[a(href='#our-work') make something] together.
+        p Hi there, and happy #[script document.write(weekdays[new Date().getDay()]);]#[noscript day]! We’re House House, a multidisciplinary design studio from Canada that collaborates with people all over the world. We’re very excited to collaborate with you and #[a(href='#our-work', style='white-space:nowrap;') make something] together.
 
 div.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-bottom-xs.u-width-1of4.u-measure-narrow.a-back-forth.u-squiggle
 
@@ -134,21 +134,21 @@ section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-le
                 a(href='https://github.com/househouse/') GitHub
             li.u-inline-block
                 a(href='https://twitter.com/house-house/') Twitter
-    div.u-measure-medium#form
+    form.u-block.u-measure-medium
         div.u-flexbox--small-up.u-clip
             div.u-context.u-border-left-dark.u-border-bottom-dark.u-width-full--small-only.u-width-1of2--small-up.u-float-left.u-margin-right-md--small-up.u-margin-bottom-md(style='height:3rem;')
-                label.u-position.u-top-halfway.u-realign-center-vert.u-text-size-small.u-color-primary.u-padding-left-md.u-stack-basic(for='form_name', style='pointer-events:none;')
+                label.u-position.u-top-halfway.u-realign-center-vert.u-text-size-small.u-color-primary.u-padding-left-md.u-stack-basic(for='form-name')
                     | Your Name
-                input.u-position.u-top-0.u-left-0.u-right-0.u-bottom-0.u-width-full.u-border-0.u-text-size-small.u-padding-left-md#form_name(required='', type='text', autocomplete='off', autocapitalize='off', spellcheck='off')
+                input.u-position.u-top-0.u-left-0.u-right-0.u-bottom-0.u-width-full.u-border-0.u-text-size-small.u-padding-left-md#form-name(required='', type='text', autocomplete='off', autocapitalize='off', spellcheck='off')
             div.u-context.u-border-left-dark.u-border-bottom-dark.u-width-full--small-only.u-width-1of2--small-up.u-float-left.u-margin-bottom-md(style='height:3rem;')
-                label.u-position.u-top-halfway.u-realign-center-vert.u-text-size-small.u-color-primary.u-padding-left-md.u-stack-basic(for='form_email', style='pointer-events:none;')
+                label.u-position.u-top-halfway.u-realign-center-vert.u-text-size-small.u-color-primary.u-padding-left-md.u-stack-basic(for='form-email')
                     | Your Email
-                input.u-position.u-top-0.u-left-0.u-right-0.u-bottom-0.u-width-full.u-border-0.u-text-size-small.u-padding-left-md#form_email(required='', type='email', autocomplete='off', autocapitalize='off', spellcheck='off')
+                input.u-position.u-top-0.u-left-0.u-right-0.u-bottom-0.u-width-full.u-border-0.u-text-size-small.u-padding-left-md#form-email(required='', type='email', autocomplete='off', autocapitalize='off', spellcheck='off')
         div.u-flexbox--small-up.u-clip
             div.u-context.u-border-left-dark.u-border-bottom-dark.u-width-full.u-float-left.u-margin-bottom-md(style='height:12rem;')
-                label.u-position.u-bottom-0.u-text-size-small.u-color-primary.u-padding-left-md.u-padding-bottom-md.u-stack-basic(for='form_message' style='pointer-events:none;')
+                label.u-position.u-bottom-0.u-text-size-small.u-color-primary.u-padding-left-md.u-padding-bottom-md.u-stack-basic(for='form-message' style='pointer-events:none;')
                     | Your Message
-                textarea.u-position.u-top-0.u-left-0.u-right-0.u-bottom-0.u-width-full.u-border-0.u-text-size-small.u-padding-left-md.u-padding-top-md.u-padding-bottom-md.u-padding-right-md#form_message(required='', placeholder='e.g. Hello, House House! I have a problem with __________ that I need some direction on – I think I may need a designer! My budget is $__,____ and I would like a solution in ____ weeks. Can you help?')
+                textarea.u-position.u-top-0.u-left-0.u-right-0.u-bottom-0.u-width-full.u-border-0.u-text-size-small.u-padding-left-md.u-padding-top-md.u-padding-bottom-md.u-padding-right-md#form-message(required='', placeholder='e.g. Hello, House House! I have a problem with ________ that I need some direction on – I think I may need a designer! My budget is $__,____ and I would like a solution in ____ weeks. Can you help?')
         div.u-flexbox--small-up.u-clip
             button.u-bg-primary.u-border-0.u-width-full--small-only.u-width-1of2--small-up.u-width-1of4--medium-up.u-text-size-small.u-color-light.u-padding-top-md.u-padding-bottom-md.u-float-right
                 | Send
