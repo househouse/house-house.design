@@ -1,0 +1,99 @@
+---
+---
+
+// Styles
+// ===
+//
+// Oh, hello. I didn’t see you there. Welcome to the beautiful, happy wonderland
+// that is this stylesheet. Our CSS follows the following rules / philosophies:
+//
+//  1. Write CSS as if someone is using it to learn how code; it needs to be
+//     sensible and learnable for our new front-end developers (and, eventually,
+//     any other designers that joined our team), who would be making use of it
+//     as well.
+//  2. Aim for writing content-agnostic classes. In other words, content should
+//     not be dictacting style. That’s why we
+//  3. Write your HTML separately from your CSS; when these styles are turned
+//     off, content should be formatted and arranged in a hierarchy that is
+//     logical and semantic.
+
+
+// Settings
+// ---
+//
+// Code that does not output CSS styles directly. This includes CSS custom
+// properties, custom media queries, etc. Things like brand colours, modular
+// spacing increments, and breakpoints are defined as variables here.
+
+@import 'settings/variables';
+@import 'settings/extends';
+@import 'settings/mixins';
+@import 'settings/type-scale';
+// @import 'settings/syntax-highlighting';
+
+
+// Base
+// ---
+//
+// Styles that target bare HTML elements. This mostly consists of a mixture of
+// normalize.css and reset.css, and core typographic styles for things like
+// headings, body text, and links which will rarely, if ever, change. No classes
+// are defined here.
+
+@import 'base/general';
+@import 'base/typography';
+
+
+// Utilities
+// ---
+//
+// The bread and butter of our CSS. These are single-purpose, highly-reusable
+// classes that do one thing extremely well. We have utilities for things like
+// margins, padding, text alignment, display properties, positioning properties,
+// and more. Utility classes use a u- namespace, e.g. u-bg-black.
+
+@import 'utilities/appearance';
+@import 'utilities/background';
+@import 'utilities/color';
+@import 'utilities/display';
+@import 'utilities/flex';
+@import 'utilities/headings';
+@import 'utilities/layout';
+@import 'utilities/margin';
+@import 'utilities/measure';
+@import 'utilities/padding';
+@import 'utilities/text';
+
+
+// Components
+// ---
+//
+// Content-specific classes that generate distinct UI appearances. Component
+// styles should also (generally) be coupled to specific markup; if it is not
+// directly related to any HTML, JS, or JSX, it should be considered a utility
+// class (or series of classes.) Components use the c- namespace, e.g. c-logo.
+
+@import 'components/content';
+@import 'components/hero';
+@import 'components/logo';
+@import 'components/overlay';
+
+
+// Templates
+// ---
+//
+// ⚠️ USE WITH EXTREME CAUTION: Sometimes, there are times that we need to write
+// template overrides, or classes that are linked directly to the page on which
+// they appear. These styles should be used as a last resort only!
+
+@import 'templates/home';
+
+
+// Third-Party Plugins
+// ---
+//
+// Third-party integrations and plugins often do not let us control their
+// settings, or require us to override how they work. Toss those styles into
+// individual partials below.
+//
+// @import 'third-party/flickity';

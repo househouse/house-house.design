@@ -1,0 +1,53 @@
+// Utilities: Flex
+// ===
+
+.u-flexbox {
+    display: flex;
+
+    &:not(.u-flex-column) {
+        flex-direction: row;
+    }
+}
+
+.u-flex-column {
+    flex-direction: column;
+}
+
+
+// Flex Layout
+// ---
+
+.u-align-middle {
+    align-items: center;
+}
+
+.u-justify-start {
+    justify-content: flex-start;
+}
+
+.u-justify-end {
+    justify-content: flex-end;
+}
+
+.u-justify-middle {
+    justify-content: center;
+}
+
+
+// Flexbox Children
+// ---
+
+.u-flex {
+    display: block;
+    flex: 1 1 auto;
+}
+
+.u-flex-expand {
+    display: block;
+    flex: 1;
+}
+
+.u-flex-shrink {
+    display: block;
+    flex: 0 1 auto;
+}
