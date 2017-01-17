@@ -1,0 +1,25 @@
+// Component: Text Content
+// ===
+//
+// Text content styles tag elements in a way that matches their component
+// equivalent in absence of any component classes, or styles tags to have
+// appropriate levels of margins that they would otherwise be lacking. You can
+// think of the c-text-content component as a way of creating a designated
+// WYSIWYG zone.
+
+
+// Component Variables
+// ---
+
+$content--rhythm: $unit;
+
+
+// Component Root
+// ---
+
+.c-text-content {
+
+    > *:not(:last-child) {
+        margin-bottom: $content--rhythm;
+    }
+}
