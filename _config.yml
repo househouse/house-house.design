@@ -23,3 +23,6 @@ gems:
 - jekyll-seo-tag
 - jekyll-watch
 - octopress-autoprefixer
+- autoprefixer-rails
+exclude:
+- patterns
