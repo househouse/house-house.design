@@ -150,6 +150,8 @@ input,
 select,
 textarea {
     font-family: $code-font;
+    line-height: $base-leading;
+
     resize: none;
 
     &:focus,
