@@ -41,7 +41,7 @@ linters:
 
     # In rulesets, order by: @extend, properties, nested rule sets?
     DeclarationOrder:
-        enabled: true
+        enabled: false
 
     # Checks for "reason" comments above linter-disabling comments.
     DisableLinterReason:
