@@ -1,0 +1,16 @@
+// Text Content Component
+// ===
+
+.c-text-content {
+    line-height: $base-leading;
+
+    > *:not(:last-child) {
+        margin-bottom: $base-space;
+    }
+
+    a {
+        @extend %u-squiggle;
+
+        padding-bottom: $very-small-space;
+    }
+}
