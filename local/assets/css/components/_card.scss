@@ -1,0 +1,25 @@
+// Card Component
+// ===
+
+.c-card {
+    padding-top: 75%;
+
+    &,
+    * {
+        transition: all 0.125s ease-out;
+    }
+
+    &:hover {
+        .c-card__image {
+            transform: scale(1.1) rotate(-1deg);
+        }
+
+        .u-squiggle {
+            @extend %a-back-forth;
+        }
+    }
+}
+
+.c-card__image {
+    transform: scale(1.05);
+}
