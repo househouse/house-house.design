@@ -1,0 +1,32 @@
+{
+    "lang": "en-ca",
+    "dir": "ltr",
+    "name": "House House Design",
+    "short_name": "House House",
+    "description": "House House is a multidisciplinary design studio that can help you with art direction, front-end development, web design, and more.",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "natural",
+    "theme_color": "#000",
+    "background_color": "#000",
+    "icons": [{
+        "src": "assets/startup/android-icon-192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+    },
+    {
+        "src": "assets/startup/android-icon-256.png",
+        "sizes": "256x256",
+        "type": "image/png"
+    },
+    {
+        "src": "assets/startup/android-icon-384.png",
+        "sizes": "384x384",
+        "type": "image/png"
+    },
+    {
+        "src": "assets/startup/android-icon-512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }],
+}
