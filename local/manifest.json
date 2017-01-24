@@ -7,8 +7,8 @@
     "start_url": "/",
     "display": "standalone",
     "orientation": "natural",
-    "theme_color": "#000",
-    "background_color": "#000",
+    "theme_color": "#4745d1",
+    "background_color": "#4745d1",
     "icons": [{
         "src": "assets/startup/android-icon-192.png",
         "sizes": "192x192",
@@ -28,5 +28,5 @@
         "src": "assets/startup/android-icon-512.png",
         "sizes": "512x512",
         "type": "image/png"
-    }],
+    }]
 }

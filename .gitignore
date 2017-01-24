@@ -1,8 +1,6 @@
-_site
+.DS_Store
 .sass-cache
 .jekyll-metadata
-.DS_Store
-
-# codekit junk
 .codekit-cache
 config.codekit
+node_modules
