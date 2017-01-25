@@ -81,3 +81,40 @@
         background: linear-gradient(to bottom, rgba($black, 0), $black);
     }
 }
+
+.u-glitch {
+    position: relative;
+
+    font-size: 90px;
+
+    &::before,
+    &::after {
+        content: attr(data-glitch);
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        clip: rect(0, 0, 0, 0);
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    &::before {
+        left: 2px;
+
+        text-shadow: -2px 0 $tertiary-color;
+
+        animation: glitch-anim-1 1.75s infinite linear alternate-reverse;
+    }
+
+    &::after {
+        right: 2px;
+
+        text-shadow: 2px 0 $accent-color;
+
+        animation: glitch-anim-2 1.75s infinite linear alternate-reverse;
+    }
+}
