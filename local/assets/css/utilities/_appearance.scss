@@ -83,38 +83,39 @@
 }
 
 .u-glitch {
-    position: relative;
-
-    font-size: 90px;
-
     &::before,
     &::after {
         content: attr(data-glitch);
 
         position: absolute;
         top: 0;
-        left: 0;
+        bottom: 0;
 
         clip: rect(0, 0, 0, 0);
-
         width: 100%;
         height: 100%;
 
+        animation-duration: 1.75s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
     }
 
     &::before {
-        left: 2px;
+        right: 0;
+        left: $very-small-space;
 
-        text-shadow: -2px 0 $tertiary-color;
+        text-shadow: -$very-small-space 0 $tertiary-color;
 
-        animation: glitch-anim-1 1.75s infinite linear alternate-reverse;
+        animation-name: a-glitch-left;
     }
 
     &::after {
-        right: 2px;
+        right: $very-small-space;
+        left: 0;
 
-        text-shadow: 2px 0 $accent-color;
+        text-shadow: $very-small-space 0 $accent-color;
 
-        animation: glitch-anim-2 1.75s infinite linear alternate-reverse;
+        animation-name: a-glitch-right;
     }
 }

@@ -1,31 +1,33 @@
 // Glitch Animation
 // ===
-// We need two of these to make sure that we get two random generations of the keyframe.
+//
+// We need two of these to make sure that we get two random generations of the
+// keyframe.
 
 $steps: 22;
 
-@keyframes glitch-anim-1 {
+@keyframes a-glitch-left {
     @for $i from 0 through $steps {
         #{percentage($i*(1/$steps))} {
-            clip: rect(random(100)+px, 320px, random(100)+px, 0);
+            clip: rect(random(100)+px, auto, random(100)+px, auto);
         }
     }
 }
 
-@keyframes glitch-anim-2 {
+@keyframes a-glitch-right {
     @for $i from 0 through $steps {
         #{percentage($i*(1/$steps))} {
-            clip: rect(random(100)+px, 320px, random(100)+px, 0);
+            clip: rect(random(100)+px, auto, random(100)+px, auto);
         }
   }
 }
 
-.a-glitch-1,
-%a-glitch-1 {
-    animation: glitch-anim-1 1.75s infinite linear alternate-reverse;
+.a-glitch-left,
+%a-glitch-left {
+    animation: a-glitch-left 1.75s infinite linear alternate-reverse;
 }
 
-.a-glitch-2,
-%a-glitch-2 {
-    animation: glitch-anim-2 2.5s infinite linear alternate-reverse;
+.a-glitch-right,
+%a-glitch-right {
+    animation: a-glitch-right 2.5s infinite linear alternate-reverse;
 }
