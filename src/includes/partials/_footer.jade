@@ -1,0 +1,11 @@
+footer.u-margin-bottom-lg.u-align-center
+    div.c-text-content
+        p.u-text-size-small 
+            | Copyright © 2016–#[script document.write(new Date().getFullYear());] #{site_name}
+        p.u-uppercase.u-tracked-loose(style='font-size:0.5rem;')
+            | Made with love in Vancouver, Canada
+        img(src='assets/img/parrot.gif', alt='Party Parrot', style='transform:scale(0.75);')
+
+//- Google Analytics
+script(async='', defer='').
+    !function(a,b,c,d,e,f,g){a.GoogleAnalyticsObject=e,a[e]=a[e]||function(){(a[e].q=a[e].q||[]).push(arguments)},a[e].l=1*new Date,f=b.createElement(c),g=b.getElementsByTagName(c)[0],f.async=1,f.src=d,g.parentNode.insertBefore(f,g)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-87162611-1','auto'),ga('send','pageview');

@@ -1,0 +1,6 @@
+mixin icon(icon_name)
+
+    svg.c-icon.u-inline-block
+        use(xlink:href='#icon-#{icon_name}')
+    span.u-text-clip
+        | #{icon_name}

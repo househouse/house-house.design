@@ -1,0 +1,34 @@
+// Glitch Animation
+// ===
+//
+// We need two of these to make sure that we get two random generations of the
+// keyframe.
+
+$steps: 22;
+$time: 1.75s;
+
+@keyframes a-glitch-left {
+    @for $i from 0 through $steps {
+        #{percentage($i*(1/$steps))} {
+            clip: rect(random(100)+px, auto, random(100)+px, auto);
+        }
+    }
+}
+
+@keyframes a-glitch-right {
+    @for $i from 0 through $steps {
+        #{percentage($i*(1/$steps))} {
+            clip: rect(random(100)+px, auto, random(100)+px, auto);
+        }
+  }
+}
+
+.a-glitch-left,
+%a-glitch-left {
+    animation: a-glitch-left $time infinite linear alternate-reverse;
+}
+
+.a-glitch-right,
+%a-glitch-right {
+    animation: a-glitch-right $time infinite linear alternate-reverse;
+}
