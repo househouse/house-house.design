@@ -41,6 +41,7 @@
 //    targeted by a mouse or finger.
 // 2. Use both before/after pseudos so that both overlays can be placed on an
 //    element simultaneously.
+// 3. 2px, 0.125rem
 
 .u-noise,
 .u-gradient {
@@ -100,7 +101,7 @@
         @extend %a-glitch-left;
 
         right: 0;
-        left: $very-small-space;
+        left: ($very-small-space/2); // 3
 
         text-shadow: -$very-small-space 0 $tertiary-color;
     }
@@ -108,7 +109,7 @@
     &::after {
         @extend %a-glitch-right;
 
-        right: $very-small-space;
+        right: ($very-small-space/2); // 3
         left: 0;
 
         text-shadow: $very-small-space 0 $accent-color;
