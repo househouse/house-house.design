@@ -5,6 +5,7 @@
 // keyframe.
 
 $steps: 22;
+$time: 1.75s;
 
 @keyframes a-glitch-left {
     @for $i from 0 through $steps {
@@ -24,10 +25,10 @@ $steps: 22;
 
 .a-glitch-left,
 %a-glitch-left {
-    animation: a-glitch-left 1.75s infinite linear alternate-reverse;
+    animation: a-glitch-left $time infinite linear alternate-reverse;
 }
 
 .a-glitch-right,
 %a-glitch-right {
-    animation: a-glitch-right 2.5s infinite linear alternate-reverse;
+    animation: a-glitch-right $time infinite linear alternate-reverse;
 }
