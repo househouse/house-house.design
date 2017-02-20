@@ -1,5 +1,8 @@
+//- Template Includes
 include includes/components/_card
 
+
+//- Template Begin
 section.u-context.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-clip
     != partial('/includes/partials/_video')
     div.u-position.u-stack-basic.u-top-halfway.u-realign-center-vert.u-measure-medium.u-hidden--small-only
@@ -13,7 +16,7 @@ section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-le
         h3 You have an audience. We respect them.
         p Hi there, and happy #[script document.write(weekdays[new Date().getDay()]);]#[noscript day]! We’re House House, a multidisciplinary design studio based in Vancouver, Canada that collaborates with people all over the world. We’re excited to join forces with you and #[a.u-no-wrap(href='#our-work') make something] wonderful together.
 
-div.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-bottom-xs.u-width-1of4.u-measure-narrow.a-back-forth.u-squiggle
+!= partial('/includes/components/_divider')
 
 section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-left-md.u-padding-right-md
     div.c-text-content.u-measure-medium
@@ -29,7 +32,7 @@ section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-le
 
         p Hire us and let's talk. ✌️
 
-div.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-bottom-xs.u-width-1of4.u-measure-narrow.a-back-forth.u-squiggle
+!= partial('/includes/components/_divider')
 
 section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-left-md.u-padding-right-md#our-work
     div.u-measure-medium.u-align-center
@@ -51,7 +54,7 @@ section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-le
                 span.u-block 📰  Editorial Design 
                 span.u-block 🗺  Environmental Design
 
-div.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-bottom-xs.u-width-1of4.u-measure-narrow.a-back-forth.u-squiggle
+!= partial('/includes/components/_divider')
 
 section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-left-md.u-padding-right-md.u-clip
     div.u-measure-medium.u-margin-bottom-lg.u-align-center 
@@ -86,7 +89,7 @@ section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-le
                     'assets/img/project-stanford.jpg',
                     'https://stanford.edu/')
 
-div.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-bottom-xs.u-width-1of4.u-measure-narrow.a-back-forth.u-squiggle
+!= partial('/includes/components/_divider')
 
 section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-left-md.u-padding-right-md.u-clip
     div.u-measure-medium
@@ -123,7 +126,7 @@ section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-le
                         a(href='https://linkedin.com/in/caitlinfarquharson', target='_blank') LinkedIn
                 p Caitlin is… lorem ipsum dolor sit amet, consectetur adipisicing elit. A vel excepturi minima recusandae dolor obcaecati optio, expedita velit iusto quos sapiente ipsam nisi incidunt at, mollitia beatae et dolore reprehenderit!
 
-div.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-bottom-xs.u-width-1of4.u-measure-narrow.a-back-forth.u-squiggle
+!= partial('/includes/components/_divider')
 
 section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-left-md.u-padding-right-md.u-clip#contact-us
     div.c-text-content.u-measure-medium.u-align-center.u-margin-bottom-xl
@@ -163,4 +166,4 @@ section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-le
             input(type='hidden', name='_subject', value='Hi there, House House!')
             input(type='hidden', name='_cc', value='sean@house-house.design')
 
-div.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-bottom-xs.u-width-1of4.u-measure-narrow.a-back-forth.u-squiggle
+!= partial('/includes/components/_divider')
