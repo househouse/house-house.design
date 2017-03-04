@@ -18,7 +18,7 @@ self.addEventListener('install', function(event) {
     event.waitUntil(
 
         // We open a cache…
-        caches.open('simple-sw-v1').then(function(cache) {
+        caches.open('simple-sw-v2').then(function(cache) {
 
             // And add resources to it
             return cache.addAll([
@@ -49,3 +49,17 @@ self.addEventListener('fetch', function(event) {
         })
     );
 });
+
+this.addEventListener('activate', function(event) {
+    var cacheWhiteList = ['simple-sw-v2'];
+
+    event.waitUntil(
+        chaches.keys().then(function(keyList) {
+            return Promise.all(keyList.map(function(key) {
+                if(cacheWhiteList.indexOf(key) === -1) {
+                    return caches.delete(key);
+                }
+            }));
+        })
+        );
+})
