@@ -2,39 +2,30 @@
 // ============================================================================
 
 @font-face {
-    font-family: 'Tiempos Text';
+    font-family: 'Tiempos Headline';
     font-style: normal;
     font-weight: $regular-font;
 
-    src: url('../type/tiempos.woff2') format('woff2'),
-    url('../type/tiempos.woff') format('woff');
+    src: url('../type/TiemposHeadline_Regular.woff2') format('woff2'), url('../type/TiemposHeadline_Regular.woff') format('woff');
+    unicode-range: U+000-5FF;
 }
 
 @font-face {
-    font-family: 'Tiempos Text';
-    font-style: italic;
-    font-weight: $regular-font;
-
-    src: url('../type/tiempos-italic.woff2') format('woff2'),
-    url('../type/tiempos-italic.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Tiempos Text';
+    font-family: 'Tiempos Headline';
     font-style: normal;
     font-weight: $bold-font;
 
-    src: url('../type/tiempos-semibold.woff2') format('woff2'),
-    url('../type/tiempos-semibold.woff') format('woff');
+    src: url('../type/TiemposHeadline_Semibold.woff2') format('woff2'), url('../type/TiemposHeadline_Semibold.woff') format('woff');
+    unicode-range: U+000-5FF;
 }
 
 @font-face {
-    font-family: 'Tiempos Text';
-    font-style: italic;
-    font-weight: $bold-font;
+    font-family: 'Akkurat Mono';
+    font-style: normal;
+    font-weight: $regular-font;
 
-    src: url('../type/tiempos-semibolditalic.woff2') format('woff2'),
-    url('../type/tiempos-semibolditalic.woff') format('woff');
+    src: url('../type/AkkuratMono_Regular.woff2') format('woff2'), url('../type/AkkuratMono_Regular.woff') format('woff');
+    unicode-range: U+000-5FF;
 }
 
 body {
@@ -95,12 +86,12 @@ pre {
 }
 
 a {
-    color: $accent-color;
+    color: $primary-color;
     text-decoration: none;
 
     &:hover {
         @extend %a-back-forth;
 
-        color: $primary-color;
+        color: $accent-color;
     }
 }
