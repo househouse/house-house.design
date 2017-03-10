@@ -18,14 +18,23 @@ self.addEventListener('install', function(event) {
     event.waitUntil(
 
         // We open a cache…
-        caches.open('simple-sw-v1').then(function(cache) {
+        caches.open('simple-sw-v2').then(function(cache) {
 
             // And add resources to it
             return cache.addAll([
                 './',
-                // 'assets/img/*',
+                'assets/js/logging.js',
                 'assets/css/main.css',
-                'assets/js/logging.js'
+                'assets/video/house-house--glitch.mp4',
+                'assets/img/glitch.jpg',
+                'assets/img/project-housecss.jpg',
+                'assets/img/project-kost.jpg',
+                'assets/img/project-bitchpop.jpg',
+                'assets/img/project-stanford.jpg',
+                'assets/img/portrait--ben-groulx--animated.gif',
+                'assets/img/portrait--sean-durfee--animated.gif',
+                'assets/img/portrait--caitlin-farquharson--animated.gif',
+                'assets/img/parrot.gif'
             ]);
         })
     );
@@ -49,3 +58,17 @@ self.addEventListener('fetch', function(event) {
         })
     );
 });
+
+this.addEventListener('activate', function(event) {
+    var cacheWhiteList = ['simple-sw-v2'];
+
+    event.waitUntil(
+        chaches.keys().then(function(keyList) {
+            return Promise.all(keyList.map(function(key) {
+                if(cacheWhiteList.indexOf(key) === -1) {
+                    return caches.delete(key);
+                }
+            }));
+        })
+    );
+})
