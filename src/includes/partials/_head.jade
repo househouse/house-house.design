@@ -11,16 +11,12 @@ head
     meta(name='author', content='Ben Groulx, Sean Durfee, Caitlin Farquharson')
     meta(name='google-site-verification', content='XQrarlvRzShmAo5O_AzT_Wuinw1JiNI4IXWGltMtxkA')
 
-    //- If JS disabled, show link to stylesheet, otherwise defer loading styles
-    link(rel='preload', as='style', href='assets/css/main.css', onload="this.rel='stylesheet'")
+    //- TODO preload
+    link(rel='stylesheet', href='assets/css/main.css')
 
     //- Service Worker
     script(async='', defer='').
         if ('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('/serviceworker.js').then(function(registration){console.log('ServiceWorker registration successful with scope: ',registration.scope);}).catch(function(err){console.log('ServiceWorker registration failed: ', err);});});}
-
-    //-
-        script(async='', defer='').
-            !function(a){var h,b={kitId:'kzm4stj',scriptTimeout:3e3,async:!0},c=a.documentElement,d=setTimeout(function(){c.className=c.className.replace(/\\bwf-loading\b/g,'')+' wf-inactive'},b.scriptTimeout),e=a.createElement('script'),f=!1,g=a.getElementsByTagName('script')[0];c.className+=' wf-loading',e.src='https://use.typekit.net/'+b.kitId+'.js',e.async=!0,e.onload=e.onreadystatechange=function(){if(h=this.readyState,!(f||h&&'complete'!=h&&'loaded'!=h)){f=!0,clearTimeout(d);try{Typekit.load(b)}catch(a){}}},g.parentNode.insertBefore(e,g)}(document);
 
     //- Twitter Cards Data
     //- meta(name='twitter:site', content='XXXX')
