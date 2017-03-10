@@ -23,7 +23,7 @@ self.addEventListener('install', function(event) {
             // And add resources to it
             return cache.addAll([
                 './',
-                'assets/js/logging.js'
+                'assets/js/logging.js',
                 'assets/css/main.css',
                 'assets/video/house-house--glitch.mp4',
                 'assets/img/glitch.jpg',
