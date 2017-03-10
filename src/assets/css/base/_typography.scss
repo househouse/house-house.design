@@ -19,6 +19,15 @@
          url('../type/TiemposHeadline_Semibold.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'Akkurat Mono';
+    font-style: normal;
+    font-weight: $regular-font;
+
+    src: url('../type/AkkuratMono_Regular.woff2') format('woff2'),
+         url('../type/AkkuratMono_Regular.woff') format('woff');
+}
+
 body {
     @extend %type-copy;
 }

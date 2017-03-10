@@ -1,6 +1,6 @@
 head
 
-    // Hi there 👋 Thanks for checking out our site’s source code! You can check out the full source code over on GitHub at https://github.com/househouse/house-house.design. If you have any questions, comments, concerns, or whatever, feel free to drop a message to us!
+    // Hi there 👋 Thanks for checking out our site’s source code! You can view the full source code over on GitHub at https://github.com/househouse/house-house.design. If you have any questions, comments, concerns, or whatever, feel free to drop us a line!
 
     //- Initialize Site Data
     title #{site_title}
@@ -8,7 +8,7 @@ head
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='description' content='#{site_description}')
     meta(name='viewport', content='width=device-width,initial-scale=1.0')
-    meta(name='author', content='Ben Groulx & Sean Durfee')
+    meta(name='author', content='Ben Groulx, Sean Durfee, Caitlin Farquharson')
     meta(name='google-site-verification', content='XQrarlvRzShmAo5O_AzT_Wuinw1JiNI4IXWGltMtxkA')
 
     //- If JS disabled, show link to stylesheet, otherwise defer loading styles
@@ -19,7 +19,7 @@ head
     script(async='').
         var loadDeferredStyles=function(){var a=document.getElementById('deferred-styles'),b=document.createElement('div');b.innerHTML=a.textContent,document.body.appendChild(b),a.parentElement.removeChild(a)},raf=requestAnimationFrame||mozRequestAnimationFrame||webkitRequestAnimationFrame||msRequestAnimationFrame;raf?raf(function(){window.setTimeout(loadDeferredStyles,0)}):window.addEventListener('load',loadDeferredStyles);
 
-    //- ServiceWorker
+    //- Service Worker
     script(async='', defer='').
         if ('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('/serviceworker.js').then(function(registration){console.log('ServiceWorker registration successful with scope: ',registration.scope);}).catch(function(err){console.log('ServiceWorker registration failed: ', err);});});}
 
