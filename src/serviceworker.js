@@ -23,9 +23,18 @@ self.addEventListener('install', function(event) {
             // And add resources to it
             return cache.addAll([
                 './',
-                // 'assets/img/*',
-                'assets/css/main.css',
                 'assets/js/logging.js'
+                'assets/css/main.css',
+                'assets/video/house-house--glitch.mp4',
+                'assets/img/glitch.jpg',
+                'assets/img/project-housecss.jpg',
+                'assets/img/project-kost.jpg',
+                'assets/img/project-bitchpop.jpg',
+                'assets/img/project-stanford.jpg',
+                'assets/img/portrait--ben-groulx--animated.gif',
+                'assets/img/portrait--sean-durfee--animated.gif',
+                'assets/img/portrait--caitlin-farquharson--animated.gif',
+                'assets/img/parrot.gif'
             ]);
         })
     );
@@ -61,5 +70,5 @@ this.addEventListener('activate', function(event) {
                 }
             }));
         })
-        );
+    );
 })
