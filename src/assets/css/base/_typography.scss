@@ -5,27 +5,18 @@
     font-family: 'Tiempos Headline';
     font-style: normal;
     font-weight: $regular-font;
-
-    src: url('../type/TiemposHeadline_Regular.woff2') format('woff2'), url('../type/TiemposHeadline_Regular.woff') format('woff');
     unicode-range: U+000-5FF;
+    src: url('../type/TiemposHeadline_Regular.woff2') format('woff2'),
+         url('../type/TiemposHeadline_Regular.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Tiempos Headline';
     font-style: normal;
     font-weight: $bold-font;
-
-    src: url('../type/TiemposHeadline_Semibold.woff2') format('woff2'), url('../type/TiemposHeadline_Semibold.woff') format('woff');
     unicode-range: U+000-5FF;
-}
-
-@font-face {
-    font-family: 'Akkurat Mono';
-    font-style: normal;
-    font-weight: $regular-font;
-
-    src: url('../type/AkkuratMono_Regular.woff2') format('woff2'), url('../type/AkkuratMono_Regular.woff') format('woff');
-    unicode-range: U+000-5FF;
+    src: url('../type/TiemposHeadline_Semibold.woff2') format('woff2'),
+         url('../type/TiemposHeadline_Semibold.woff') format('woff');
 }
 
 body {
