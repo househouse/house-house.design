@@ -1,6 +1,11 @@
 // Utilities: Appearance
 // ============================================================================
 
+.u-circle {
+    border-radius: $circle;
+}
+
+/* Unused CSS :: Chrome DevTools Audit
 .u-rounded-corners {
     border-radius: $rounded-corners;
 }
@@ -9,9 +14,6 @@
     border-radius: $very-rounded-corners;
 }
 
-.u-circle {
-    border-radius: $circle;
-}
 
 .u-not-transparent {
     opacity: $not-transparent;
@@ -24,6 +26,7 @@
 .u-fully-transparent {
     opacity: $fully-transparent;
 }
+*/
 
 .u-squiggle,
 %u-squiggle {
