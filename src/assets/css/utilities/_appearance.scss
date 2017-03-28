@@ -43,37 +43,13 @@
 //    element simultaneously.
 // 3. 2px, 0.125rem
 
-.u-noise,
 .u-gradient {
-    &::before,
+    // 2
+
     &::after {
         content: '';
 
         position: absolute;
-    }
-}
-
-.u-noise {
-    // 2
-
-    &::before {
-        // @extend %a-noise;
-
-        top: -50%;
-        left: -50%;
-        z-index: $z3-depth;
-
-        width: 200%;
-        height: 200%;
-
-        background-image: url('../img/noise.png');
-    }
-}
-
-.u-gradient {
-    // 2
-
-    &::after {
         top: 0;
         right: 0;
         bottom: 0;
