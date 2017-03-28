@@ -4,7 +4,7 @@ include includes/components/_card
 
 //- Template Begin
 section.u-context.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-clip
-    div.u-context(style='height:0;padding-bottom:56%;background-color:#000;')
+    div.u-context.u-bg-dark(style='height:0;padding-bottom:56%;')
         video.u-position.u-top-halfway.u-left-halfway.u-realign-center.u-width-full(playsinline, autoplay, muted, loop, poster='assets/img/glitch.jpg', style='background-image:url("assets/img/glitch.jpg");')
             source(src='assets/video/house-house--glitch.mp4', type='video/mp4')
     div.u-position.u-stack-basic.u-top-halfway.u-realign-center-vert.u-measure-medium.u-hidden--small-only
@@ -65,10 +65,10 @@ section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-le
         div.u-float-start.u-width-1of2--small-up.u-max-width-1of4--medium-up.u-margin-bottom-md
             div.u-bg-dark.u-height-full.u-margin-right-md--small-up
                 +card(
-                    'housecss',
+                    'Blanc Ink',
                     'Front-End Development',
-                    'assets/img/project-housecss.jpg',
-                    'https://github.com/househouse/housecss')
+                    'assets/img/project-blancink.jpg',
+                    '#')
         div.u-float-start.u-width-1of2--small-up.u-max-width-1of4--medium-up.u-margin-bottom-md
             div.u-bg-dark.u-height-full.u-margin-right-md--medium-up
                 +card(
@@ -86,10 +86,19 @@ section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-le
         div.u-float-start.u-width-1of2--small-up.u-max-width-1of4--medium-up.u-margin-bottom-md
             div.u-bg-dark.u-height-full
                 +card(
-                    'Stanford',
+                    'Ultrafast Optics',
                     'Responsive Web Design',
                     'assets/img/project-stanford.jpg',
                     'https://stanford.edu/')
+
+    article.c-card.c--no-padding.c-faux-link.u-context.u-clip.u-bg-center.u-bg-cover.u-gradient.u-padding-top-xl.u-padding-bottom-xl.u-padding-left-md.u-padding-right-md(style='background-image:url("assets/img/stars.gif");')
+        a.c-faux-link__overlay(href='https://github.com/househouse/housecss', aria-hidden='true') Find out more about housecss
+        div.u-context.u-stack-basic.u-measure-medium.u-flexbox--medium-up.u-color-light.u-align-center
+            div.u-flex.u-margin-right-lg--medium-up
+                p.u-context.u-glitch(data-glitch='🚀', style='font-size:5rem;') 🚀
+            div.u-flex
+                img.u-max-width-1of2.u-margin-bottom-md(src='assets/img/housecss-logo.png')
+                p Launch your next web project quickly by removing the uncertainty and grunt-work around writing CSS. #[span.u-inline-block.u-squiggle Learn more about housecss &rarr;]
 
 include includes/components/_divider
 
@@ -105,7 +114,7 @@ section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-le
                     li.u-inline-block.u-margin-right-md
                         a(href='https://linkedin.com/in/bengroulx', target='_blank', rel='noopener') LinkedIn
                     li.u-inline-block
-                        a(href='http://bengroulx.com', target='_blank', rel='noopener') Website
+                        a(href='https://bengroulx.com', target='_blank', rel='noopener') Website
                 p Ben brings experience in design systems, front-end architecture, and feedback processes to House House. You can find him hanging out at a local brewery or playing board games when not focusing on the intersection of interaction and graphic design.
         div.u-clip.u-margin-bottom-lg
             figure.u-context.u-float-left.u-width-1of3.u-margin-right-md.u-clip
