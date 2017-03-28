@@ -89,7 +89,7 @@ $leading-map: (
 
 $primary-color:   $configure--primary-color;
 $secondary-color: $configure--secondary-color;
-$tertiary-color: #50e3c2;
+$tertiary-color: saturate(darken(#50e3c2, 25%), 50%);
 $accent-color: $configure--accent-color;
 $black: darken(mix(#000, $primary-color), 15%);
 $white: $secondary-color;

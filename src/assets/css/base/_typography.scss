@@ -91,12 +91,15 @@ a {
 
 ::-webkit-input-placeholder {
     font-size: 0.79012rem;
+    line-height: $base-leading;
 }
 
 ::-moz-placeholder {
     font-size: 0.79012rem;
+    line-height: $base-leading;
 }
 
 :-ms-input-placeholder {
     font-size: 0.79012rem;
+    line-height: $base-leading;
 }

@@ -5,12 +5,13 @@ include includes/components/_card
 //- Template Begin
 section.u-context.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-clip
     div.u-context.u-bg-dark(style='height:0;padding-bottom:56%;')
-        video.u-position.u-top-halfway.u-left-halfway.u-realign-center.u-width-full(playsinline, autoplay, muted, loop, poster='assets/img/glitch.jpg', style='background-image:url("assets/img/glitch.jpg");')
+        video.u-position.u-top-halfway.u-left-halfway.u-realign-center.u-width-full#main-video(playsinline, autoplay, muted, loop, poster='assets/img/glitch.jpg', style='background-image:url("assets/img/glitch.jpg");')
             source(src='assets/video/house-house--glitch.mp4', type='video/mp4')
+        label(for='main-video') Glitching/flashing video of people encountering technology.
     div.u-position.u-stack-basic.u-top-halfway.u-realign-center-vert.u-measure-medium.u-hidden--small-only
         h1.u-text-size-large.u-padding-left-md--small-up.u-padding-left-xl--medium-up.u-bold(style='line-height:2.5;')
             span.u-bg-light.u-padding-top-sm.u-padding-bottom-sm
-                | Wherever you are, #[span.u-color-accent design] can help you better communicate with purpose. #[span.u-color-accent.u-no-wrap We can help.]
+                | As #[span.u-color-tertiary tech] becomes increasingly overwhelming, good #[span.u-color-accent design] will help you better use it. That’s where #[span.u-color-primary.u-no-wrap we can help.]
 
 section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-left-md.u-padding-right-md#who-we-are
     script var weekdays = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
@@ -91,7 +92,7 @@ section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-le
                     'assets/img/project-stanford.jpg',
                     'https://stanford.edu/')
 
-    article.c-card.c--no-padding.c-faux-link.u-context.u-clip.u-bg-center.u-bg-cover.u-gradient.u-padding-top-xl.u-padding-bottom-xl.u-padding-left-md.u-padding-right-md(style='background-image:url("assets/img/stars.gif");')
+    article.c-card.c--no-padding.c-faux-link.u-context.u-clip.u-bg-center.u-bg-cover.u-gradient.u-padding-top-xl.u-padding-bottom-xl.u-padding-left-md.u-padding-right-md.u-bg-dark(style='background-image:url("assets/img/stars.gif");')
         a.c-faux-link__overlay(href='https://github.com/househouse/housecss', aria-hidden='true') Find out more about housecss
         div.u-context.u-stack-basic.u-measure-medium.u-flexbox--medium-up.u-color-light.u-align-center
             div.u-flex.u-margin-right-lg--medium-up
