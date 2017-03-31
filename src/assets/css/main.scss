@@ -59,6 +59,20 @@
 // @import 'animations/noise';
 
 
+// Components
+// ---
+//
+// Content-specific classes that generate distinct UI appearances. Component
+// styles should also (generally) be coupled to specific markup; if it is not
+// directly related to any HTML, JS, or JSX, it should be considered a utility
+// class (or series of classes.) Components use the c- namespace, e.g. c-logo.
+
+@import 'components/card';
+@import 'components/faux-link';
+@import 'components/icon';
+@import 'components/text-content';
+
+
 // Utilities
 // ---
 //
@@ -77,20 +91,6 @@
 @import 'utilities/measure';
 @import 'utilities/spacing';
 @import 'utilities/text';
-
-
-// Components
-// ---
-//
-// Content-specific classes that generate distinct UI appearances. Component
-// styles should also (generally) be coupled to specific markup; if it is not
-// directly related to any HTML, JS, or JSX, it should be considered a utility
-// class (or series of classes.) Components use the c- namespace, e.g. c-logo.
-
-@import 'components/card';
-@import 'components/faux-link';
-@import 'components/icon';
-@import 'components/text-content';
 
 
 // Templates
