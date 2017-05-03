@@ -2,7 +2,9 @@
 // ===
 
 .c-card {
-    padding-top: 75%;
+    &:not(.c--no-padding) {
+        padding-top: 75%;
+    }
 
     &,
     * {
