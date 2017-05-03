@@ -17,7 +17,7 @@
     },
     "dependencies": {
         "browser-sync": "^2.18.6",
-        "harp": "^0.20.3",
+        "harp": "^0.23.0",
         "sass-lint": "1.8.2"
     }
 }
