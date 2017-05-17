@@ -1,0 +1,189 @@
+// Project-Wide Configurable Variables
+// ============================================================================
+
+// Everything is based off this define unit and ratio
+$configure--base-unit: 1rem;
+$configure--base-ratio: 525;
+
+// All text is based off this font size
+$configure--text-size: 1rem;
+
+// Choose your base typographic styles
+$configure--primary-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+$configure--secondary-font: 'Tiempos Headline', 'Times', serif;
+$configure--code-font: 'Menlo', monospace;
+
+// Choose your desired type weights
+$configure--text-weight: 400;
+$configure--text-bold: 600;
+
+// Choose the colours of your entire project
+$configure--primary-color: #4745d1;
+$configure--secondary-color: #fff;
+$configure--accent-color: #ff4d37;
+
+
+
+// Project-Wide Options
+// ============================================================================
+
+
+// Spacing Options
+// ---
+
+$very-small-space: $configure--base-unit/4;
+$small-space: $configure--base-unit/2;
+$base-space: $configure--base-unit;
+$large-space: $configure--base-unit*2;
+$very-large-space: $configure--base-unit*4;
+
+$size-map: (
+    xs: $very-small-space,
+    sm: $small-space,
+    md: $base-space,
+    lg: $large-space,
+    xl: $very-large-space,
+);
+
+
+// Typeface Options
+// ---
+
+$primary-font: $configure--primary-font;
+$secondary-font: $configure--secondary-font;
+$code-font: $configure--code-font;
+
+$typeface-map: (
+    primary: $primary-font,
+    secondary: $secondary-font,
+    code: $code-font,
+);
+
+
+// Type Weight Options
+// ---
+
+$bold-font: $configure--text-bold;
+$regular-font: $configure--text-weight;
+
+$type-weight-map: (
+    base: $regular-font,
+    bold: $bold-font,
+);
+
+
+// Type Leading Options
+// ---
+
+$base-leading: $configure--base-ratio*1.3;
+$tight-leading: $configure--base-ratio;
+
+$leading-map: (
+    base: $base-leading,
+    tight: $tight-leading,
+);
+
+
+// Colour Options
+// ---
+
+$primary-color:   $configure--primary-color;
+$secondary-color: $configure--secondary-color;
+$tertiary-color: saturate(darken(#50e3c2, 25%), 50%);
+$accent-color: $configure--accent-color;
+$black: darken(mix(#000, $primary-color), 15%);
+$white: $secondary-color;
+
+$color-map: (
+    primary: $primary-color,
+    secondary: $secondary-color,
+    tertiary: $tertiary-color,
+    accent: $accent-color,
+    dark: $black,
+    light: $white,
+);
+
+
+// Z-axis Options
+// ---
+
+$z1-depth: -1;
+$z2-depth: 1;
+$z3-depth: 10;
+$z4-depth: 100;
+$z5-depth: 1000;
+
+$z-map: (
+    under: $z1-depth,
+    basic: $z2-depth,
+    stack: $z3-depth,
+    shade: $z4-depth,
+    modal: $z5-depth,
+);
+
+
+// Content Area Options
+// ---
+
+$content-area-narrow: $configure--base-unit*25;
+$content-area-medium: $configure--base-unit*45;
+$content-area-wide: $configure--base-unit*65;
+
+$content-area-map: (
+    narrow: $content-area-narrow,
+    medium: $content-area-medium,
+    wide:   $content-area-wide,
+);
+
+
+// Dimension Options
+// ---
+
+$no-size: 0;
+$one-quarter: (100%/4);
+$one-third: (100%/3);
+$one-half: (100%/2);
+$two-thirds: (100%/1.5151);
+$three-quarters: (100%/1.3333);
+$full-size: (100%/1);
+
+$dimensions-map: (
+    full: $full-size,
+    3of4: $three-quarters,
+    2of3: $two-thirds,
+    1of2: $one-half,
+    1of3: $one-third,
+    1of4: $one-quarter,
+    0: $no-size,
+);
+
+
+// Style options
+// ---
+
+$circle: 100%;
+$rounded-corners: $configure--base-unit / ($configure--base-ratio*3);
+$very-rounded-corners: $configure--base-unit * $configure--base-ratio;
+$not-transparent: 1;
+$half-transparent: 0.5;
+$fully-transparent: 0;
+
+$appearances-map: (
+    circle: $circle,
+    rounded-corners: $rounded-corners,
+    very-rounded-corners: $very-rounded-corners,
+    not-transparent: $not-transparent,
+    half-transparent: $half-transparent,
+    fully-transparent: $fully-transparent,
+);
+
+
+// Direction options
+// ---
+
+$directions-map: (
+    top,
+    left,
+    right,
+    bottom,
+);

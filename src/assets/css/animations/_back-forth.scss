@@ -1,0 +1,17 @@
+// Back & Forth Animation
+// ===
+
+@keyframes a-back-forth {
+    0% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 50rem 100%;
+    }
+}
+
+.a-back-forth,
+%a-back-forth {
+    animation: a-back-forth 12s infinite linear;
+}
