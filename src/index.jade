@@ -3,16 +3,18 @@ include includes/components/_card
 
 
 //- Template Begin
-section.u-context.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-clip
-    div.u-context.u-bg-dark(style='height:0;padding-bottom:56%;')
-        video.u-position.u-top-halfway.u-left-halfway.u-realign-center.u-width-full#main-video(playsinline, autoplay, muted, loop, poster='assets/img/glitch.jpg', style='background-image:url("assets/img/glitch.jpg");')
+section.u-context.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-clip(style='')
+    div.u-context.u-bg-dark.u-gradient(style='height:0;padding-bottom:56%;')
+        div.u-position.u-stack-basic.u-bottom-0.u-left-halfway.u-realign-center.u-padding-bottom-md--medium-up.u-width-full.u-align-center.u-uppercase.u-text-size-small.u-tracked-loose.u-color-light.u-half-transparent
+            | See how we can help 👇
+        video.u-position.u-top-halfway.u-left-halfway.u-realign-center.u-width-full.u-bg-cover#main-video(playsinline, autoplay, muted, loop, poster='assets/img/glitch.jpg')
             source(src='assets/video/house-house--glitch.mp4', type='video/mp4')
             track(kind='captions', default)
-        label.u-color-light(for='main-video') Glitching/flashing video of people encountering technology.
+        label.u-color-light.u-fully-transparent(for='main-video') Glitching/flashing video of people encountering technology.
     div.u-position.u-stack-basic.u-top-halfway.u-realign-center-vert.u-measure-medium.u-hidden--small-only
         h1.u-text-size-large.u-padding-left-md--small-up.u-padding-left-xl--medium-up.u-bold(style='line-height:2.5;')
             span.u-bg-light.u-padding-top-sm.u-padding-bottom-sm
-                | As #[span.u-color-tertiary tech] becomes increasingly overwhelming, good #[span.u-color-accent design] will help you better use it. That’s where #[span.u-color-primary.u-no-wrap we can help.]
+                |&nbsp;As #[span.u-color-tertiary tech] becomes increasingly overwhelming,&ensp;good #[span.u-color-accent design] will help you better use it. That’s where #[span.u-color-primary.u-no-wrap we can help].&nbsp;
 
 section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-left-md.u-padding-right-md#who-we-are
     script var weekdays = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
@@ -91,10 +93,11 @@ section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-le
                     'Ultrafast Optics',
                     'Responsive Web Design',
                     'assets/img/project-stanford.jpg',
-                    'https://stanford.edu/')
+                    'http://ultrafastoptics2017.org/')
 
-    article.c-card.c--no-padding.c-faux-link.u-context.u-clip.u-bg-center.u-bg-cover.u-gradient.u-padding-top-xl.u-padding-bottom-xl.u-padding-left-md.u-padding-right-md.u-bg-dark(style='background-image:url("assets/img/stars.gif");')
+    article.c-card.c--no-padding.c-faux-link.u-context.u-clip.u-bg-center.u-bg-cover.u-gradient.u-padding-top-xl.u-padding-bottom-xl.u-padding-left-md.u-padding-right-md.u-bg-dark
         a.c-faux-link__overlay(href='https://github.com/househouse/housecss', aria-hidden='true') Find out more about housecss
+        div.u-position.u-top-0.u-bottom-0.u-left-0.u-right-0.u-half-transparent.u-bg-center.u-bg-cover(style='background-image:url("assets/img/stars.gif");')
         div.u-context.u-stack-basic.u-measure-medium.u-flexbox--medium-up.u-color-light.u-align-center
             div.u-flex.u-margin-right-lg--medium-up
                 p.u-context.u-glitch(data-glitch='🚀', style='font-size:5rem;') 🚀
@@ -149,7 +152,7 @@ section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-le
         h3 We should work together
         p.u-flexbox.u-align-middle.u-justify-middle
             span.u-block.u-circle.u-margin-right-sm.u-bg-tertiary(style='width:0.5rem;height:0.5rem;')
-            span.u-block.u-uppercase.u-text-size-small.u-tracked-loose Ready for work Spring 2017
+            span.u-block.u-uppercase.u-text-size-small.u-tracked-loose Ready for work in Q3 2017
         p We’re often head-down, jamming out creating something really cool. But we’ll always make time to hear about your challenges, or if you’re just wanting to say a quick hello. So give us a shout, and let’s make some magic happen.
         ul
             li.u-inline-block.u-margin-right-md
