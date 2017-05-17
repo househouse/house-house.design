@@ -18,7 +18,7 @@ self.addEventListener('install', function(event) {
     event.waitUntil(
 
         // We open a cache…
-        caches.open('simple-sw-v2').then(function(cache) {
+        caches.open('simple-sw-v4').then(function(cache) {
 
             // And add resources to it
             return cache.addAll([
@@ -60,7 +60,7 @@ self.addEventListener('fetch', function(event) {
 });
 
 this.addEventListener('activate', function(event) {
-    var cacheWhiteList = ['simple-sw-v2'];
+    var cacheWhiteList = ['simple-sw-v4'];
 
     event.waitUntil(
         chaches.keys().then(function(keyList) {
