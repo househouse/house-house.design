@@ -14,19 +14,18 @@
     border-radius: $very-rounded-corners;
 }
 
-
 .u-not-transparent {
     opacity: $not-transparent;
+}
+*/
+
+.u-fully-transparent {
+    opacity: $fully-transparent;
 }
 
 .u-half-transparent {
     opacity: $half-transparent;
 }
-
-.u-fully-transparent {
-    opacity: $fully-transparent;
-}
-*/
 
 .u-squiggle,
 %u-squiggle {
@@ -53,7 +52,7 @@
         content: '';
 
         position: absolute;
-        top: 0;
+        top: 50%;
         right: 0;
         bottom: 0;
         left: 0;
