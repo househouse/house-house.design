@@ -3,7 +3,7 @@
 
 // Everything is based off this define unit and ratio
 $configure--base-unit: 1rem;
-$configure--base-ratio: 525;
+$configure--base-ratio: 1.125;
 
 // All text is based off this font size
 $configure--text-size: 1rem;
@@ -75,7 +75,7 @@ $type-weight-map: (
 // Type Leading Options
 // ---
 
-$base-leading: $configure--base-ratio*1.3;
+$base-leading: $configure--base-ratio*1.5;
 $tight-leading: $configure--base-ratio;
 
 $leading-map: (
@@ -126,7 +126,7 @@ $z-map: (
 // ---
 
 $content-area-narrow: $configure--base-unit*25;
-$content-area-medium: $configure--base-unit*45;
+$content-area-medium: $configure--base-unit*50;
 $content-area-wide: $configure--base-unit*65;
 
 $content-area-map: (
