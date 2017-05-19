@@ -9,7 +9,7 @@ $configure--base-ratio: 1.125;
 $configure--text-size: 1rem;
 
 // Choose your base typographic styles
-$configure--primary-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+$configure--primary-font: 'Akkurat', -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', sans-serif;
 $configure--secondary-font: 'Tiempos Headline', 'Times', serif;
 $configure--code-font: 'Menlo', monospace;
 
@@ -36,6 +36,7 @@ $small-space: $configure--base-unit/2;
 $base-space: $configure--base-unit;
 $large-space: $configure--base-unit*2;
 $very-large-space: $configure--base-unit*4;
+$huge-large-space: $configure--base-unit*8;
 
 $size-map: (
     xs: $very-small-space,
@@ -43,6 +44,7 @@ $size-map: (
     md: $base-space,
     lg: $large-space,
     xl: $very-large-space,
+    xxl: $huge-large-space,
 );
 
 
@@ -93,6 +95,7 @@ $tertiary-color: saturate(darken(#50e3c2, 25%), 50%);
 $accent-color: $configure--accent-color;
 $black: darken(mix(#000, $primary-color), 15%);
 $white: $secondary-color;
+$grey: darken(#90a1b8, 9%);
 
 $color-map: (
     primary: $primary-color,
@@ -101,6 +104,8 @@ $color-map: (
     accent: $accent-color,
     dark: $black,
     light: $white,
+    light-grey: lighten($grey, 42%),
+    dark-grey: $grey,
 );
 
 
@@ -126,7 +131,7 @@ $z-map: (
 // ---
 
 $content-area-narrow: $configure--base-unit*25;
-$content-area-medium: $configure--base-unit*50;
+$content-area-medium: $configure--base-unit*55;
 $content-area-wide: $configure--base-unit*65;
 
 $content-area-map: (

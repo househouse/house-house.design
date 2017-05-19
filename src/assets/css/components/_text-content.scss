@@ -8,6 +8,10 @@
         margin-bottom: $base-space;
     }
 
+    p {
+        color: $grey;
+    }
+
     a {
         @extend %u-squiggle;
 

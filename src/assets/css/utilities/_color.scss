@@ -3,6 +3,6 @@
 
 @each $color-name, $color-value in $color-map {
     .u-color-#{$color-name} {
-        color: $color-value;
+        color: $color-value !important;
     }
 }

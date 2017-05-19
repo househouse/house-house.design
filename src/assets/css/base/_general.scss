@@ -149,6 +149,8 @@ button {
 input,
 select,
 textarea {
+    background-color: transparent;
+
     font-family: $code-font;
     line-height: $base-leading;
 
