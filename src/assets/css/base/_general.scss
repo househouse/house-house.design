@@ -139,6 +139,10 @@ table {
 }
 
 button {
+    font-family: $primary-font, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+    transition: all 0.05s linear;
+
     cursor: pointer;
 
     &:hover {

@@ -52,6 +52,12 @@
 
 .u-align-center {
     text-align: center;
+
+    @include --small-up {
+        &--small-up {
+            text-align: center;
+        }
+    }
 }
 
 .u-align-right {

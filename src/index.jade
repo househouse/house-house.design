@@ -8,7 +8,7 @@ section.u-context.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-
         div.u-position.u-stack-basic.u-bottom-0.u-left-halfway.u-realign-center.u-padding-bottom-sm.u-width-full.u-align-center.u-uppercase.u-text-size-small.u-tracked-loose.u-color-light
             | 👇 See how we do it
         video.u-width-full.u-bg-cover#main-video(playsinline, autoplay, muted, loop, poster='assets/img/glitch.jpg')
-            source(src='_assets/video/house-house--glitch.mp4', type='video/mp4')
+            source(src='assets/video/house-house--glitch.mp4', type='video/mp4')
             track(kind='captions', default)
         label.u-color-light.u-fully-transparent.u-visually-hidden(for='main-video') Glitching/flashing video of people encountering technology.
     div.u-position.u-stack-basic.u-top-halfway.u-realign-center-vert.u-measure-medium.u-hidden--small-only
@@ -18,24 +18,33 @@ section.u-context.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-
 
 section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-margin-bottom-xxl--medium-up.u-padding-left-md.u-padding-right-md#who-we-are
     script var weekdays = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-    div.c-text-content.u-measure-medium.u-align-center.u-margin-bottom-lg.u-margin-bottom-xxl--medium-up
+    div.c-text-content.u-measure-medium.u-align-center--small-up.u-margin-bottom-lg.u-margin-bottom-xxl--medium-up
         h2.u-bold.u-margin-bottom-md You have an audience. We #[span.u-no-wrap respect them].
         include includes/components/_divider
         p.u-color-dark 👋 Hi there, and happy #[script document.write(weekdays[new Date().getDay()]);]#[noscript day]! We’re #[span.u-secondary-font.u-bold.u-color-tertiary House House], a multidisciplinary design studio based in Vancouver, Canada that collaborates with people all over the world — and we’re excited to join forces with you to #[a.u-no-wrap(href='#our-work') make something] wonderful together. We achieve results by striving to accomplish three things:
 
-    div.u-flexbox--small-up.u-padding-left-lg--small-up
-        div.c-text-content.u-flex.u-width-1of3--small-up.u-padding-right-lg--small-up.u-margin-bottom-lg--small-only
-            h4 1. Working Differently
+    div.u-flexbox--medium-up.u-padding-left-lg--medium-up
+        div.c-text-content.u-flex.u-width-1of3--medium-up.u-padding-right-lg--small-up.u-margin-bottom-lg--small-only
+            h4.u-flexbox.u-align-middle
+                div.u-flex-shrink
+                    span.u-flexbox.u-justify-middle.u-align-middle.u-circle.u-border-primary.u-margin-right-sm.u-text-size-small.u-bold(style='width:2rem; height:2rem;') 1
+                | Working Differently
             p While other design shops shoehorn your business into their process, we listen and help you grow. We’re not interested in adding to the noise — that doesn’t help anyone. We're here to cut through the cacophony and build beautiful products that have purpose and function.
             p #[a.u-text-size-small(href='https://github.com/househouse/design-statement') Read our design statement &rarr;]
 
-        div.c-text-content.u-flex.u-width-1of3--small-up.u-padding-right-lg--small-up.u-margin-bottom-lg--small-only
-            h4 2. Making Connections
-            p To do this, we listen to your story. In discovering who you are, we uncover who is at the heart of your business — and who your audience is. We work until we can connect your goals to their needs in a way that is seamless, accessible, and intelligent; we work until we know your audience as well as your dog knows its bone; we work until they come away saying, “of course.” 
+        div.c-text-content.u-flex.u-width-1of3--medium-up.u-padding-right-lg--small-up.u-margin-bottom-lg--small-only
+            h4.u-flexbox.u-align-middle
+                div.u-flex-shrink
+                    span.u-flexbox.u-justify-middle.u-align-middle.u-circle.u-border-primary.u-margin-right-sm.u-text-size-small.u-bold(style='width:2rem; height:2rem;') 2
+                | Making Connections
+            p To do this, we listen to your story. In discovering who you are, we uncover who is at the heart of your business — and who your audience is. We work until we can connect your goals to their needs in a seamless, intelligent way; we work until we know your audience as well as your dog knows its bone; we work until they come away saying, “of course.” 
             p #[a.u-text-size-small(href='#') Learn about our process &rarr;]
 
-        div.c-text-content.u-flex.u-width-1of3--small-up.u-padding-right-lg--small-up
-            h4 3. Thinking Big
+        div.c-text-content.u-flex.u-width-1of3--medium-up.u-padding-right-lg--small-up
+            h4.u-flexbox.u-align-middle
+                div.u-flex-shrink
+                    span.u-flexbox.u-justify-middle.u-align-middle.u-circle.u-border-primary.u-margin-right-sm.u-text-size-small.u-bold(style='width:2rem; height:2rem;') 3
+                | Thinking Big
             p You’ve got a visionary idea or you wouldn’t be here right now. Let’s start a conversation to see if our values jive with your desires, to see if our approach fits your needs, to see if our solution-focused, scalable work meshes with your vision. 
             p #[a.u-text-size-small(href='#contact-us') Hire us and let’s talk &rarr;]
 
@@ -65,7 +74,7 @@ section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-margin-bot
             p …or something else?
 
 
-section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-margin-bottom-xxl--medium-up.u-padding-left-md--small-up.u-padding-right-md--small-up.u-clip
+section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-margin-bottom-xxl--medium-up.u-padding-left-md.u-padding-right-md.u-clip
     div.u-measure-medium.u-margin-bottom-lg.u-align-center 
         h2.u-bold.u-margin-bottom-md What have we been working #[span.u-no-wrap on lately?]
         include includes/components/_divider
@@ -85,14 +94,14 @@ section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-margin-bot
                     'assets/img/project-bitchpop.gif',
                     'https://bitchpopproductions.com')
 
-    article.c-card.c--no-padding.c-faux-link.u-context.u-clip.u-bg-center.u-bg-cover.u-gradient.u-padding-top-xl.u-padding-bottom-xl.u-padding-left-md.u-padding-right-md.u-bg-dark.u-margin-bottom-md
+    article.c-card.c--no-padding.c-faux-link.u-context.u-clip.u-bg-center.u-bg-cover.u-gradient.u-padding-top-lg--small-only.u-padding-top-xl--small-up.u-padding-bottom-xl.u-padding-left-md.u-padding-right-md.u-bg-dark.u-margin-bottom-md
         a.c-faux-link__overlay(href='https://github.com/househouse/housecss', aria-hidden='true') Find out more about housecss
         div.c-card__image.u-position.u-top-0.u-bottom-0.u-left-0.u-right-0.u-half-transparent.u-bg-center.u-bg-cover(style='background-image:url("assets/img/stars.gif");')
         div.u-context.u-stack-basic.u-measure-medium.u-flexbox--medium-up.u-color-light.u-align-center
             div.u-flex.u-margin-right-lg--medium-up
                 p.u-context.u-glitch(data-glitch='🚀', style='font-size:5rem;') 🚀
             div.u-flex
-                img.u-max-width-1of2.u-margin-bottom-md(src='assets/img/housecss-logo.png', alt='House CSS logo')
+                img.u-max-width-2of3.u-margin-bottom-md(src='assets/img/housecss-logo.png', alt='House CSS logo')
                 p Launch your next web project quickly by removing the uncertainty and grunt-work around writing CSS. #[span.u-inline-block.u-squiggle Learn more about housecss &rarr;]
     
     div.u-flexbox--small-up.u-flex-wrap
@@ -135,37 +144,37 @@ section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-margin-bot
         h2.u-bold.u-margin-bottom-md.u-align-center Let us introduce ourselves!
         include includes/components/_divider
 
-    div.u-flexbox--small-up.u-padding-left-md--small-only.u-padding-right-md--small-only.u-padding-left-lg--small-up
+    div.u-flexbox--medium-up.u-padding-left-md.u-padding-right-md--small-only.u-padding-left-lg--medium-up
         
-        div.u-clip.u-flex.u-width-1of3--small-up.u-margin-right-lg--small-up.u-margin-bottom-lg--small-only
-            figure.u-context.u-float-left.u-width-1of3.u-margin-right-md.u-clip
-                img.u-block(src='assets/img/portrait--ben-groulx--animated.gif', alt='Illustrated portrait of Ben Groulx')
+        div.u-clip.u-flex.u-width-1of3--medium-up.u-margin-right-lg--medium-up
+            figure.u-context.u-float-left.u-width-full--small-only.u-width-1of3--small-up.u-margin-right-md--medium-up.u-margin-right-md.u-clip
+                img.u-block.u-width-full(src='assets/img/portrait--ben-groulx--animated.gif', alt='Illustrated portrait of Ben Groulx')
             div.c-text-content
-                h4 Ben Groulx 🐙
+                h4 Ben Groulx 🤙
                 ul
                     li.u-inline-block.u-margin-right-md
                         a(href='https://linkedin.com/in/bengroulx', target='_blank', rel='noopener') LinkedIn
                     li.u-inline-block
                         a(href='https://bengroulx.com', target='_blank', rel='noopener') Website
-                p Ben brings experience in design systems, front-end architecture, and feedback processes to House House. You can find him hanging out at a local brewery or playing board games when not focusing on the intersection of interaction and graphic design.
+                p.u-margin-bottom-md Ben brings experience in design systems, front-end architecture, and feedback processes to House House. You can find him hanging out at a local brewery or playing board games when not focusing on the intersection of interaction and graphic design.
 
-        div.u-clip.u-flex.u-width-1of3--small-up.u-margin-right-lg--small-up.u-margin-bottom-lg--small-only
-            figure.u-context.u-float-left.u-width-1of3.u-margin-right-md.u-clip
+        div.u-clip.u-flex.u-width-1of3--medium-up.u-margin-right-lg--medium-up
+            figure.u-context.u-float-left.u-width-full--small-only.u-width-1of3--small-up.u-margin-right-md--medium-up.u-margin-right-md.u-clip
                 img.u-block(src='assets/img/portrait--sean-durfee--animated.gif', alt='Illustrated portrait of Sean Durfee')
             div.c-text-content
-                h4 Sean Durfee 🚀
+                h4 Sean Durfee 🤘
                 ul
                     li.u-inline-block.u-margin-right-md
                         a(href='https://linkedin.com/in/sean-durfee-ba393b5a', target='_blank', rel='noopener') LinkedIn
                     li.u-inline-block
                         a(href='http://durfee.me/', target='_blank', rel='noopener') Website
-                p Sean is a web, product, and graphic designer fluent in front-end development with a background in international relations and entrepreneurship. He spends too much time in coffee shops building new products.
+                p.u-margin-bottom-md Sean is a web, product, and graphic designer fluent in front-end development with a background in international relations and entrepreneurship. He spends too much time in coffee shops building new products.
 
-        div.u-clip.u-flex.u-width-1of3--small-up.u-margin-right-lg--small-up
-            figure.u-context.u-float-left.u-width-1of3.u-margin-right-md.u-clip
+        div.u-clip.u-flex.u-width-1of3--medium-up.u-margin-right-lg--medium-up
+            figure.u-context.u-float-left.u-width-full--small-only.u-width-1of3--small-up.u-margin-right-md--medium-up.u-margin-right-md.u-clip
                 img.u-block(src='assets/img/portrait--caitlin-farquharson--animated.gif', alt='Illustrated portrait of Caitlin Farquharson')
             div.c-text-content
-                h4 Caitlin Farquharson 💅🏼
+                h4 Caitlin Farquharson 💅
                 ul
                     li.u-inline-block.u-margin-right-md
                         a(href='https://linkedin.com/in/caitlinfarquharson', target='_blank', rel='noopener') LinkedIn
@@ -173,9 +182,9 @@ section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-margin-bot
 
 
 section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-left-md--small-up.u-padding-right-md--small-up#contact-us
-    div.u-context.u-bg-light-grey.u-corners.u-padding-top-lg.u-padding-top-xxl--medium-up.u-padding-bottom-lg.u-padding-bottom-xxl--medium-up
+    div.u-context.u-bg-light-grey.u-corners.u-padding-top-lg.u-padding-top-xxl--medium-up.u-padding-bottom-lg.u-padding-bottom-xxl--medium-up.u-padding-left-md.u-padding-right-md
 
-        div.c-text-content.u-measure-medium.u-align-center.u-margin-bottom-xl
+        div.c-text-content.u-measure-medium.u-align-center.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up
             h2.u-bold.u-margin-bottom-md We should work together.
             include includes/components/_divider
             p.u-flexbox.u-align-middle.u-justify-middle
