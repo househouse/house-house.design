@@ -153,7 +153,7 @@ button {
 input,
 select,
 textarea {
-    background-color: transparent;
+    background-color: map-get($color-map, light-grey);
 
     font-family: $code-font;
     line-height: $base-leading;
