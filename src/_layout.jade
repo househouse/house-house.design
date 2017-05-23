@@ -3,7 +3,13 @@ html(lang='en-ca')
 
     include includes/partials/_head
 
-    body.a-fade-in--mid-forwards
+    body.a-fade-in--mid-forwards.no-js(onload='load();')
+        
+        script.
+            function load() {
+                document.body.classList.remove('no-js');
+            }
+        
         //-
             div(hidden='')
                 include includes/partials/_spritesheet

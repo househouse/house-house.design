@@ -1,223 +1,24 @@
 //- Template Includes
 include includes/components/_card
+include includes/components/_modal
 
 
 //- Template Begin
-section.u-context.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-margin-bottom-xxl--medium-up.u-padding-top-md--small-up.u-padding-left-md--small-up.u-padding-right-md--small-up.u-clip
-    div.u-context.u-bg-dark.u-gradient.u-corners(style='max-height:calc(100vh - 13rem);')
-        div.u-position.u-stack-basic.u-bottom-0.u-left-halfway.u-realign-center.u-padding-bottom-sm.u-width-full.u-align-center.u-uppercase.u-text-size-small.u-tracked-loose.u-color-light
-            | 👇 See how we do it
-        video.u-width-full.u-bg-cover#main-video(playsinline, autoplay, muted, loop, poster='assets/img/glitch.jpg')
-            source(src='assets/video/house-house--glitch.mp4', type='video/mp4')
-            track(kind='captions', default)
-        label.u-color-light.u-fully-transparent.u-visually-hidden(for='main-video') Glitching/flashing video of people encountering technology.
-    div.u-position.u-stack-basic.u-top-halfway.u-realign-center-vert.u-measure-medium.u-hidden--small-only
-        h1.u-text-size-large.u-padding-left-md--small-up.u-padding-left-xl--medium-up.u-bold(style='line-height:2.5;')
-            span.u-bg-light.u-padding-top-sm.u-padding-bottom-sm
-                |&nbsp;As #[span.u-color-tertiary tech] becomes increasingly overwhelming, good #[span.u-color-accent design] will help you better use it. That’s where #[span.u-color-primary.u-no-wrap we can help].&nbsp;
-
-section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-margin-bottom-xxl--medium-up.u-padding-left-md.u-padding-right-md#who-we-are
-    script var weekdays = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-    div.c-text-content.u-measure-medium.u-margin-bottom-lg.u-margin-bottom-xxl--medium-up
-        h2.u-align-center.u-bold.u-margin-bottom-md You have an audience. We #[span.u-no-wrap respect them].
-        include includes/components/_divider
-        p.u-align-center--small-up.u-color-dark 👋 Hi there, and happy #[script document.write(weekdays[new Date().getDay()]);]#[noscript day]! We’re #[span.u-secondary-font.u-bold.u-color-tertiary House House], a multidisciplinary design studio based in Vancouver, Canada that collaborates with people all over the world — and we’re excited to join forces with you to #[a.u-no-wrap(href='#our-work') make something] wonderful together. We achieve results by striving to accomplish three things:
-
-    div.u-flexbox--medium-up.u-padding-left-lg--medium-up
-        div.c-text-content.u-flex.u-width-1of3--medium-up.u-padding-right-lg--small-up.u-margin-bottom-lg--small-only
-            h4.u-flexbox.u-align-middle
-                div.u-flex-shrink
-                    span.u-flexbox.u-justify-middle.u-align-middle.u-circle.u-border-primary.u-margin-right-sm.u-text-size-small.u-bold(style='width:2rem; height:2rem;') 1
-                | Working Differently
-            p While other design shops shoehorn your business into their process, we listen and help you grow. We’re not interested in adding to the noise — that doesn’t help anyone. We're here to cut through the cacophony and build beautiful products that have purpose and function.
-            p #[a.u-text-size-small(href='https://github.com/househouse/design-statement') Read our design statement &rarr;]
-
-        div.c-text-content.u-flex.u-width-1of3--medium-up.u-padding-right-lg--small-up.u-margin-bottom-lg--small-only
-            h4.u-flexbox.u-align-middle
-                div.u-flex-shrink
-                    span.u-flexbox.u-justify-middle.u-align-middle.u-circle.u-border-primary.u-margin-right-sm.u-text-size-small.u-bold(style='width:2rem; height:2rem;') 2
-                | Making Connections
-            p To do this, we listen to your story. In discovering who you are, we uncover who is at the heart of your business — and who your audience is. We work until we can connect your goals to their needs in a seamless, intelligent way; we work until we know your audience as well as your dog knows its bone; we work until they come away saying, “of course.” 
-            p #[a.u-text-size-small(href='#') Learn about our process &rarr;]
-
-        div.c-text-content.u-flex.u-width-1of3--medium-up.u-padding-right-lg--small-up
-            h4.u-flexbox.u-align-middle
-                div.u-flex-shrink
-                    span.u-flexbox.u-justify-middle.u-align-middle.u-circle.u-border-primary.u-margin-right-sm.u-text-size-small.u-bold(style='width:2rem; height:2rem;') 3
-                | Thinking Big
-            p You’ve got a visionary idea or you wouldn’t be here right now. Let’s start a conversation to see if our values jive with your desires, to see if our approach fits your needs, to see if our solution-focused, scalable work meshes with your vision. 
-            p #[a.u-text-size-small(href='#contact-us') Hire us and let’s talk &rarr;]
+include includes/sections/_intro
+include includes/sections/_who-we-are
+include includes/sections/_our-work
+include includes/sections/_portfolio
+include includes/sections/_profiles
+include includes/sections/_contact
 
 
-section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-margin-bottom-xxl--medium-up.u-padding-left-md--small-up.u-padding-right-md--small-up#our-work
-    
-    div.u-context.u-bg-light-grey.u-corners.u-padding-top-lg.u-padding-top-xxl--medium-up.u-padding-bottom-lg.u-padding-bottom-xxl--medium-up
-        div.u-measure-wide.u-align-center
-            h2.u-bold.u-margin-bottom-md What should we make together?
-            include includes/components/_divider
-            div.u-flexbox--medium-up.u-margin-bottom-md
-                div.c-text-content.u-flex.u-margin-bottom-md
-                    span.u-block 📝  Art Direction 
-                    span.u-block 🌄  Brand Identity  
-                    span.u-block 📚  Graphic Design
-                    span.u-block 💻  Responsive Websites
-                div.c-text-content.u-flex.u-margin-bottom-md
-                    span.u-block ⌨️  Front-End Dev
-                    span.u-block 🚚  Product Design
-                    span.u-block 📦  Packaging Design 
-                    span.u-block 📱  Progressive Web Apps
-                div.c-text-content.u-flex.u-margin-bottom-md
-                    span.u-block 🎬  Film Editing
-                    span.u-block 🌀  Motion Design 
-                    span.u-block 📰  Editorial Design 
-                    span.u-block 🗺  Environmental Design
-            p …or something else?
+//- Template Modals
++modal('Design Statement')
+    include includes/modals/_statement
 
+//- TODO: See the “modal” section in `script.js`; right now, there’s only only
+    one trigger for one modal… we need to be able to create a method of defining
+    which trigger initiates which modal so that we can have multiple modals.
 
-section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-margin-bottom-xxl--medium-up.u-padding-left-md.u-padding-right-md.u-clip
-    div.u-measure-medium.u-margin-bottom-lg.u-align-center 
-        h2.u-bold.u-margin-bottom-md What have we been working #[span.u-no-wrap on lately?]
-        include includes/components/_divider
-    div.u-flexbox--small-up.u-flex-wrap
-        div.u-float-start.u-width-1of2--small-up.u-margin-bottom-md
-            div.u-bg-dark.u-height-full.u-margin-right-md--small-up
-                +card(
-                    'Blanc Ink',
-                    '#research #frontend #ui',
-                    'assets/img/project-blancink.jpg',
-                    'https://medium.com/house-house/house-house-blanc-ink-3050b75adc4f')
-        div.u-float-start.u-width-1of2--small-up.u-margin-bottom-md
-            div.u-bg-dark.u-height-full
-                +card(
-                    'Bitchpop',
-                    '#film #responsive #brand',
-                    'assets/img/project-bitchpop.gif',
-                    'https://bitchpopproductions.com')
-
-    article.c-card.c--no-padding.c-faux-link.u-context.u-clip.u-bg-center.u-bg-cover.u-gradient.u-padding-top-lg--small-only.u-padding-top-xl--small-up.u-padding-bottom-xl.u-padding-left-md.u-padding-right-md.u-bg-dark.u-margin-bottom-md
-        a.c-faux-link__overlay(href='https://github.com/househouse/housecss', aria-hidden='true') Find out more about housecss
-        div.c-card__image.u-position.u-top-0.u-bottom-0.u-left-0.u-right-0.u-half-transparent.u-bg-center.u-bg-cover(style='background-image:url("assets/img/stars.gif");')
-        div.u-context.u-stack-basic.u-measure-medium.u-flexbox--medium-up.u-color-light.u-align-center
-            div.u-flex.u-margin-right-lg--medium-up
-                p.u-context.u-glitch(data-glitch='🚀', style='font-size:5rem;') 🚀
-            div.u-flex
-                img.u-max-width-2of3.u-margin-bottom-md(src='assets/img/housecss-logo.png', alt='House CSS logo')
-                p Launch your next web project quickly by removing the uncertainty and grunt-work around writing CSS. #[span.u-inline-block.u-squiggle Learn more about housecss &rarr;]
-    
-    div.u-flexbox--small-up.u-flex-wrap
-        div.u-float-start.u-width-1of2--small-up.u-max-width-1of4--medium-up.u-margin-bottom-md
-            div.u-bg-dark.u-height-full.u-margin-right-md--small-up
-                +card(
-                    'Kost',
-                    '#product #webapp',
-                    'assets/img/project-kost.jpg',
-                    '#')
-
-        div.u-float-start.u-width-1of2--small-up.u-max-width-1of4--medium-up.u-margin-bottom-md
-            div.u-bg-dark.u-height-full.u-margin-right-md--medium-up
-                +card(
-                    'VDW',
-                    '#brand #responsive #print',
-                    'assets/img/project-vdw.jpg',
-                    '#')
-
-        div.u-float-start.u-width-1of2--small-up.u-max-width-1of4--medium-up.u-margin-bottom-md
-            div.u-bg-dark.u-height-full.u-margin-right-md--small-up
-                +card(
-                    'Ultrafast Optics',
-                    '#responsive #visual',
-                    'assets/img/project-stanford.jpg',
-                    'http://ultrafastoptics2017.org/')
-
-        div.u-float-start.u-width-1of2--small-up.u-max-width-1of4--medium-up.u-margin-bottom-md
-            div.u-bg-dark.u-height-full
-                +card(
-                    'Ask Will',
-                    '#motion #print',
-                    'assets/img/project-askwill.gif',
-                    'https://www.youtube.com/watch?v=68F7ta8kk9w')
-
-
-section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-margin-bottom-xxl--medium-up.u-clip
-    
-    div.u-measure-medium
-        h2.u-bold.u-margin-bottom-md.u-align-center Let us introduce ourselves!
-        include includes/components/_divider
-
-    div.u-flexbox--medium-up.u-padding-left-md.u-padding-right-md--small-only.u-padding-left-lg--medium-up
-        
-        div.u-clip.u-flex.u-width-1of3--medium-up.u-margin-right-lg--medium-up
-            figure.u-context.u-float-left.u-width-full--small-only.u-width-1of3--small-up.u-margin-right-md--medium-up.u-margin-right-md.u-clip
-                img.u-block.u-width-full(src='assets/img/portrait--ben-groulx--animated.gif', alt='Illustrated portrait of Ben Groulx')
-            div.c-text-content
-                h4 Ben Groulx 🤙
-                ul
-                    li.u-inline-block.u-margin-right-md
-                        a(href='https://linkedin.com/in/bengroulx', target='_blank', rel='noopener') LinkedIn
-                    li.u-inline-block
-                        a(href='https://bengroulx.com', target='_blank', rel='noopener') Website
-                p.u-margin-bottom-md Ben brings experience in design systems, front-end architecture, and feedback processes to House House. You can find him hanging out at a local brewery or playing board games when not focusing on the intersection of interaction and graphic design.
-
-        div.u-clip.u-flex.u-width-1of3--medium-up.u-margin-right-lg--medium-up
-            figure.u-context.u-float-left.u-width-full--small-only.u-width-1of3--small-up.u-margin-right-md--medium-up.u-margin-right-md.u-clip
-                img.u-block(src='assets/img/portrait--sean-durfee--animated.gif', alt='Illustrated portrait of Sean Durfee')
-            div.c-text-content
-                h4 Sean Durfee 🤘
-                ul
-                    li.u-inline-block.u-margin-right-md
-                        a(href='https://linkedin.com/in/sean-durfee-ba393b5a', target='_blank', rel='noopener') LinkedIn
-                    li.u-inline-block
-                        a(href='http://durfee.me/', target='_blank', rel='noopener') Website
-                p.u-margin-bottom-md Sean is a web, product, and graphic designer fluent in front-end development with a background in international relations and entrepreneurship. He spends too much time in coffee shops building new products.
-
-        div.u-clip.u-flex.u-width-1of3--medium-up.u-margin-right-lg--medium-up
-            figure.u-context.u-float-left.u-width-full--small-only.u-width-1of3--small-up.u-margin-right-md--medium-up.u-margin-right-md.u-clip
-                img.u-block(src='assets/img/portrait--caitlin-farquharson--animated.gif', alt='Illustrated portrait of Caitlin Farquharson')
-            div.c-text-content
-                h4 Caitlin Farquharson 💅
-                ul
-                    li.u-inline-block.u-margin-right-md
-                        a(href='https://linkedin.com/in/caitlinfarquharson', target='_blank', rel='noopener') LinkedIn
-                p Caitlin is House House’s marketing whiz; with a background in business strategy and marketing, Caitlin helps us uncover user needs, organize complicated information challenges, and refine and focus content tasks.
-
-
-section.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-left-md--small-up.u-padding-right-md--small-up#contact-us
-    div.u-context.u-bg-light-grey.u-corners.u-padding-top-lg.u-padding-top-xxl--medium-up.u-padding-bottom-lg.u-padding-bottom-xxl--medium-up.u-padding-left-md.u-padding-right-md
-
-        div.c-text-content.u-measure-medium.u-align-center.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up
-            h2.u-bold.u-margin-bottom-md We should work together.
-            include includes/components/_divider
-            p.u-flexbox.u-align-middle.u-justify-middle
-                span.u-block.u-circle.u-margin-right-sm.u-bg-tertiary(style='width:0.5rem;height:0.5rem;')
-                span.u-block.u-uppercase.u-text-size-small.u-tracked-loose.u-color-dark Available starting Q3 2017
-            p We’re often head-down, jamming out creating something really cool. But we’ll always make time to hear about your challenges, or if you’re just wanting to say a quick hello. So give us a shout, and let’s make some magic happen.
-            ul
-                li.u-inline-block.u-margin-right-md
-                    a(href='https://househouse-hq.slack.com/', target='_blank', rel='noopener') Slack
-                li.u-inline-block.u-margin-right-md
-                    a(href='https://github.com/househouse/', target='_blank', rel='noopener') GitHub
-                li.u-inline-block
-                    a(href='https://twitter.com/house-house/', target='_blank', rel='noopener') Twitter
-        form.u-block.u-measure-medium#contact-form(action='https://formspree.io/ben@house-house.design', method='POST')
-            div.u-flexbox--small-up.u-clip
-                div.u-context.u-border-left-dark.u-border-bottom-dark.u-width-full--small-only.u-width-1of2--small-up.u-float-left.u-margin-right-md--small-up.u-margin-bottom-md(style='height:3rem;')
-                    label.u-position.u-top-halfway.u-realign-center-vert.u-text-size-small.u-color-primary.u-padding-left-md.u-stack-basic(for='form-name')
-                        | Your Name
-                    input.u-position.u-top-0.u-left-0.u-right-0.u-bottom-0.u-width-full.u-border-0.u-text-size-base.u-padding-left-md#form-name(required='', type='text', name='_name')
-                div.u-context.u-border-left-dark.u-border-bottom-dark.u-width-full--small-only.u-width-1of2--small-up.u-float-left.u-margin-bottom-md(style='height:3rem;')
-                    label.u-position.u-top-halfway.u-realign-center-vert.u-text-size-small.u-color-primary.u-padding-left-md.u-stack-basic(for='form-email')
-                        | Your Email
-                    input.u-position.u-top-0.u-left-0.u-right-0.u-bottom-0.u-width-full.u-border-0.u-text-size-base.u-padding-left-md#form-email(required='', type='text', name='_replyto')
-            div.u-flexbox--small-up.u-clip
-                div.u-context.u-border-left-dark.u-border-bottom-dark.u-width-full.u-float-left.u-margin-bottom-md(style='height:12rem;')
-                    label.u-position.u-bottom-0.u-text-size-small.u-color-primary.u-padding-left-md.u-padding-bottom-md.u-stack-basic(for='form-message' style='pointer-events:none;')
-                        | Your Message
-                    textarea.u-position.u-top-0.u-left-0.u-right-0.u-bottom-0.u-width-full.u-border-0.u-text-size-base.u-padding-left-md.u-padding-top-md.u-padding-bottom-md.u-padding-right-md#form-message(required='', placeholder='e.g. Hello, House House! I have a problem with ________ that I need some guidance on – I think I may need a designer! My budget is $__,____ and I would like a solution in ____ weeks. Can you help?', name='_message')
-            div.u-flexbox--small-up.u-clip
-                button.u-bg-primary.u-border-0.u-width-full--small-only.u-width-1of2--small-up.u-width-1of4--medium-up.u-color-light.u-padding-top-md.u-padding-bottom-md.u-float-right.u-text-size-base#form-submit(name='submit', type='submit')
-                    | Send
-            div(hidden='')
-                input(type='text', name='_gotcha')
-                input(type='hidden', name='_next', value='/thanks')
-                input(type='hidden', name='_subject', value='Hi there, House House!')
-                input(type='hidden', name='_cc', value='sean@house-house.design')
+    +modal('Design Process')
+        include includes/partials/_modal-process

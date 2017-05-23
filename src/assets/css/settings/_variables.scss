@@ -28,26 +28,6 @@ $configure--accent-color: #ff4d37;
 // ============================================================================
 
 
-// Spacing Options
-// ---
-
-$very-small-space: $configure--base-unit/4;
-$small-space: $configure--base-unit/2;
-$base-space: $configure--base-unit;
-$large-space: $configure--base-unit*2;
-$very-large-space: $configure--base-unit*4;
-$huge-large-space: $configure--base-unit*8;
-
-$size-map: (
-    xs: $very-small-space,
-    sm: $small-space,
-    md: $base-space,
-    lg: $large-space,
-    xl: $very-large-space,
-    xxl: $huge-large-space,
-);
-
-
 // Typeface Options
 // ---
 
@@ -160,6 +140,27 @@ $dimensions-map: (
     1of3: $one-third,
     1of4: $one-quarter,
     0: $no-size,
+);
+
+
+// Spacing Options
+// ---
+
+$very-small-space: $configure--base-unit/4;
+$small-space: $configure--base-unit/2;
+$base-space: $configure--base-unit;
+$large-space: $configure--base-unit*2;
+$very-large-space: $configure--base-unit*4;
+$huge-large-space: $configure--base-unit*8;
+
+$size-map: (
+    xs: $very-small-space,
+    sm: $small-space,
+    md: $base-space,
+    lg: $large-space,
+    xl: $very-large-space,
+    xxl: $huge-large-space,
+    none: 0,
 );
 
 

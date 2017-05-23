@@ -138,12 +138,21 @@ table {
     border-collapse: collapse;
 }
 
-button {
-    font-family: $primary-font, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+a,
+button,
+%button {
+    cursor: pointer;
+}
+
+button,
+%button {
+    border: 0;
+
+    font-family: $primary-font;
 
     transition: all 0.05s linear;
 
-    cursor: pointer;
+    appearance: none;
 
     &:hover {
         opacity: $half-transparent;

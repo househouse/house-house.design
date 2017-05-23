@@ -8,8 +8,23 @@
         margin-bottom: $base-space;
     }
 
-    p {
+    p,
+    li {
         color: $grey;
+    }
+
+    li {
+        padding-left: $base-space;
+
+        text-indent: -$base-space;
+
+        &::before {
+            content: '>';
+
+            padding-right: $small-space;
+
+            color: $accent-color;
+        }
     }
 
     a {

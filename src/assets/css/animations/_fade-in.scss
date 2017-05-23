@@ -1,4 +1,4 @@
-// Fade In
+// Fade In Animation
 // ===
 
 @keyframes a-fade-in {
@@ -13,5 +13,5 @@
 
 .a-fade-in--mid-forwards,
 %a-fade-in--mid-forwards {
-    animation: a-fade-in  0.5s forwards;
+    animation: a-fade-in 1s forwards;
 }

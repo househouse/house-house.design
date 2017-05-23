@@ -8,7 +8,8 @@
     font-display: swap;
 
     unicode-range: U+000-5FF;
-    src: url('../type/Akkurat_Regular.otf');
+    src: url('../type/Akkurat_Regular.woff2') format('woff2'),
+         url('../type/Akkurat_Regular.woff') format('woff');
 }
 
 @font-face {
@@ -19,7 +20,7 @@
 
     unicode-range: U+000-5FF;
     src: url('../type/TiemposHeadline_Regular.woff2') format('woff2'),
-    url('../type/TiemposHeadline_Regular.woff') format('woff');
+         url('../type/TiemposHeadline_Regular.woff') format('woff');
 }
 
 @font-face {
@@ -30,7 +31,7 @@
 
     unicode-range: U+000-5FF;
     src: url('../type/TiemposHeadline_Semibold.woff2') format('woff2'),
-    url('../type/TiemposHeadline_Semibold.woff') format('woff');
+         url('../type/TiemposHeadline_Semibold.woff') format('woff');
 }
 
 body {
@@ -67,6 +68,10 @@ h6 {
     line-height: $tight-leading;
 }
 
+small {
+    @extend %type-small;
+}
+
 ol,
 ul {
     list-style: none;
@@ -80,10 +85,6 @@ blockquote {
     &::after {
         content: '';
     }
-}
-
-small {
-    @extend %type-small;
 }
 
 code,
@@ -104,18 +105,18 @@ a {
 
 ::-webkit-input-placeholder {
     color: $grey;
-    font-size: 0.79012rem;
+    font-size: 0.8rem;
     line-height: $base-leading;
 }
 
 ::-moz-placeholder {
     color: $grey;
-    font-size: 0.79012rem;
+    font-size: 0.8rem;
     line-height: $base-leading;
 }
 
 :-ms-input-placeholder {
     color: $grey;
-    font-size: 0.79012rem;
+    font-size: 0.8rem;
     line-height: $base-leading;
 }
