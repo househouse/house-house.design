@@ -4,7 +4,7 @@ const cardImage = document.getElementsByClassName('js-card-visible');
 
 window.onscroll = function() {
     // Don't run the rest of the code if every section is already visible
-    if (document.querySelectorAll('.c-card__image:not(.visible)').length === 0) return;
+    if (document.querySelectorAll('.c-card__image:not(.js-card-visible)').length === 0) return;
 
     // Run the check for every section in sections; add the visibile class
     for (const section of sections) {
@@ -37,7 +37,7 @@ window.onscroll = function() {
         var i = document.createElement('b');
         var t;
         for (t in e) {
-            if (i.style[t] != null) {
+            if (i.style[t] !== null) {
                 return e[t]
             }
         }
@@ -73,24 +73,24 @@ window.onscroll = function() {
 
         var r = a.fade = t ? l.fade : false;
 
-        a.scrollTop = l.scrollTop != null ? l.scrollTop : true;
+        a.scrollTop = l.scrollTop !== null ? l.scrollTop : true;
         a.isVisible = false;
 
         var c = e.querySelector(l.dialogSelector);
 
-        n(l.showSelector || '.js-modal-show', function(e) { a.show(e.target) });
-        n(l.hideSelector || '.js-modal-hide', function(e) { a.hide(e.target) });
+        n(l.showSelector || '.js-modal-show', function(e) { a.show(e.target); });
+        n(l.hideSelector || '.js-modal-hide', function(e) { a.hide(e.target); });
 
         e.addEventListener('click', function(i) {
-            i.target === e && a.hide(e)
+            i.target === e && a.hide(e);
         });
 
         if (r) {
             var u = (r.duration || '0.25s') + ' ' + (r.timingFunction || 'ease') + ' opacity';
             e.style.cssText += 'transition:' + u + ';';
             e.addEventListener(t, function() {
-                (a.isVisible ? a.onShowEnd : a.onHideEnd)(e)
-            })
+                (a.isVisible ? a.onShowEnd : a.onHideEnd)(e);
+            });
         }
     }
 
@@ -101,20 +101,20 @@ window.onscroll = function() {
         if (!i.isVisible) {
             document.body.style.overflow = 'hidden';
             if (i.fade) {
-                n.opacity = 0
+                n.opacity = 0;
             }
             n.display = 'block';
             if (i.scrollTop) {
-                t.scrollTop = 0
+                t.scrollTop = 0;
             }
             if (i.fade) {
                 setTimeout(function() {
-                    n.opacity = 1
+                    n.opacity = 1;
                 }, 0)
             }
             i.isVisible = true;
             i.onShow(t, e);
-            !i.fade && i.onShowEnd(t)
+            !i.fade && i.onShowEnd(t);
         }
     };
 
@@ -124,18 +124,18 @@ window.onscroll = function() {
         if (i.isVisible) {
             document.body.style.overflow = '';
             if (i.fade) {
-                t.style.opacity = 0
+                t.style.opacity = 0;
             }
             i.isVisible = false;
             i.onHide(t, e);
-            !i.fade && i.onHideEnd(t)
+            !i.fade && i.onHideEnd(t);
         }
     };
 
     if (typeof module === 'object') {
-        module.exports = o
+        module.exports = o;
     } else {
-        e.modal = o
+        e.modal = o;
     }
 })(this);
 
