@@ -1,3 +1,5 @@
+/* jshint esversion: 6 */
+
 // Lazy Load
 const sections = document.getElementsByClassName('c-card__image');
 const cardImage = document.getElementsByClassName('js-card-visible');
