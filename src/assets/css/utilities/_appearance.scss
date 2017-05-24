@@ -114,7 +114,15 @@
 }
 
 @keyframes colorChange {
-    0% { color: $tertiary-color; }
-    50% { color: $primary-color; }
-    100% { color: $accent-color; }
+    0% {
+        color: $tertiary-color;
+    }
+
+    50% {
+        color: $primary-color;
+    }
+
+    100% {
+        color: $accent-color;
+    }
 }

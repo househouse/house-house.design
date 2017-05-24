@@ -38,7 +38,7 @@ window.onscroll = function() {
         var t;
         for (t in e) {
             if (i.style[t] !== null) {
-                return e[t]
+                return e[t];
             }
         }
     }();
@@ -48,7 +48,7 @@ window.onscroll = function() {
         var n = -1;
         var o = t.length;
         while (++n < o) {
-            t[n].addEventListener('click', i)
+            t[n].addEventListener('click', i);
         }
     }
 
@@ -58,7 +58,7 @@ window.onscroll = function() {
         l = l || {};
 
         if (!(a instanceof o)) {
-            return new o(e, l)
+            return new o(e, l);
         }
         a.elem = e;
         a.onShow = l.onShow || i;
@@ -68,7 +68,7 @@ window.onscroll = function() {
 
         a.onHideEnd = function() {
             e.style.display = 'none';
-            s(e)
+            s(e);
         };
 
         var r = a.fade = t ? l.fade : false;
