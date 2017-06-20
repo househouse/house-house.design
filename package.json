@@ -23,6 +23,9 @@
     "devDependencies": {
         "babel-cli": "^6.24.1",
         "babel-loader": "^7.1.0",
+        "eslint": "^4.0.0",
+        "eslint-config-airbnb-base": "^11.2.0",
+        "eslint-plugin-import": "^2.3.0",
         "webpack": "^3.0.0"
     }
 }
