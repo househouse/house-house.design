@@ -102,6 +102,7 @@ class Modal {
         this.isOpen = false;
         this.self.style.display = 'none';
         this.self.style.opacity = 1;
+        this.content.style.animation = '';
       }, this.openTimer);
     }
   }
