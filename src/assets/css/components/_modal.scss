@@ -4,6 +4,7 @@
 .c-modal {
     display: none;
 
+    transition: 0.25s ease-in-out opacity;
     &,
     &__shade,
     &__content {
