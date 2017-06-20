@@ -32,14 +32,14 @@ class Modal {
     * Create a new Modal instance
     *
     * @param {object} selectorName
-    * @param {object} contents
+    * @param {object} content
     * @param {object} trigger
     */
 
-  constructor(selectorName, contents, trigger = null) {
+  constructor(selectorName, content, triggers = null) {
     this.self = selectorName;
-    this.contents = contents;
-    this.trigger = trigger;
+    this.content = content;
+    this.triggers = triggers;
     this.isOpen = false;
     this.openTimer = 250;
     this.openDelayTimer = null;
@@ -52,48 +52,51 @@ class Modal {
     */
 
   init() {
-    window.modalInner = Modal.contents;
     // Create a node with a random ID to hold markup for each instance
-    console.log('>>>>>> I N I T    M O D A L <<<<<<');
+
     const modalNodeInstance = document.createElement('div');
     modalNodeInstance.id = `c-modal-instance-${Math.floor(Math.random() * 10000)}`;
-    console.log("create container");
+
     // Create the container elements
     this.modalElement = document.createElement('div');
     this.modalElement.classList.add('c-modal', 'u-stack-modal');
-    console.log("Clone contents");
-    // Clone the modal contents into the inner modal container
-    const modalContents = this.contents.cloneNode(true);
+
+    // Clone the modal content into the inner modal container
+    const modalContents = this.content.cloneNode(true);
     this.modalElement.appendChild(modalContents);
 
-    console.log("Append everything");
+
     // Add the node to the DOM
     document.body.appendChild(modalNodeInstance);
 
     // Add inner container as a child element to the modal element
-    this.modalElement.appendChild(modalContent);
+    this.modalElement.appendChild(modalContents);
 
     // Add modal element to the instance container
     modalNodeInstance.appendChild(this.modalElement);
 
     // Get the click region element (what triggers the modal)
-    let trigger;
-    if (this.trigger === null) {
-      trigger = this.self;
-    } else {
-      trigger = this.trigger;
-    }
+    // let trigger;
+    // if (this.trigger === null) {
+    //   trigger = this.self;
+    // } else {
+    //   trigger = this.trigger;
+    // }
 
     // Add event listeners for modal
-    trigger.addEventListener('click', () => {
-      if (this.isOpen) {
-        console.log('>>>>>> T O G G L E    M O D A L   C L O S E <<<<<<');
-        this.close();
-      } else {
-        console.log('>>>>>> T O G G L E    M O D A L   O P E N <<<<<<');
-        this.open();
-      }
-    });
+    for (const trigger of this.triggers) {
+      trigger.addEventListener('click', (e) => {
+        if (this.isOpen) {
+          e.preventDefault();
+          console.log('>>>>>> T O G G L E    M O D A L   C L O S E <<<<<<');
+          this.close();
+        } else {
+          e.preventDefault();
+          console.log('>>>>>> T O G G L E    M O D A L   O P E N <<<<<<');
+          this.open();
+        }
+      });
+    }
   }
 
   /**
@@ -103,18 +106,14 @@ class Modal {
   open() {
     // Only open the modal if delay timer has expired
     if (this.openDelayTimer === null) {
-      this.isOpen = true;
-      console.log('>>>>>> O P E N I N G <<<<<<');
-      this.self.classList.add('js-modal-show');
-      this.modalElement.classList.add('js-modal-show');
-
-      // if (this.trigger !== null) {
-      //   this.trigger.classList.add('is-active');
-      // }
+      this.isOpening = true;
+      this.self.style.display = 'block';
 
       this.openDelayTimer = setTimeout(() => {
         clearTimeout(this.openDelayTimer);
         this.openDelayTimer = null;
+        this.isOpening = false;
+        this.isOpen = true;
       }, this.openTimer);
     }
   }
@@ -126,22 +125,17 @@ class Modal {
   close() {
     // Close modal if delay timer is expired
     if (this.openDelayTimer === null) {
-      this.isOpen = false;
-      console.log('>>>>>> C L O S I N G <<<<<<');
-      this.self.classList.remove('js-modal-show');
-      this.modalElement.classList.remove('js-modal-show');
-
-      // if (this.trigger !== null) {
-        // this.trigger.classList.remove('is-active');
-        // this.trigger.classList.add('js-modal-hide');
-      // }
+      this.isClosing = true;
+      this.content.style.animation = 'slide-out 0.5s forwards';
+      this.self.style.opacity = 0;
 
       this.openDelayTimer = setTimeout(() => {
-        // if (this.trigger !== null) {
-        //   this.trigger.classList.remove('js-modal-hide');
-        // }
         clearTimeout(this.openDelayTimer);
         this.openDelayTimer = null;
+        this.isClosing = false;
+        this.isOpen = false;
+        this.self.style.display = 'none';
+        this.self.style.opacity = 1;
       }, this.openTimer);
     }
   }
@@ -149,9 +143,8 @@ class Modal {
 
 const statementSelector = document.querySelector('.c-modal[data-modal="statement"]');
 const statementContent = document.querySelector('[data-modal-inner="statement"]');
-const statementTrigger = document.querySelector('[data-modal-trigger="statement"]');
+const statementTrigger = document.querySelectorAll('[data-modal-trigger="statement"]');
 const statement = new Modal(statementSelector, statementContent, statementTrigger);
-export default statement;
 
 // Old Modal
 // (function(e) {
