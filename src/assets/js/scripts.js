@@ -7,7 +7,7 @@ const sections = document.getElementsByClassName('c-card__image');
 const cardImage = document.getElementsByClassName('js-card-visible');
 
 window.onscroll = () => {
-    // Don't run the rest of the code if every section is already visible
+  // Don't run the rest of the code if every section is already visible
   if (document.querySelectorAll('.c-card__image:not(.js-card-visible)').length === 0) return;
 
   // Run the check for every section in sections; add the visibile class
@@ -31,15 +31,13 @@ class Modal {
   /**
     * Create a new Modal instance
     *
-    * @param {object} selectorName
-    * @param {object} content
-    * @param {object} trigger
+    * @param {string} selector
     */
 
-  constructor(selectorName, content, triggers = null) {
-    this.self = selectorName;
-    this.content = content;
-    this.triggers = triggers;
+  constructor(selector) {
+    this.self = document.querySelector(`[data-modal="${selector}"]`);
+    this.content = document.querySelector(`[data-modal-inner="${selector}"]`);
+    this.triggers = document.querySelectorAll(`[data-modal-trigger="${selector}"]`);
     this.isOpen = false;
     this.openTimer = 250;
     this.openDelayTimer = null;
@@ -108,10 +106,7 @@ class Modal {
   }
 }
 
-const statementSelector = document.querySelector('.c-modal[data-modal="statement"]');
-const statementContent = document.querySelector('[data-modal-inner="statement"]');
-const statementTrigger = document.querySelectorAll('[data-modal-trigger="statement"]');
-const statement = new Modal(statementSelector, statementContent, statementTrigger);
+const statement = new Modal('statement');
 
 
 // Google Analytics
