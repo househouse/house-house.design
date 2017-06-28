@@ -1,5 +1,5 @@
 // Chrome's currently missing some useful cache methods; this polyfill adds 'em.
-importScripts('assets/js/serviceworker-cache-polyfill.js');
+
 
 // Here comes the install event! This only happens once, when the browser sees
 // this version of the ServiceWorker for the first time.
@@ -22,19 +22,22 @@ self.addEventListener('install', function(event) {
 
             // And add resources to it
             return cache.addAll([
-                './',
-                'assets/js/logging.js',
-                'assets/css/main.css',
-                'assets/video/house-house--glitch.mp4',
-                'assets/img/glitch.jpg',
-                'assets/img/project-housecss.jpg',
-                'assets/img/project-kost.jpg',
-                'assets/img/project-bitchpop.jpg',
-                'assets/img/project-stanford.jpg',
-                'assets/img/portrait--ben-groulx--animated.gif',
-                'assets/img/portrait--sean-durfee--animated.gif',
-                'assets/img/portrait--caitlin-farquharson--animated.gif',
-                'assets/img/parrot.gif'
+                '/',
+                '/assets/js/logging.js',
+                '/assets/css/main.css',
+                '/assets/video/house-house--glitch.mp4',
+                '/assets/img/glitch.jpg',
+                '/assets/img/housecss-logo.png',
+                '/assets/img/project--kost.jpg',
+                '/assets/img/project--bitchpop.gif',
+                '/assets/img/project--stanford.jpg',
+                '/assets/img/project--askwill.gif',
+                '/assets/img/project--blancink.jpg',
+                '/assets/img/project--lawnpartyfilms.jpg',
+                '/assets/img/portrait--ben-groulx--animated.gif',
+                '/assets/img/portrait--sean-durfee--animated.gif',
+                '/assets/img/portrait--caitlin-farquharson--animated.gif',
+                '/assets/img/parrot.gif'
             ]);
         })
     );
@@ -59,11 +62,11 @@ self.addEventListener('fetch', function(event) {
     );
 });
 
-this.addEventListener('activate', function(event) {
+self.addEventListener('activate', function(event) {
     var cacheWhiteList = ['simple-sw-v4'];
 
     event.waitUntil(
-        chaches.keys().then(function(keyList) {
+        caches.keys().then(function(keyList) {
             return Promise.all(keyList.map(function(key) {
                 if(cacheWhiteList.indexOf(key) === -1) {
                     return caches.delete(key);
