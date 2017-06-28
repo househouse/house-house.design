@@ -10,7 +10,7 @@
         "url": "https://github.com/househouse/house-house.design"
     },
     "scripts": {
-        "compile": "harp compile src/ ./",
+        "compile": "harp compile src/ ./dist",
         "deploy": "harp compile src/ ./ && git add . && git commit -a -m 'Deploy' && git push origin master",
         "dev": "harp server src/ & browser-sync start --proxy 'localhost:9000' --files '*.jade, *.scss'",
         "lint": "sass-lint -c .sass-lint.yml 'app/**/*.scss' -v"

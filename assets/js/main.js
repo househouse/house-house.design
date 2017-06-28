@@ -57,10 +57,10 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/src/assets/js/";
+/******/ 	__webpack_require__.p = "/dist/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -69,10 +69,10 @@
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__assets_js_scripts__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__assets_js_serviceworker_serviceworker__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__assets_js_scripts__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__assets_js_serviceworker_serviceworker__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__assets_js_serviceworker_serviceworker___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__assets_js_serviceworker_serviceworker__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__assets_js_serviceworker_serviceworker_cache_polyfill__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__assets_js_serviceworker_serviceworker_cache_polyfill__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__assets_js_serviceworker_serviceworker_cache_polyfill___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__assets_js_serviceworker_serviceworker_cache_polyfill__);
 
 
@@ -80,10 +80,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(0);
+module.exports = __webpack_require__(0);
+
+
+/***/ }),
+/* 2 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal__ = __webpack_require__(3);
 /* jshint esversion: 6 */
 // Make eslint shutup about undef global vars
 /* global window, document */
@@ -129,7 +137,7 @@ window.onscroll = () => {
 /* eslint-enable */
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -218,7 +226,7 @@ const statement = new Modal('statement');
 const process = new Modal('process');
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports) {
 
 // Chrome's currently missing some useful cache methods; this polyfill adds 'em.
@@ -244,7 +252,7 @@ self.addEventListener('install', function (event) {
     caches.open('simple-sw-v4').then(function (cache) {
 
         // And add resources to it
-        return cache.addAll(['/', '/assets/js/logging.js', '/assets/css/main.css', '/assets/video/house-house--glitch.mp4', '/assets/img/glitch.jpg', '/assets/img/housecss-logo.png', '/assets/img/project--kost.jpg', '/assets/img/project--bitchpop.gif', '/assets/img/project--stanford.jpg', '/assets/img/project--askwill.gif', '/assets/img/project--blancink.jpg', '/assets/img/project--lawnpartyfilms.jpg', '/assets/img/portrait--ben-groulx--animated.gif', '/assets/img/portrait--sean-durfee--animated.gif', '/assets/img/portrait--caitlin-farquharson--animated.gif', '/assets/img/parrot.gif']);
+        return cache.addAll(['./', '/assets/js/logging.js', '/assets/css/main.css', '/assets/video/house-house--glitch.mp4', '/assets/img/glitch.jpg', '/assets/img/project-housecss.jpg', '/assets/img/project-kost.jpg', '/assets/img/project-bitchpop.jpg', '/assets/img/project-stanford.jpg', '/assets/img/portrait--ben-groulx--animated.gif', '/assets/img/portrait--sean-durfee--animated.gif', '/assets/img/portrait--caitlin-farquharson--animated.gif', '/assets/img/parrot.gif']);
     }));
 });
 
@@ -268,7 +276,7 @@ self.addEventListener('fetch', function (event) {
 self.addEventListener('activate', function (event) {
     var cacheWhiteList = ['simple-sw-v4'];
 
-    event.waitUntil(caches.keys().then(function (keyList) {
+    event.waitUntil(chaches.keys().then(function (keyList) {
         return Promise.all(keyList.map(function (key) {
             if (cacheWhiteList.indexOf(key) === -1) {
                 return caches.delete(key);
@@ -278,7 +286,7 @@ self.addEventListener('activate', function (event) {
 });
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports) {
 
 if (!Cache.prototype.add) {
