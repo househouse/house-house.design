@@ -18,12 +18,13 @@ self.addEventListener('install', function(event) {
     event.waitUntil(
 
         // We open a cache…
-        caches.open('simple-sw-v5-17-06-29b').then(function(cache) {
+        caches.open('simple-sw-v5-17-06-29c').then(function(cache) {
 
             // And add resources to it
             return cache.addAll([
                 '/',
                 '/assets/js/logging.js',
+                '/assets/js/main.js',
                 '/assets/css/main.css',
                 '/assets/video/house-house--glitch.mp4',
                 '/assets/img/glitch.jpg',
@@ -63,7 +64,7 @@ self.addEventListener('fetch', function(event) {
 });
 
 self.addEventListener('activate', function(event) {
-    var cacheWhiteList = ['simple-sw-v5-17-06-29b'];
+    var cacheWhiteList = ['simple-sw-v5-17-06-29c'];
 
     event.waitUntil(
         caches.keys().then(function(keyList) {

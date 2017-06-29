@@ -78,6 +78,3 @@ class Modal {
 }
 
 export default Modal;
-
-const statement = new Modal('statement');
-const process = new Modal('process');
