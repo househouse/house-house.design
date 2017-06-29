@@ -93,7 +93,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 // Init new Modals
 
 const statement = new __WEBPACK_IMPORTED_MODULE_0__modal__["a" /* default */]('statement');
-const process = new __WEBPACK_IMPORTED_MODULE_0__modal__["a" /* default */]('process');
+// const process = new Modal('process');
 
 // Lazy Load
 const sections = document.getElementsByClassName('c-card__image');
@@ -241,7 +241,7 @@ self.addEventListener('install', function (event) {
     event.waitUntil(
 
     // We open a cache…
-    caches.open('simple-sw-v5-17-06-29').then(function (cache) {
+    caches.open('simple-sw-v5-17-06-29a').then(function (cache) {
 
         // And add resources to it
         return cache.addAll(['/', '/assets/js/logging.js', '/assets/css/main.css', '/assets/video/house-house--glitch.mp4', '/assets/img/glitch.jpg', '/assets/img/housecss-logo.png', '/assets/img/project--kost.jpg', '/assets/img/project--bitchpop.gif', '/assets/img/project--stanford.jpg', '/assets/img/project--askwill.gif', '/assets/img/project--blancink.jpg', '/assets/img/project--lawnpartyfilms.jpg', '/assets/img/portrait--ben-groulx--animated.gif', '/assets/img/portrait--sean-durfee--animated.gif', '/assets/img/portrait--caitlin-farquharson--animated.gif', '/assets/img/parrot.gif']);
@@ -266,7 +266,7 @@ self.addEventListener('fetch', function (event) {
 });
 
 self.addEventListener('activate', function (event) {
-    var cacheWhiteList = ['simple-sw-v5-17-06-29'];
+    var cacheWhiteList = ['simple-sw-v5-17-06-29a'];
 
     event.waitUntil(caches.keys().then(function (keyList) {
         return Promise.all(keyList.map(function (key) {

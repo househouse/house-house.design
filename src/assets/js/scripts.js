@@ -8,7 +8,7 @@ import Modal from './modal';
 // Init new Modals
 
 const statement = new Modal('statement');
-const process = new Modal('process');
+// const process = new Modal('process');
 
 // Lazy Load
 const sections = document.getElementsByClassName('c-card__image');
