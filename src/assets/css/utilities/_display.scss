@@ -138,6 +138,29 @@
         }
     }
 }
+@each $dimensions-name, $dimensions-value in $dimensions-map {
+    .u-flex-basis-#{$dimensions-name} {
+        flex-basis: $dimensions-value;
+
+        @include --small-only {
+            &--small-only {
+                flex-basis: $dimensions-value;
+            }
+        }
+
+        @include --small-up {
+            &--small-up {
+                flex-basis: $dimensions-value;
+            }
+        }
+
+        @include --medium-up {
+            &--medium-up {
+                flex-basis: $dimensions-value;
+            }
+        }
+    }
+}
 
 @each $dimensions-name, $dimensions-value in $dimensions-map {
     .u-height-#{$dimensions-name} {
