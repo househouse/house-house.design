@@ -19,9 +19,9 @@ window.onscroll = () => {
   if (document.querySelectorAll('.c-card__image:not(.js-card-visible)').length === 0) return;
 
   // Run the check for every section in sections; add the visibile class
-  for (const section of sections) {
-    if (section.getBoundingClientRect().top <= window.innerHeight * 0.75 && section.getBoundingClientRect().top > 0) {
-      section.classList.add('js-card-visible');
+  for (let i = 0; i < sections.length; i += 1) {
+    if (sections[i].getBoundingClientRect().top <= window.innerHeight * 0.75 && sections[i].getBoundingClientRect().top > 0) {
+      sections[i].classList.add('js-card-visible');
     }
   }
 
