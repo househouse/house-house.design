@@ -138,8 +138,21 @@ table {
     border-collapse: collapse;
 }
 
-button {
+a,
+button,
+%button {
     cursor: pointer;
+}
+
+button,
+%button {
+    border: 0;
+
+    font-family: $primary-font;
+
+    transition: all 0.05s linear;
+
+    appearance: none;
 
     &:hover {
         opacity: $half-transparent;
@@ -149,6 +162,8 @@ button {
 input,
 select,
 textarea {
+    background-color: map-get($color-map, light-grey);
+
     font-family: $code-font;
     line-height: $base-leading;
 

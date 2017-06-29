@@ -10,7 +10,7 @@
         "url": "https://github.com/househouse/house-house.design"
     },
     "scripts": {
-        "compile": "harp compile src/ ./",
+        "compile": "webpack && harp compile src/ ./dist",
         "deploy": "harp compile src/ ./ && git add . && git commit -a -m 'Deploy' && git push origin master",
         "dev": "harp server src/ & browser-sync start --proxy 'localhost:9000' --files '*.jade, *.scss'",
         "lint": "sass-lint -c .sass-lint.yml 'app/**/*.scss' -v"
@@ -19,5 +19,13 @@
         "browser-sync": "^2.18.6",
         "harp": "^0.23.0",
         "sass-lint": "1.8.2"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.24.1",
+        "babel-loader": "^7.1.0",
+        "eslint": "^4.0.0",
+        "eslint-config-airbnb-base": "^11.2.0",
+        "eslint-plugin-import": "^2.3.0",
+        "webpack": "^3.0.0"
     }
 }

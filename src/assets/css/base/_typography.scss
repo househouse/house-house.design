@@ -2,23 +2,36 @@
 // ============================================================================
 
 @font-face {
+    font-family: 'Akkurat';
+    font-style: normal;
+    font-weight: $regular-font;
+    font-display: swap;
+
+    unicode-range: U+000-5FF;
+    src: url('../type/Akkurat_Regular.woff2') format('woff2'),
+         url('../type/Akkurat_Regular.woff') format('woff');
+}
+
+@font-face {
     font-family: 'Tiempos Headline';
     font-style: normal;
     font-weight: $regular-font;
+    font-display: swap;
 
     unicode-range: U+000-5FF;
     src: url('../type/TiemposHeadline_Regular.woff2') format('woff2'),
-    url('../type/TiemposHeadline_Regular.woff') format('woff');
+         url('../type/TiemposHeadline_Regular.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Tiempos Headline';
     font-style: normal;
     font-weight: $bold-font;
+    font-display: swap;
 
     unicode-range: U+000-5FF;
     src: url('../type/TiemposHeadline_Semibold.woff2') format('woff2'),
-    url('../type/TiemposHeadline_Semibold.woff') format('woff');
+         url('../type/TiemposHeadline_Semibold.woff') format('woff');
 }
 
 body {
@@ -27,10 +40,12 @@ body {
 
 h1 {
     @extend %type-headline;
+    font-family: $secondary-font;
 }
 
 h2 {
     @extend %type-subheadline;
+    font-family: $secondary-font;
 }
 
 h3 {
@@ -49,9 +64,12 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $secondary-font;
     font-weight: $regular-font;
     line-height: $tight-leading;
+}
+
+small {
+    @extend %type-small;
 }
 
 ol,
@@ -67,10 +85,6 @@ blockquote {
     &::after {
         content: '';
     }
-}
-
-small {
-    @extend %type-small;
 }
 
 code,
@@ -90,16 +104,19 @@ a {
 }
 
 ::-webkit-input-placeholder {
-    font-size: 0.79012rem;
+    color: $grey;
+    font-size: 0.8rem;
     line-height: $base-leading;
 }
 
 ::-moz-placeholder {
-    font-size: 0.79012rem;
+    color: $grey;
+    font-size: 0.8rem;
     line-height: $base-leading;
 }
 
 :-ms-input-placeholder {
-    font-size: 0.79012rem;
+    color: $grey;
+    font-size: 0.8rem;
     line-height: $base-leading;
 }

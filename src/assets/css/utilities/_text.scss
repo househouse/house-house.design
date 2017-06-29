@@ -38,7 +38,9 @@
     font-weight: $bold-font; // 1
 }
 
-
+.u-secondary-font {
+    font-family: $secondary-font;
+}
 
 
 // Text Alignment
@@ -50,6 +52,12 @@
 
 .u-align-center {
     text-align: center;
+
+    @include --small-up {
+        &--small-up {
+            text-align: center;
+        }
+    }
 }
 
 .u-align-right {

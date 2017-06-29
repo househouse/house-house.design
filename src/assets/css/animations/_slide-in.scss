@@ -1,0 +1,17 @@
+// Slide In Animation
+// ===
+
+@keyframes slide-in {
+    from {
+        transform: translate(100%, 0);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+.a-slide-in--mid-forwards,
+%a-slide-in--mid-forwards {
+    animation: slide-in 0.5s forwards;
+}

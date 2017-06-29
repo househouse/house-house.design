@@ -3,17 +3,14 @@
 
 .c-card {
     &:not(.c--no-padding) {
-        padding-top: 75%;
-    }
-
-    &,
-    * {
-        transition: all 0.125s ease-out;
+        height: 40vh;
+        padding-top: 25vh;
     }
 
     &:hover {
         .c-card__image {
-            transform: scale(1.1) rotate(-1deg);
+            opacity: 0.8;
+            transform: scale(1.2) rotate(-2deg);
         }
 
         .u-squiggle {
@@ -24,4 +21,5 @@
 
 .c-card__image {
     transform: scale(1.05);
+    transition: all 0.7s ease-out;
 }

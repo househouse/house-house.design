@@ -9,7 +9,7 @@ $configure--base-ratio: 1.125;
 $configure--text-size: 1rem;
 
 // Choose your base typographic styles
-$configure--primary-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+$configure--primary-font: 'Akkurat', -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', sans-serif;
 $configure--secondary-font: 'Tiempos Headline', 'Times', serif;
 $configure--code-font: 'Menlo', monospace;
 
@@ -26,24 +26,6 @@ $configure--accent-color: #ff4d37;
 
 // Project-Wide Options
 // ============================================================================
-
-
-// Spacing Options
-// ---
-
-$very-small-space: $configure--base-unit/4;
-$small-space: $configure--base-unit/2;
-$base-space: $configure--base-unit;
-$large-space: $configure--base-unit*2;
-$very-large-space: $configure--base-unit*4;
-
-$size-map: (
-    xs: $very-small-space,
-    sm: $small-space,
-    md: $base-space,
-    lg: $large-space,
-    xl: $very-large-space,
-);
 
 
 // Typeface Options
@@ -93,6 +75,7 @@ $tertiary-color: saturate(darken(#50e3c2, 25%), 50%);
 $accent-color: $configure--accent-color;
 $black: darken(mix(#000, $primary-color), 15%);
 $white: $secondary-color;
+$grey: darken(#90a1b8, 9%);
 
 $color-map: (
     primary: $primary-color,
@@ -101,6 +84,8 @@ $color-map: (
     accent: $accent-color,
     dark: $black,
     light: $white,
+    light-grey: lighten($grey, 42%),
+    dark-grey: $grey,
 );
 
 
@@ -155,6 +140,27 @@ $dimensions-map: (
     1of3: $one-third,
     1of4: $one-quarter,
     0: $no-size,
+);
+
+
+// Spacing Options
+// ---
+
+$very-small-space: $configure--base-unit/4;
+$small-space: $configure--base-unit/2;
+$base-space: $configure--base-unit;
+$large-space: $configure--base-unit*2;
+$very-large-space: $configure--base-unit*4;
+$huge-large-space: $configure--base-unit*8;
+
+$size-map: (
+    xs: $very-small-space,
+    sm: $small-space,
+    md: $base-space,
+    lg: $large-space,
+    xl: $very-large-space,
+    xxl: $huge-large-space,
+    none: 0,
 );
 
 

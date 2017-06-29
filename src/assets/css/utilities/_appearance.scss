@@ -17,15 +17,11 @@
 .u-not-transparent {
     opacity: $not-transparent;
 }
+*/
 
 .u-half-transparent {
     opacity: $half-transparent;
 }
-
-.u-fully-transparent {
-    opacity: $fully-transparent;
-}
-*/
 
 .u-squiggle,
 %u-squiggle {
@@ -45,19 +41,38 @@
 //    element simultaneously.
 // 3. 2px, 0.125rem
 
-.u-gradient {
-    // 2
-
+.u-gradient,
+.u-corners {
+    &::before,
     &::after {
         content: '';
 
         position: absolute;
-        top: 50%;
         right: 0;
         bottom: 0;
         left: 0;
 
-        background: linear-gradient(to bottom, rgba($black, 0), $black);
+        pointer-events: none;
+    }
+}
+
+.u-gradient {
+    // 2
+
+    &::before {
+        top: 50%;
+
+        background: linear-gradient(to bottom, rgba($black, 0), rgba($black, 0.5));
+    }
+}
+
+.u-corners {
+    // 2
+
+    &::after {
+        top: 0;
+
+        background: radial-gradient(at center, transparent 60%, rgba($primary-color, 0.075) 100%);
     }
 }
 
@@ -91,5 +106,23 @@
         left: 0;
 
         text-shadow: $very-small-space 0 $accent-color;
+    }
+}
+
+.u-color-swap {
+    animation: colorChange 10s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% {
+        color: $tertiary-color;
+    }
+
+    50% {
+        color: $primary-color;
+    }
+
+    100% {
+        color: $accent-color;
     }
 }
