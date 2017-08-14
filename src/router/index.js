@@ -1,15 +1,28 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/assets/components/Hello'
+
+import NotFound from '@/views/NotFound'
+import Home from '@/views/Home'
+import Thanks from '@/views/Thanks'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
+      path: '*',
+      name: 'NotFound',
+      component: NotFound,
+    },
+    {
       path: '/',
-      name: 'Hello',
-      component: Hello
-    }
+      name: 'Home',
+      component: Home,
+    },
+    {
+      path: '/thanks',
+      name: 'Thanks',
+      component: Thanks,
+    },
   ]
 })

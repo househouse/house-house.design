@@ -1,23 +1,29 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view></router-view>
-  </div>
+    <div id="app">
+        <x-header></x-header>
+        <router-view></router-view>
+        <x-footer></x-footer>
+    </div>
 </template>
 
+
 <script>
+import xHeader from './components/xHeader'
+import xFooter from './components/xFooter'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    xHeader,
+    xFooter
+  }
 }
+
+document.body.classList.remove('no-js');
+
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
+<style lang="scss">
+@import './assets/styles/main';
 </style>

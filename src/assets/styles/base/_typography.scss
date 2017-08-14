@@ -8,8 +8,8 @@
     font-display: swap;
 
     unicode-range: U+000-5FF;
-    src: url('../type/Akkurat_Regular.woff2') format('woff2'),
-         url('../type/Akkurat_Regular.woff') format('woff');
+    src: url('./assets/fonts/Akkurat_Regular.woff2') format('woff2'),
+         // url('./assets/fonts/Akkurat_Regular.woff') format('woff');
 }
 
 @font-face {
@@ -19,8 +19,8 @@
     font-display: swap;
 
     unicode-range: U+000-5FF;
-    src: url('../type/TiemposHeadline_Regular.woff2') format('woff2'),
-         url('../type/TiemposHeadline_Regular.woff') format('woff');
+    src: url('./assets/fonts/TiemposHeadline_Regular.woff2') format('woff2'),
+         url('./assets/fonts/TiemposHeadline_Regular.woff') format('woff');
 }
 
 @font-face {
@@ -30,8 +30,8 @@
     font-display: swap;
 
     unicode-range: U+000-5FF;
-    src: url('../type/TiemposHeadline_Semibold.woff2') format('woff2'),
-         url('../type/TiemposHeadline_Semibold.woff') format('woff');
+    src: url('./assets/fonts/TiemposHeadline_Semibold.woff2') format('woff2'),
+         url('./assets/fonts/TiemposHeadline_Semibold.woff') format('woff');
 }
 
 body {
