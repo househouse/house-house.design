@@ -1,9 +1,8 @@
-// Card Component
-// ===
+// Import global styles
+@import '~@/assets/styles/settings';
 
+// Component root
 .c-button {
-    @extend %button;
-
     min-width: $large-space;
     min-height: $large-space;
 

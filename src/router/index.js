@@ -1,19 +1,14 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import NotFound from '@/views/NotFound'
-import Home from '@/views/Home/Home'
-import Thanks from '@/views/Thanks'
+import Home from '@/components/vHome/v-home'
+import NotFound from '@/components/vNotFound/v-not-found'
+import Thanks from '@/components/vThanks/v-thanks'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
-    {
-      path: '*',
-      name: 'NotFound',
-      component: NotFound,
-    },
     {
       path: '/',
       name: 'Home',
@@ -23,6 +18,11 @@ export default new Router({
       path: '/thanks',
       name: 'Thanks',
       component: Thanks,
+    },
+    {
+      path: '*',
+      name: 'NotFound',
+      component: NotFound,
     },
   ]
 })

@@ -139,13 +139,11 @@ table {
 }
 
 a,
-button,
-%button {
+button {
     cursor: pointer;
 }
 
-button,
-%button {
+button {
     border: 0;
 
     font-family: $primary-font;

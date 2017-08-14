@@ -1,5 +1,8 @@
+<script src="./v-thanks.js"></script>
+<style src="./v-thanks.scss" lang="scss" scoped></style>
+
 <template>
-    <article class="view-thanks" style="padding-top:20vh;padding-bottom:25vh">
+    <article class="v-thanks" style="padding-top:20vh;padding-bottom:25vh">
 
         <div class="c-text-content u-measure-medium u-margin-horizontal-fill u-padding-left-md u-padding-right-md">
 
@@ -15,16 +18,3 @@
 
     </article>
 </template>
-
-
-<script>
-export default {
-  name: 'thanks',
-}
-
-</script>
-
-
-<style scoped>
-/* Template-scoped (or view-scoped) styles only */
-</style>

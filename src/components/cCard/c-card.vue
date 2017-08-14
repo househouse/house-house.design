@@ -1,3 +1,6 @@
+<script src="./c-card.js"></script>
+<style src="./c-card.scss" lang="scss" scoped></style>
+
 <template>
     <article class="c-card c-faux-link u-context u-clip u-corners u-gradient u-align-center u-stack-basic">
 
@@ -21,14 +24,3 @@
 
     </article>
 </template>
-
-
-<script>
-export default {
-  name: 'Card',
-}
-</script>
-
-
-<style scoped>
-</style>

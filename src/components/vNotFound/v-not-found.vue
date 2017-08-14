@@ -1,5 +1,8 @@
+<script src="./v-not-found.js"></script>
+<style src="./v-not-found.scss" lang="scss" scoped></style>
+
 <template>
-    <article lass="view-notfound" style="padding-top:20vh;padding-bottom:25vh">
+    <article lass="v-not-found" style="padding-top:20vh; padding-bottom:25vh">
 
         <div class="c-text-content u-measure-wide u-margin-horizontal-fill u-padding-left-md u-padding-right-md">
 
@@ -15,21 +18,3 @@
 
     </article>
 </template>
-
-
-<script>
-export default {
-  name: 'notfound',
-  data () {
-    return {
-      title: 'Uh oh!',
-      msg: "We’re sorry, we can’t find what you're looking for…"
-    }
-  }
-}
-</script>
-
-
-<style scoped>
-/* Template-scoped (or view-scoped) styles only */
-</style>

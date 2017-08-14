@@ -1,10 +1,13 @@
-// Modal Component
-// ===
+// Import global styles
+@import '~@/assets/styles/settings';
+@import '~@/assets/styles/animations';
 
+// Component root
 .c-modal {
     display: none;
 
     transition: 0.25s ease-in-out opacity;
+
     &,
     &__shade,
     &__content {
@@ -18,7 +21,7 @@
     &__shade {
         opacity: 0.95;
         background-color: currentColor;
-        background-image: url('../img/pattern.png');
+        background-image: url('~@/assets/images/pattern.png');
     }
 
     &__content {
@@ -26,8 +29,8 @@
 
         overflow: auto;
 
-        background-color: $white;
-        box-shadow: 0 0 1em rgba($black, 0.25);
+        // background-color: $white;
+        // box-shadow: 0 0 1em rgba($black, 0.25);
 
         @include --medium-up {
             left: 50%;

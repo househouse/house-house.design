@@ -8,8 +8,8 @@
 
 
 <script>
-import xHeader from './components/xHeader'
-import xFooter from './components/xFooter'
+import xHeader from '@/components/xHeader/x-header'
+import xFooter from '@/components/xFooter/x-footer'
 
 export default {
   name: 'app',
@@ -18,12 +18,10 @@ export default {
     xFooter
   }
 }
-
 document.body.classList.remove('no-js');
-
 </script>
-
 
 <style lang="scss">
 @import './assets/styles/main';
+@import './assets/styles/animations.scss';
 </style>

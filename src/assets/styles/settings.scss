@@ -1,0 +1,10 @@
+// Settings
+// ---
+//
+// Code that does not output CSS styles directly. This includes CSS custom
+// properties, custom media queries, etc. Things like brand colours, modular
+// spacing increments, and breakpoints are defined as variables here.
+
+@import 'settings/variables';
+@import 'settings/responsive';
+@import 'settings/type-scale';

@@ -1,6 +1,8 @@
-// Card Component
-// ===
+// Import global styles
+@import '~@/assets/styles/settings';
+@import '~@/assets/styles/animations';
 
+// Component root
 .c-card {
     &:not(.c--no-padding) {
         height: 40vh;
@@ -17,9 +19,9 @@
             @extend %a-back-forth;
         }
     }
-}
 
-.c-card__image {
-    transform: scale(1.05);
-    transition: all 0.7s ease-out;
+    &__image {
+        transform: scale(1.05);
+        transition: all 0.7s ease-out;
+    }
 }

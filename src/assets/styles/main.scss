@@ -47,29 +47,6 @@
 @import 'base/typography';
 
 
-// Animations
-// ---
-//
-// Grouping CSS keyframes and animations together will help organize
-// interactions. Animations classes use a a- namespace, e.g. a-fade-in-top-slow.
-
-@import 'animations/back-forth';
-@import 'animations/fade-in';
-@import 'animations/glitch';
-@import 'animations/slide-in';
-@import 'animations/slide-out';
-
-
-// Components
-// ---
-//
-// Content-specific classes that generate distinct UI appearances. Component
-// styles should also (generally) be coupled to specific markup; if it is not
-// directly related to any HTML, JS, or JSX, it should be considered a utility
-// class (or series of classes.) Components use the c- namespace, e.g. c-logo.
-
-
-
 // Utilities
 // ---
 //
@@ -90,21 +67,18 @@
 @import 'utilities/text';
 
 
-// Templates
-// ---
+// 🤔 Where’s everything else?
+// ============================================================================
 //
-// ⚠️ USE WITH EXTREME CAUTION: Sometimes, there are times that we need to write
-// template overrides, or classes that are linked directly to the page on which
-// they appear. These styles should be used as a last resort only!
+// Components: Content-specific classes that generate distinct UI appearances.
+// Styles should also (generally) be coupled to specific markup; if it is not
+// directly related to any HTML, JS, or JSX, it should be considered a utility
+// class (or series of classes.) Components use the c- namespace, e.g. c-logo.
 //
-// @import 'templates/home';
-
-
-// Third-Party Plugins
-// ---
+// Views / templates: Sometimes, there are times that we need to write template
+// overrides, or classes that are linked directly to the page on which they
+// appear. These styles should be used as a last resort only!
 //
-// Third-party integrations and plugins often do not let us control their
+// Third-party plugins and integrations often do not let us control their
 // settings, or require us to override how they work. Toss those styles into
 // individual partials below.
-//
-// @import 'third-party/flickity';

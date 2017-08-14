@@ -5,8 +5,8 @@ module.exports = {
   entry: './src/main.js',
 
   output: {
-    path: path.resolve(__dirname, './src/assets/js/'),
-    publicPath: '/src/assets/js/',
+    path: path.resolve(__dirname, './src/assets/scripts/'),
+    publicPath: '/src/assets/scripts/',
     filename: 'main.js'
   },
 
@@ -19,4 +19,5 @@ module.exports = {
       }
     ]
   }
+
 }
