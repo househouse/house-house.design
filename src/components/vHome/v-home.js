@@ -1,15 +1,11 @@
-// Reusable, composable component
+// Reusable, composable components
 import cButton from '@/components/cButton/c-button'
-import cCard from '@/components/cCard/c-card'
 import cModal from '@/components/cModal/c-modal'
+import cCard from '@/components/cCard/c-card'
 
 // Split this view into multiple partials
-// import HomeAbout from './partials/HomeAbout'
-// import HomeContact from './partials/HomeContact'
-// import HomePortfolio from './partials/HomePortfolio'
-// import HomeProfiles from './partials/HomeProfiles'
-// import HomeWork from './partials/HomeWork'
-import HomeIntro from './partials/HomeIntro'
+import vHomeIntro from './partials/v-home--intro'
+import vHomeWork from './partials/v-home--work'
 
 // Modals!
 // ---
@@ -26,8 +22,9 @@ export default {
   },
   components: {
     cButton,
-    cCard,
     cModal,
-    HomeIntro
+    cCard,
+    vHomeIntro,
+    vHomeWork,
   }
 }

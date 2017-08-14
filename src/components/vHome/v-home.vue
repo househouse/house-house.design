@@ -3,10 +3,7 @@
 
 <template>
     <div class="v-home">
-
-        <home-intro></home-intro>
-
+        <h1>Hello!</h1>
         <div>{{ msg }}</div>
-
     </div>
 </template>

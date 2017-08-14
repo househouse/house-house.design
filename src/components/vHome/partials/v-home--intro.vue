@@ -34,10 +34,6 @@
 
 <script>
 export default {
-  name: 'HomeIntro',
+  name: 'vHomeIntro',
 }
 </script>
-
-
-<style scoped>
-</style>
