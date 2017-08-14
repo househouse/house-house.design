@@ -1,9 +1,9 @@
 <template>
-    <div id="app">
+    <main id="app" class="u-context">
         <x-header></x-header>
         <router-view></router-view>
         <x-footer></x-footer>
-    </div>
+    </main>
 </template>
 
 

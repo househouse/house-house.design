@@ -1,7 +1,7 @@
 <template>
     <header class="u-context u-clip u-align-center u-stack-basic u-padding-top-md--small-up u-padding-left-md--small-up u-padding-right-md--small-up">
 
-        <div class="u-padding-top-lg u-padding-bottom-lg u-bg-primary" style="background-image:url('@/assets/images/pattern.png'); background-attachment:fixed;">
+        <div class="u-padding-top-lg u-padding-bottom-lg u-bg-primary" style="background-image:url('/assets/images/pattern.png'); background-attachment:fixed;">
 
             <h2 class="u-bold">
                 <a class="u-color-light" href="/">

@@ -19,7 +19,7 @@
 
 <script>
 export default {
-  name: 'hello',
+  name: 'notfound',
   data () {
     return {
       title: 'Uh oh!',

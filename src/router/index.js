@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import NotFound from '@/views/NotFound'
-import Home from '@/views/Home'
+import Home from '@/views/Home/Home'
 import Thanks from '@/views/Thanks'
 
 Vue.use(Router)
