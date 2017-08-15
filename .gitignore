@@ -3,5 +3,5 @@
 .jekyll-metadata
 .codekit-cache
 config.codekit
-node_modules
-package-lock.json
+node_modules/
+dist/

@@ -1,7 +1,7 @@
 <script src="./v-thanks.js"></script>
 <style src="./v-thanks.scss" lang="scss" scoped></style>
 
-<template>
+<template lang="html">
     <article class="v-thanks" style="padding-top:20vh;padding-bottom:25vh">
 
         <div class="c-text-content u-measure-medium u-margin-horizontal-fill u-padding-left-md u-padding-right-md">
