@@ -1,11 +1,11 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import Vue from 'vue';
+import Router from 'vue-router';
 
-import Home from '@/components/vHome/v-home'
-import NotFound from '@/components/vNotFound/v-not-found'
-import Thanks from '@/components/vThanks/v-thanks'
+import Home from '@/components/vHome/vHome';
+import NotFound from '@/components/vNotFound/vNotFound';
+import Thanks from '@/components/vThanks/vThanks';
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   routes: [
@@ -24,5 +24,5 @@ export default new Router({
       name: 'Thanks',
       component: Thanks,
     },
-  ]
-})
+  ],
+});
