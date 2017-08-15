@@ -1,4 +1,4 @@
-<template>
+<template lang="html">
     <section class="u-context u-margin-bottom-lg--small-only u-margin-bottom-xl--small-up u-margin-bottom-xxl--medium-up u-padding-top-md--small-up u-padding-left-md--small-up u-padding-right-md--small-up u-clip" id="intro">
 
         <div class="u-context u-bg-dark u-gradient u-corners" style="max-height:calc(100vh - 13rem)">
@@ -35,5 +35,5 @@
 <script>
 export default {
   name: 'vHomeIntro',
-}
+};
 </script>

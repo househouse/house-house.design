@@ -6,15 +6,14 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import scripts from './assets/scripts/scripts';
-import serviceworker from './assets/scripts/serviceworker/serviceworker';
-import serviceworkerPolyfill from './assets/scripts/serviceworker/serviceworker-cache-polyfill';
 /* eslint-enable */
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
+/* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
   template: '<App/>',
-  components: { App }
-})
+  components: { App },
+});

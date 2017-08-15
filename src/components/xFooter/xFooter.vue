@@ -1,4 +1,4 @@
-<template>
+<template lang="html">
     <footer class="u-margin-bottom-lg u-align-center">
 
         <div class="c-text-content">
@@ -25,9 +25,9 @@
 <script>
 export default {
   name: 'xFooter',
-}
+};
 </script>
 
 
-<style scoped>
+<style lang="css" scoped>
 </style>

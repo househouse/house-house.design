@@ -1,7 +1,7 @@
 <script src="./c-card.js"></script>
 <style src="./c-card.scss" lang="scss" scoped></style>
 
-<template>
+<template lang="html">
     <article class="c-card c-faux-link u-context u-clip u-corners u-gradient u-align-center u-stack-basic">
 
         <a class="c-faux-link__overlay" href="#{card_link}" aria-hidden="true">

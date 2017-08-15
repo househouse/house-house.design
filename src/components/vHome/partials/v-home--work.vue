@@ -1,4 +1,4 @@
-<template>
+<template lang="html">
     <section class="u-margin-bottom-lg--small-only u-margin-bottom-xl--small-up u-margin-bottom-xxl--medium-up u-padding-left-md--small-up u-padding-right-md--small-up" id="our-work">
 
         <div class="u-context u-bg-light-grey u-corners u-padding-top-lg u-padding-top-xxl--medium-up u-padding-bottom-lg u-padding-bottom-xxl--medium-up">
@@ -43,5 +43,5 @@
 <script>
 export default {
   name: 'vHomeWork',
-}
+};
 </script>

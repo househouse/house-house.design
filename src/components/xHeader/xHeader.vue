@@ -1,4 +1,4 @@
-<template>
+<template lang="html">
     <header class="u-context u-clip u-align-center u-stack-basic u-padding-top-md--small-up u-padding-left-md--small-up u-padding-right-md--small-up">
 
         <div class="u-padding-top-lg u-padding-bottom-lg u-bg-primary" style="background-image:url('/assets/images/pattern.png'); background-attachment:fixed;">
@@ -40,10 +40,10 @@
 <script>
 export default {
   name: 'xHeader',
-}
+};
 </script>
 
 
-<style lang="scss">
+<style lang="css">
 /* @import '../assets/styles/components/main'; */
 </style>
