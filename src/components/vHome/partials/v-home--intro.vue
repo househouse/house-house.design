@@ -22,7 +22,7 @@
 
             <h1 class="u-text-size-large u-padding-left-md u-padding-left-xl--medium-up u-bold" style="line-height:2.5">
                 <span class="u-bg-light u-padding-top-sm u-padding-bottom-sm">
-                    As <span class="u-color-tertiary">technology</span> becomes increasingly overwhelming, good <span class="u-color-accent">design</span> will us better understand it — and each other. That’s where <span class="u-color-primary u-no-wrap">we can help</span>.
+                    As <span class="u-color-tertiary">technology</span> becomes increasingly overwhelming, good <span class="u-color-accent">design</span> helps us better understand it — and each other. That’s where <span class="u-color-primary u-no-wrap">we come in</span>.
                 </span>
             </h1>
 
