@@ -1,0 +1,84 @@
+// Styles
+// ============================================================================
+//
+// Welcome to housecss! This functional CSS framework should be used as a
+// foundation for you and your team to get set up and working on a project as
+// quickly aspossible. Whether you are expanding housecss locally, or
+// contributing back upstream to the housecss repo, we encourage you write CSS
+// according our code guidelines and conventions:
+//
+// 1. Write SCSS (and CSS) as if someone is using it to learn how code. It
+//    needs to be sensible and learnable for new front-end developers and
+//    designers — everyone should be able to get going with housecss speedily.
+//    We achieve this by writing well-documented code.
+// 2. Housecss is content-agnostic, meaning HTML and CSS are completele separate
+//    from one another. If you hide all styles from your template, the HTML
+//    should be well-structured and semantically correct, formatted and arranged
+//    in a logical hierarchy. That also means classes should be self-documenting
+//    and independent of elements. The exception is components, which are
+//    directly coupled to markup or other styles.
+// 3. Follow the Code of Conduct at all times.
+//
+// Note: When contributing back upstream, compile your SCSS to CSS with:
+//       sass --watch scss:css --style compact
+
+
+// Settings
+// ---
+//
+// Code that does not output CSS styles directly. This includes CSS custom
+// properties, custom media queries, etc. Things like brand colours, modular
+// spacing increments, and breakpoints are defined as variables here.
+
+@import 'settings/variables';
+@import 'settings/responsive';
+@import 'settings/type-scale';
+
+
+// Base
+// ---
+//
+// Styles that target bare HTML elements. This mostly consists of a mixture of
+// normalize.css and reset.css, and core typographic styles for things like
+// headings, body text, and links which will rarely, if ever, change. No classes
+// are defined here.
+
+@import 'base/general';
+@import 'base/typography';
+
+
+// Utilities
+// ---
+//
+// The bread and butter of our CSS. These are single-purpose, highly-reusable
+// classes that do one thing extremely well. We have utilities for things like
+// margins, padding, text alignment, display properties, positioning properties,
+// and more. Utility classes use a u- namespace, e.g. u-bg-black.
+
+@import 'utilities/appearance';
+@import 'utilities/background';
+@import 'utilities/border';
+@import 'utilities/color';
+@import 'utilities/display';
+@import 'utilities/flex';
+@import 'utilities/layout';
+@import 'utilities/measure';
+@import 'utilities/spacing';
+@import 'utilities/text';
+
+
+// 🤔 Where’s everything else?
+// ============================================================================
+//
+// Components: Content-specific classes that generate distinct UI appearances.
+// Styles should also (generally) be coupled to specific markup; if it is not
+// directly related to any HTML, JS, or JSX, it should be considered a utility
+// class (or series of classes.) Components use the c- namespace, e.g. c-logo.
+//
+// Views / templates: Sometimes, there are times that we need to write template
+// overrides, or classes that are linked directly to the page on which they
+// appear. These styles should be used as a last resort only!
+//
+// Third-party plugins and integrations often do not let us control their
+// settings, or require us to override how they work. Toss those styles into
+// individual partials below.

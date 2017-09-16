@@ -1,0 +1,11 @@
+// Animations
+// ---
+//
+// Grouping CSS keyframes and animations together will help organize
+// interactions. Animations classes use a a- namespace, e.g. a-fade-in-top-slow.
+
+@import 'animations/back-forth';
+@import 'animations/fade-in';
+@import 'animations/glitch';
+@import 'animations/slide-in';
+@import 'animations/slide-out';

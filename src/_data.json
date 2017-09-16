@@ -1,9 +1,0 @@
-{
-    "sitemap": {
-        "layout": false
-    },
-    "404": {
-        "title": "Not Found",
-        "description": "Oops, we’re sorry, the page you are looking for cannot be found."
-    }
-}

@@ -1,0 +1,45 @@
+// Import global styles
+@import '~@/assets/styles/settings';
+@import '~@/assets/styles/animations';
+
+// Component root
+.c-modal {
+    display: none;
+
+    transition: 0.25s ease-in-out opacity;
+
+    &,
+    &__shade,
+    &__content {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    &__shade {
+        opacity: 0.95;
+        background-color: currentColor;
+        background-image: url('~@/assets/images/pattern.png');
+    }
+
+    &__content {
+        left: 10%;
+
+        overflow: auto;
+
+        // background-color: $white;
+        // box-shadow: 0 0 1em rgba($black, 0.25);
+
+        @include --medium-up {
+            left: 50%;
+        }
+    }
+
+    &[style*='block'] {
+        .c-modal__content {
+            animation: slide-in 0.5s ease-out forwards;
+        }
+    }
+}

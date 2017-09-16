@@ -1,2 +1,29 @@
 User-agent: *
 Disallow:
+
+===============================================================================
+
+# Can we use something like this for building sitemaps?
+https://github.com/lgraubner/sitemap-generator
+
+===============================================================================
+
+# Site SEO data below, in JSON format
+
+{
+    "globals": {
+        "site_name": "House House",
+        "site_title": "House House • A Design Studio",
+        "site_description": "House House is a multidisciplinary design studio that can help you with art direction, front-end development, web design, and more.",
+        "site_image": "assets/img/glitch.jpg"
+    },
+    "sitemap": {
+        "layout": false
+    },
+    "404": {
+        "title": "Not Found",
+        "description": "Oops, we’re sorry, the page you are looking for cannot be found."
+    }
+}
+
+===============================================================================

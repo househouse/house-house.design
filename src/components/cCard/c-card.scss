@@ -1,0 +1,27 @@
+// Import global styles
+@import '~@/assets/styles/settings';
+@import '~@/assets/styles/animations';
+
+// Component root
+.c-card {
+    &:not(.c--no-padding) {
+        height: 40vh;
+        padding-top: 25vh;
+    }
+
+    &:hover {
+        .c-card__image {
+            opacity: 0.8;
+            transform: scale(1.2) rotate(-2deg);
+        }
+
+        .u-squiggle {
+            @extend %a-back-forth;
+        }
+    }
+
+    &__image {
+        transform: scale(1.05);
+        transition: all 0.7s ease-out;
+    }
+}

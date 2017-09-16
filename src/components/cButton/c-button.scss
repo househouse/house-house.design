@@ -1,0 +1,12 @@
+// Import global styles
+@import '~@/assets/styles/settings';
+
+// Component root
+.c-button {
+    min-width: $large-space;
+    min-height: $large-space;
+
+    background: transparent;
+
+    font-size: 1rem;
+}
