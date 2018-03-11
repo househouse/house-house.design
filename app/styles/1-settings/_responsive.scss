@@ -1,0 +1,19 @@
+// Custom media queries
+// ==========
+//
+// [EXAMPLE] “I want to add margining on an element when it’s on a device
+//           larger than 1400px.”
+//
+// .container {
+//    margin-top: 10px;
+//
+//    @include break(1400) {
+//        margin-top: 20px;
+//    }
+// }
+
+@mixin break($screen) {
+    @media (min-width: $screen+'px') {
+        @content;
+    }
+}
