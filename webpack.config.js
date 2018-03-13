@@ -14,6 +14,7 @@ const parts = require('./webpack.parts')
 
 const lintJSOptions = {
   emitWarning: true,
+
   // Fail only on errors
   failOnWarning: false,
   failOnError: true,
@@ -53,7 +54,7 @@ const commonConfig = merge([
     },
     plugins: [
       new HtmlPlugin({
-        template: './index.pug'
+        template: './index.pug',
       }),
       new FriendlyErrorsPlugin(),
       new StylelintPlugin(lintStylesOptions)
@@ -166,6 +167,32 @@ const developmentConfig = merge([
 ])
 
 module.exports = env => {
+
+    const pages = [
+      parts.page({
+        title: 'Home',
+        entry: {
+          home: PATHS.app
+        },
+         template: path.join(PATHS.app, 'index.pug'),
+
+        // `manifest` and `vendor` are shared between all pages
+        chunks: ['home', 'manifest', 'vendor']
+      }),
+      parts.page({
+        title: 'About',
+        path: 'about',
+        entry: {
+          about: path.join(PATHS.app, 'about/index.js')
+        },
+        template: path.join(PATHS.app, 'about/about.pug'),
+
+        // `manifest` and `vendor` are shared between all pages
+        chunks: ['about', 'manifest', 'vendor']
+      })
+    ];
+
+
   process.env.BABEL_ENV = env
 
   if (env === 'production') {

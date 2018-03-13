@@ -1,8 +1,19 @@
 hr
-div.c-section.--small(style="color:var(--grey-dark);")
-    small
-        p Copyright © 2016–2018 House House.
-        p Made with love in Vancouver, Canada
+div.c-section.--small.u-flexbox
+    div.u-flex
+        p(style="line-height:1.5;")
+            small Made with love in Vancouver, Canada.
+        p 
+            small(style="color:var(--grey-dark);") © 2016—2018 House House
+    
+    div.u-flex-shrink
+        p
+            small 
+                a(href="#" style="border:0;") LinkedIn
+                span &emsp;
+                a(href="#" style="border:0;") Twitter
+                span &emsp;
+                a(href="#" style="border:0;") GitHub                
 
 //- 
  script(src='/assets/js/main.js')

@@ -8,17 +8,20 @@
 }
 
 html,
-body,
-main {
-    position: relative;
-
-    max-width: 100%;
-    min-height: 100%;
+body {
+    height: 100%;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
+}
+
+html,
+body,
+main {
+    max-width: 100%;
+    min-height: 100%;
 }
 
 html,

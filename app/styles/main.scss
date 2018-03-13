@@ -50,22 +50,8 @@
 
 @import '3-components/components';
 
-/*
 
-// Animations
-// ---
-//
-// Grouping CSS keyframes and animations together will help organize
-// interactions. Animations classes use a a- namespace, e.g. a-fade-in-top-slow.
-
-@import 'animations/back-forth';
-@import 'animations/fade-in';
-@import 'animations/glitch';
-@import 'animations/slide-in';
-@import 'animations/slide-out';
-
-
-// Utilities
+// [4] Utilities
 // ---
 //
 // The bread and butter of our CSS. These are single-purpose, highly-reusable
@@ -73,16 +59,26 @@
 // margins, padding, text alignment, display properties, positioning properties,
 // and more. Utility classes use a u- namespace, e.g. u-bg-black.
 
-@import 'utilities/appearance';
-@import 'utilities/background';
-@import 'utilities/border';
-@import 'utilities/color';
-@import 'utilities/display';
-@import 'utilities/flex';
-@import 'utilities/layout';
-@import 'utilities/measure';
-@import 'utilities/spacing';
-@import 'utilities/text';
+@import '4-utilities/flex';
+// @import 'utilities/appearance';
+// @import 'utilities/background';
+// @import 'utilities/border';
+// @import 'utilities/color';
+// @import 'utilities/display';
+// @import 'utilities/layout';
+// @import 'utilities/measure';
+// @import 'utilities/spacing';
+// @import 'utilities/text';
+
+// [5] Animations
+// ---
+//
+// Grouping CSS keyframes and animations together will help organize
+// interactions. Animations classes use a a- namespace, e.g. a-fade-in-top-slow.
+
+@import '5-animations/fade';
+
+/*
 
 // Templates
 // ---

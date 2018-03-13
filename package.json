@@ -5,14 +5,13 @@
     "author": "Ben Groulx & Sean Durfee",
     "homepage": "http://house-house.design/",
     "private": false,
-    "main": "./app/scripts/index.js",
     "repository": {
         "type": "git",
         "url": "https://github.com/alexnoz/webpack-pug-scss-boilerplate.git"
     },
     "scripts": {
-        "build": "webpack --env production",
-        "start": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --open --hot --env development\""
+        "start": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --open --hot --env development\"",
+        "build": "webpack --env production"
     },
     "devDependencies": {
         "autoprefixer": "^7.2.2",

@@ -11,6 +11,12 @@ meta(name='viewport', content='width=device-width,initial-scale=1.0')
 meta(name='author', content='Ben Groulx, Sean Durfee')
 meta(name='google-site-verification', content='XQrarlvRzShmAo5O_AzT_Wuinw1JiNI4IXWGltMtxkA')
 
+noscript
+    style.
+        .no-js *[style*="opacity:0;"] {
+            opacity: 1 !important;
+        }
+
 style.
     :root {
         --black: #101030;
@@ -44,6 +50,9 @@ style.
         --font--secondary: 'TiemposHeadline-Bold', 'Georgia', serif;
         --font--code: 'Menlo', monospace;
     }
+    .no-js .a-fade-in {
+        opacity: 0;
+    }
     body {
         background-color: var(--white);
         color: var(--black);    
@@ -60,20 +69,25 @@ style.
     .c-shapes {
         position: absolute;
         top: 0;
-        right: 0;
         left: 0;
+        right: 0;
         z-index: -1;
-
         overflow: hidden;
         width: 100%;
         height: 100%;
     }
     .c-shapes__container {
         position: absolute;
-        top: -35%;
-        left: 35%;
-
-        transform: rotate(45deg) scale(2);
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @media screen and (min-width:600px) {
+        .c-shapes__container {
+            top: -35%;
+            left: 35%;
+            transform: rotate(45deg) scale(2);
+        }
     }
     .c-shapes__single {
         fill: currentColor;
@@ -82,10 +96,24 @@ style.
         
 //- Service Worker
     script(async='', defer='').
-        if ('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('/assets/js/serviceworker/serviceworker.js').then(function(registration){console.log('ServiceWorker registration successful with scope: ',registration.scope);}).catch(function(err){console.log('ServiceWorker registration failed: ', err);});});}
+        if ("serviceWorker" in navigator) {
+          window.addEventListener("load", function() {
+            navigator.serviceWorker
+              .register("/assets/js/serviceworker/serviceworker.js")
+              .then(function(registration) {
+                console.log(
+                  "ServiceWorker registration successful with scope: ",
+                  registration.scope
+                );
+              })
+              .catch(function(err) {
+                console.log("ServiceWorker registration failed: ", err);
+              });
+          });
+        }
 
 //- Twitter Cards Data
-//- meta(name='twitter:site', content='XXXX')
+meta(name='twitter:site', content='XXXX')
 meta(name='twitter:card', content='summary_large_image')
 meta(name='twitter:title', content='#{site_title}')
 meta(name='twitter:image', content='#{site_image}')
@@ -120,4 +148,23 @@ link(rel='icon', type='image/png', sizes='32x32', href='/assets/startup/favicon-
 link(rel='icon', type='image/png', sizes='16x16', href='/assets/startup/favicon-16.png')
 
 script.
-    document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style"); return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");
+    document.documentElement.className = "js";
+    var supportsCssVars = function() {
+      var e,
+        t = document.createElement("style");
+      return (
+        (t.innerHTML = "root: { --tmp-var: bold; }"),
+        document.head.appendChild(t),
+        (e = !!(
+          window.CSS &&
+          window.CSS.supports &&
+          window.CSS.supports("font-weight", "var(--tmp-var)")
+        )),
+        t.parentNode.removeChild(t),
+        e
+      );
+    };
+    supportsCssVars() ||
+      alert(
+        "Please view this demo in a modern browser that supports CSS Variables."
+      );
