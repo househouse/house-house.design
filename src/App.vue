@@ -3,17 +3,26 @@
     <header>
       <span>Vue.js PWA</span>
     </header>
+    <BgParticles/>
+    <BgShapes/>
     <main>
       <img src="./assets/logo.png" alt="Vue.js PWA">
-      <router-link :to="{ name: 'about', params: {} }">About</router-link>
-      <router-link :to="{ name: 'home', params: {} }">Home</router-link>
+      <router-link to="/about">About</router-link>
+      <router-link to="/">Home</router-link>
       <router-view></router-view>
     </main>
   </div>
 </template>
 
 <script>
+import BgParticles from '@/components/bgParticles';
+import BgShapes from '@/components/bgShapes';
+
 export default {
+  components: {
+    BgParticles,
+    BgShapes,
+  },
   name: 'app',
 };
 </script>
