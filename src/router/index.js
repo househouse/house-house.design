@@ -1,9 +1,13 @@
 import Vue from 'vue';
 import Router from 'vue-router';
+
 import Home from '@/pages/Home';
 import About from '@/pages/About';
-import Contact from '@/pages/Contact';
 import Process from '@/pages/Process';
+import Contact from '@/pages/Contact';
+
+// import Thanks from '@/pages/Thanks';
+// import 404 from '@/pages/404';
 
 Vue.use(Router);
 
