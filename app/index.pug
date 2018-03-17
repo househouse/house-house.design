@@ -5,36 +5,38 @@ html(lang="en-ca")
     
     body.no-js(onload="load();")
 
-        aside(role="presentation")
-            include includes/partials/_shapes
-            include includes/partials/_particles
+        include includes/partials/_shapes
+        include includes/partials/_particles
 
         main.a-fade-in.--from-bottom
-            //- section.c-section.u-flexbox
-                
-                div.u-flex
-                    article.c-resident.--sean
-                        div.c-resident__image
-                        div.c-resident__info
-                            h3.c-resident__name Sean Durfee
-                            p.c-resident__role Designer
-                
-                div.u-flex
-                    article.c-resident.--ben
-                        div.c-resident__image
-                        div.c-resident__info
-                            h3.c-resident__name Ben Groulx
-                            p.c-resident__role Designer
-
+            
             section.c-section
                 div.c-contain
-                    h1.c-title
-                        span House House 
-                        span is a multidisciplinary studio that helps teams like yours find success through 
-                        span design
+                    h1.c-title We should work together
                     
                     div.c-text-content(style="color:var(--grey-dark);")
-                        include:markdown-it copy/home-intro.md
+                        
+                        div.c-text-content.u-measure-medium.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up
+                            
+                            p.u-flexbox.u-align-middle
+                                span.u-block.u-circle.u-margin-right-sm(style='background:var(--green-med); width:0.5rem; height:0.5rem;')
+                                span.u-block.u-uppercase.u-text-size-small.u-tracked-loose.u-color-dark Available starting Q2 2018
+                            
+                            p We’re often head-down, jamming out creating something really cool. But we’ll always make time to hear about your challenges, or if you’re just wanting to say a quick hello. So give us a shout, and let’s make some magic happen.
+                            
+                            ul
+                                li.u-inline-block.u-margin-right-md
+                                    a(href='https://househouse-hq.slack.com/', target='_blank', rel='noopener') Slack
+                                li.u-inline-block.u-margin-right-md
+                                    a(href='https://github.com/househouse/', target='_blank', rel='noopener') GitHub
+                                li.u-inline-block
+                                    a(href='https://twitter.com/house-house/', target='_blank', rel='noopener') Twitter
+                        
+                        
+
+                        
+                        include includes/sections/_contact
+
 
         footer.a-fade-in.--from-bottom
             include includes/partials/_footer
@@ -59,5 +61,5 @@ html(lang="en-ca")
                 boxes[i].style.color = colors[Math.floor(Math.random() * colors.length)];
             }
 
-        script(src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js")
+        script(async src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js")
         script(src="app/scripts/particles.js")
