@@ -1,15 +1,16 @@
 <template>
-  <div id="app">
-    <header>
-      <span>Vue.js PWA</span>
-    </header>
-    <main>
-      <img src="./assets/logo.png" alt="Vue.js PWA">
-      <router-link :to="{ name: 'about', params: {} }">About</router-link>
-      <router-link :to="{ name: 'home', params: {} }">Home</router-link>
-      <router-view></router-view>
-    </main>
-  </div>
+    <div id="app">
+        <header>
+            <span>Vue.js PWA</span>
+        </header>
+        <main>
+            <router-link to="/">Home</router-link>
+            <router-link to="/about">About</router-link>
+            <router-link to="/process">Process</router-link>
+            <router-link to="/contact">Contact</router-link>
+            <router-view></router-view>
+        </main>
+    </div>
 </template>
 
 <script>

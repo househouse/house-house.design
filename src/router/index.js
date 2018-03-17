@@ -1,8 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Hello from '@/components/Hello';
+import Home from '@/pages/Home';
 import About from '@/pages/About';
-
+import Contact from '@/pages/Contact';
+import Process from '@/pages/Process';
 
 Vue.use(Router);
 
@@ -11,13 +12,20 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Hello',
-      component: Hello,
-    },
-    {
+      name: 'Home',
+      component: Home,
+    }, {
       path: '/about',
       name: 'About',
       component: About,
+    }, {
+      path: '/contact',
+      name: 'Contact',
+      component: Contact,
+    }, {
+      path: '/process',
+      name: 'Process',
+      component: Process,
     },
   ],
 });
