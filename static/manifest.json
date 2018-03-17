@@ -1,20 +1,36 @@
 {
-  "name": "house-house.design",
-  "short_name": "househouse",
-  "icons": [
-    {
-      "src": "/static/img/icons/android-chrome-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/static/img/icons/android-chrome-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ],
-  "start_url": "/index.html",
-  "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#4DBA87"
+    "manifest_version": 1,
+    "version": "1",
+    "name": "House House",
+    "short_name": "House House",
+    "description": "House House is a multidisciplinary studio that helps teams like yours find success through design.",
+    "dir": "ltr",
+    "lang": "en-CA",
+    "display": "standalone",
+    "orientation": "natural",
+    "start_url": "/index.html",
+    "theme_color": "#4745d1",
+    "background_color": "#4745d1",
+    "icons": [
+        {
+            "sizes": "192x192",
+            "src": "assets/startup/android-icon-192.png",
+            "type": "image/png"
+        },
+        {
+            "sizes": "256x256",
+            "src": "assets/startup/android-icon-256.png",
+            "type": "image/png"
+        },
+        {
+            "sizes": "384x384",
+            "src": "assets/startup/android-icon-384.png",
+            "type": "image/png"
+        },
+        {
+            "sizes": "512x512",
+            "src": "assets/startup/android-icon-512.png",
+            "type": "image/png"
+        }
+    ]
 }
