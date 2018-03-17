@@ -1,19 +1,21 @@
 <template lang="pug">
-    div.t-about
-        h1 About
-        div.u-flex
-            article.c-resident.--sean
-                div.c-resident__image
-                div.c-resident__info
-                    h3.c-resident__name Sean Durfee
-                    p.c-resident__role Designer
+    section.c-section
+        div.c-contain
+            h1 About
+            div.u-flexbox
+                div.u-flex
+                    article.c-resident.c--sean
+                        div.c-resident__image
+                        div.c-resident__info
+                            h3.c-resident__name Sean Durfee
+                            p.c-resident__role Designer
 
-        div.u-flex
-            article.c-resident.--ben
-                div.c-resident__image
-                div.c-resident__info
-                    h3.c-resident__name Ben Groulx
-                    p.c-resident__role Designer
+                div.u-flex
+                    article.c-resident.c--ben
+                        div.c-resident__image
+                        div.c-resident__info
+                            h3.c-resident__name Ben Groulx
+                            p.c-resident__role Designer
 </template>
 
 <script>

@@ -39,6 +39,7 @@
         display: flex;
 
         &:hover &__image {
+            border-radius: 1rem;
             box-shadow: 0 1rem 5rem rgba(0, 0, 100, 0.3);
 
             transform: scale(1.05) rotate(-4deg);
@@ -62,8 +63,8 @@
         display: block;
         overflow: hidden;
         min-height: 10rem;
+        border-radius: 0.25rem;
 
-        border-radius: 0.5rem;
         background-position: center;
         background-size: cover;
 
@@ -86,14 +87,6 @@
             background-image: url('data:image/svg+xml;utf8,<svg style="fill:#f3f6fa;" width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><path fill-opacity="0.3" d="M0 0h20v20h-20z"/><path fill-opacity="0.3" d="M20 20h20v20h-20z"/><path fill-opacity="0.6" d="M0 20h20v20h-20z"/><path fill-opacity="0.9" d="M0 40h20v20h-20z"/><path fill-opacity="0.9" d="M20 60h20v20h-20z"/><path fill-opacity="1.0" d="M0 60h20v20h-20z"/><path fill-opacity="0.6" d="M20 40h20v20h-20z"/><path fill-opacity="0.6" d="M40 60h20v20h-20z"/><path fill-opacity="0.3" d="M40 40h20v20h-20z"/><path fill-opacity="0.3" d="M60 60h20v20h-20z"/></svg>');
             background-size: cover;
         }
-
-        .--ben & {
-            // background-image: url('../../images/-ben.png');
-        }
-
-        .--sean & {
-            // background-image: url('../../images/-sean.jpg');
-        }
     }
 
     &__info {
@@ -114,6 +107,14 @@
 
         line-height: 1;
     }
+}
+
+.c--ben .c-resident__image {
+    background-image: url('assets/img/-ben.png');
+}
+
+.c--sean .c-resident__image {
+    background-image: url('assets/img/-sean.jpg');
 }
 
 .c-particles {

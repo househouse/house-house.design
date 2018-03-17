@@ -20,12 +20,12 @@
                             a(href='https://github.com/househouse/', target='_blank', rel='noopener') GitHub
                         li.u-inline-block
                             a(href='https://twitter.com/house-house/', target='_blank', rel='noopener') Twitter
-            div.u-margin-bottom-lg--small-only.u-margin-bottom-xl--small-up.u-padding-left-md--small-up.u-padding-right-md--small-up#contact-us
 
-                    div.u-context.u-bg-light-grey.u-corners.u-padding-top-lg.u-padding-top-xxl--medium-up.u-padding-bottom-lg.u-padding-bottom-xxl--medium-up.u-padding-left-md.u-padding-right-md
+            div#contact-us
 
-                        form.u-block.u-measure-medium#contact-form(action='https://formspree.io/ben@house-house.design', method='POST')
+                    div.u-context
 
+                        form#contact-form.u-block(action='https://formspree.io/ben@house-house.design', method='POST')
 
                             div.u-flexbox--small-up.u-clip
                                 div.u-context.u-border-left-dark.u-border-bottom-dark.u-width-full--small-only.u-width-1of2--small-up.u-float-left.u-margin-right-md--small-up.u-margin-bottom-md(style='height:3rem;')

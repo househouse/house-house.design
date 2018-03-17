@@ -1,6 +1,7 @@
 <template lang="pug">
-    div.t-process
-        h1 Process
+    section.c-section
+        div.c-contain
+            h1 Process
 </template>
 
 <script>
