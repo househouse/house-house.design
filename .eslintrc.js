@@ -1,38 +1,39 @@
+// http://eslint.org/docs/user-guide/configuring
+
 module.exports = {
-  env: {
-    browser: true,
-    commonjs: true,
-    es6: true,
-    node: true
-  },
-  plugins: ['import', 'promise', 'compat', 'node'],
-  extends: [
-    'plugin:promise/recommended',
-    'standard'
-  ],
+  root: true,
   parser: 'babel-eslint',
   parserOptions: {
-    sourceType: 'module',
-    ecmaVersion: 9,
-    ecmaFeatures: {
-      sourceType: 'module',
-      jsx: true
-    },
-    allowImportExportEverywhere: true
+    sourceType: 'module'
   },
-  rules: {
-    'promise/always-return': 0,
-    'promise/avoid-new': 0,
-    'compat/compat': 1,
-    'node/no-deprecated-api': 2,
-    'node/no-extraneous-require': 2,
-    'node/no-missing-require': 2,
-    'import/no-unresolved': [2, { commonjs: true, amd: true }],
-    'import/named': 2,
-    'import/namespace': 2,
-    'import/default': 2,
-    'import/export': 2,
-    'no-console': 1,
-    'curly': 0
+  env: {
+    browser: true,
+  },
+  extends: 'airbnb-base',
+  // required to lint *.vue files
+  plugins: [
+    'html'
+  ],
+  // check if imports actually resolve
+  'settings': {
+    'import/resolver': {
+      'webpack': {
+        'config': 'build/webpack.base.conf.js'
+      }
+    }
+  },
+  // add your custom rules here
+  'rules': {
+    // don't require .vue extension when importing
+    'import/extensions': ['error', 'always', {
+      'js': 'never',
+      'vue': 'never'
+    }],
+    // allow optionalDependencies
+    'import/no-extraneous-dependencies': ['error', {
+      'optionalDependencies': ['test/unit/index.js']
+    }],
+    // allow debugger during development
+    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
   }
 }
