@@ -1,6 +1,5 @@
 // Project-Wide Configurable Variables
-// ==========
-
+// ============================================================================
 
 // Everything is based off this define unit and ratio
 $configure--base-unit: 1rem;
@@ -9,13 +8,38 @@ $configure--base-ratio: 1.125;
 // All text is based off this font size
 $configure--text-size: 1rem;
 
+// Choose your base typographic styles
+$configure--primary-font: 'Akkurat', -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', sans-serif;
+$configure--secondary-font: 'Tiempos Headline', 'Times', serif;
+$configure--code-font: 'Menlo', monospace;
+
 // Choose your desired type weights
 $configure--text-weight: 400;
 $configure--text-bold: 600;
 
+// Choose the colours of your entire project
+$configure--primary-color: #4745d1;
+$configure--secondary-color: #fff;
+$configure--accent-color: #ff4d37;
 
 
 
+// Project-Wide Options
+// ============================================================================
+
+
+// Typeface Options
+// ---
+
+$primary-font: $configure--primary-font;
+$secondary-font: $configure--secondary-font;
+$code-font: $configure--code-font;
+
+$typeface-map: (
+    primary: $primary-font,
+    secondary: $secondary-font,
+    code: $code-font,
+);
 
 
 // Type Weight Options
@@ -29,61 +53,40 @@ $type-weight-map: (
     bold: $bold-font,
 );
 
-// Spacing Options
+
+// Type Leading Options
 // ---
 
-$very-small-space: $configure--base-unit/4;
-$small-space: $configure--base-unit/2;
-$base-space: $configure--base-unit;
-$large-space: $configure--base-unit*2;
-$very-large-space: $configure--base-unit*4;
-$huge-large-space: $configure--base-unit*8;
+$base-leading: $configure--base-ratio*1.5;
+$tight-leading: $configure--base-ratio;
 
-$size-map: (
-    xs: $very-small-space,
-    sm: $small-space,
-    md: $base-space,
-    lg: $large-space,
-    xl: $very-large-space,
-    xxl: $huge-large-space,
-    none: 0,
+$leading-map: (
+    base: $base-leading,
+    tight: $tight-leading,
 );
 
 
 // Colour Options
 // ---
 
-$primary-color: var(--indigo-dark);
-$accent-color: var(--orange-dark);
-$black-color: var(--black);
-$white-color: var(--white);
-$grey-light-color: var(--grey-light);
-$grey-dark-color: var(--grey-dark);
+$primary-color:   $configure--primary-color;
+$secondary-color: $configure--secondary-color;
+$tertiary-color: saturate(darken(#50e3c2, 25%), 50%);
+$accent-color: $configure--accent-color;
+$black: darken(mix(#000, $primary-color), 15%);
+$white: $secondary-color;
+$grey: darken(#90a1b8, 9%);
 
 $color-map: (
     primary: $primary-color,
+    secondary: $secondary-color,
+    tertiary: $tertiary-color,
     accent: $accent-color,
-    black: $black-color,
-    white: $white-color,
-    grey-light: $grey-light-color,
-    grey-dark: $grey-dark-color,
+    dark: $black,
+    light: $white,
+    light-grey: lighten($grey, 42%),
+    dark-grey: $grey,
 );
-
-
-// Content Area Options
-// ---
-
-$content-area-narrow: $configure--base-unit*25;
-$content-area-medium: $configure--base-unit*50;
-$content-area-wide: $configure--base-unit*65;
-
-$content-area-map: (
-    narrow: $content-area-narrow,
-    medium: $content-area-medium,
-    wide:   $content-area-wide,
-);
-
-
 
 
 // Z-axis Options
@@ -161,9 +164,6 @@ $size-map: (
 );
 
 
-
-
-
 // Style options
 // ---
 
@@ -182,8 +182,6 @@ $appearances-map: (
     half-transparent: $half-transparent,
     fully-transparent: $fully-transparent,
 );
-
-
 
 
 // Direction options

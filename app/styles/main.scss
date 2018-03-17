@@ -29,6 +29,7 @@
 
 @import '1-settings/variables';
 @import '1-settings/responsive';
+@import '1-settings/type-scale';
 
 // [2] Base
 // ---
@@ -60,15 +61,15 @@
 // and more. Utility classes use a u- namespace, e.g. u-bg-black.
 
 @import '4-utilities/flex';
-// @import 'utilities/appearance';
-// @import 'utilities/background';
-// @import 'utilities/border';
-// @import 'utilities/color';
-// @import 'utilities/display';
-// @import 'utilities/layout';
-// @import 'utilities/measure';
-// @import 'utilities/spacing';
-// @import 'utilities/text';
+@import '4-utilities/spacing';
+@import '4-utilities/appearance';
+@import '4-utilities/background';
+@import '4-utilities/border';
+@import '4-utilities/color';
+@import '4-utilities/display';
+@import '4-utilities/layout';
+@import '4-utilities/measure';
+@import '4-utilities/text';
 
 // [5] Animations
 // ---
