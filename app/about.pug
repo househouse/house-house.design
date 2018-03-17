@@ -1,0 +1,62 @@
+doctype html
+html(lang="en-ca")
+    head
+        include includes/partials/_head
+    
+    body.no-js(onload="load();")
+
+        include includes/partials/_shapes
+        include includes/partials/_particles
+
+        main.a-fade-in.--from-bottom
+            section.c-section.u-flexbox
+                
+                div.u-flex
+                    article.c-resident.--sean
+                        div.c-resident__image
+                        div.c-resident__info
+                            h3.c-resident__name Sean Durfee
+                            p.c-resident__role Designer
+                
+                div.u-flex
+                    article.c-resident.--ben
+                        div.c-resident__image
+                        div.c-resident__info
+                            h3.c-resident__name Ben Groulx
+                            p.c-resident__role Designer
+
+            section.c-section
+                div.c-contain
+                    h1.c-title
+                        span House House 
+                        span is a multidisciplinary studio that helps teams like yours find success through 
+                        span design
+                    
+                    div.c-text-content(style="color:var(--grey-dark);")
+                        //- include:markdown-it copy/home-intro.md
+
+        footer.a-fade-in.--from-bottom
+            include includes/partials/_footer
+
+        script.
+            //- Remove the `.no-js` class from <body>
+            function load() {
+                document.body.classList.remove('no-js');
+            }
+            
+            //- Define brand colours and the various shape elements
+            var colors = [
+                'var(--indigo-dark)', 
+                'var(--indigo-light)', 
+                'var(--orange-light)',
+                'var(--violet-light)',
+                'var(--green-light)',
+            ], boxes = document.querySelectorAll(".c-shapes__single");
+            
+            //- Apply a random brand colour various elements
+            for (i = 0; i < boxes.length; i++) {
+                boxes[i].style.color = colors[Math.floor(Math.random() * colors.length)];
+            }
+
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" async)
+        script(src="app/scripts/particles.js")
