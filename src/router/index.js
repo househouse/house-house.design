@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Hello from '@/pages/Hello';
+import Home from '@/pages/Home';
 import About from '@/pages/About';
 import Contact from '@/pages/Contact';
 import Process from '@/pages/Process';
