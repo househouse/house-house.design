@@ -5,6 +5,8 @@
     </header>
     <main>
       <img src="./assets/logo.png" alt="Vue.js PWA">
+      <router-link :to="{ name: 'about', params: {} }">About</router-link>
+      <router-link :to="{ name: 'home', params: {} }">Home</router-link>
       <router-view></router-view>
     </main>
   </div>
