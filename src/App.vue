@@ -9,6 +9,26 @@
             <router-link to="/contact">Contact</router-link>
             <router-view></router-view>
         </main>
+        <hr/>
+        <footer class="c-section --small u-flexbox">
+            <div class="u-flex">
+                <p style="line-height:1.5;">
+                    <small>Made with love in Vancouver, Canada.</small>
+                </p>
+                <p>
+                    <small style="color:var(--grey-dark);">© 2016—2018 House House</small>
+                </p>
+            </div>
+            <div class="u-flex-shrink">
+                <p>
+                    <small>
+                    <a href="#" style="border:0;">LinkedIn</a><span>&emsp;</span>
+                    <a href="#" style="border:0;">Twitter</a><span>&emsp;</span>
+                    <a href="#" style="border:0;">GitHub</a>
+                    </small>
+                </p>
+            </div>
+        </footer>
     </div>
 </template>
 
@@ -26,7 +46,7 @@ export default {
 </script>
 
 <style lang='scss'>
-@import 'src/assets/styles/main.scss';
+@import 'src/assets/css/main.scss';
 
     :root {
         --black: #101030;
