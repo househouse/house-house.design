@@ -1,8 +1,8 @@
 <template>
     <div id="app">
-        <BgParticles/>
-        <BgShapes/>
-        <main>
+      <BgParticles />
+      <BgShapes />
+        <main class="a-fade-in --from-bottom">
             <router-link to="/">Home</router-link>
             <router-link to="/about">About</router-link>
             <router-link to="/process">Process</router-link>
@@ -56,7 +56,7 @@ export default {
         --font--secondary: 'TiemposHeadline-Bold', 'Georgia', serif;
         --font--code: 'Menlo', monospace;
     }
-    .no-js .a-fade-in {
+    .a-fade-in {
         opacity: 0;
     }
     body {
@@ -73,30 +73,34 @@ export default {
         padding: 10%;
     }
     .c-shapes {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        overflow: hidden;
-        width: 100%;
-        height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
     }
+
     .c-shapes__container {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, -50%);
+      position: absolute;
+      top: 0;
+      left: 0%;
+      transform-origin: center center;
+      transform: translate(50%, -50%);
     }
+
     @media screen and (min-width:600px) {
-        .c-shapes__container {
-            top: -35%;
-            left: 35%;
-            transform: rotate(45deg) scale(2);
-        }
+      .c-shapes__container {
+        top: -5%;
+        left: -25%;
+        transform: rotate(55deg) scale(2);
+      }
     }
+
     .c-shapes__single {
-        fill: currentColor;
-        transition: all ease-out 2s 1s;
+      fill: currentColor;
+      transition: all ease-out 2s 1s;
     }
 </style>

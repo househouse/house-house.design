@@ -54,7 +54,6 @@
                                 input(type='hidden', name='_next', value='/thanks')
                                 input(type='hidden', name='_subject', value='Hi there, House House!')
                                 input(type='hidden', name='_cc', value='sean@house-house.design')
-
 </template>
 
 <script>

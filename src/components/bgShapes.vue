@@ -72,19 +72,21 @@ div.c-shapes
 </template>
 
 <script>
-const colors = [
-  'var(--indigo-dark)',
-  'var(--indigo-light)',
-  'var(--orange-light)',
-  'var(--violet-light)',
-  'var(--green-light)',
-];
-const boxes = document.querySelectorAll('.c-shapes__single');
-
-for (let i = 0; i < boxes.length; i += 1) {
-  boxes[i].style.color = colors[Math.floor(Math.random() * colors.length)];
-}
 export default {
+  mounted() {
+    const colors = [
+      'var(--indigo-dark)',
+      'var(--indigo-light)',
+      'var(--orange-light)',
+      'var(--violet-light)',
+      'var(--green-light)',
+    ];
+    const boxes = document.querySelectorAll('.c-shapes__single');
+
+    for (let i = 0; i < boxes.length; i += 1) {
+      boxes[i].style.color = colors[Math.floor(Math.random() * colors.length)];
+    }
+  },
 };
 </script>
 
