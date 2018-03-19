@@ -1,6 +1,6 @@
 <template lang="pug">
 div.c-shapes
-    svg.c-shapes__container(style="color:var(--grey-med);" width="1440px" height="1440px" viewbox="0 0 1440 430")
+    svg.c-shapes__container.u-color-grey-med(width="1440px" height="1440px" viewbox="0 0 1440 430")
         polygon.c-shapes__single(points="458.96875 269, 476.609375 233.71875, 494.25 269" _fill="var(--violet-light)" style="opacity:0.85; transform-origin:476.609px 197px 0px; transform:translateX(-237px) translateY(-216px) scale(0.54) rotate(36deg);" data-tx="-237" data-ty="-216" data-s="0.54")
         circle.c-shapes__single(r="17.640625" cx="476.609375" cy="197" _fill="var(--indigo-dark)" style="opacity:0.85; transform-origin:476.609px 197px 0px; transform:translateX(-101px) translateY(-173px) scale(0.39) rotate(19deg);" data-tx="-101" data-ty="-173" data-s="0.39")
         polygon.c-shapes__single(points="458.96875 269, 476.609375 233.71875, 494.25 269" _fill="var(--green-light)" style="opacity:0.85; transform-origin:476.609px 197px 0px; transform:translateX(234px) translateY(138px) scale(0.27) rotate(-67deg);" data-tx="234" data-ty="138" data-s="0.27")

@@ -1,4 +1,4 @@
-<template lang='pug'>
+<template lang="pug">
   div#particles.c-particles.a-fade-in
 </template>
 
@@ -22,4 +22,5 @@ export default {
 </script>
 
 <style lang='css'>
+@import '../assets/css/3-components/_bgParticles.scss';
 </style>

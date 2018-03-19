@@ -1,51 +1,43 @@
-<template>
-    <div id="app">
-      <BgParticles />
-      <BgShapes />
-        <main class="a-fade-in --from-bottom">
-            <router-link to="/">Home</router-link>
-            <router-link to="/about">About</router-link>
-            <router-link to="/process">Process</router-link>
-            <router-link to="/contact">Contact</router-link>
-            <router-view></router-view>
-        </main>
-        <hr/>
-        <footer class="c-section --small u-flexbox">
-            <div class="u-flex">
-                <p style="line-height:1.5;">
-                    <small>Made with love in Vancouver, Canada.</small>
-                </p>
-                <p>
-                    <small style="color:var(--grey-dark);">© 2016—2018 House House</small>
-                </p>
-            </div>
-            <div class="u-flex-shrink">
-                <p>
-                    <small>
-                    <a href="#" style="border:0;">LinkedIn</a><span>&emsp;</span>
-                    <a href="#" style="border:0;">Twitter</a><span>&emsp;</span>
-                    <a href="#" style="border:0;">GitHub</a>
-                    </small>
-                </p>
-            </div>
-        </footer>
-    </div>
+<template lang="pug">
+div#app
+    bgParticles
+    bgShapes
+    navCrumbs
+    main.a-fade-in.--from-bottom(style='min-height:100vh;')
+        router-view
+    hr
+    footer.c-section.u-flexbox
+        div.u-flex
+            p(style='line-height:1.5;')
+                small Made with love in Vancouver, Canada.
+            p
+                small.u-color-grey-dark © 2016—2018 House House
+        div.u-flex-shrink
+            p
+                small
+                    a.u-border-0(href='#') LinkedIn
+                    span  
+                    a.u-border-0(href='#') Twitter
+                    span  
+                    a.u-border-0(href='#') GitHub
 </template>
 
 <script>
 import BgParticles from '@/components/bgParticles';
 import BgShapes from '@/components/bgShapes';
+import NavCrumbs from '@/components/navCrumbs';
 
 export default {
   components: {
     BgParticles,
     BgShapes,
+    NavCrumbs,
   },
   name: 'app',
 };
 </script>
 
-<style lang='scss'>
+<style lang="scss">
 @import 'src/assets/css/main.scss';
 
     :root {
@@ -85,12 +77,6 @@ export default {
     }
     .c-contain {
         max-width: 30em;
-    }
-    .c-section.--small {
-        padding: 5% 10%;
-    }
-    .c-section:not(.--small) {
-        padding: 10%;
     }
     .c-shapes {
       position: absolute;

@@ -49,8 +49,10 @@
 // directly related to any HTML, JS, or JSX, it should be considered a utility
 // class (or series of classes.) Components use the c- namespace, e.g. c-logo.
 
-@import '3-components/components';
-
+@import '3-components/title';
+@import '3-components/contain';
+@import '3-components/resident';
+@import '3-components/text-content';
 
 // [4] Utilities
 // ---

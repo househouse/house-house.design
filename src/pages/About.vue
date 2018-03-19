@@ -1,4 +1,6 @@
 <template lang="pug">
+div
+    NavCrumbs
     section.c-section
         div.c-contain
             h1 About
@@ -19,9 +21,8 @@
 </template>
 
 <script>
-export default {
-};
+export default {};
 </script>
 
-<style lang="scss">
+<style>
 </style>

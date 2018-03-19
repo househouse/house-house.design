@@ -1,0 +1,25 @@
+.c-title {
+    margin-bottom: 1em;
+
+    span {
+        @include break(650) {
+            & {
+                display: block;
+            }
+        }
+
+        &:nth-child(1) {
+            @include break(510) {
+                & {
+                    display: block;
+                }
+            }
+
+            color: var(--indigo-dark);
+        }
+
+        &:nth-child(2) {
+            color: var(--orange-dark);
+        }
+    }
+}

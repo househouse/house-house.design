@@ -1,35 +1,3 @@
-.c-text-content {
-    > * {
-        margin-bottom: 1em;
-    }
-}
-
-.c-title {
-    margin-bottom: 1em;
-
-    span {
-        @include break(650) {
-            & {
-                display: block;
-            }
-        }
-
-        &:nth-child(1) {
-            @include break(510) {
-                & {
-                    display: block;
-                }
-            }
-
-            color: var(--indigo-dark);
-        }
-
-        &:nth-child(2) {
-            color: var(--orange-dark);
-        }
-    }
-}
-
 .c-resident {
     width: 100%;
 
@@ -56,6 +24,7 @@
             width: 50%;
         }
     }
+
 
     &__image {
         position: relative;
@@ -87,6 +56,16 @@
             background-image: url('data:image/svg+xml;utf8,<svg style="fill:#f3f6fa;" width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><path fill-opacity="0.3" d="M0 0h20v20h-20z"/><path fill-opacity="0.3" d="M20 20h20v20h-20z"/><path fill-opacity="0.6" d="M0 20h20v20h-20z"/><path fill-opacity="0.9" d="M0 40h20v20h-20z"/><path fill-opacity="0.9" d="M20 60h20v20h-20z"/><path fill-opacity="1.0" d="M0 60h20v20h-20z"/><path fill-opacity="0.6" d="M20 40h20v20h-20z"/><path fill-opacity="0.6" d="M40 60h20v20h-20z"/><path fill-opacity="0.3" d="M40 40h20v20h-20z"/><path fill-opacity="0.3" d="M60 60h20v20h-20z"/></svg>');
             background-size: cover;
         }
+
+        .c--ben & {
+            background-image: url('assets/img/-ben.png');
+        }
+
+        .c--sean & {
+            background-image: url('assets/img/-sean.jpg');
+        }
+
+
     }
 
     &__info {
@@ -106,28 +85,5 @@
         padding-top: 0.5rem;
 
         line-height: 1;
-    }
-}
-
-.c--ben .c-resident__image {
-    background-image: url('assets/img/-ben.png');
-}
-
-.c--sean .c-resident__image {
-    background-image: url('assets/img/-sean.jpg');
-}
-
-.c-particles {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-
-    display: none;
-
-    @include break(900) {
-        display: block;
     }
 }
