@@ -1,10 +1,10 @@
 var config = {
   "particles": {
     "number": {
-      "value": 20,
+      "value": 5,
       "density": {
         "enable": true,
-        "value_area": 800
+        "value_area": 200
       }
     },
     "color": {
@@ -27,7 +27,7 @@ var config = {
       }
     },
     "size": {
-      "value": 10,
+      "value": 20,
       "random": true
     },
     "line_linked": {
@@ -42,8 +42,6 @@ var config = {
       "out_mode": "in",
       "attract": {
         "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
       }
     }
   },
@@ -52,11 +50,9 @@ var config = {
     "events": {
       "onhover": {
         "enable": false,
-        "mode": "repulse"
       },
       "onclick": {
         "enable": false,
-        "mode": "push"
       },
       "resize": true
     },
@@ -66,7 +62,6 @@ var config = {
       }
     }
   },
-  "retina_detect": true
 };
 
 particlesJS('particles', config);
