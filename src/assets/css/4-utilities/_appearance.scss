@@ -11,10 +11,14 @@
 
 .u-squiggle,
 %u-squiggle {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 4'%3E%3Cpath fill='none' stroke='#{$accent-color}' stroke-width='1' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    width: 50%;
+    max-width: 10rem;
+    height: 1rem;
+
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 4'%3E%3Cpath fill='none' stroke='#f44631' stroke-width='1' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
     background-repeat: repeat-x;
     background-position: 100% 100%;
-    background-size: auto 3px;
+    background-size: auto 100%;
 }
 
 

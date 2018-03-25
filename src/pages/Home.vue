@@ -2,7 +2,7 @@
 div
     section.c-section
         div.c-contain
-            h1.c-title
+            h1.c-title.u-margin-bottom-lg
                 | #[span House House]
                 | is a multidisciplinary studio that helps teams like yours find success through
                 | #[span design]
