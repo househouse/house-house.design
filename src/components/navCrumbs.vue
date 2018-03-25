@@ -1,30 +1,53 @@
-<template lang="pug">
-nav.c-nav-crumbs
-    router-link.c-nav-crumbs__back.u-circle(to='/')
-        svg(width='16px' height='14px' viewbox='0 0 16 14')
-            path(d='M1,7 L15,7')
-            polyline(points='7 1 1 7 7 13')
-        span.c-nav-crumbs__home Home
-
-    ul.c-nav-crumbs__major.u-context
-        li
-            router-link.u-color-grey-dark(to='/about') About
-        li
-            router-link.u-color-grey-dark(to='/process') Process
-        li
-            router-link.u-color-grey-dark(to='/contact') Contact
-
-    ul.c-nav-crumbs__minor.u-context
-        li
-            router-link.u-color-grey-dark(to='/about') My Account
-        li
-            router-link.u-color-grey-dark(to='/about') Privacy Policy
-        li
-            router-link.u-color-grey-dark(to='/about') Support / Help
+<template>
+  <nav class="c-nav-crumbs">
+    <router-link to="/" class="c-nav-crumbs__back u-circle">
+      <svg width="16px" height="14px" viewbox="0 0 16 14">
+        <path d="M1,7 L15,7"></path>
+        <polyline points="7 1 1 7 7 13"></polyline>
+      </svg><span class="c-nav-crumbs__home">Home</span>
+    </router-link>
+    <ul class="c-nav-crumbs__major u-context">
+      <li v-bind:class="{isActive: currentPath === 'about'}">
+        <router-link to="/about" class="u-color-grey-dark">About</router-link>
+      </li>
+      <li v-bind:class="{isActive: currentPath === 'process'}">
+        <router-link to="/process" class="u-color-grey-dark">Process</router-link>
+      </li>
+      <li v-bind:class="{isActive: currentPath === 'contact'}">
+        <router-link to="/contact" class="u-color-grey-dark">Contact</router-link>
+      </li>
+    </ul>
+    <ul class="c-nav-crumbs__minor u-context">
+      <li>
+        <router-link to="/about" class="u-color-grey-dark">My Account</router-link>
+      </li>
+      <li>
+        <router-link to="/about" class="u-color-grey-dark">Privacy Policy</router-link>
+      </li>
+      <li>
+        <router-link to="/about" class="u-color-grey-dark">Support / Help</router-link>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <script>
-export default {};
+export default {
+  name: 'nav-crumbs',
+  methods: {
+    linkParentIsActive(route) {
+      if (this.$route.name === route) {
+        return true;
+      }
+      return false;
+    },
+  },
+  computed: {
+    currentPath() {
+      return this.$route.name.toLowerCase();
+    },
+  },
+};
 </script>
 
 <style lang="scss">
