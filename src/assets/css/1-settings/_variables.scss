@@ -55,10 +55,11 @@ $size-map: (
 
 $primary-color: var(--indigo-dark);
 $accent-color: var(--orange-dark);
-$black-color: var(--black);
-$white-color: var(--white);
 $grey-light-color: var(--grey-light);
 $grey-dark-color: var(--grey-dark);
+$grey-med-color: var(--grey-med);
+$black-color: var(--black);
+$white-color: var(--white);
 
 $color-map: (
     primary: $primary-color,
@@ -67,6 +68,7 @@ $color-map: (
     white: $white-color,
     grey-light: $grey-light-color,
     grey-dark: $grey-dark-color,
+    grey-med: $grey-med-color,
 );
 
 
@@ -161,9 +163,6 @@ $size-map: (
 );
 
 
-
-
-
 // Style options
 // ---
 
@@ -182,8 +181,6 @@ $appearances-map: (
     half-transparent: $half-transparent,
     fully-transparent: $fully-transparent,
 );
-
-
 
 
 // Direction options

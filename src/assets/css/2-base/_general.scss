@@ -24,6 +24,11 @@ main {
     min-height: 100%;
 }
 
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
 html,
 body,
 div,
