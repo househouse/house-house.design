@@ -1,13 +1,14 @@
 <template lang="pug">
 div
-    NavCrumbs
     section.c-section
         article.c-contain
+
             h1.c-title.u-margin-bottom-lg
                 | #[span House House]
-                | can fit into your team
+                | extends your team
+
             div.c-text-content.u-color-grey-dark
-                p When filmmakers make movies, characters are portrayed by the actors who best embody the role. Similarly, House House staffs your project by selecting designers who will best fit the project requirements. The result is your team acquires the right number of folks handpicked for your situation.
+                p When filmmakers make movies, characters are portrayed by the actors who best embody the role. Similarly, House House staffs your project by selecting designers who will best fit the project requirements. The result is your team acquires the right number of folks handpicked for your specific situation.
 
     section.c-section.u-bg-primary.u-color-white.u-context
         div.u-squiggle.u-position.u-top-0.u-left-halfway(role='presentation' style='transform: translate(-50%, -50%) rotate(45deg);')
@@ -43,7 +44,7 @@ div
                             a(href='#') GitHub
 
     section.c-section.u-bg-black.u-color-white.u-context
-        div.u-squiggle.u-position.u-top-0.u-left-halfway(role='presentation' style='transform: translate(-50%, -50%) rotate(-45deg);')
+        div.u-squiggle.u-position.u-top-0(role='presentation' style='transform: translate(-50%, -50%) rotate(-45deg);')
 
         h2.u-margin-bottom-lg Houseguests
 

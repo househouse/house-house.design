@@ -6,6 +6,7 @@ div
                 | #[span House House]
                 | is a multidisciplinary studio that helps teams like yours find success through
                 | #[span design]
+
             div.c-text-content.u-color-grey-dark
                 p If your team needs to get organized, launch a service, or build a product, then a designer from House House can help you get there. By combining the strategic and the execution, we’ll push you to build towards a mission, towards user needs, towards inclusivity. It’s part of [our approach](/404).
                 p(style="margin-top:-1rem;")

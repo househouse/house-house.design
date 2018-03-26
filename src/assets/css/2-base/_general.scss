@@ -200,6 +200,11 @@ input {
 button,
 select {
     text-transform: none;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.9;
+    }
 }
 
 button,
@@ -317,4 +322,32 @@ textarea {
     font: inherit; /* 2 */
 
     -webkit-appearance: button; /* 1 */
+}
+
+
+input:focus,
+input:active,
+input:valid,
+select:focus,
+select:active,
+select:valid,
+textarea:focus,
+textarea:active,
+textarea:valid {
+    z-index: 10;
+
+    outline: 2px solid var(--black);
+
+    -webkit-appearance: none;
+}
+
+textarea {
+    font-size: 16px !important;
+    line-height: 1.6;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+    z-index: auto;
 }
