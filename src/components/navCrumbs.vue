@@ -1,10 +1,11 @@
 <template>
-  <nav class="c-nav-crumbs">
+  <nav class="c-nav-crumbs" @click='handleNavToggle'>
     <router-link to="/" class="c-nav-crumbs__back u-circle">
       <svg width="16px" height="14px" viewbox="0 0 16 14">
         <path d="M1,7 L15,7"></path>
         <polyline points="7 1 1 7 7 13"></polyline>
-      </svg><span class="c-nav-crumbs__home">Home</span>
+      </svg>
+      <span class="c-nav-crumbs__home">Home</span>
     </router-link>
     <ul class="c-nav-crumbs__major u-context">
       <li v-bind:class="{isActive: currentPath === 'about'}">
@@ -34,6 +35,11 @@
 <script>
 export default {
   name: 'nav-crumbs',
+  data() {
+    return {
+      isExpanded: false,
+    };
+  },
   methods: {
     linkParentIsActive(route) {
       if (this.$route.name === route) {
@@ -41,11 +47,16 @@ export default {
       }
       return false;
     },
+    handleNavToggle() {
+      this.isExpanded = !this.isExpanded;
+    },
   },
   computed: {
     currentPath() {
       return this.$route.name.toLowerCase();
     },
+  },
+  mounted() {
   },
 };
 </script>

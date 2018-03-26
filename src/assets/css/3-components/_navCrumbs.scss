@@ -1,4 +1,8 @@
+@import '../1-settings/_responsive';
+
 $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+$mobileScaleOffset: -6rem;
 
 
 .c-nav-crumbs {
@@ -7,9 +11,11 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
     right: 0;
     z-index: 100;
 
-    width: 10rem;
-    margin-right: 10%;
+    width: 8rem;
+    margin-right: 5%;
     padding-top: 5%;
+
+    transform: translateX(5rem);
 
     ul {
         display: block;
@@ -21,6 +27,17 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
         a {
             text-decoration: none;
         }
+    }
+
+    @include break(768) {
+      width: 8rem;
+      margin-right: 7.5%;
+      padding-top: 5%;
+      transform: translateX(0);
+    }
+
+    @include break(900) {
+      width: 10rem;
     }
 }
 
@@ -39,6 +56,13 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
 
     .c-nav-crumbs:hover & {
         width: 8rem;
+        transform: translateX($mobileScaleOffset);
+
+        @include break(768) {
+          transform: translateX(0);
+        }
+        @include break(900) {}
+
     }
 
     &,
@@ -104,10 +128,23 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
 
     pointer-events: none;
 
-    .c-nav-crumbs:hover & {
-        transform: translateY(0);
+    transition: $animation;
 
+    opacity: 0;
+
+    @include break(768) {
+      opacity: 1;
+    }
+
+    .c-nav-crumbs:hover & {
+        transform: translateY(0) translateX($mobileScaleOffset);
         pointer-events: auto;
+
+        opacity: 1;
+
+        @include break(768) {
+          transform: translateX(0);
+        }
     }
 
     li {
@@ -205,8 +242,12 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
 
         opacity: 1;
 
-        transform: translateY(0);
+        transform: translateY(0) translateX($mobileScaleOffset);
 
         pointer-events: auto;
+
+        @include break(768) {
+          transform: translateY(0) translateX(0);
+        }
     }
 }
