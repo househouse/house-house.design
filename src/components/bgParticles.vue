@@ -1,5 +1,5 @@
 <template lang="pug">
-  div#particles.c-particles.a-fade-in.--from-right
+  div#particles.c-particles.a-fade-in.--from-right(style='pointer-events:none;')
 </template>
 
 <script>

@@ -8,15 +8,13 @@ nav.c-nav-crumbs
 
     ul.c-nav-crumbs__major.u-context
         li
-            router-link.u-color-grey-dark(to='/about') About
+            router-link.u-color-grey-dark(to='/approach') Approach
         li
-            router-link.u-color-grey-dark(to='/process') Process
+            router-link.u-color-grey-dark(to='/work') Work
         li
             router-link.u-color-grey-dark(to='/contact') Contact
 
     ul.c-nav-crumbs__minor.u-context
-        li
-            router-link.u-color-grey-dark(to='/about') My Account
         li
             router-link.u-color-grey-dark(to='/about') Privacy Policy
         li
@@ -27,6 +25,6 @@ nav.c-nav-crumbs
 export default {};
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '../assets/css/3-components/_navCrumbs.scss';
 </style>

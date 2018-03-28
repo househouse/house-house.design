@@ -325,20 +325,22 @@ textarea {
 }
 
 
-input:focus,
-input:active,
-input:valid,
-select:focus,
-select:active,
-select:valid,
-textarea:focus,
-textarea:active,
-textarea:valid {
-    z-index: 10;
+input,
+select,
+textarea {
 
-    outline: 2px solid var(--black);
+    &:focus,
+    &:active,
+    &:valid {
+        z-index: 10;
+        -webkit-appearance: none;
+    }
 
-    -webkit-appearance: none;
+    &:focus,
+    &:active {
+        outline: 2px solid var(--black);
+
+    }
 }
 
 textarea {
