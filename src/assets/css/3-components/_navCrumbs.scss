@@ -4,7 +4,6 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
 
 $mobileScaleOffset: -6rem;
 
-
 .c-nav-crumbs {
     position: fixed;
     top: 0;
@@ -41,7 +40,8 @@ $mobileScaleOffset: -6rem;
     }
 }
 
-.c-nav-crumbs__back {
+.c-nav-crumbs__back,
+.c-nav__mobile-trigger {
     position: relative;
 
     display: block;
@@ -54,15 +54,13 @@ $mobileScaleOffset: -6rem;
     line-height: 3rem;
     white-space: nowrap;
 
-    .c-nav-crumbs:hover & {
+    .c-nav-crumbs.isExpanded & {
         width: 8rem;
         transform: translateX($mobileScaleOffset);
 
         @include break(768) {
           transform: translateX(0);
         }
-        @include break(900) {}
-
     }
 
     &,
@@ -97,7 +95,7 @@ $mobileScaleOffset: -6rem;
 
         transition: $animation;
 
-        .c-nav-crumbs:hover & {
+        .c-nav-crumbs.isExpanded & {
             color: rgba(white, 1);
         }
     }
@@ -106,16 +104,16 @@ $mobileScaleOffset: -6rem;
         color: #2770bf;
     }
 
-    .c-nav-crumbs:hover & div {
+    .c-nav-crumbs.isExpanded & div {
         background: rgba(65, 138, 216, 0.25);
     }
 
-    .c-nav-crumbs:hover & div svg path,
-    .c-nav-crumbs:hover & div svg polyline {
+    .c-nav-crumbs.isExpanded & div svg path,
+    .c-nav-crumbs.isExpanded & div svg polyline {
         stroke: #418ad8;
     }
 
-    .c-nav-crumbs:hover & span {
+    .c-nav-crumbs.isExpanded & span {
         opacity: 1;
 
         transform: translateX(0);
@@ -136,7 +134,7 @@ $mobileScaleOffset: -6rem;
       opacity: 1;
     }
 
-    .c-nav-crumbs:hover & {
+    .c-nav-crumbs.isExpanded & {
         transform: translateY(0) translateX($mobileScaleOffset);
         pointer-events: auto;
 
@@ -189,7 +187,7 @@ $mobileScaleOffset: -6rem;
 
             transition: $animation;
 
-            .c-nav-crumbs:hover & {
+            .c-nav-crumbs.isExpanded & {
                 opacity: 1;
 
                 transform: translateY(0);
@@ -201,7 +199,7 @@ $mobileScaleOffset: -6rem;
         }
     }
 
-    .c-nav-crumbs:hover & li::after {
+    .c-nav-crumbs.isExpanded & li::after {
         background: var(--indigo-dark);
 
         transform: translateY(6px);
@@ -211,7 +209,7 @@ $mobileScaleOffset: -6rem;
         background: var(--indigo-dark);
     }
 
-    .c-nav-crumbs:hover & .active::after {
+    .c-nav-crumbs.isExpanded & .active::after {
         background: #5a667f;
     }
 }
@@ -237,7 +235,7 @@ $mobileScaleOffset: -6rem;
         }
     }
 
-    .c-nav-crumbs:hover & {
+    .c-nav-crumbs.isExpanded & {
         position: relative;
 
         opacity: 1;
