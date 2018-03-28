@@ -1,28 +1,70 @@
-<template lang="pug">
-nav.c-nav-crumbs
-    router-link.c-nav-crumbs__back.u-circle(to='/')
-        svg(width='16px' height='14px' viewbox='0 0 16 14')
-            path(d='M1,7 L15,7')
-            polyline(points='7 1 1 7 7 13')
-        span.c-nav-crumbs__home Home
-
-    ul.c-nav-crumbs__major.u-context
-        li
-            router-link.u-color-grey-dark(to='/approach') Approach
-        li
-            router-link.u-color-grey-dark(to='/work') Work
-        li
-            router-link.u-color-grey-dark(to='/contact') Contact
-
-    ul.c-nav-crumbs__minor.u-context
-        li
-            router-link.u-color-grey-dark(to='/about') Privacy Policy
-        li
-            router-link.u-color-grey-dark(to='/about') Support / Help
+<template lang="html">
+  <div class="c-nav-wrapper">
+    <nav v-bind:class="[{isExpanded: isExpanded}, 'c-nav-crumbs']">
+      <div class="c-nav-crumbs__back u-circle" v-show="!isExpanded" @click="handleNavToggle">
+        <svg width="16px" height="14px" viewbox="0 0 16 14">
+          <path d="M1,7 L15,7"></path>
+          <polyline points="7 1 1 7 7 13"></polyline>
+        </svg>
+        <span class="c-nav-crumbs__home">Home</span>
+      </div>
+      <router-link v-on:click.native="handleNavToggle" to="/" class="c-nav-crumbs__back u-circle" v-show="isExpanded">
+        <svg width="16px" height="14px" viewbox="0 0 16 14">
+          <path d="M1,7 L15,7"></path>
+          <polyline points="7 1 1 7 7 13"></polyline>
+        </svg>
+        <span class="c-nav-crumbs__home">Home</span>
+      </router-link>
+      <ul class="c-nav-crumbs__major u-context">
+        <li v-bind:class="{isActive: currentPath === 'about'}">
+          <router-link v-on:click.native="handleNavToggle" to="/approach" class="u-color-grey-dark">Approach</router-link>
+        </li>
+        <li v-bind:class="{isActive: currentPath === 'process'}">
+          <router-link v-on:click.native="handleNavToggle" to="/work" class="u-color-grey-dark">Work</router-link>
+        </li>
+        <li v-bind:class="{isActive: currentPath === 'contact'}">
+          <router-link v-on:click.native="handleNavToggle" to="/contact" class="u-color-grey-dark">Contact</router-link>
+        </li>
+      </ul>
+      <ul class="c-nav-crumbs__minor u-context">
+        <li>
+          <router-link v-on:click.native="handleNavToggle" to="/about" class="u-color-grey-dark">Join our team</router-link>
+        </li>
+        <li>
+          <router-link v-on:click.native="handleNavToggle" to="/about" class="u-color-grey-dark">Privacy Policy</router-link>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </template>
 
 <script>
-export default {};
+export default {
+  name: 'nav-crumbs',
+  data() {
+    return {
+      isExpanded: false,
+    };
+  },
+  methods: {
+    linkParentIsActive(route) {
+      if (this.$route.name === route) {
+        return true;
+      }
+      return false;
+    },
+    handleNavToggle() {
+      this.isExpanded = !this.isExpanded;
+    },
+  },
+  computed: {
+    currentPath() {
+      return this.$route.name.toLowerCase();
+    },
+  },
+  mounted() {
+  },
+};
 </script>
 
 <style lang="scss" scoped>

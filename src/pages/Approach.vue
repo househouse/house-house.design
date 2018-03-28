@@ -51,7 +51,6 @@ div
                 div.c-text-content
                     p When filmmakers make movies, characters are portrayed by the actors who best embody the role. Similarly, House House staffs your project by selecting designers who will best fit the project requirements. The result is your team acquires the right number of folks handpicked for your specific situation.
 
-
                     p Our full-time members call ourselves “residents:” we live and breathe the House House way. Sometimes the addition of a single resident on your team is all you need.
 
                     p [write more here!]

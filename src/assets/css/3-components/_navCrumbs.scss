@@ -1,5 +1,8 @@
+@import '../1-settings/_responsive';
+
 $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
 
+$mobileScaleOffset: -6rem;
 
 .c-nav-crumbs {
     position: fixed;
@@ -7,9 +10,11 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
     right: 0;
     z-index: 100;
 
-    width: 10rem;
-    margin-right: 10%;
+    width: 8rem;
+    margin-right: 5%;
     padding-top: 5%;
+
+    transform: translateX(5rem);
 
     ul {
         display: block;
@@ -21,9 +26,21 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
             text-decoration: none;
         }
     }
+
+    @include break(768) {
+      width: 8rem;
+      margin-right: 7.5%;
+      padding-top: 5%;
+      transform: translateX(0);
+    }
+
+    @include break(900) {
+      width: 10rem;
+    }
 }
 
-.c-nav-crumbs__back {
+.c-nav-crumbs__back,
+.c-nav__mobile-trigger {
     position: relative;
 
     display: block;
@@ -37,8 +54,13 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
     line-height: 3rem;
     white-space: nowrap;
 
-    .c-nav-crumbs:hover & {
+    .c-nav-crumbs.isExpanded & {
         width: 8rem;
+        transform: translateX($mobileScaleOffset);
+
+        @include break(768) {
+          transform: translateX(0);
+        }
     }
 
     &,
@@ -73,7 +95,7 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
 
         transition: $animation;
 
-        .c-nav-crumbs:hover & {
+        .c-nav-crumbs.isExpanded & {
             color: rgba(white, 1);
         }
     }
@@ -82,16 +104,16 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
         color: #2770bf;
     }
 
-    .c-nav-crumbs:hover & div {
+    .c-nav-crumbs.isExpanded & div {
         background: rgba(65, 138, 216, 0.25);
     }
 
-    .c-nav-crumbs:hover & div svg path,
-    .c-nav-crumbs:hover & div svg polyline {
+    .c-nav-crumbs.isExpanded & div svg path,
+    .c-nav-crumbs.isExpanded & div svg polyline {
         stroke: #418ad8;
     }
 
-    .c-nav-crumbs:hover & span {
+    .c-nav-crumbs.isExpanded & span {
         opacity: 1;
 
         transform: translateX(0);
@@ -104,10 +126,23 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
 
     pointer-events: none;
 
-    .c-nav-crumbs:hover & {
-        transform: translateY(0);
+    transition: $animation;
 
+    opacity: 0;
+
+    @include break(768) {
+      opacity: 1;
+    }
+
+    .c-nav-crumbs.isExpanded & {
+        transform: translateY(0) translateX($mobileScaleOffset);
         pointer-events: auto;
+
+        opacity: 1;
+
+        @include break(768) {
+          transform: translateX(0);
+        }
     }
 
     li {
@@ -152,7 +187,7 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
 
             transition: $animation;
 
-            .c-nav-crumbs:hover & {
+            .c-nav-crumbs.isExpanded & {
                 opacity: 1;
 
                 transform: translateY(0);
@@ -164,13 +199,17 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
         }
     }
 
-    .c-nav-crumbs:hover & li::after {
+    .c-nav-crumbs.isExpanded & li::after {
         background: var(--indigo-dark);
 
         transform: translateY(6px);
     }
 
-    .c-nav-crumbs:hover & .active::after {
+    .c-nav-crumbs & li.isActive::after {
+        background: var(--indigo-dark);
+    }
+
+    .c-nav-crumbs.isExpanded & .active::after {
         background: #5a667f;
     }
 }
@@ -196,13 +235,17 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
         }
     }
 
-    .c-nav-crumbs:hover & {
+    .c-nav-crumbs.isExpanded & {
         position: relative;
 
         opacity: 1;
 
-        transform: translateY(0);
+        transform: translateY(0) translateX($mobileScaleOffset);
 
         pointer-events: auto;
+
+        @include break(768) {
+          transform: translateY(0) translateX(0);
+        }
     }
 }
