@@ -2,14 +2,14 @@
 export default {
   "particles": {
     "number": {
-      "value": 20,
+      "value": 10,
       "density": {
         "enable": true,
         "value_area": 800
       }
     },
     "color": {
-      "value": ["#4745d1", "#37a1fc", "#b083c8", "#72c87c", "#fd9a59"]
+      "value": ["#37a1fc", "#b083c8", "#72c87c", "#fd9a59"]
     },
     "shape": {
       "type": ["circle", "triangle"],

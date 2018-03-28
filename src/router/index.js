@@ -2,8 +2,8 @@ import Vue from 'vue';
 import Router from 'vue-router';
 
 import Home from '@/pages/Home';
-import About from '@/pages/About';
-import Process from '@/pages/Process';
+import Approach from '@/pages/Approach';
+import Work from '@/pages/Work';
 import Contact from '@/pages/Contact';
 
 // import Thanks from '@/pages/Thanks';
@@ -19,17 +19,17 @@ export default new Router({
       name: 'Home',
       component: Home,
     }, {
-      path: '/about',
-      name: 'About',
-      component: About,
+      path: '/approach',
+      name: 'Approach',
+      component: Approach,
     }, {
       path: '/contact',
       name: 'Contact',
       component: Contact,
     }, {
-      path: '/process',
-      name: 'Process',
-      component: Process,
+      path: '/work',
+      name: 'Work',
+      component: Work,
     },
   ],
 });

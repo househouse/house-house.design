@@ -22,7 +22,6 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
 
     ul {
         display: block;
-        margin-bottom: 0;
 
         white-space: nowrap;
         list-style: none;
@@ -71,6 +70,7 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
     height: 3rem;
 
     background: var(--indigo-dark);
+    box-shadow: 0 0 2px var(--white);
 
     line-height: 3rem;
     white-space: nowrap;
