@@ -1,0 +1,18 @@
+.a-scale-out-enter-active {
+  transition: all 0.9s cubic-bezier(0, 0, 0.3, 1);
+}
+
+.a-scale-out-leave-active {
+  transition: all .8s cubic-bezier(0.3, 0, 1, 1);
+}
+
+.a-scale-out-enter {
+  transform: scale(1.02,1.02) translateY(10px);
+  opacity: 0;
+}
+
+.a-scale-out-leave-to {
+  transform: scale(0.95,0.95);
+  opacity: 0;
+  display: none;
+}
