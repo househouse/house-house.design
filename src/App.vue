@@ -12,6 +12,7 @@ div#app
                 small Made with love in Vancouver, Canada.
             p
                 small.u-color-grey-dark © 2016—2018 House House
+
         div.u-flex-shrink
             p
                 small
