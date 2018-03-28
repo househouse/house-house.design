@@ -1,7 +1,6 @@
 <template>
   <div class="c-nav-wrapper">
     <nav v-bind:class="[{isExpanded: isExpanded}, 'c-nav-crumbs']">
-
       <div class="c-nav-crumbs__back u-circle" v-show="!isExpanded" @click="handleNavToggle">
         <svg width="16px" height="14px" viewbox="0 0 16 14">
           <path d="M1,7 L15,7"></path>
@@ -9,16 +8,13 @@
         </svg>
         <span class="c-nav-crumbs__home">Home</span>
       </div>
-
-
-        <router-link v-on:click.native="handleNavToggle" to="/" class="c-nav-crumbs__back u-circle" v-show="isExpanded">
-          <svg width="16px" height="14px" viewbox="0 0 16 14">
-            <path d="M1,7 L15,7"></path>
-            <polyline points="7 1 1 7 7 13"></polyline>
-          </svg>
-          <span class="c-nav-crumbs__home">Home</span>
-        </router-link>
-
+      <router-link v-on:click.native="handleNavToggle" to="/" class="c-nav-crumbs__back u-circle" v-show="isExpanded">
+        <svg width="16px" height="14px" viewbox="0 0 16 14">
+          <path d="M1,7 L15,7"></path>
+          <polyline points="7 1 1 7 7 13"></polyline>
+        </svg>
+        <span class="c-nav-crumbs__home">Home</span>
+      </router-link>
       <ul class="c-nav-crumbs__major u-context">
         <li v-bind:class="{isActive: currentPath === 'about'}">
           <router-link v-on:click.native="handleNavToggle" to="/about" class="u-color-grey-dark">About</router-link>
@@ -76,15 +72,4 @@ export default {
 
 <style lang="scss" scoped>
 @import '../assets/css/3-components/_navCrumbs.scss';
-
-.a-fade-enter-active,
-.a-fade-leave-active {
-  transition: all 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
-  position: absolute;
-}
-
-.a-fade-enter,
-.a-fade-leave-to {
-  opacity: 0.25;
-}
 </style>
