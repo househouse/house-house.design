@@ -3,8 +3,9 @@ div#app
     bgParticles
     bgShapes
     navCrumbs
-    main.a-fade-in.--from-bottom(style='min-height:100vh;')
-        router-view
+    main(style='min-height:100vh;')
+        transition(name="a-scale-out")
+          router-view
     siteFooter
 </template>
 

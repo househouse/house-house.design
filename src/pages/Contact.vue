@@ -8,7 +8,7 @@ div
                 | is ready to hear you out
 
             div.c-text-content.u-color-grey-dark
-                p We’vee often got our heads down doing important work, but we’ll always make time to hear about your challenges and your ideas. So give us a shout, say a quick hello, and let’s make some magic happen.
+                p We’ve often got our heads down doing important work, but we’ll always make time to hear about your challenges and your ideas. So give us a shout, say a quick hello, and let’s make some magic happen.
 
                 p.u-flexbox.u-align-middle.u-justify-middle.u-padding-top-md.u-padding-bottom-md.u-color-black.u-uppercase.u-text-size-small.u-tracked-loose.u-bg-grey-light(style='border-radius:0.5rem; border:1px solid var(--grey-med);')
                     | 👍 We are ready to join your team in&nbsp;#[strong Q2]&nbsp;and&nbsp;#[strong Q3]&nbsp;2018
