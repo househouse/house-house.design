@@ -2,19 +2,23 @@
 
 $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
 
-$mobileScaleOffset: -6rem;
-
 .c-nav-crumbs {
     position: fixed;
-    top: 0;
+    top: 10%;
     right: 0;
     z-index: 100;
 
-    width: 8rem;
+    width: 3rem;
     margin-right: 5%;
-    padding-top: 5%;
+    padding: 0.5rem;
 
-    transform: translateX(5rem);
+    border-radius: 16px;
+
+    transition: $animation;
+
+    &.--large {
+      display: none;
+    }
 
     ul {
         display: block;
@@ -28,11 +32,29 @@ $mobileScaleOffset: -6rem;
         }
     }
 
+    &.isExpanded,
+    &.--large:hover {
+      background: rgba(243,246,250,0.85);
+      width: 10rem;
+    }
+
     @include break(768) {
       width: 8rem;
       margin-right: 7.5%;
-      padding-top: 5%;
       transform: translateX(0);
+
+      &.--mobile {
+        display: none;
+      }
+      &.--large {
+        display: block;
+      }
+
+      &.isExpanded,
+      &.--large:hover {
+        background: rgba(243,246,250,0.85);
+        width: 12rem;
+      }
     }
 
     @include break(900) {
@@ -40,8 +62,7 @@ $mobileScaleOffset: -6rem;
     }
 }
 
-.c-nav-crumbs__back,
-.c-nav__mobile-trigger {
+.c-nav-crumbs__back {
     position: relative;
 
     display: block;
@@ -54,9 +75,9 @@ $mobileScaleOffset: -6rem;
     line-height: 3rem;
     white-space: nowrap;
 
-    .c-nav-crumbs.isExpanded & {
+    .c-nav-crumbs.isExpanded &,
+    .c-nav-crumbs.--large:hover & {
         width: 8rem;
-        transform: translateX($mobileScaleOffset);
 
         @include break(768) {
           transform: translateX(0);
@@ -95,7 +116,8 @@ $mobileScaleOffset: -6rem;
 
         transition: $animation;
 
-        .c-nav-crumbs.isExpanded & {
+        .c-nav-crumbs.isExpanded &,
+        .c-nav-crumbs.--large:hover & {
             color: rgba(white, 1);
         }
     }
@@ -104,16 +126,20 @@ $mobileScaleOffset: -6rem;
         color: #2770bf;
     }
 
-    .c-nav-crumbs.isExpanded & div {
+    .c-nav-crumbs.isExpanded & div,
+    .c-nav-crumbs.--large:hover & div {
         background: rgba(65, 138, 216, 0.25);
     }
 
     .c-nav-crumbs.isExpanded & div svg path,
-    .c-nav-crumbs.isExpanded & div svg polyline {
+    .c-nav-crumbs.isExpanded & div svg polyline,
+    .c-nav-crumbs.--large:hover & div svg path,
+    .c-nav-crumbs.--large:hover & div svg polyline {
         stroke: #418ad8;
     }
 
-    .c-nav-crumbs.isExpanded & span {
+    .c-nav-crumbs.isExpanded & span,
+    .c-nav-crumbs.--large:hover & span{
         opacity: 1;
 
         transform: translateX(0);
@@ -134,8 +160,9 @@ $mobileScaleOffset: -6rem;
       opacity: 1;
     }
 
-    .c-nav-crumbs.isExpanded & {
-        transform: translateY(0) translateX($mobileScaleOffset);
+    .c-nav-crumbs.isExpanded &,
+    .c-nav-crumbs.--large:hover & {
+        transform: translateY(0);
         pointer-events: auto;
 
         opacity: 1;
@@ -187,7 +214,8 @@ $mobileScaleOffset: -6rem;
 
             transition: $animation;
 
-            .c-nav-crumbs.isExpanded & {
+            .c-nav-crumbs.isExpanded &,
+            .c-nav-crumbs.--large:hover & {
                 opacity: 1;
 
                 transform: translateY(0);
@@ -199,7 +227,8 @@ $mobileScaleOffset: -6rem;
         }
     }
 
-    .c-nav-crumbs.isExpanded & li::after {
+    .c-nav-crumbs.isExpanded & li::after,
+    .c-nav-crumbs.--large:hover & li::after {
         background: var(--indigo-dark);
 
         transform: translateY(6px);
@@ -209,7 +238,8 @@ $mobileScaleOffset: -6rem;
         background: var(--indigo-dark);
     }
 
-    .c-nav-crumbs.isExpanded & .active::after {
+    .c-nav-crumbs.isExpanded & .active::after,
+    .c-nav-crumbs.--large:hover & .active::after {
         background: #5a667f;
     }
 }
@@ -235,12 +265,13 @@ $mobileScaleOffset: -6rem;
         }
     }
 
-    .c-nav-crumbs.isExpanded & {
+    .c-nav-crumbs.isExpanded &,
+    .c-nav-crumbs.--large:hover & {
         position: relative;
 
         opacity: 1;
 
-        transform: translateY(0) translateX($mobileScaleOffset);
+        transform: translateY(0);
 
         pointer-events: auto;
 
