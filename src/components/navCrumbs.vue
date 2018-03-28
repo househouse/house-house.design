@@ -16,10 +16,10 @@
         <span class="c-nav-crumbs__home">Home</span>
       </router-link>
       <ul class="c-nav-crumbs__major u-context">
-        <li v-bind:class="{isActive: currentPath === 'about'}">
+        <li v-bind:class="{isActive: currentPath === 'approach'}">
           <router-link v-on:click.native="handleNavToggle" to="/approach" class="u-color-grey-dark">Approach</router-link>
         </li>
-        <li v-bind:class="{isActive: currentPath === 'process'}">
+        <li v-bind:class="{isActive: currentPath === 'work'}">
           <router-link v-on:click.native="handleNavToggle" to="/work" class="u-color-grey-dark">Work</router-link>
         </li>
         <li v-bind:class="{isActive: currentPath === 'contact'}">
@@ -44,11 +44,11 @@
         <span class="c-nav-crumbs__home">Home</span>
       </router-link>
       <ul class="c-nav-crumbs__major u-context">
-        <li v-bind:class="{isActive: currentPath === 'about'}">
-          <router-link to="/about" class="u-color-grey-dark">About</router-link>
+        <li v-bind:class="{isActive: currentPath === 'approach'}">
+          <router-link to="/approach" class="u-color-grey-dark">Approach</router-link>
         </li>
-        <li v-bind:class="{isActive: currentPath === 'process'}">
-          <router-link to="/process" class="u-color-grey-dark">Process</router-link>
+        <li v-bind:class="{isActive: currentPath === 'work'}">
+          <router-link to="/work" class="u-color-grey-dark">Work</router-link>
         </li>
         <li v-bind:class="{isActive: currentPath === 'contact'}">
           <router-link to="/contact" class="u-color-grey-dark">Contact</router-link>
@@ -56,13 +56,10 @@
       </ul>
       <ul class="c-nav-crumbs__minor u-context">
         <li>
-          <router-link v-on:click.native="handleNavToggle" to="/about" class="u-color-grey-dark">My Account</router-link>
+          <router-link v-on:click.native="handleNavToggle" to="/about" class="u-color-grey-dark">Join our team</router-link>
         </li>
         <li>
           <router-link v-on:click.native="handleNavToggle" to="/about" class="u-color-grey-dark">Privacy Policy</router-link>
-        </li>
-        <li>
-          <router-link v-on:click.native="handleNavToggle" to="/about" class="u-color-grey-dark">Support / Help</router-link>
         </li>
       </ul>
     </nav>
