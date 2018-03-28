@@ -15,30 +15,29 @@ div
 
         h2.u-margin-bottom-lg Residents
 
-        article.c-contain
+        article.c-contain.u-margin-bottom-lg
             p We take an iterative design approach to our work, meaning we communicating often, pivoting and adjusting until we get it right. This is a process; as we discover and learn more about you and your business goals, targets may sometime change. By designing iteratively, we can make sure things adapt gracefully along the way. Our process is broken down to three general stages that overlap and interweave with one another, like a braid.
 
-        div(style='margin:4em 0;')
-            img(src='../assets/img/design-braid.png' style='width:100%;')
-
-        div.u-flexbox--medium-up.u-margin-bottom-md.u-align-center(style='line-height:1;')
-            div.c-text-content.u-flex.u-margin-bottom-md
+        div.u-flexbox--medium-up.u-margin-bottom-md.u-align-center.u-context(style='line-height:1;')
+            div.c-text-content.u-flex.u-margin-bottom-md.u-context(style='z-index:10;')
                 h3 Design
                 span.u-block 🌀 Interface Design
                 span.u-block 🌄 Brand Identity
                 span.u-block 📝 Art Direction
 
-            div.c-text-content.u-flex.u-margin-bottom-md
+            div.c-text-content.u-flex.u-margin-bottom-md.u-context(style='z-index:10;')
                     h3 Technology
                     span.u-block ⌨️ Front-End Development
                     span.u-block 📱 Progressive Web Apps
                     span.u-block 💻 Responsive Websites
 
-            div.c-text-content.u-flex.u-margin-bottom-md
+            div.c-text-content.u-flex.u-margin-bottom-md.u-context(style='z-index:10;')
                 h3 Strategy
                 span.u-block 📝 Training / Mentorship
                 span.u-block 📦 Service Design
                 span.u-block 📦 UX Research
+
+            img.u-position.u-top-halfway.u-left-halfway.u-realign-center(src='../assets/img/design-braid.png' style='width:100%; opacity:0.25; margin-top:1em;')
 
 
     section.c-section.u-bg-primary.u-color-white.u-context
@@ -82,6 +81,14 @@ div
         article.u-flex.u-margin-right-lg.c-contain
             div.c-text-content
                 p Some projects need a handful of specialists, like an information architect who has years of experience making sites for kids or a 3D animator who has extensive knowledge of the home improvement industry. Other projects call for an army of variously tenured folks, from junior-level production people to seasoned veterans who call the shots. For every project, we pull together the right people for the job.
+
+        div.c-network.u-position.u-right-0.u-top-0
+            div.c-network__ring.c--1
+                | 👨🏼‍💻 👩🏽‍🎨 👨🏻‍🔬 👩🏻‍🏫
+            div.c-network__ring.c--2
+                | 👨🏽‍🏫 👩🏻‍🌾 👩🏾‍💼 👨🏻‍🎨 
+            div.c-network__ring.c--3
+                | 👩🏼‍🔬 👩🏻‍🔧 👩🏾‍💻 👨🏿‍💼
 
 
     section.c-section.u-bg-secondary.u-context

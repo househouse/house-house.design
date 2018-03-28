@@ -5,7 +5,7 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
 .c-nav-crumbs {
     position: fixed;
     top: 10%;
-    right: 0;
+    left: calc(100% - 20rem);
     z-index: 100;
 
     width: 3rem;
@@ -17,7 +17,7 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
     transition: $animation;
 
     &.--large {
-      display: none;
+        display: none;
     }
 
     ul {
@@ -33,27 +33,30 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
 
     &.isExpanded,
     &.--large:hover {
-      background: rgba(243,246,250,0.85);
-      width: 10rem;
+        width: 10rem;
+        background: rgba(243,246,250,0.9);
     }
 
     @include break(768) {
-      width: 8rem;
-      margin-right: 7.5%;
-      transform: translateX(0);
+        width: 8rem;
+        margin-right: 7.5%;
 
-      &.--mobile {
-        display: none;
-      }
-      &.--large {
-        display: block;
-      }
+        transform: translateX(0);
 
-      &.isExpanded,
-      &.--large:hover {
-        background: rgba(243,246,250,0.85);
-        width: 12rem;
-      }
+        &.--mobile {
+            display: none;
+        }
+
+        &.--large {
+            display: block;
+        }
+
+        &.isExpanded,
+        &.--large:hover {
+            width: 12rem;
+
+            background: rgba(243,246,250,0.85);
+        }
     }
 
     @include break(900) {
@@ -80,7 +83,7 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
         width: 8rem;
 
         @include break(768) {
-          transform: translateX(0);
+            transform: translateX(0);
         }
     }
 
