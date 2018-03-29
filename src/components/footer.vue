@@ -13,12 +13,12 @@ div
 
         div.u-flex-shrink.c-text-content
             p.u-text-size-small
-                a.u-margin-right-lg.u-color-acent(href='#')
+                a.u-margin-right-lg.u-color-acent(href='https://linkedin.com/company/17940020/')
                     span LinkedIn
-                a.u-margin-right-lg.u-color-acent(href='#')
-                    span Twitter
-                a.u-margin-right-lg.u-color-ccent(href='#')
+                a.u-margin-right-lg.u-color-ccent(href='https://github.com/househouse/')
                     span GitHub
+                a.u-margin-right-lg.u-color-ccent(href='mailto:hello@house-house.design')
+                    span hello@
 </template>
 
 <script>
