@@ -28,10 +28,10 @@
       </ul>
       <ul class="c-nav-crumbs__minor u-context">
         <li>
-          <router-link v-on:click.native="handleNavToggle" to="/about" class="u-color-grey-dark">Join our team</router-link>
+          <router-link v-on:click.native="handleNavToggle" to="mailto:hello@house-house.design" class="u-color-grey-dark">Join our team</router-link>
         </li>
         <li>
-          <router-link v-on:click.native="handleNavToggle" to="/about" class="u-color-grey-dark">Privacy Policy</router-link>
+          <router-link v-on:click.native="handleNavToggle" to="https://github.com/househouse/housecss" class="u-color-grey-dark">housecss</router-link>
         </li>
       </ul>
     </nav>
@@ -56,7 +56,7 @@
       </ul>
       <ul class="c-nav-crumbs__minor u-context">
         <li>
-          <router-link v-on:click.native="handleNavToggle" to="/about" class="u-color-grey-dark">Join our team</router-link>
+            <router-link v-on:click.native="handleNavToggle" to="mailto:hello@house-house.design" class="u-color-grey-dark">Join our team</router-link>
         </li>
         <li>
           <router-link v-on:click.native="handleNavToggle" to="https://github.com/househouse/housecss" class="u-color-grey-dark">housecss</router-link>
