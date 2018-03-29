@@ -1,0 +1,59 @@
+.c-text-content {
+    > *:not(:last-child) {
+        margin-bottom: 1em;
+    }
+
+    a {
+        position: relative;
+
+        display: inline-block;
+
+        color: var(--indigo-med);
+        text-decoration: none;
+
+        transition: all 0.125s ease-out;
+
+        &::before {
+            content: "";
+
+            position: absolute;
+            right: 0;
+            bottom: 0.125em;
+            left: 0;
+            z-index: -1;
+
+            height: 0.5em;
+
+            opacity: 0.25;
+            background-color: var(--indigo-light);
+
+            transition: all 0.125s ease-out;
+        }
+
+        &:hover {
+            color: var(--indigo-dark);
+
+            &:before {
+                height: 0.125em;
+
+                opacity: 1;
+                background-color: var(--orange-dark);
+
+                transform: translate(0, 0.25em);
+            }
+        }
+
+        .u-color-white & {
+            color: var(--white);
+
+            &:before {
+                opacity: 0.5;
+                background-color: var(--orange-dark);
+            }
+
+            &:hover {
+                color: var(--white);
+            }
+        }
+    }
+}

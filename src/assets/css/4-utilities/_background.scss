@@ -1,0 +1,40 @@
+// Utilities: Background
+// ============================================================================
+
+@each $color-name, $color-value in $color-map {
+    .u-bg-#{$color-name} {
+        background-color: $color-value;
+    }
+}
+
+.u-bg-cover {
+    background-size: cover;
+}
+
+.u-bg-center {
+    background-position: center;
+}
+
+.u-bg-stars {
+    background-image: url('assets/img/stars.gif');
+}
+
+.u-bg-vdw {
+    background-image: url('assets/img/project--vdw.jpg');
+}
+
+.u-bg-bi {
+    background-image: url('assets/img/project--blancink.jpg');
+}
+
+.u-bg-lpf {
+    background-image: url('assets/img/project--lawnpartyfilms.jpg');
+}
+
+.u-bg-askwill {
+    background-image: url('assets/img/project--askwill.gif');
+}
+
+.u-bg-ufo {
+    background-image: url('assets/img/project--stanford.jpg');
+}

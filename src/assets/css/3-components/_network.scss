@@ -1,0 +1,106 @@
+.c-network {
+    opacity: 0;
+    @include break(800) {
+        opacity: 1 !important;
+        left: 40rem;
+    }
+
+    max-height: 90%;
+}
+
+
+.c-network__ring {
+    width: 5em;
+
+    font-size: 2em;
+}
+
+.c-approach {
+    position: relative;
+
+    &::after,
+    &::before {
+      display: none;
+      @include break(800) {
+        display: initial;
+        content: '';
+
+        position: absolute;
+        top: -8rem;
+      }
+    }
+
+    &::after {
+        width: 1px;
+        height: 8rem;
+        background: linear-gradient(to bottom, var(--white), rgba(255, 255, 255, 0));
+    }
+
+    &::before {
+        width: 0.5rem;
+        height: 0.5rem;
+
+        border-radius: 100%;
+        background: var(--white);
+
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+// Card Component
+// ===
+
+.c-card {
+    &:not(.c--no-padding) {
+        height: 40vh;
+        padding-top: 25vh;
+    }
+
+    &:hover {
+        .c-card__image {
+            opacity: 0.8;
+            transform: scale(1.2) rotate(-2deg);
+        }
+    }
+}
+
+.c-card__image {
+    background: var(--black);
+    transform: scale(1.05);
+    transition: all 0.7s ease-out;
+}
+
+
+// Faux Link Component
+// ===
+
+.c-faux-link {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.c-faux-link__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: $z4-depth;
+
+    display: block;
+    overflow: hidden;
+
+    white-space: nowrap;
+    text-indent: 200%;
+
+    .lt-ie9 & {
+        opacity: 0;
+        background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');
+    }
+
+    &:hover {
+        background: none;
+    }
+}

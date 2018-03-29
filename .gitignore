@@ -1,7 +1,14 @@
 .DS_Store
-.sass-cache
-.jekyll-metadata
-.codekit-cache
-config.codekit
-node_modules
+node_modules/
+/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 package-lock.json
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

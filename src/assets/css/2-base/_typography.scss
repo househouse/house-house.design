@@ -1,0 +1,74 @@
+// Global typography styles
+// ==========
+
+//- TODO: Add a @font-face for Tiempos Text
+
+body {
+    font-family: var(--font--primary);
+    font-weight: var(--font--weight--default, 300);
+    font-size: 1em;
+    line-height: 1.75;
+
+    @include break(500) {
+        font-size: 1.1em;
+    }
+
+    @include break(900) {
+        font-size: 1.2em;
+    }
+
+    @include break(1200) {
+        font-size: 1.3em;
+    }
+
+    @include break(1500) {
+        font-size: 1.4em;
+    }
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font--secondary);
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+h1 {
+    font-size: 1.75em;
+
+    @include break(450) {
+        font-size: 2.25em;
+    }
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+small {
+    font-size: 0.65em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+code,
+pre {
+    font-family: var(--font--code);
+}
+
+q,
+blockquote {
+    quote: none;
+
+    &::before,
+    &::after {
+        content: '';
+    }
+}
