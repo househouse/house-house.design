@@ -1,13 +1,1 @@
-<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-    <title>Pixellated corner</title>
-    <path fill-opacity="0.3" d="M0 0h20v20h-20z"/>
-    <path fill-opacity="0.3" d="M20 20h20v20h-20z"/>
-    <path fill-opacity="0.6" d="M0 20h20v20h-20z"/>
-    <path fill-opacity="0.9" d="M0 40h20v20h-20z"/>
-    <path fill-opacity="0.9" d="M20 60h20v20h-20z"/>
-    <path fill-opacity="1.0" d="M0 60h20v20h-20z"/>
-    <path fill-opacity="0.6" d="M20 40h20v20h-20z"/>
-    <path fill-opacity="0.6" d="M40 60h20v20h-20z"/>
-    <path fill-opacity="0.3" d="M40 40h20v20h-20z"/>
-    <path fill-opacity="0.3" d="M60 60h20v20h-20z"/>
-</svg>
+<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><title>Pixellated corner</title><path fill-opacity=".3" d="M0 0h20v20h-20z"/><path fill-opacity=".3" d="M20 20h20v20h-20z"/><path fill-opacity=".6" d="M0 20h20v20h-20z"/><path fill-opacity=".9" d="M0 40h20v20h-20z"/><path fill-opacity=".9" d="M20 60h20v20h-20z"/><path fill-opacity="1" d="M0 60h20v20h-20z"/><path fill-opacity=".6" d="M20 40h20v20h-20z"/><path fill-opacity=".6" d="M40 60h20v20h-20z"/><path fill-opacity=".3" d="M40 40h20v20h-20z"/><path fill-opacity=".3" d="M60 60h20v20h-20z"/></svg>

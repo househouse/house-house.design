@@ -1,19 +1,24 @@
 <template lang="pug">
-footer.c-section.u-flexbox
-    div.u-flex
-        p.u-text-size-small.u-margin-bottom-md(style='line-height:1.5;')
-            | Made with love in Vancouver, Canada.
-        p.u-text-size-small.u-color-grey-dark
-            | © 2016—2018 House House
+div
+    aside.u-padding-top-md.u-padding-bottom-md.u-padding-left-md.u-padding-right-md.u-align-center.u-bg-grey-light.u-text-size-small
+        p.c-text-content
+            a(href='').u-color-grey-dark Things look a bit off? Content missing? We’re designing in the open. See what that means &rarr;
 
-    div.u-flex-shrink.c-text-content
-        p.u-text-size-small
-            a.u-margin-right-lg.u-color-acent(href='#')
-                span LinkedIn
-            a.u-margin-right-lg.u-color-acent(href='#')
-                span Twitter
-            a.u-margin-right-lg.u-color-ccent(href='#')
-                span GitHub
+    footer.c-section.u-flexbox
+        div.u-flex
+            p.u-text-size-small.u-margin-bottom-md(style='line-height:1.5;')
+                | Made with love in Vancouver, Canada.
+            p.u-text-size-small.u-color-grey-dark
+                | © 2016—2018 House House
+
+        div.u-flex-shrink.c-text-content
+            p.u-text-size-small
+                a.u-margin-right-lg.u-color-acent(href='#')
+                    span LinkedIn
+                a.u-margin-right-lg.u-color-acent(href='#')
+                    span Twitter
+                a.u-margin-right-lg.u-color-ccent(href='#')
+                    span GitHub
 </template>
 
 <script>

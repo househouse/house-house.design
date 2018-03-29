@@ -5,7 +5,7 @@ div#app
     navCrumbs
     main(style='min-height:100vh;')
         transition(name="a-scale-out")
-          router-view
+            router-view
     siteFooter
 </template>
 
