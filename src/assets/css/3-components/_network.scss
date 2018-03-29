@@ -1,5 +1,7 @@
 .c-network {
-    @include break(760) {
+    opacity: 0;
+    @include break(800) {
+        opacity: 1 !important;
         left: 40rem;
     }
 
@@ -18,10 +20,14 @@
 
     &::after,
     &::before {
+      display: none;
+      @include break(800) {
+        display: initial;
         content: '';
 
         position: absolute;
         top: -8rem;
+      }
     }
 
     &::after {
