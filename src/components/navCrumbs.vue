@@ -63,6 +63,7 @@
         </li>
       </ul>
     </nav>
+    <div class="c-nav-crumbs__screen-close"></div>
   </div>
 </template>
 

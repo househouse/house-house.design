@@ -19,25 +19,25 @@ div
         img(src='../assets/img/design-braid.png' style='opacity:0.95; width:100%; margin:1rem 0;')
 
         div.u-flexbox--medium-up.u-margin-bottom-md.u-align-center.u-context(style='line-height:1; margin-top:4rem;')
-            div.c-text-content.u-flex.u-margin-bottom-md.u-context.c-approach(style='z-index:10;')
+            div.c-text-content.u-flex.u-margin-bottom-lg.u-context.c-approach(style='z-index:10;')
                 h3 Design
                 span.u-block 🌀 Interface Design
                 span.u-block 🌄 Brand Identity
                 span.u-block 👉 Art Direction
 
-            div.c-text-content.u-flex.u-margin-bottom-md.u-context.c-approach(style='z-index:10;')
+            div.c-text-content.u-flex.u-margin-bottom-lg.u-context.c-approach(style='z-index:10;')
                 h3 Technology
                 span.u-block ⌨️ Front-End Development
                 span.u-block 📱 Progressive Web Apps
                 span.u-block 💻 Responsive Websites
 
-            div.c-text-content.u-flex.u-margin-bottom-md.u-context.c-approach(style='z-index:10;')
+            div.c-text-content.u-flex.u-margin-bottom-lg.u-context.c-approach(style='z-index:10;')
                 h3 Strategy
                 span.u-block ⚡️ Experience Strategy
                 span.u-block 🗺 Service Design
                 span.u-block 🔍 UX Research
 
-            div.c-text-content.u-flex.u-margin-bottom-md.u-context.c-approach(style='z-index:10;')
+            div.c-text-content.u-flex.u-margin-bottom-lg.u-context.c-approach(style='z-index:10;')
                 h3 Mentorship
                 span.u-block 🤝 Team Building
                 span.u-block 🎨 Workshops
@@ -49,7 +49,7 @@ div
         h2.u-margin-bottom-lg Residents
 
         div.u-flexbox
-            article.u-flex.u-margin-right-lg.c-contain
+            article.u-flex.u-margin-right-lg.c-contain.u-width-full.u-width-1of2--small-up
                 div.c-text-content
                     p When filmmakers make movies, characters are portrayed by the actors who best embody the role. Similarly, we’ll staff your project by choosing the designer who will best fit the requirements. With our vertality and broad range of skills, the result is your team acquires the right number of folks handpicked for your specific situation.
 
@@ -58,7 +58,7 @@ div
 
                     p [write more here!]
 
-            aside.u-flex
+            aside.u-flex.u-width-full.u-width-1of2--small-up
                 article.c-resident.c--ben.u-margin-bottom-lg
                     div.c-resident__image
                     div.c-resident__info.c-text-content
