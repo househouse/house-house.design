@@ -35,6 +35,9 @@ This valid, semantic <small>HTML5</small>, <small>CSS3</small>, and <small>JS</s
 5. 🎉 *Start developing*. When you are done…
 6. `yarn run build` to get the prod version
 
+#### Pushing to production
+We use [Now](//now.sh) for our blue-green deployment system. Bother @durfee to make new deployments.
+
 ***
 
 ## Questions?

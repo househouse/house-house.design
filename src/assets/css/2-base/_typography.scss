@@ -1,7 +1,19 @@
 // Global typography styles
 // ==========
 
-//- TODO: Add a @font-face for Tiempos Text
+@font-face {
+    font-family: 'TiemposHeadline-Bold';
+    src: local('TiemposHeadline-Bold'),
+        local('Tiempos Headline Bold'),
+        url("/static/fonts/TiemposHeadline-Bold.otf") format(otf);
+}
+
+@font-face {
+    font-family: 'UntitledSansTest-Regular';
+    src: local('UntitledSansTest-Regular'),
+        local('Unittled Sans Regular'),
+        url("/static/fonts/UntitledSansTest-Regular.otf") format(otf);
+}
 
 body {
     font-family: var(--font--primary);
