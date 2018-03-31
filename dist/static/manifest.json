@@ -14,22 +14,22 @@
     "icons": [
         {
             "sizes": "192x192",
-            "src": "assets/startup/android-icon-192.png",
+            "src": "img/android-icon-192.png",
             "type": "image/png"
         },
         {
             "sizes": "256x256",
-            "src": "assets/startup/android-icon-256.png",
+            "src": "img/android-icon-256.png",
             "type": "image/png"
         },
         {
             "sizes": "384x384",
-            "src": "assets/startup/android-icon-384.png",
+            "src": "img/android-icon-384.png",
             "type": "image/png"
         },
         {
             "sizes": "512x512",
-            "src": "assets/startup/android-icon-512.png",
+            "src": "img/android-icon-512.png",
             "type": "image/png"
         }
     ]
