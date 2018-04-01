@@ -1,10 +1,10 @@
 <template lang="pug">
-    div#particles.u-position.u-top-0.u-right-0.u-left-0.u-stack-shade.a-fade-in.--from-right
+div#particles.u-position.u-top-0.u-right-0.u-left-0.u-stack-shade.a-fade-in.--from-right
 </template>
 
 <script>
 import 'particles.js';
-import config from '@/assets/scripts/pData';
+import config from '@/assets/scripts/bgParticlesData';
 /* global particlesJS */
 
 export default {

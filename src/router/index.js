@@ -39,4 +39,10 @@ export default new Router({
       component: Work,
     },
   ],
+  scrollBehavior() {
+    return {
+      x: 0,
+      y: 0,
+    };
+  },
 });
