@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Tiempos Headline';
+    font-style: normal;
+    font-weight: normal;
+    src:
+    url('/static/fonts/tiempos-headline--regular.woff2') format('woff2'),
+    url('/static/fonts/tiempos-headline--regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Tiempos Headline';
+    font-style: italic;
+    font-weight: normal;
+    src:
+    url('/static/fonts/tiempos-headline--regular-italic.woff2') format('woff2'),
+    url('/static/fonts/tiempos-headline--regular-italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Tiempos Headline';
+    font-style: normal;
+    font-weight: bold;
+    src:
+    url('/static/fonts/tiempos-headline--bold.woff2') format('woff2'),
+    url('/static/fonts/tiempos-headline--bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Tiempos Headline';
+    font-style: italic;
+    font-weight: bold;
+    src:
+    url('/static/fonts/tiempos-headline--bold-italic.woff2') format('woff2'),
+    url('/static/fonts/tiempos-headline--bold-italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Untitled Sans';
+    font-style: normal;
+    font-weight: normal;
+    src:
+    url('/static/fonts/untitled-sans--regular.woff2') format('woff2'),
+    url('/static/fonts/untitled-sans--regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Untitled Sans';
+    font-style: italic;
+    font-weight: normal;
+    src:
+    url('/static/fonts/untitled-sans--regular-italic.woff2') format('woff2'),
+    url('/static/fonts/untitled-sans--regular-italic.woff') format('woff');
+}
