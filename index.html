@@ -1,24 +1,124 @@
 <!DOCTYPE html>
 <html lang="en-ca">
-    <head>
+<head>
 
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="undefined" />
-        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        <meta name="author" content="Ben Groulx, Sean Durfee" />
-        <meta name="google-site-verification" content="XQrarlvRzShmAo5O_AzT_Wuinw1JiNI4IXWGltMtxkA" />
-        <title>House House • A Design Studio</title>
+    <!-- SITE CONTENT-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>House House • A Design Studio</title>
 
-        <noscript>
-        <style>
-            .no-js .a-fade-in  {
-                opacity: 1 !important;
-            }
-        </style>
-        </noscript>
+    <!-- METADATA CONTENT-->
+    <meta name="google-site-verification" content="XQrarlvRzShmAo5O_AzT_Wuinw1JiNI4IXWGltMtxkA" />
+    <meta name="description" content="undefined" />
+    <meta name="author" content="Ben Groulx, Sean Durfee" />
+    <meta name="twitter:site" content="XXXX" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="undefined" />
+    <meta name="twitter:image" content="undefined" />
+    <meta name="twitter:image:alt" content="undefined" />
+    <meta name="twitter:creator" content="@bengroulx, @durfeee" />
+    <meta name="twitter:description" content="" />
+    <meta name="og:url" content="https://house-house.design" />
+    <meta name="og:type" content="website" />
+    <meta name="og:title" content="undefined" />
+    <meta name="og:image" content="undefined" />
+    <meta name="og:site_name" content="undefined" />
+    <meta name="og:description" content="undefined" />
 
-        <style>
+    <!-- APP INSTALLATION -->
+    <link rel="mask-icon" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/safari-pinned-tab.svg" color="#4745d1">
+    <link rel="manifest" href="<%= htmlWebpackPlugin.files.publicPath %>static/manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="house-house.design" />
+    <meta name="theme-color" content="#4745d1" />
+    <meta name="msapplication-TileColor" content="#4745d1" />
+
+    <!-- APP ICONS -->
+    <meta
+        name="msapplication-TileImage"
+        content="<%= htmlWebpackPlugin.files.publicPath %>static/img/apple-icon-144x144.png"
+    />
+    <link
+        rel="apple-touch-icon"
+        sizes="114x114"
+        href="<%= htmlWebpackPlugin.files.publicPath %>static/img/apple-icon-114.png"
+    />
+    <link
+        rel="apple-touch-icon"
+        sizes="144x144"
+        href="<%= htmlWebpackPlugin.files.publicPath %>static/img/apple-icon-144.png"
+    />
+    <link
+        rel="apple-touch-icon"
+        sizes="152x152"
+        href="<%= htmlWebpackPlugin.files.publicPath %>static/img/apple-icon-152.png"
+    />
+    <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="<%= htmlWebpackPlugin.files.publicPath %>static/img/apple-icon-180.png"
+    />
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="512x512"
+        href="<%= htmlWebpackPlugin.files.publicPath %>static/img/android-icon-512.png"
+    />
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="384x384"
+        href="<%= htmlWebpackPlugin.files.publicPath %>static/img/android-icon-384.png"
+    />
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="256x256"
+        href="<%= htmlWebpackPlugin.files.publicPath %>static/img/android-icon-256.png"
+    />
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="192x192"
+        href="<%= htmlWebpackPlugin.files.publicPath %>static/img/android-icon-192.png"
+    />
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="<%= htmlWebpackPlugin.files.publicPath %>static/img/favicon-16.png"
+    />
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="<%= htmlWebpackPlugin.files.publicPath %>static/img/favicon-32.png"
+    />
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="96x96"
+        href="<%= htmlWebpackPlugin.files.publicPath %>static/img/favicon-96.png"
+    />
+
+    <!--[if IE]>
+    <link rel="shortcut icon" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/favicon.ico">
+    <![endif]-->
+
+    <%
+        for (var chunk of webpack.chunks) {
+        for (var file of chunk.files) {
+        if (file.match(/\.(js|css)$/)) {
+    %>
+    <link
+        href="<%= htmlWebpackPlugin.files.publicPath + file %>"
+        rel="<%= chunk.initial?'preload':'prefetch' %>"
+        as="<%= file.match(/\.css$/)?'style':'script' %>"
+    />
+    <% }}} %>
+
+    <style>
         :root {
             --black: #101030;
             --white: #f3f6fa;
@@ -37,112 +137,25 @@
             --green-dark: #419f77;
             --green-med: #60b584;
             --green-light: #72c87c;
-            --font--primary: 'UntitledSansTest-Regular', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
-            --font--secondary: 'TiemposHeadline-Bold', 'Georgia', serif;
+            --font--primary: 'Untitled Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+            --font--secondary: 'Tiempos Headline', 'Georgia', serif;
             --font--code: 'Menlo', monospace;
         }
+    </style>
 
-        .no-js .a-fade-in {
-            opacity: 0;
-        }
-        </style>
+</head>
+<body>
 
-        <meta name="twitter:site" content="XXXX" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="undefined" />
-        <meta name="twitter:image" content="undefined" />
-        <meta name="twitter:image:alt" content="undefined" />
-        <meta name="twitter:creator" content="@bengroulx, @durfeee" />
-        <meta name="twitter:description" content="" />
+    <noscript>
+        <p>This is your fallback content in case JavaScript fails to load.</p>
+    </noscript>
 
-        <meta name="og:url" content="https://house-house.design" />
-        <meta name="og:type" content="website" />
-        <meta name="og:title" content="undefined" />
-        <meta name="og:image" content="undefined" />
-        <meta name="og:site_name" content="undefined" />
-        <meta name="og:description" content="undefined" />
+    <div id="app">
+    </div>
 
-        <meta name="theme-color" content="#4745d1" />
-        <link rel="manifest" href="<%= htmlWebpackPlugin.files.publicPath %>static/manifest.json" />
+    <!-- Todo: only include in production -->
+    <%= htmlWebpackPlugin.options.serviceWorkerLoader %>
+    <!-- built files will be auto injected -->
 
-        <link rel="apple-touch-icon" sizes="114x114" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/apple-icon-114.png" />
-        <link rel="apple-touch-icon" sizes="144x144" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/apple-icon-144.png" />
-        <link rel="apple-touch-icon" sizes="152x152" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/apple-icon-152.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/apple-icon-180.png" />
-
-        <link rel="icon" type="image/png" sizes="16x16" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/favicon-16.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/favicon-32.png" />
-        <link rel="icon" type="image/png" sizes="96x96" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/favicon-96.png" />
-
-        <!--[if IE]><link rel="shortcut icon" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/favicon.ico"><![endif]-->
-        <!-- Add to home screen for Android and modern mobile browsers -->
-
-        <link rel="icon" type="image/png" sizes="512x512" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/android-icon-512.png" />
-        <link rel="icon" type="image/png" sizes="384x384" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/android-icon-384.png" />
-        <link rel="icon" type="image/png" sizes="256x256" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/android-icon-256.png" />
-        <link rel="icon" type="image/png" sizes="192x192" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/android-icon-192.png" />
-
-        <!-- Add to home screen for Safari on iOS -->
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <meta name="apple-mobile-web-app-title" content="house-house.design">
-
-        <link rel="mask-icon" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/safari-pinned-tab.svg" color="#4DBA87">
-
-
-        <!-- Add to home screen for Windows -->
-        <meta name="msapplication-TileColor" content="#4745d1" />
-        <meta name="msapplication-TileImage"
-              content="<%= htmlWebpackPlugin.files.publicPath %>static/img/apple-icon-144x144.png">
-
-        <%
-            for (var chunk of webpack.chunks) {
-            for (var file of chunk.files) {
-            if (file.match(/\.(js|css)$/)) {
-        %>
-        <link href="<%= htmlWebpackPlugin.files.publicPath + file %>"
-              rel="<%= chunk.initial?'preload':'prefetch' %>"
-              as="<%= file.match(/\.css$/)?'style':'script' %>" />
-        <% }}} %>
-
-
-
-        <script>
-        document.documentElement.className = "js";
-        var supportsCssVars = function() {
-          var e,
-            t = document.createElement("style");
-          return (
-            (t.innerHTML = "root: { --tmp-var: bold; }"),
-            document.head.appendChild(t),
-            (e = !!(
-              window.CSS &&
-              window.CSS.supports &&
-              window.CSS.supports("font-weight", "var(--tmp-var)")
-            )),
-            t.parentNode.removeChild(t),
-            e
-          );
-        };
-        supportsCssVars() ||
-          alert(
-            "Please view this demo in a modern browser that supports CSS Variables."
-          );
-        </script>
-
-    </head>
-    <body>
-
-        <noscript>
-            <p>This is your fallback content in case JavaScript fails to load.</p>
-        </noscript>
-
-        <div id="app">
-        </div>
-
-        <!-- Todo: only include in production -->
-        <%= htmlWebpackPlugin.options.serviceWorkerLoader %>
-        <!-- built files will be auto injected -->
-
-    </body>
+</body>
 </html>

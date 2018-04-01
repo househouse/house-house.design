@@ -16,7 +16,12 @@ div
 </template>
 
 <script>
-export default {};
+export default {
+  name: 'Home',
+  metaInfo: {
+    title: 'House House', // title will be injected into parent titleTemplate
+  },
+};
 </script>
 
 <style>

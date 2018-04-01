@@ -52,11 +52,8 @@ div
             article.u-flex.u-margin-right-lg.c-contain.u-width-full.u-width-1of2--small-up
                 div.c-text-content
                     p When filmmakers make movies, characters are portrayed by the actors who best embody the role. Similarly, we’ll staff your project by choosing the designer who will best fit the requirements. With our vertality and broad range of skills, the result is your team acquires the right number of folks handpicked for your specific situation.
-
                     p We residents and housemates are versatile.
                     p Our full-time residents we live and breathe the House House way. Sometimes the addition of a single resident on your team is all you need.
-
-                    p [write more here!]
 
             aside.u-flex.u-width-full.u-width-1of2--small-up
                 article.c-resident.c--ben.u-margin-bottom-lg
@@ -95,7 +92,12 @@ div
 </template>
 
 <script>
-export default {};
+export default {
+  name: 'Approach',
+  metaInfo: {
+    title: 'Approach • House House', // title will be injected into parent titleTemplate
+  },
+};
 </script>
 
 <style>

@@ -16,18 +16,22 @@ import NavCrumbs from '@/components/navCrumbs';
 import siteFooter from '@/components/footer';
 
 export default {
+  name: 'app',
   components: {
     BgParticles,
     BgShapes,
     NavCrumbs,
     siteFooter,
   },
-  name: 'app',
+  metaInfo: {
+    title: 'House House', // if no subcomponents specify a metaInfo.title, this title will be used
+    titleTemplate: '%s • A Design Studio', // all titles will be injected into this template
+  },
 };
 </script>
 
 <style lang="scss">
-@import 'src/assets/css/main.scss';
+    @import 'src/assets/css/main.scss';
 
     .a-fade-in {
         opacity: 0;
