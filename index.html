@@ -2,16 +2,9 @@
 <html lang="en-ca">
 <head>
 
-    <!-- SITE CONTENT-->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>House House • A Design Studio</title>
+    <!-- Looking for Site content metadata? Check `metaInfo` in App.vue -->
 
     <!-- METADATA CONTENT-->
-    <meta name="google-site-verification" content="XQrarlvRzShmAo5O_AzT_Wuinw1JiNI4IXWGltMtxkA" />
-    <meta name="description" content="undefined" />
-    <meta name="author" content="Ben Groulx, Sean Durfee" />
     <meta name="twitter:site" content="XXXX" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="undefined" />
@@ -30,7 +23,7 @@
     <link rel="mask-icon" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/safari-pinned-tab.svg" color="#4745d1">
     <link rel="manifest" href="<%= htmlWebpackPlugin.files.publicPath %>static/manifest.json" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="house-house.design" />
+    <meta name="apple-mobile-web-app-title" content="House House" />
     <meta name="theme-color" content="#4745d1" />
     <meta name="msapplication-TileColor" content="#4745d1" />
 
@@ -121,10 +114,10 @@
     <style>
         :root {
             --black: #101030;
-            --white: #f3f6fa;
             --grey-dark: #54657f;
             --grey-med: #b0bbcb;
             --grey-light: #e6e9ee;
+            --white: #f3f6fa;
             --indigo-dark: #4745d1;
             --indigo-med: #3c69d9;
             --indigo-light: #37a1fc;
@@ -153,9 +146,8 @@
     <div id="app">
     </div>
 
-    <!-- Todo: only include in production -->
+    <!-- TODO: only include in production -->
     <%= htmlWebpackPlugin.options.serviceWorkerLoader %>
-    <!-- built files will be auto injected -->
 
 </body>
 </html>

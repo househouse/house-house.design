@@ -24,6 +24,14 @@ export default {
     siteFooter,
   },
   metaInfo: {
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'google-site-verification', content: 'XQrarlvRzShmAo5O_AzT_Wuinw1JiNI4IXWGltMtxkA' },
+      { name: 'description', content: 'Hello!' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'author', content: 'Ben Groulx, Sean Durfee' },
+      { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
+    ],
     title: 'House House', // if no subcomponents specify a metaInfo.title, this title will be used
     titleTemplate: '%s • A Design Studio', // all titles will be injected into this template
   },
