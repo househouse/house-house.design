@@ -7,13 +7,13 @@
         }
 
         &:nth-child(1) {
+            color: var(--indigo-dark);
+
             @include break(510) {
                 & {
                     display: block;
                 }
             }
-
-            color: var(--indigo-dark);
         }
 
         &:nth-child(2) {

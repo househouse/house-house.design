@@ -1,8 +1,9 @@
 <template lang="pug">
-div
+footer
     aside.u-padding-top-md.u-padding-bottom-md.u-padding-left-md.u-padding-right-md.u-align-center.u-bg-grey-light.u-text-size-small
         p.c-text-content
-            a(href='https://github.com/househouse/house-house.design/pull/21').u-color-grey-dark Things look a bit off? Content missing? We’re designing in the open. See what that means &rarr;
+            a(href='https://github.com/househouse/house-house.design/pull/21').u-color-grey-dark
+                | Things look a bit off? Content missing? We’re designing in the open; see what that means &rarr;
 
     footer.c-section.u-flexbox
         div.u-flex
@@ -22,11 +23,12 @@ div
 </template>
 
 <script>
-export default {};
+    export default {};
 </script>
 
 <style lang="scss" scoped>
-a {
-    padding: 0 0.25em;
-}
+    a {
+        padding-right: 0.25em;
+        padding-left: 0.25em;
+    }
 </style>

@@ -1,27 +1,28 @@
 <template lang="pug">
 div#app
-    bgParticles
-    bgShapes
-    navCrumbs
-    main(style='min-height:100vh;')
-        transition(name="a-scale-out")
-            router-view
-    siteFooter
+    globalNav
+    main
+        router-view
+        // transition(name='a-scale-out')
+    globalFooter
+    aside(style='pointer-events:none;' role='presentation')
+        bgParticles
+        bgShapes
 </template>
 
 <script>
 import BgParticles from '@/components/bgParticles';
 import BgShapes from '@/components/bgShapes';
-import NavCrumbs from '@/components/navCrumbs';
-import siteFooter from '@/components/footer';
+import GlobalFooter from '@/components/globalFooter';
+import GlobalNav from '@/components/globalNav';
 
 export default {
   name: 'app',
   components: {
     BgParticles,
     BgShapes,
-    NavCrumbs,
-    siteFooter,
+    GlobalNav,
+    GlobalFooter,
   },
   metaInfo: {
     meta: [

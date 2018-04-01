@@ -139,15 +139,18 @@
 </head>
 <body>
 
-    <noscript>
-        <p>This is your fallback content in case JavaScript fails to load.</p>
-    </noscript>
-
     <div id="app">
+        <!-- TODO: how can we further optimize SEO? -->
     </div>
 
-    <!-- TODO: only include in production -->
+    <noscript>
+        <!-- TODO: add non-js fallback -->
+        <p>We haven’t optimized the site for non-JavaScript users yet. We’re working on it as furiously as we can!</p>
+    </noscript>
+
+    <!-- TODO: only include in production
     <%= htmlWebpackPlugin.options.serviceWorkerLoader %>
+    -->
 
 </body>
 </html>
