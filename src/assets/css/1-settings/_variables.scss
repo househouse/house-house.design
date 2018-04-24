@@ -63,20 +63,6 @@ $color-map: (
 );
 
 
-// Content Area options
-// ---
-
-$content-area-narrow: $configure--base-unit*25;
-$content-area-medium: $configure--base-unit*50;
-$content-area-wide: $configure--base-unit*65;
-
-$content-area-map: (
-    narrow: $content-area-narrow,
-    medium: $content-area-medium,
-    wide:   $content-area-wide,
-);
-
-
 // Z-axis options
 // ---
 
@@ -98,7 +84,7 @@ $z-map: (
 // Content Area options
 // ---
 
-$content-area-narrow: $configure--base-unit*25;
+$content-area-narrow: $configure--base-unit*35;
 $content-area-medium: $configure--base-unit*50;
 $content-area-wide: $configure--base-unit*65;
 

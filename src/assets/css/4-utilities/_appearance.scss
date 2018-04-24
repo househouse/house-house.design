@@ -3,6 +3,12 @@
 
 .u-circle {
     border-radius: 100rem;
+
+    @include --medium-up {
+        &--medium-up {
+            border-radius: 100rem;
+        }
+    }
 }
 
 .u-half-transparent {

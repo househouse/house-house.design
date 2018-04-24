@@ -1,7 +1,8 @@
 <template lang="pug">
 nav.c-nav
+
     nav(v-bind:class="[{isExpanded: isExpanded}, 'c-nav-crumbs --mobile']")
-        .c-nav-crumbs__back.u-circle(v-show='!isExpanded', @click='handleNavToggle')
+        div.c-nav-crumbs__back(v-show='!isExpanded', @click='handleNavToggle')
             svg(width='16px', height='14px', viewbox='0 0 16 14')
                 path(d='M1,7 L15,7')
                 polyline(points='7 1 1 7 7 13')
@@ -13,6 +14,7 @@ nav.c-nav
                 polyline(points='7 1 1 7 7 13')
             span.c-nav-crumbs__home
                 | Home
+
         ul.c-nav-crumbs__major.u-context
             li(v-bind:class="{isActive: currentPath === 'approach'}")
                 router-link.u-color-grey-dark(v-on:click.native='handleNavToggle', to='/approach')
@@ -25,10 +27,10 @@ nav.c-nav
                     | Contact
         ul.c-nav-crumbs__minor.u-context
             li
-                router-link.u-color-grey-dark(v-on:click.native='handleNavToggle' to='mailto:hello@house-house.design')
+                a.u-color-grey-dark(v-on:click.native='handleNavToggle' to='mailto:hello@house-house.design')
                     | Join our team
             li
-                router-link.u-color-grey-dark(v-on:click.native='handleNavToggle' to='https://github.com/househouse/housecss')
+                a.u-color-grey-dark(v-on:click.native='handleNavToggle' to='https://github.com/househouse/housecss')
                     | housecss
 
     nav.c-nav-crumbs.--large
@@ -50,10 +52,10 @@ nav.c-nav
                     | Contact
         ul.c-nav-crumbs__minor.u-context
             li
-                router-link.u-color-grey-dark(v-on:click.native='handleNavToggle' to='mailto:hello@house-house.design')
+                a.u-color-grey-dark(v-on:click.native='handleNavToggle' href='mailto:hello@house-house.design')
                     | Join our team
             li
-                router-link.u-color-grey-dark(v-on:click.native='handleNavToggle' to='https://github.com/househouse/housecss')
+                a.u-color-grey-dark(v-on:click.native='handleNavToggle' href='https://github.com/househouse/housecss')
                     | housecss
 </template>
 
@@ -85,5 +87,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/css/3-components/_navCrumbs.scss';
+@import '../assets/css/3-components/_globalNav.scss';
 </style>

@@ -1,6 +1,6 @@
 <template lang="pug">
 main
-    transition(name='a-scale-out')
+    transition(name='_a-scale-out')
         router-view
 </template>
 

@@ -3,5 +3,9 @@
 }
 
 .c-section {
-    padding: 5% 10%;
+    padding: 5%;
+
+    @include --medium-up {
+        padding: 5% 10%;
+    }
 }
