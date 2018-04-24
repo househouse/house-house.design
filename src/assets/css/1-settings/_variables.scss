@@ -1,24 +1,14 @@
 // Project-Wide Configurable Variables
 // ==========
 
-
-// Everything is based off this define unit and ratio
 $configure--base-unit: 1rem;
 $configure--base-ratio: 1.125;
-
-// All text is based off this font size
 $configure--text-size: 1rem;
-
-// Choose your desired type weights
 $configure--text-weight: 400;
 $configure--text-bold: 600;
 
 
-
-
-
-
-// Type Weight Options
+// Type Weight options
 // ---
 
 $bold-font: $configure--text-bold;
@@ -29,7 +19,8 @@ $type-weight-map: (
     bold: $bold-font,
 );
 
-// Spacing Options
+
+// Spacing options
 // ---
 
 $very-small-space: $configure--base-unit/4;
@@ -50,7 +41,7 @@ $size-map: (
 );
 
 
-// Colour Options
+// Colour options
 // ---
 
 $primary-color: var(--indigo-dark);
@@ -72,23 +63,7 @@ $color-map: (
 );
 
 
-// Content Area Options
-// ---
-
-$content-area-narrow: $configure--base-unit*25;
-$content-area-medium: $configure--base-unit*50;
-$content-area-wide: $configure--base-unit*65;
-
-$content-area-map: (
-    narrow: $content-area-narrow,
-    medium: $content-area-medium,
-    wide:   $content-area-wide,
-);
-
-
-
-
-// Z-axis Options
+// Z-axis options
 // ---
 
 $z1-depth: -1;
@@ -106,10 +81,10 @@ $z-map: (
 );
 
 
-// Content Area Options
+// Content Area options
 // ---
 
-$content-area-narrow: $configure--base-unit*25;
+$content-area-narrow: $configure--base-unit*35;
 $content-area-medium: $configure--base-unit*50;
 $content-area-wide: $configure--base-unit*65;
 
@@ -120,7 +95,7 @@ $content-area-map: (
 );
 
 
-// Dimension Options
+// Dimension options
 // ---
 
 $no-size: 0;
@@ -142,7 +117,7 @@ $dimensions-map: (
 );
 
 
-// Spacing Options
+// Spacing options
 // ---
 
 $very-small-space: $configure--base-unit/4;

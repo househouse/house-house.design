@@ -1,13 +1,14 @@
 .c-network {
-    opacity: 0;
-    @include break(800) {
-        opacity: 1 !important;
-        left: 40rem;
-    }
-
     max-height: 90%;
-}
 
+    opacity: 0;
+
+    @include break(800) {
+        left: 40rem;
+
+        opacity: 1 !important;
+    }
+}
 
 .c-network__ring {
     width: 5em;
@@ -20,14 +21,16 @@
 
     &::after,
     &::before {
-      display: none;
-      @include break(800) {
-        display: initial;
-        content: '';
+        display: none;
 
-        position: absolute;
-        top: -8rem;
-      }
+        @include break(800) {
+            content: '';
+
+            position: absolute;
+            top: -8rem;
+
+            display: initial;
+        }
     }
 
     &::after {

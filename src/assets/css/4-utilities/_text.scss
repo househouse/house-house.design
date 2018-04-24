@@ -39,6 +39,12 @@
 .u-align-center {
     text-align: center;
 
+    @include --small-only {
+        &--small-only {
+            text-align: center;
+        }
+    }
+
     @include --small-up {
         &--small-up {
             text-align: center;

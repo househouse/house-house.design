@@ -1,76 +1,85 @@
 <template lang="pug">
 div#app
-    bgParticles
-    bgShapes
-    navCrumbs
-    main(style='min-height:100vh;')
-        transition(name="a-scale-out")
-            router-view
-    siteFooter
+    globalNav
+    globalContent
+    globalFooter
+    globalBackground
 </template>
 
 <script>
-import BgParticles from '@/components/bgParticles';
-import BgShapes from '@/components/bgShapes';
-import NavCrumbs from '@/components/navCrumbs';
-import siteFooter from '@/components/footer';
+import GlobalBackground from '@/components/globalBackground';
+import GlobalContent from '@/components/globalContent';
+import GlobalFooter from '@/components/globalFooter';
+import GlobalNav from '@/components/globalNav';
 
 export default {
-  components: {
-    BgParticles,
-    BgShapes,
-    NavCrumbs,
-    siteFooter,
-  },
   name: 'app',
+  components: {
+    GlobalBackground,
+    GlobalContent,
+    GlobalFooter,
+    GlobalNav,
+  },
+  metaInfo: {
+    title: 'House House', // if no subcomponents specify a metaInfo.title, this title will be used
+    titleTemplate: '%s • A Design Studio', // all titles will be injected into this template
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'google-site-verification', content: 'XQrarlvRzShmAo5O_AzT_Wuinw1JiNI4IXWGltMtxkA' },
+      { name: 'description', content: 'Hello!' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'author', content: 'Ben Groulx, Sean Durfee' },
+      { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
+    ],
+  },
 };
 </script>
 
 <style lang="scss">
 @import 'src/assets/css/main.scss';
 
-    .a-fade-in {
-        opacity: 0;
-    }
-    body {
-        background-color: var(--white);
-        color: var(--black);
-    }
-    a {
-        color: inherit;
-    }
-    .c-contain {
-        max-width: 30em;
-    }
-    .c-shapes {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: -1;
-      overflow: hidden;
-      width: 100%;
-      height: 100%;
-    }
+.a-fade-in {
+    opacity: 0;
+}
+body {
+    background-color: var(--white);
+    color: var(--black);
+}
+a {
+    color: inherit;
+}
+.c-contain {
+    max-width: 30em;
+}
+.c-shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
 
-    .c-shapes__container {
-      position: absolute;
-      top: 0;
-      left: 0%;
-      transform-origin: center center;
-      transform: translate(50%, -50%);
-    }
+.c-shapes__container {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  transform-origin: center center;
+  transform: translate(50%, -50%);
+}
 
-    @media screen and (min-width:600px) {
-      .c-shapes__container {
-        top: -5%;
-        left: -25%;
-        transform: rotate(55deg) scale(2);
-      }
-    }
+@media screen and (min-width:600px) {
+  .c-shapes__container {
+    top: -5%;
+    left: -25%;
+    transform: rotate(55deg) scale(2);
+  }
+}
 
-    .c-shapes__single {
-      fill: currentColor;
-      transition: all ease-out 2s 1s;
-    }
+.c-shapes__single {
+  fill: currentColor;
+  transition: all ease-out 2s 1s;
+}
 </style>

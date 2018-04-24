@@ -87,7 +87,12 @@ div
 </template>
 
 <script>
-export default {};
+export default {
+  name: 'Work',
+  metaInfo: {
+    title: 'How We Work • House House', // title will be injected into parent titleTemplate
+  },
+};
 </script>
 
 <style>
