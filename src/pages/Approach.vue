@@ -71,7 +71,7 @@ div
                         h3.c-resident__name.u-margin-bottom-sm Sean Durfee
                         p.c-resident__role.u-half-transparent Designer
                         p.c-resident__links.u-text-size-small.u-bold
-                            a(href='https://www.linkedin.com/in/sean-durfee-ba393b5a/' target='_blank' rel='noopener').u-margin-right-md LinkedIn
+                            a(href='https://www.linkedin.com/in/seandurfee' target='_blank' rel='noopener').u-margin-right-md LinkedIn
                             a(href='https://github.com/durfee' target='_blank' rel='noopener') GitHub
 
     section.c-section.u-bg-grey-dark.u-color-white.u-context
