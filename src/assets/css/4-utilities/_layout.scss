@@ -89,23 +89,23 @@
 
 @each $direction-name in $directions-map {
     .u-#{$direction-name}-0 {
-        #{$direction-name}: $no-size;
+        #{$direction-name}: $hh-dimension-none;
 
         @include --small-only {
             &--small-only {
-                #{$direction-name}: $no-size;
+                #{$direction-name}: $hh-dimension-none;
             }
         }
 
         @include --small-up {
             &--small-up {
-                #{$direction-name}: $no-size;
+                #{$direction-name}: $hh-dimension-none;
             }
         }
 
         @include --medium-up {
             &--medium-up {
-                #{$direction-name}: $no-size;
+                #{$direction-name}: $hh-dimension-none;
             }
         }
     }
@@ -113,23 +113,23 @@
 
 @each $direction-name in $directions-map {
     .u-#{$direction-name}-halfway {
-        #{$direction-name}: $one-half;
+        #{$direction-name}: $hh-dimension-1of2;
 
         @include --small-only {
             &--small-only {
-                #{$direction-name}: $one-half;
+                #{$direction-name}: $hh-dimension-1of2;
             }
         }
 
         @include --small-up {
             &--small-up {
-                #{$direction-name}: $one-half;
+                #{$direction-name}: $hh-dimension-1of2;
             }
         }
 
         @include --medium-up {
             &--medium-up {
-                #{$direction-name}: $one-half;
+                #{$direction-name}: $hh-dimension-1of2;
             }
         }
     }
@@ -137,23 +137,23 @@
 
 @each $direction-name in $directions-map {
     .u-#{$direction-name}-fullway {
-        #{$direction-name}: $full-size;
+        #{$direction-name}: $hh-dimension-full;
 
         @include --small-only {
             &--small-only {
-                #{$direction-name}: $full-size;
+                #{$direction-name}: $hh-dimension-full;
             }
         }
 
         @include --small-up {
             &--small-up {
-                #{$direction-name}: $full-size;
+                #{$direction-name}: $hh-dimension-full;
             }
         }
 
         @include --medium-up {
             &--medium-up {
-                #{$direction-name}: $full-size;
+                #{$direction-name}: $hh-dimension-full;
             }
         }
     }
@@ -164,67 +164,67 @@
 // ---
 
 .u-realign-center {
-    transform: translate(-50%, -50%);
+    transform: translate(-$hh-dimension-1of2, -$hh-dimension-1of2);
 
     @include --small-only {
         &--small-only {
-            transform: translate(-50%, -50%);
+            transform: translate(-$hh-dimension-1of2, -$hh-dimension-1of2);
         }
     }
 
     @include --small-up {
         &--small-up {
-            transform: translate(-50%, -50%);
+            transform: translate(-$hh-dimension-1of2, -$hh-dimension-1of2);
         }
     }
 
     @include --medium-up {
         &--medium-up {
-            transform: translate(-$one-half, -$one-half);
+            transform: translate(-$hh-dimension-1of2, -$hh-dimension-1of2);
         }
     }
 }
 
 .u-realign-center-vert {
-    transform: translateY(-$one-half);
+    transform: translateY(-$hh-dimension-1of2);
 
     @include --small-only {
         &--small-only {
-            transform: translateY(-$one-half);
+            transform: translateY(-$hh-dimension-1of2);
         }
     }
 
     @include --small-up {
         &--small-up {
-            transform: translateY(-$one-half);
+            transform: translateY(-$hh-dimension-1of2);
         }
     }
 
     @include --medium-up {
         &--medium-up {
-            transform: translateY(-$one-half);
+            transform: translateY(-$hh-dimension-1of2);
         }
     }
 }
 
 .u-realign-center-horz {
-    transform: translateX(-$one-half);
+    transform: translateX(-$hh-dimension-1of2);
 
     @include --small-only {
         &--small-only {
-            transform: translateX(-$one-half);
+            transform: translateX(-$hh-dimension-1of2);
         }
     }
 
     @include --small-up {
         &--small-up {
-            transform: translateX(-$one-half);
+            transform: translateX(-$hh-dimension-1of2);
         }
     }
 
     @include --medium-up {
         &--medium-up {
-            transform: translateX(-$one-half);
+            transform: translateX(-$hh-dimension-1of2);
         }
     }
 }

@@ -1,42 +1,101 @@
 // Utilities: Text
 // ============================================================================
 
-.u-text-size-very-large {
-    @extend %type-headline;
-}
 
-.u-text-size-large {
-    @extend %type-title;
-}
+// Text Sizes
+// ---
 
-.u-text-size-base {
-    @extend %type-copy;
+.u-text-size-xsmall {
+    font-size: $hh-font-size-xsmall !important;
 }
 
 .u-text-size-small {
-    @extend %type-small;
+    font-size: $hh-font-size-small !important;
+}
+
+.u-text-size-base {
+    font-size: $hh-font-size-base !important;
+}
+
+.u-text-size-medium {
+    font-size: $hh-font-size-medium !important;
+}
+
+.u-text-size-large {
+    font-size: $hh-font-size-large !important;
+}
+
+.u-text-size-xlarge {
+    font-size: $hh-font-size-xlarge !important;
+}
+
+
+// Type Families
+// ---
+
+.u-text-family-primary {
+    font-family: $hh-font-family-primary;
+}
+
+.u-text-family-secondary {
+    font-family: $hh-font-family-secondary;
+}
+
+.u-text-family-mono,
+.u-text-family-code {
+    font-family: $hh-font-family-code;
 }
 
 
 // Text Styles
 // ---
+
+.u-text-underline {
+    text-decoration: underline !important;
+}
+
+
+// Text Weights
+// ---
 //
 // 1. The same style could be applied by using an element. Think about what may
 //    be more semantically correct for your specific situation.
 
-.u-bold {
-    font-weight: $bold-font; // 1
+
+.u-text-weight-thin,
+.u-text-weight-light {
+    font-weight: $hh-font-weight-thin; // 1
+}
+
+.u-text-weight-regular {
+    font-weight: $hh-font-weight-regular; // 1
+}
+
+.u-text-weight-bold {
+    font-weight: $hh-font-weight-bold; // 1
 }
 
 
 // Text Alignment
 // ---
 
-.u-align-left {
+.u-text-align-left {
     text-align: left;
+
+    @include --small-only {
+        &--small-only {
+            text-align: left;
+        }
+    }
+
+    @include --small-up {
+        &--small-up {
+            text-align: left;
+        }
+    }
 }
 
-.u-align-center {
+.u-text-align-center {
     text-align: center;
 
     @include --small-only {
@@ -52,23 +111,35 @@
     }
 }
 
-.u-align-right {
+.u-text-align-right {
     text-align: right;
+
+    @include --small-only {
+        &--small-only {
+            text-align: right;
+        }
+    }
+
+    @include --small-up {
+        &--small-up {
+            text-align: right;
+        }
+    }
 }
 
 
 // Text Casing
 // ---
 
-.u-uppercase {
+.u-text-uppercase {
     text-transform: uppercase;
 }
 
-.u-lowercase {
+.u-text-lowercase {
     text-transform: lowercase;
 }
 
-.u-capitalize {
+.u-text-capitalize {
     text-transform: capitalize;
 }
 
@@ -76,11 +147,6 @@
 // Tracking
 // ---
 
-.u-tracked-loose {
+.u-text-trackig-loose {
     letter-spacing: 0.125em;
-}
-
-
-.u-mono {
-    font-family: var(--font--code);
 }

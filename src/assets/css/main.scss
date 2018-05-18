@@ -29,7 +29,6 @@
 
 @import '1-settings/variables';
 @import '1-settings/responsive';
-@import '1-settings/type-scale';
 @import '1-settings/type-families';
 
 // [2] Base
@@ -50,11 +49,12 @@
 // directly related to any HTML, JS, or JSX, it should be considered a utility
 // class (or series of classes.) Components use the c- namespace, e.g. c-logo.
 
-@import '3-components/title';
 @import '3-components/contain';
+@import '3-components/heading';
 @import '3-components/network';
 @import '3-components/resident';
 @import '3-components/text-content';
+@import '3-components/title';
 
 // [4] Utilities
 // ---
@@ -64,15 +64,15 @@
 // margins, padding, text alignment, display properties, positioning properties,
 // and more. Utility classes use a u- namespace, e.g. u-bg-black.
 
-@import '4-utilities/flex';
-@import '4-utilities/spacing';
 @import '4-utilities/appearance';
 @import '4-utilities/background';
+@import '4-utilities/baseline';
 @import '4-utilities/border';
 @import '4-utilities/color';
 @import '4-utilities/display';
+@import '4-utilities/flex';
 @import '4-utilities/layout';
-@import '4-utilities/measure';
+@import '4-utilities/spacing';
 @import '4-utilities/text';
 
 // [5] Animations

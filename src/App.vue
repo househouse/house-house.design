@@ -1,6 +1,7 @@
 <template lang="pug">
 div#app
     globalNav
+    globalHeader
     globalContent
     globalFooter
     globalBackground
@@ -10,6 +11,7 @@ div#app
 import GlobalBackground from '@/components/globalBackground';
 import GlobalContent from '@/components/globalContent';
 import GlobalFooter from '@/components/globalFooter';
+import GlobalHeader from '@/components/globalHeader';
 import GlobalNav from '@/components/globalNav';
 
 export default {
@@ -18,6 +20,7 @@ export default {
     GlobalBackground,
     GlobalContent,
     GlobalFooter,
+    GlobalHeader,
     GlobalNav,
   },
   metaInfo: {
@@ -41,16 +44,7 @@ export default {
 .a-fade-in {
     opacity: 0;
 }
-body {
-    background-color: var(--white);
-    color: var(--black);
-}
-a {
-    color: inherit;
-}
-.c-contain {
-    max-width: 30em;
-}
+
 .c-shapes {
   position: absolute;
   top: 0;

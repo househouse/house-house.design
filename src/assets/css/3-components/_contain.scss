@@ -1,11 +1,13 @@
 .c-contain {
-    max-width: 30em;
+    max-width: 1140px;
+
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .c-section {
-    padding: 5%;
 
     @include --medium-up {
-        padding: 5% 10%;
+        // padding: 5% 10%;
     }
 }

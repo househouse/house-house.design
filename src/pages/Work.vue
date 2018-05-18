@@ -48,7 +48,7 @@ div
         article.c-card.c--no-padding.c-faux-link.u-context.u-clip.u-bg-center.u-bg-cover.u-gradient.u-padding-top-lg--small-only.u-padding-top-xl--small-up.u-padding-bottom-xl.u-bg-dark
             a.c-faux-link__overlay(href='https://github.com/househouse/housecss', aria-hidden='true') Find out more about housecss
             .c-card__image.u-position.u-top-0.u-bottom-0.u-left-0.u-right-0.u-bg-center.u-bg-cover.js-card-visible.u-bg-stars
-            .u-context.u-stack-basic.u-measure-medium.u-flexbox--medium-up.u-color-light.u-align-center
+            .u-context.u-stack-basic.u-flexbox--medium-up.u-color-light.u-align-center
                 .u-flex.u-margin-right-lg--medium-up
                     p.u-context.u-glitch(data-glitch='🚀', style='font-size:5rem') 🚀
                 .u-flex

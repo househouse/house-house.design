@@ -7,9 +7,16 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
 html,
 body {
     height: 100%;
+
+    font-size: 16px;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -22,11 +29,6 @@ body,
 main {
     max-width: 100%;
     min-height: 100%;
-}
-
-html {
-    overflow-x: hidden;
-    overflow-y: scroll;
 }
 
 html,
@@ -200,6 +202,7 @@ input {
 button,
 select {
     text-transform: none;
+
     cursor: pointer;
 
     &:hover {
@@ -328,18 +331,17 @@ textarea {
 input,
 select,
 textarea {
-
     &:focus,
     &:active,
     &:valid {
         z-index: 10;
+
         -webkit-appearance: none;
     }
 
     &:focus,
     &:active {
         outline: 2px solid var(--black);
-
     }
 }
 

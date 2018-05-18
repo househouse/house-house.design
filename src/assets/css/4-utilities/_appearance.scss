@@ -1,6 +1,10 @@
 // Utilities: Appearance
 // ============================================================================
 
+.u-shadow-thick {
+    box-shadow: 0 0 $hh-spacing-large 0 rgba(71, 69, 209, 0.15);
+}
+
 .u-circle {
     border-radius: 100rem;
 
@@ -9,10 +13,6 @@
             border-radius: 100rem;
         }
     }
-}
-
-.u-half-transparent {
-    opacity: $half-transparent;
 }
 
 .u-squiggle,

@@ -1,0 +1,15 @@
+.c-heading {
+    display: block;
+
+    &.c--1 {
+        @extend %h1;
+    }
+
+    &.c--2 {
+        @extend %h2;
+    }
+
+    &.c--3 {
+        @extend %h3;
+    }
+}

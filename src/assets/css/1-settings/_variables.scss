@@ -1,70 +1,49 @@
-// Project-Wide Configurable Variables
+// Global variables
 // ==========
 
-$configure--base-unit: 1rem;
-$configure--base-ratio: 1.125;
-$configure--text-size: 1rem;
-$configure--text-weight: 400;
-$configure--text-bold: 600;
+$hh-unit: (1rem / 3.2); // 5px
 
+$hh-baseline-xsmall: ($hh-unit * 2); // 10px
+$hh-baseline-small: ($hh-unit * 4); // 20px
+$hh-baseline-base: ($hh-unit * 6); // 30px
+$hh-baseline-medium: ($hh-unit * 8); // 40px
+$hh-baseline-large: ($hh-unit * 12); // 60px
+$hh-baseline-xlarge: ($hh-unit * 16); // 80px
 
-// Type Weight options
-// ---
+$hh-spacing-xsmall: ($hh-unit * 2); // 10px
+$hh-spacing-small: ($hh-unit * 4); // 20px
+$hh-spacing-base: ($hh-unit * 8 ); // 40px
+$hh-spacing-medium: ($hh-unit * 16); // 80px
+$hh-spacing-large: ($hh-unit * 24); // 120px
+$hh-spacing-xlarge: ($hh-unit * 32); // 160px
 
-$bold-font: $configure--text-bold;
-$regular-font: $configure--text-weight;
+$hh-dimension-none: 0;
+$hh-dimension-1of4: (100%/4); // 25%
+$hh-dimension-1of3: (100%/3); // 33%
+$hh-dimension-1of2: (100%/2); // 50%
+$hh-dimension-2of3: (100%/1.52); // 66%
+$hh-dimension-3of4: (100%/1.33); // 75%
+$hh-dimension-full: (100%/1); // 100%
 
-$type-weight-map: (
-    base: $regular-font,
-    bold: $bold-font,
-);
+$hh-content-area-narrow: ($hh-unit * 75); // 375px
+$hh-content-area-medium: ($hh-unit * 150); // 750px
+$hh-content-area-wide: ($hh-unit * 225); // 1125px
 
+$hh-font-size-xsmall: ($hh-unit * 2.4 ); // 12px
+$hh-font-size-small: ($hh-unit * 2.8 ); // 14px
+$hh-font-size-base: ($hh-unit * 3.2 ); // 16px
+$hh-font-size-medium: ($hh-unit * 4 ); // 20px
+$hh-font-size-large: ($hh-unit * 8 ); // 40px
+$hh-font-size-xlarge: ($hh-unit * 12 ); // 60px
 
-// Spacing options
-// ---
+$hh-font-family-primary: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+$hh-font-family-secondary: 'TiemposText-Regular', 'Georgia', serif;
+$hh-font-family-tertiary: 'TiemposHeadline-Bold', 'Georgia', serif;
+$hh-font-family-code: 'Menlo', monospace;
 
-$very-small-space: $configure--base-unit/4;
-$small-space: $configure--base-unit/2;
-$base-space: $configure--base-unit;
-$large-space: $configure--base-unit*2;
-$very-large-space: $configure--base-unit*4;
-$huge-large-space: $configure--base-unit*8;
-
-$size-map: (
-    xs: $very-small-space,
-    sm: $small-space,
-    md: $base-space,
-    lg: $large-space,
-    xl: $very-large-space,
-    xxl: $huge-large-space,
-    none: 0,
-);
-
-
-// Colour options
-// ---
-
-$primary-color: var(--indigo-dark);
-$accent-color: var(--orange-dark);
-$grey-light-color: var(--grey-light);
-$grey-dark-color: var(--grey-dark);
-$grey-med-color: var(--grey-med);
-$black-color: var(--black);
-$white-color: var(--white);
-
-$color-map: (
-    primary: $primary-color,
-    accent: $accent-color,
-    black: $black-color,
-    white: $white-color,
-    grey-light: $grey-light-color,
-    grey-dark: $grey-dark-color,
-    grey-med: $grey-med-color,
-);
-
-
-// Z-axis options
-// ---
+$hh-font-weight-thin: 300;
+$hh-font-weight-regular: 400;
+$hh-font-weight-bold: 800;
 
 $z1-depth: -1;
 $z2-depth: 1;
@@ -72,94 +51,58 @@ $z3-depth: 10;
 $z4-depth: 100;
 $z5-depth: 1000;
 
+
+// Global maps
+// ==========
+
+$spacing-map: (
+    xsmall: $hh-spacing-xsmall,
+    small:  $hh-spacing-small,
+    base:   $hh-spacing-base,
+    medium: $hh-spacing-medium,
+    large:  $hh-spacing-large,
+    xlarge: $hh-spacing-xlarge,
+    none:   0,
+);
+
+$dimensions-map: (
+    none: $hh-dimension-none,
+    1of4: $hh-dimension-1of4,
+    1of3: $hh-dimension-1of3,
+    1of2: $hh-dimension-1of2,
+    2of3: $hh-dimension-2of3,
+    3of4: $hh-dimension-3of4,
+    full: $hh-dimension-full,
+);
+
 $z-map: (
     under: $z1-depth,
-    basic: $z2-depth,
-    stack: $z3-depth,
+    base: $z2-depth,
+    over: $z3-depth,
     shade: $z4-depth,
     modal: $z5-depth,
 );
 
-
-// Content Area options
-// ---
-
-$content-area-narrow: $configure--base-unit*35;
-$content-area-medium: $configure--base-unit*50;
-$content-area-wide: $configure--base-unit*65;
-
-$content-area-map: (
-    narrow: $content-area-narrow,
-    medium: $content-area-medium,
-    wide:   $content-area-wide,
+$color-map: (
+    white:        var(--white),
+    grey-light:   var(--grey-light),
+    grey-base:    var(--grey-base),
+    grey-med:     var(--grey-med),
+    grey-dark:    var(--grey-dark),
+    black:        var(--black),
+    indigo-light: var(--indigo-light),
+    indigo-med:   var(--indigo-med),
+    indigo-dark:  var(--indigo-dark),
+    violet-light: var(--violet-light),
+    violet-med:   var(--violet-med),
+    violet-dark:  var(--violet-dark),
+    orange-light: var(--orange-light),
+    orange-med:   var(--orange-med),
+    orange-dark:  var(--orange-dark),
+    green-light:  var(--green-light),
+    green-med:    var(--green-med),
+    green-dark:   var(--green-dark),
 );
-
-
-// Dimension options
-// ---
-
-$no-size: 0;
-$one-quarter: (100%/4);
-$one-third: (100%/3);
-$one-half: (100%/2);
-$two-thirds: (100%/1.5151);
-$three-quarters: (100%/1.3333);
-$full-size: (100%/1);
-
-$dimensions-map: (
-    full: $full-size,
-    3of4: $three-quarters,
-    2of3: $two-thirds,
-    1of2: $one-half,
-    1of3: $one-third,
-    1of4: $one-quarter,
-    0: $no-size,
-);
-
-
-// Spacing options
-// ---
-
-$very-small-space: $configure--base-unit/4;
-$small-space: $configure--base-unit/2;
-$base-space: $configure--base-unit;
-$large-space: $configure--base-unit*2;
-$very-large-space: $configure--base-unit*4;
-$huge-large-space: $configure--base-unit*8;
-
-$size-map: (
-    xs: $very-small-space,
-    sm: $small-space,
-    md: $base-space,
-    lg: $large-space,
-    xl: $very-large-space,
-    xxl: $huge-large-space,
-    none: 0,
-);
-
-
-// Style options
-// ---
-
-$circle: 100%;
-$rounded-corners: $configure--base-unit / ($configure--base-ratio*3);
-$very-rounded-corners: $configure--base-unit * $configure--base-ratio;
-$not-transparent: 1;
-$half-transparent: 0.5;
-$fully-transparent: 0;
-
-$appearances-map: (
-    circle: $circle,
-    rounded-corners: $rounded-corners,
-    very-rounded-corners: $very-rounded-corners,
-    not-transparent: $not-transparent,
-    half-transparent: $half-transparent,
-    fully-transparent: $fully-transparent,
-);
-
-
-// Direction options
-// ---
 
 $directions-map: (
     top,

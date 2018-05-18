@@ -1,20 +1,6 @@
 // Custom media queries
 // ==========
 
-
-// [1] Break Anywhere
-// ---
-// [EXAMPLE] “I want to add margining on an element when it’s on a device
-//           larger than 1400px.”
-//
-// .container {
-//    margin-top: 10px;
-//
-//    @include break(1400) {
-//        margin-top: 20px;
-//    }
-// }
-
 @mixin break($screen) {
     @media (min-width: $screen+'px') {
         @content;
@@ -26,11 +12,11 @@
 // ---
 
 @mixin --small-only {
-    @media screen and (max-width: $content-area-narrow) { @content; }
+    @media screen and (max-width: $hh-content-area-narrow) { @content; }
 }
 
 @mixin --medium-only {
-    @media screen and (min-width: $content-area-narrow) and (max-width: $content-area-medium) { @content; }
+    @media screen and (min-width: $hh-content-area-narrow) and (max-width: $hh-content-area-medium) { @content; }
 }
 
 
@@ -38,13 +24,13 @@
 // ---
 
 @mixin --small-up {
-    @media screen and (min-width: $content-area-narrow) { @content; }
+    @media screen and (min-width: $hh-content-area-narrow) { @content; }
 }
 
 @mixin --medium-up {
-    @media screen and (min-width: $content-area-medium) { @content; }
+    @media screen and (min-width: $hh-content-area-medium) { @content; }
 }
 
 @mixin --large-up {
-    @media screen and (min-width: $content-area-wide) { @content; }
+    @media screen and (min-width: $hh-content-area-wide) { @content; }
 }

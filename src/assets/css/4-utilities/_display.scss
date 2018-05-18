@@ -50,7 +50,8 @@
 // ---
 
 .u-hidden,
-%u-hidden {
+%u-hidden,
+[hidden] {
     display: none;
 
     @include --small-only {
@@ -70,10 +71,6 @@
             display: none;
         }
     }
-}
-
-[hidden] {
-    @extend %u-hidden;
 }
 
 .u-visually-hidden {
@@ -231,16 +228,6 @@
         &--medium-up {
             height: 100vh;
         }
-    }
-}
-
-
-// Bleed
-// --
-
-@each $direction in $directions-map {
-    .u-bleed-#{$direction} {
-        margin-#{$direction}: -$base-space;
     }
 }
 
