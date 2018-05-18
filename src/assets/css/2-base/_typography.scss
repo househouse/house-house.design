@@ -17,6 +17,7 @@ h1,
     font-weight: $hh-font-weight-thin;
     font-size: $hh-font-size-xlarge;
     line-height: $hh-baseline-xlarge;
+    letter-spacing: -0.1rem;
 }
 
 h2,
@@ -30,8 +31,8 @@ h3,
 %h3 {
     font-weight: $hh-font-weight-bold;
     font-size: $hh-font-size-base;
-    line-height: $hh-baseline-base;
-    letter-spacing: 0.05em;
+    line-height: $hh-baseline-small;
+    letter-spacing: ($hh-spacing-xsmall / 5);
     text-transform: uppercase;
 }
 

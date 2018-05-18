@@ -41,6 +41,10 @@
     font-family: $hh-font-family-secondary;
 }
 
+.u-text-family-headline {
+    font-family: $hh-font-family-headline;
+}
+
 .u-text-family-mono,
 .u-text-family-code {
     font-family: $hh-font-family-code;
@@ -52,6 +56,11 @@
 
 .u-text-underline {
     text-decoration: underline !important;
+}
+
+.u-text-no-underline,
+%u-text-no-underline {
+    text-decoration: none !important;
 }
 
 
@@ -82,14 +91,14 @@
 .u-text-align-left {
     text-align: left;
 
-    @include --small-only {
-        &--small-only {
+    @include --narrow-only {
+        &--narrow-only {
             text-align: left;
         }
     }
 
-    @include --small-up {
-        &--small-up {
+    @include --narrow-up {
+        &--narrow-up {
             text-align: left;
         }
     }
@@ -98,14 +107,14 @@
 .u-text-align-center {
     text-align: center;
 
-    @include --small-only {
-        &--small-only {
+    @include --narrow-only {
+        &--narrow-only {
             text-align: center;
         }
     }
 
-    @include --small-up {
-        &--small-up {
+    @include --narrow-up {
+        &--narrow-up {
             text-align: center;
         }
     }
@@ -114,14 +123,14 @@
 .u-text-align-right {
     text-align: right;
 
-    @include --small-only {
-        &--small-only {
+    @include --narrow-only {
+        &--narrow-only {
             text-align: right;
         }
     }
 
-    @include --small-up {
-        &--small-up {
+    @include --narrow-up {
+        &--narrow-up {
             text-align: right;
         }
     }

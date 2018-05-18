@@ -18,14 +18,14 @@ $attribute-map: (
         .u-#{$attribute}-#{$direction}-#{$size} {
             #{$attribute}-#{$direction}: #{map-get($spacing-map, $size)} !important;
 
-            @include --small-only {
-                &--small-only {
+            @include --narrow-only {
+                &--narrow-only {
                     #{$attribute}-#{$direction}: #{map-get($spacing-map, $size)} !important;
                 }
             }
 
-            @include --small-up {
-                &--small-up {
+            @include --narrow-up {
+                &--narrow-up {
                     #{$attribute}-#{$direction}: #{map-get($spacing-map, $size)} !important;
                 }
             }

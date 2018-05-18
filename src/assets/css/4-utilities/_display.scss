@@ -4,14 +4,14 @@
 .u-block {
     display: block;
 
-    @include --small-only {
-        &--small-only {
+    @include --narrow-only {
+        &--narrow-only {
             display: block;
         }
     }
 
-    @include --small-up {
-        &--small-up {
+    @include --narrow-up {
+        &--narrow-up {
             display: block;
         }
     }
@@ -26,14 +26,14 @@
 .u-inline-block {
     display: inline-block;
 
-    @include --small-only {
-        &--small-only {
+    @include --narrow-only {
+        &--narrow-only {
             display: inline-block;
         }
     }
 
-    @include --small-up {
-        &--small-up {
+    @include --narrow-up {
+        &--narrow-up {
             display: inline-block;
         }
     }
@@ -54,8 +54,8 @@
 [hidden] {
     display: none;
 
-    @include --small-only {
-        &--small-only {
+    @include --narrow-only {
+        &--narrow-only {
             display: none;
         }
     }
@@ -66,8 +66,8 @@
         }
     }
 
-    @include --small-up {
-        &--small-up {
+    @include --narrow-up {
+        &--narrow-up {
             display: none;
         }
     }
@@ -92,14 +92,14 @@
     .u-width-#{$dimensions-name} {
         width: $dimensions-value;
 
-        @include --small-only {
-            &--small-only {
+        @include --narrow-only {
+            &--narrow-only {
                 width: $dimensions-value;
             }
         }
 
-        @include --small-up {
-            &--small-up {
+        @include --narrow-up {
+            &--narrow-up {
                 width: $dimensions-value;
             }
         }
@@ -116,14 +116,14 @@
     .u-max-width-#{$dimensions-name} {
         max-width: $dimensions-value;
 
-        @include --small-only {
-            &--small-only {
+        @include --narrow-only {
+            &--narrow-only {
                 width: $dimensions-value;
             }
         }
 
-        @include --small-up {
-            &--small-up {
+        @include --narrow-up {
+            &--narrow-up {
                 max-width: $dimensions-value;
             }
         }
@@ -139,14 +139,14 @@
     .u-flex-basis-#{$dimensions-name} {
         flex-basis: $dimensions-value;
 
-        @include --small-only {
-            &--small-only {
+        @include --narrow-only {
+            &--narrow-only {
                 flex-basis: $dimensions-value;
             }
         }
 
-        @include --small-up {
-            &--small-up {
+        @include --narrow-up {
+            &--narrow-up {
                 flex-basis: $dimensions-value;
             }
         }
@@ -163,14 +163,14 @@
     .u-height-#{$dimensions-name} {
         height: $dimensions-value;
 
-        @include --small-only {
-            &--small-only {
+        @include --narrow-only {
+            &--narrow-only {
                 width: $dimensions-value;
             }
         }
 
-        @include --small-up {
-            &--small-up {
+        @include --narrow-up {
+            &--narrow-up {
                 width: $dimensions-value;
             }
         }
@@ -190,14 +190,14 @@
 .u-full-vw {
     width: 100vw;
 
-    @include --small-only {
-        &--small-only {
+    @include --narrow-only {
+        &--narrow-only {
             width: 100vw;
         }
     }
 
-    @include --small-up {
-        &--small-up {
+    @include --narrow-up {
+        &--narrow-up {
             width: 100vw;
         }
     }
@@ -212,14 +212,14 @@
 .u-full-vh {
     height: 100vh;
 
-    @include --small-only {
-        &--small-only {
+    @include --narrow-only {
+        &--narrow-only {
             height: 100vh;
         }
     }
 
-    @include --small-up {
-        &--small-up {
+    @include --narrow-up {
+        &--narrow-up {
             height: 100vh;
         }
     }
@@ -235,7 +235,8 @@
 // Overflow
 // ---
 
-.u-clip {
+.u-clip,
+%u-clip {
     overflow: hidden;
 }
 

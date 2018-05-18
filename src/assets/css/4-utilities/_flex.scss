@@ -8,14 +8,14 @@
         flex-direction: row;
     }
 
-    @include --small-only {
-        &--small-only {
+    @include --narrow-only {
+        &--narrow-only {
             display: flex;
         }
     }
 
-    @include --small-up {
-        &--small-up {
+    @include --narrow-up {
+        &--narrow-up {
             display: flex;
         }
     }
@@ -30,14 +30,14 @@
 .u-flex-column {
     flex-direction: column;
 
-    @include --small-only {
-        &--small-only {
+    @include --narrow-only {
+        &--narrow-only {
             flex-direction: column;
         }
     }
 
-    @include --small-up {
-        &--small-up {
+    @include --narrow-up {
+        &--narrow-up {
             flex-direction: column;
         }
     }
@@ -57,17 +57,39 @@
 // Flex Layout
 // ---
 
+.u-align-start {
+    align-items: start;
+
+    @include --narrow-only {
+        &--narrow-only {
+            align-items: start;
+        }
+    }
+
+    @include --narrow-up {
+        &--narrow-up {
+            align-items: start;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            align-items: start;
+        }
+    }
+}
+
 .u-align-middle {
     align-items: center;
 
-    @include --small-only {
-        &--small-only {
+    @include --narrow-only {
+        &--narrow-only {
             align-items: center;
         }
     }
 
-    @include --small-up {
-        &--small-up {
+    @include --narrow-up {
+        &--narrow-up {
             align-items: center;
         }
     }
@@ -79,17 +101,39 @@
     }
 }
 
+.u-align-end {
+    align-items: flex-end;
+
+    @include --narrow-only {
+        &--narrow-only {
+            align-items: flex-end;
+        }
+    }
+
+    @include --narrow-up {
+        &--narrow-up {
+            align-items: flex-end;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            align-items: flex-end;
+        }
+    }
+}
+
 .u-justify-start {
     justify-content: flex-start;
 
-    @include --small-only {
-        &--small-only {
+    @include --narrow-only {
+        &--narrow-only {
             justify-content: flex-start;
         }
     }
 
-    @include --small-up {
-        &--small-up {
+    @include --narrow-up {
+        &--narrow-up {
             justify-content: flex-start;
         }
     }
@@ -104,14 +148,14 @@
 .u-justify-end {
     justify-content: flex-end;
 
-    @include --small-only {
-        &--small-only {
+    @include --narrow-only {
+        &--narrow-only {
             justify-content: flex-end;
         }
     }
 
-    @include --small-up {
-        &--small-up {
+    @include --narrow-up {
+        &--narrow-up {
             justify-content: flex-end;
         }
     }
@@ -126,14 +170,14 @@
 .u-justify-middle {
     justify-content: center;
 
-    @include --small-only {
-        &--small-only {
+    @include --narrow-only {
+        &--narrow-only {
             justify-content: center;
         }
     }
 
-    @include --small-up {
-        &--small-up {
+    @include --narrow-up {
+        &--narrow-up {
             justify-content: center;
         }
     }

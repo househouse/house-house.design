@@ -26,8 +26,8 @@ div
 
 
     section#portfolio.u-clip.u-color-white
-        .u-flexbox--small-up.u-flex-wrap
-            .u-float-start.u-width-1of2--small-up
+        .u-flexbox--narrow-up.u-flex-wrap
+            .u-float-start.u-width-1of2--narrow-up
                 .u-bg-dark.u-height-full
                     article.c-card.c-faux-link.u-context.u-clip.u-corners.u-gradient.u-align-center.u-stack-basic
                         a.c-faux-link__overlay(href='https://medium.com/house-house/house-house-blanc-ink-3050b75adc4f', aria-hidden='true') Find out more about Blanc Ink
@@ -36,7 +36,7 @@ div
                                 span Blanc Ink
                             p.u-uppercase.u-text-size-small.u-tracked-loose #research #frontend #ui
                         .c-card__image.u-position.u-top-0.u-bottom-0.u-left-0.u-right-0.u-stack-under.u-bg-cover.u-bg-center.js-card-visible.u-bg-bi(role='presentation')
-            .u-float-start.u-width-1of2--small-up
+            .u-float-start.u-width-1of2--narrow-up
                 .u-bg-dark.u-height-full
                     article.c-card.c-faux-link.u-context.u-clip.u-corners.u-gradient.u-align-center.u-stack-basic
                         a.c-faux-link__overlay(href='http://vancouverdesignwk.com/', aria-hidden='true') Find out more about VDW
@@ -45,7 +45,7 @@ div
                                 span VDW
                             p.u-uppercase.u-text-size-small.u-tracked-loose #brand #responsive #print
                         .c-card__image.u-position.u-top-0.u-bottom-0.u-left-0.u-right-0.u-stack-under.u-bg-cover.u-bg-center.js-card-visible.u-bg-vdw(role='presentation')
-        article.c-card.c--no-padding.c-faux-link.u-context.u-clip.u-bg-center.u-bg-cover.u-gradient.u-padding-top-lg--small-only.u-padding-top-xl--small-up.u-padding-bottom-xl.u-bg-dark
+        article.c-card.c--no-padding.c-faux-link.u-context.u-clip.u-bg-center.u-bg-cover.u-gradient.u-padding-top-lg--narrow-only.u-padding-top-xl--narrow-up.u-padding-bottom-xl.u-bg-dark
             a.c-faux-link__overlay(href='https://github.com/househouse/housecss', aria-hidden='true') Find out more about housecss
             .c-card__image.u-position.u-top-0.u-bottom-0.u-left-0.u-right-0.u-bg-center.u-bg-cover.js-card-visible.u-bg-stars
             .u-context.u-stack-basic.u-flexbox--medium-up.u-color-light.u-align-center
@@ -56,8 +56,8 @@ div
                     p
                         | Launch your next web project quickly by removing the uncertainty and grunt-work around writing CSS.
                         span.u-inline-block Learn more about housecss →
-        .u-flexbox--small-up.u-flex-wrap
-            .u-float-start.u-width-1of2--small-up.u-max-width-1of3--medium-up.u-flex-basis-1of3--medium-up
+        .u-flexbox--narrow-up.u-flex-wrap
+            .u-float-start.u-width-1of2--narrow-up.u-max-width-1of3--medium-up.u-flex-basis-1of3--medium-up
                 .u-bg-dark.u-height-full
                     article.c-card.c-faux-link.u-context.u-clip.u-corners.u-gradient.u-align-center.u-stack-basic
                         a.c-faux-link__overlay(href='http://lawnpartyfilms.com/', aria-hidden='true') Find out more about Lawn Party Films
@@ -66,7 +66,7 @@ div
                                 span Lawn Party Films
                             p.u-uppercase.u-text-size-small.u-tracked-loose #responsive
                         .c-card__image.u-position.u-top-0.u-bottom-0.u-left-0.u-right-0.u-stack-under.u-bg-cover.u-bg-center.js-card-visible.u-bg-lpf(role='presentation')
-            .u-float-start.u-width-1of2--small-up.u-max-width-1of3--medium-up.u-flex-basis-1of3--medium-up
+            .u-float-start.u-width-1of2--narrow-up.u-max-width-1of3--medium-up.u-flex-basis-1of3--medium-up
                 .u-bg-dark.u-height-full
                     article.c-card.c-faux-link.u-context.u-clip.u-corners.u-gradient.u-align-center.u-stack-basic
                         a.c-faux-link__overlay(href='http://ultrafastoptics2017.org/', aria-hidden='true') Find out more about Ultrafast Optics
@@ -75,7 +75,7 @@ div
                                 span Ultrafast Optics
                             p.u-uppercase.u-text-size-small.u-tracked-loose #responsive #visual
                         .c-card__image.u-position.u-top-0.u-bottom-0.u-left-0.u-right-0.u-stack-under.u-bg-cover.u-bg-center.js-card-visible.u-bg-ufo(role='presentation')
-            .u-float-start.u-width-full--small-up.u-max-width-1of3--medium-up.u-flex-basis-1of3--medium-up
+            .u-float-start.u-width-full--narrow-up.u-max-width-1of3--medium-up.u-flex-basis-1of3--medium-up
                 .u-bg-dark.u-height-full
                     article.c-card.c-faux-link.u-context.u-clip.u-corners.u-gradient.u-align-center.u-stack-basic
                         a.c-faux-link__overlay(href='https://www.youtube.com/watch?v=68F7ta8kk9w', aria-hidden='true') Find out more about Ask Will

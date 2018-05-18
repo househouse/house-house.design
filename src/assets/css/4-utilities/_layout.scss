@@ -1,17 +1,18 @@
 // Utilities: Layout
 // ============================================================================
 
-.u-context {
+.u-context,
+%u-context {
     position: relative;
 
-    @include --small-only {
-        &--small-only {
-            position: relative;
+    @include --narrow-only {
+        &--narrow-only {
+
         }
     }
 
-    @include --small-up {
-        &--small-up {
+    @include --narrow-up {
+        &--narrow-up {
             position: relative;
         }
     }
@@ -26,14 +27,14 @@
 .u-position {
     position: absolute;
 
-    @include --small-only {
-        &--small-only {
+    @include --narrow-only {
+        &--narrow-only {
             position: absolute;
         }
     }
 
-    @include --small-up {
-        &--small-up {
+    @include --narrow-up {
+        &--narrow-up {
             position: absolute;
         }
     }
@@ -48,14 +49,14 @@
 .u-fixed {
     position: fixed;
 
-    @include --small-only {
-        &--small-only {
+    @include --narrow-only {
+        &--narrow-only {
             position: fixed;
         }
     }
 
-    @include --small-up {
-        &--small-up {
+    @include --narrow-up {
+        &--narrow-up {
             position: fixed;
         }
     }
@@ -91,14 +92,14 @@
     .u-#{$direction-name}-0 {
         #{$direction-name}: $hh-dimension-none;
 
-        @include --small-only {
-            &--small-only {
+        @include --narrow-only {
+            &--narrow-only {
                 #{$direction-name}: $hh-dimension-none;
             }
         }
 
-        @include --small-up {
-            &--small-up {
+        @include --narrow-up {
+            &--narrow-up {
                 #{$direction-name}: $hh-dimension-none;
             }
         }
@@ -115,14 +116,14 @@
     .u-#{$direction-name}-halfway {
         #{$direction-name}: $hh-dimension-1of2;
 
-        @include --small-only {
-            &--small-only {
+        @include --narrow-only {
+            &--narrow-only {
                 #{$direction-name}: $hh-dimension-1of2;
             }
         }
 
-        @include --small-up {
-            &--small-up {
+        @include --narrow-up {
+            &--narrow-up {
                 #{$direction-name}: $hh-dimension-1of2;
             }
         }
@@ -139,14 +140,14 @@
     .u-#{$direction-name}-fullway {
         #{$direction-name}: $hh-dimension-full;
 
-        @include --small-only {
-            &--small-only {
+        @include --narrow-only {
+            &--narrow-only {
                 #{$direction-name}: $hh-dimension-full;
             }
         }
 
-        @include --small-up {
-            &--small-up {
+        @include --narrow-up {
+            &--narrow-up {
                 #{$direction-name}: $hh-dimension-full;
             }
         }
@@ -166,14 +167,14 @@
 .u-realign-center {
     transform: translate(-$hh-dimension-1of2, -$hh-dimension-1of2);
 
-    @include --small-only {
-        &--small-only {
+    @include --narrow-only {
+        &--narrow-only {
             transform: translate(-$hh-dimension-1of2, -$hh-dimension-1of2);
         }
     }
 
-    @include --small-up {
-        &--small-up {
+    @include --narrow-up {
+        &--narrow-up {
             transform: translate(-$hh-dimension-1of2, -$hh-dimension-1of2);
         }
     }
@@ -188,14 +189,14 @@
 .u-realign-center-vert {
     transform: translateY(-$hh-dimension-1of2);
 
-    @include --small-only {
-        &--small-only {
+    @include --narrow-only {
+        &--narrow-only {
             transform: translateY(-$hh-dimension-1of2);
         }
     }
 
-    @include --small-up {
-        &--small-up {
+    @include --narrow-up {
+        &--narrow-up {
             transform: translateY(-$hh-dimension-1of2);
         }
     }
@@ -210,14 +211,14 @@
 .u-realign-center-horz {
     transform: translateX(-$hh-dimension-1of2);
 
-    @include --small-only {
-        &--small-only {
+    @include --narrow-only {
+        &--narrow-only {
             transform: translateX(-$hh-dimension-1of2);
         }
     }
 
-    @include --small-up {
-        &--small-up {
+    @include --narrow-up {
+        &--narrow-up {
             transform: translateX(-$hh-dimension-1of2);
         }
     }

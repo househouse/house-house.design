@@ -5,7 +5,7 @@ footer.u-bg-black.u-color-white.u-context.u-padding-bottom-xlarge
     div.c-contain.u-flexbox.u-align-middle
 
         div.u-flex-shrink
-            div.u-bg-indigo-dark.u-padding-top-base.u-padding-bottom-base.u-padding-right-medium.u-padding-left-base.u-context#question(style='transform:skew(20deg);')
+            div.u-bg-blue-dark.u-padding-top-base.u-padding-bottom-base.u-padding-right-medium.u-padding-left-base.u-context#question(style='transform:skew(20deg);')
                 div.u-flexbox.u-align-middle(style='transform:skew(-20deg);')
 
                     div.u-flex-shrink.u-margin-right-base
@@ -13,13 +13,13 @@ footer.u-bg-black.u-color-white.u-context.u-padding-bottom-xlarge
 
                     div.u-flex
                         h2.c-heading.c--2.u-baseline-base.u-margin-bottom-small
-                            | Have a question?
+                            | Questions? Chatty?
                         p.u-baseline-small
-                            | email Ben at
+                            | 👋 email Ben at
                             | #[a(href='mailto:hello@house-house.design') hello@house-house.design]
 
 
-        div.u-flex.u-padding-left-large.u-context.u-stack-over
+        div.u-flex.u-context.u-stack-over
             ul.u-flexbox.u-margin-bottom-small.u-justify-end.u-text-size-medium
                 li #[a(href='') Work]
                 li #[a(href='') Approach]
@@ -78,15 +78,15 @@ export default {
         content: '';
 
         position: absolute;
-        right: 0;
+        left: 0;
         bottom: 0;
         top: 0;
-        width: 100%;
+        width: 100vw;
 
         transform: translate(-99%, 0);
 
         display: block;
 
-        background: var(--indigo-dark);
+        background: var(--blue-dark);
     }
 </style>

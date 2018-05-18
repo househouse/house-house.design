@@ -31,6 +31,7 @@
 @import '1-settings/responsive';
 @import '1-settings/type-families';
 
+
 // [2] Base
 // ---
 // Styles that target bare HTML elements. This mostly consists of a mixture of
@@ -41,6 +42,7 @@
 @import '2-base/general';
 @import '2-base/typography';
 
+
 // [3] Components
 // ---
 //
@@ -49,12 +51,18 @@
 // directly related to any HTML, JS, or JSX, it should be considered a utility
 // class (or series of classes.) Components use the c- namespace, e.g. c-logo.
 
+@import '3-components/bgShapes';
+@import '3-components/buttonBlock';
+@import '3-components/buttonLink';
+@import '3-components/globalHeader';
+@import '3-components/globalNav';
+
 @import '3-components/contain';
 @import '3-components/heading';
 @import '3-components/network';
 @import '3-components/resident';
 @import '3-components/text-content';
-@import '3-components/title';
+
 
 // [4] Utilities
 // ---
@@ -75,6 +83,7 @@
 @import '4-utilities/spacing';
 @import '4-utilities/text';
 
+
 // [5] Animations
 // ---
 //
@@ -84,9 +93,8 @@
 @import '5-animations/fade';
 @import '5-animations/scale-out';
 
-/*
 
-// Templates
+// [6] Templates
 // ---
 //
 // ⚠️ USE WITH EXTREME CAUTION: Sometimes, there are times that we need to write
@@ -94,8 +102,9 @@
 // they appear. These styles should be used as a last resort only!
 //
 // @import 'templates/home';
-
-// Third-Party Plugins
+//
+//
+// [7] Third-Party Plugins
 // ---
 //
 // Third-party integrations and plugins often do not let us control their
@@ -103,5 +112,3 @@
 // individual partials below.
 //
 // @import 'third-party/flickity';
-
-*/

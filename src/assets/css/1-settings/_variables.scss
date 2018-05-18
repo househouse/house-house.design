@@ -27,29 +27,31 @@ $hh-dimension-full: (100%/1); // 100%
 
 $hh-content-area-narrow: ($hh-unit * 75); // 375px
 $hh-content-area-medium: ($hh-unit * 150); // 750px
-$hh-content-area-wide: ($hh-unit * 225); // 1125px
+$hh-content-area-wide: ($hh-unit * 235); // 1175px
 
 $hh-font-size-xsmall: ($hh-unit * 2.4 ); // 12px
 $hh-font-size-small: ($hh-unit * 2.8 ); // 14px
 $hh-font-size-base: ($hh-unit * 3.2 ); // 16px
 $hh-font-size-medium: ($hh-unit * 4 ); // 20px
-$hh-font-size-large: ($hh-unit * 8 ); // 40px
+$hh-font-size-large: ($hh-unit * 7 ); // 35px
 $hh-font-size-xlarge: ($hh-unit * 12 ); // 60px
 
-$hh-font-family-primary: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
-$hh-font-family-secondary: 'TiemposText-Regular', 'Georgia', serif;
-$hh-font-family-tertiary: 'TiemposHeadline-Bold', 'Georgia', serif;
+$hh-font-family-primary: 'Walfork', -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+$hh-font-family-secondary: 'Tiempos Text', 'Georgia', serif;
+$hh-font-family-headline: 'Tiempos Headline', 'Georgia', serif;
 $hh-font-family-code: 'Menlo', monospace;
 
 $hh-font-weight-thin: 300;
 $hh-font-weight-regular: 400;
-$hh-font-weight-bold: 800;
+$hh-font-weight-bold: 700;
 
 $z1-depth: -1;
 $z2-depth: 1;
 $z3-depth: 10;
 $z4-depth: 100;
 $z5-depth: 1000;
+
+$hh-animation-fast: all 0.15s ease-in-out;
 
 
 // Global maps
@@ -77,31 +79,31 @@ $dimensions-map: (
 
 $z-map: (
     under: $z1-depth,
-    base: $z2-depth,
-    over: $z3-depth,
+    base:  $z2-depth,
+    over:  $z3-depth,
     shade: $z4-depth,
     modal: $z5-depth,
 );
 
 $color-map: (
-    white:        var(--white),
-    grey-light:   var(--grey-light),
-    grey-base:    var(--grey-base),
-    grey-med:     var(--grey-med),
-    grey-dark:    var(--grey-dark),
-    black:        var(--black),
-    indigo-light: var(--indigo-light),
-    indigo-med:   var(--indigo-med),
-    indigo-dark:  var(--indigo-dark),
-    violet-light: var(--violet-light),
-    violet-med:   var(--violet-med),
-    violet-dark:  var(--violet-dark),
-    orange-light: var(--orange-light),
-    orange-med:   var(--orange-med),
-    orange-dark:  var(--orange-dark),
-    green-light:  var(--green-light),
-    green-med:    var(--green-med),
-    green-dark:   var(--green-dark),
+    white:         var(--white),
+    grey-light:    var(--grey-light),
+    grey-base:     var(--grey-base),
+    grey-medium:   var(--grey-medium),
+    grey-dark:     var(--grey-dark),
+    black:         var(--black),
+    blue-light:    var(--blue-light),
+    blue-medium:   var(--blue-medium),
+    blue-dark:     var(--blue-dark),
+    purple-light:  var(--purple-light),
+    purple-medium: var(--purple-medium),
+    purple-dark:   var(--purple-dark),
+    orange-light:  var(--orange-light),
+    orange-medium: var(--orange-medium),
+    orange-dark:   var(--orange-dark),
+    green-light:   var(--green-light),
+    green-medium:  var(--green-medium),
+    green-dark:    var(--green-dark),
 );
 
 $directions-map: (

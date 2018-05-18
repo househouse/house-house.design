@@ -1,0 +1,14 @@
+.c-button-block {
+    min-height: ($hh-unit * 10);
+    padding: 0 $hh-spacing-small;
+    border: 0;
+
+    border-radius: 0.25em;
+
+    font-weight: $hh-font-weight-bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: $hh-animation-fast;
+}
