@@ -1,30 +1,74 @@
 <template lang="pug">
-div
-    section.c-section
-        article.c-contain
+div#pageWork
 
-            h1.c-title.u-margin-bottom-lg
-                | #[span House House]
-                | focuses your design efforts
-
-            div.c-text-content.u-color-grey-dark
-                p We’re excited to join forces with you to make something wonderful together. We achieve results by striving to accomplish three things:
-
-    section.c-section.u-bg-primary.u-color-white.u-context
-        article.u-flexbox
-            div.u-flex.u-margin-right-lg.c-text-content
-                h3 Connecting Dots
-                p Our process starts by listening to your story. We uncover who you are, unearth who is at the heart of your business and make a plan to connect your goals with their needs. We talk to make sure we're always on the same page, solving the right problems, and telling the same story.
-
-            div.u-flex.u-margin-right-lg.c-text-content
-                h3 Work Differently
-                p We're here to cut through the cacophony and build beautiful products that have purpose and function, not add to the noise — that doesn’t help anyone. We strive to give you inclusive and sustainable solutions that always have your audience at the heart.
-
-            div.u-flex.c-text-content
-                h3 Think Big
-                p Got a visionary idea that needs a little push? A new product to bring to market? An audience that needs understanding? Let’s start a conversation to see if our values jive with your ambitions and see if our solution-focused, scalable approach meshes with your vision.
+    section.u-padding-bottom-medium
+        div.c-contain.u-color-black
+            h1.c-heading-c--1.u-margin-bottom-small.u-max-width-2of3
+                | #[span.u-visually-hidden House House is]
+                | a ready to doopity doo
 
 
+    section.u-padding-bottom-large
+        div.c-contain.u-flexbox.u-align-end
+
+            div.u-flex.u-padding-right-medium
+                div.c-text-content.u-text-size-large.u-baseline-large.u-color-black
+                    p.u-margin-bottom-medium
+                        | As a collective of freelancers, we designers are able assemble on your project in many shapes and ways. But every project follows a similar pattern, summarized by the three things we strive to achieve…
+
+                    div.u-flexbox.u-align-center.u-color-black
+                        svg.u-margin-right-small(width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg")
+                            title Icon: Checkbox
+                            path(d="M9.091 14.091l-4.545-3.864 1.25-1.477 3.068 2.614 5.341-6.25 1.477 1.25-6.591 7.727zm10.909.227v-8.636c0-3.182-2.5-5.682-5.682-5.682h-8.636c-3.182 0-5.682 2.5-5.682 5.682v8.636c0 3.182 2.5 5.682 5.682 5.682h8.636c3.182 0 5.682-2.5 5.682-5.682zm-14.318 3.75c-2.159 0-3.75-1.591-3.75-3.75v-8.636c0-2.159 1.591-3.75 3.75-3.75h8.636c2.159 0 3.75 1.591 3.75 3.75v8.636c0 2.159-1.591 3.75-3.75 3.75h-8.636z" fill="currentColor" fill-rule="nonzero")
+                        h2.c-heading.c--3
+                            | Put the user at the centre
+                    p.u-text-family-secondary.u-text-size-medium.u-baseline-medium.u-margin-bottom-base
+                        | Our process starts by listening to your story, unearthing who is at the heart of your business. By then connecting their needs to your team’s goals, we can deliver value in four areas:
+                        | #[strong.u-color-blue-dark design support],
+                        | #[strong.u-color-blue-light strategic consulting],
+                        | #[strong.u-color-purple-medium tech guidance], and
+                        | #[strong.u-color-green-medium mentorship offerings].
+                        | We interweave these like a braid, bringing a bit of each to every project.
+
+                    div.u-flexbox.u-align-center.u-color-black
+                        svg.u-margin-right-small(width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg")
+                            title Icon: Checkbox
+                            path(d="M9.091 14.091l-4.545-3.864 1.25-1.477 3.068 2.614 5.341-6.25 1.477 1.25-6.591 7.727zm10.909.227v-8.636c0-3.182-2.5-5.682-5.682-5.682h-8.636c-3.182 0-5.682 2.5-5.682 5.682v8.636c0 3.182 2.5 5.682 5.682 5.682h8.636c3.182 0 5.682-2.5 5.682-5.682zm-14.318 3.75c-2.159 0-3.75-1.591-3.75-3.75v-8.636c0-2.159 1.591-3.75 3.75-3.75h8.636c2.159 0 3.75 1.591 3.75 3.75v8.636c0 2.159-1.591 3.75-3.75 3.75h-8.636z" fill="currentColor" fill-rule="nonzero")
+                        h2.c-heading.c--3
+                            | Think big but embrace adaptation
+                    p.u-text-family-secondary.u-text-size-medium.u-baseline-medium.u-margin-bottom-base
+                        | We take an iterative design approach to our work, meaning we communicate often, pivoting and adjusting until we get it right. This is a process; as we discover and learn more about you and your business goals, targets may sometime change. By designing iteratively, we can come in with big ideas, but let your users and your goals massage and refine it, making sure things adapt gracefully along the way.
+
+                    div.u-flexbox.u-align-center.u-color-black
+                        svg.u-margin-right-small(width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg")
+                            title Icon: Checkbox
+                            path(d="M9.091 14.091l-4.545-3.864 1.25-1.477 3.068 2.614 5.341-6.25 1.477 1.25-6.591 7.727zm10.909.227v-8.636c0-3.182-2.5-5.682-5.682-5.682h-8.636c-3.182 0-5.682 2.5-5.682 5.682v8.636c0 3.182 2.5 5.682 5.682 5.682h8.636c3.182 0 5.682-2.5 5.682-5.682zm-14.318 3.75c-2.159 0-3.75-1.591-3.75-3.75v-8.636c0-2.159 1.591-3.75 3.75-3.75h8.636c2.159 0 3.75 1.591 3.75 3.75v8.636c0 2.159-1.591 3.75-3.75 3.75h-8.636z" fill="currentColor" fill-rule="nonzero")
+                        h2.c-heading.c--3
+                            | Rely on what you know
+                    p.u-text-family-secondary.u-text-size-medium.u-baseline-medium
+                        | We’re here to cut through the cacophony and help you design with purpose and function, not add to the noise — that doesn’t help anyone. We’ll always aim to give you inclusive and sustainable solutions that have your audience’s interests at their heart. To do that well, we depend on our deep skills in multiple areas of service, experience, and visual design.
+
+            div.u-flex-none.c-text-content.u-no-wrap
+                div.u-text-size-medium.u-baseline-medium
+                    ul.c-pill-group.c--blue-dark.u-margin-bottom-base
+                        li 🌀 Interface Design
+                        li 🌄 Brand Identity
+                        li 👉 Art Direction
+                    ul.c-pill-group.c--blue-light.u-margin-bottom-base
+                        li ⚡️ Experience Strategy
+                        li 🗺 Service Design
+                        li 🔍 UX Research
+                    ul.c-pill-group.c--purple-light.u-margin-bottom-base
+                        li ⌨️ Front-End Development
+                        li 📱 Progressive Web Apps
+                        li 💻 Responsive Websites
+                    ul.c-pill-group.c--green-light.u-margin-bottom-small
+                        li 🤝 Team Building
+                        li 🎨 Workshops
+                        li 📝 Training
+                    router-link(to='/approach').c-button-link.c--orange.u-text-size-base.u-baseline-small
+                        | Learn how we work
+//-
     section#portfolio.u-clip.u-color-white
         .u-flexbox--narrow-up.u-flex-wrap
             .u-float-start.u-width-1of2--narrow-up
@@ -95,5 +139,5 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 </style>

@@ -5,27 +5,33 @@
 // Text Sizes
 // ---
 
-.u-text-size-xsmall {
+.u-text-size-xsmall,
+%u-text-size-xsmall {
     font-size: $hh-font-size-xsmall !important;
 }
 
-.u-text-size-small {
+.u-text-size-small,
+%u-text-size-small {
     font-size: $hh-font-size-small !important;
 }
 
-.u-text-size-base {
+.u-text-size-base,
+%u-text-size-base {
     font-size: $hh-font-size-base !important;
 }
 
-.u-text-size-medium {
+.u-text-size-medium,
+%u-text-size-medium {
     font-size: $hh-font-size-medium !important;
 }
 
-.u-text-size-large {
+.u-text-size-large,
+%u-text-size-large {
     font-size: $hh-font-size-large !important;
 }
 
-.u-text-size-xlarge {
+.u-text-size-xlarge,
+%u-text-size-xlarge {
     font-size: $hh-font-size-xlarge !important;
 }
 
@@ -33,20 +39,25 @@
 // Type Families
 // ---
 
-.u-text-family-primary {
+.u-text-family-primary,
+%u-text-family-primary {
     font-family: $hh-font-family-primary;
 }
 
-.u-text-family-secondary {
+.u-text-family-secondary,
+%u-text-family-secondary {
     font-family: $hh-font-family-secondary;
 }
 
-.u-text-family-headline {
+.u-text-family-headline,
+%u-text-family-headline {
     font-family: $hh-font-family-headline;
 }
 
+.u-text-family-code,
 .u-text-family-mono,
-.u-text-family-code {
+%u-text-family-code,
+%u-text-family-mono {
     font-family: $hh-font-family-code;
 }
 
@@ -140,15 +151,18 @@
 // Text Casing
 // ---
 
-.u-text-uppercase {
+.u-text-uppercase,
+%u-text-uppercase {
     text-transform: uppercase;
 }
 
-.u-text-lowercase {
+.u-text-lowercase,
+%u-text-lowercase {
     text-transform: lowercase;
 }
 
-.u-text-capitalize {
+.u-text-capitalize,
+%u-text-capitalize {
     text-transform: capitalize;
 }
 

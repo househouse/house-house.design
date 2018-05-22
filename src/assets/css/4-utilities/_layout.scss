@@ -24,7 +24,8 @@
     }
 }
 
-.u-position {
+.u-position,
+%u-position {
     position: absolute;
 
     @include --narrow-only {

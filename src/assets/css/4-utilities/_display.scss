@@ -1,7 +1,8 @@
 // Utilities: Display
 // ============================================================================
 
-.u-block {
+.u-block,
+%u-block {
     display: block;
 
     @include --narrow-only {

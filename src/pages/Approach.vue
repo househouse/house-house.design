@@ -1,49 +1,31 @@
 <template lang="pug">
-div
-    section.c-section
-        article.c-contain
+div#pageApproach
 
-            h1.c-title.u-margin-bottom-lg
-                | #[span House House]
-                | extends your team
+    section.u-padding-bottom-medium
+        div.c-contain.u-color-black
+            h1.c-heading-c--1.u-margin-bottom-small.u-max-width-2of3
+                | #[span.u-visually-hidden House House is]
+                | a ready to doopity doo
 
-            div.c-text-content.u-color-grey-dark
-                p We’re organized a bit differently than the last agency you worked with, and we think that’s our biggest strength. With a tiny full-time staff and a big network, we can adapt to scale and changes — just as your teams and projects do.
 
-    section.c-section.u-bg-black.u-color-white.u-context
-        div.u-squiggle.u-position.u-top-0.u-left-halfway(role='presentation' style='transform: translate(-50%, -50%) rotate(45deg);')
+    section.u-padding-bottom-large
+        div.c-contain
 
-        article.c-contain.u-margin-bottom-lg.c-text-content
-            p A think a small team like ours can make a big impact when you need it to. We take an iterative design approach to our work, meaning we communicating often, pivoting and adjusting until we get it right. This is a process; as we discover and learn more about you and your business goals, targets may sometime change. By designing iteratively, we can make sure things adapt gracefully along the way.
+            div.u-width-3of4
+                div.c-text-content.u-color-black.u-text-size-large.u-baseline-large
+                    p
+                        | We’re organized a bit differently than the last agency you worked with, and we think that’s our biggest strength. With a tiny full-time staff and a big network, we can adapt to scale and changes—just as your teams and projects do.
 
-        img(src='../assets/img/design-braid.png' style='opacity:0.95; width:100%; margin:1rem 0;')
 
-        div.u-flexbox--medium-up.u-margin-bottom-md.u-align-center.u-context(style='line-height:1; margin-top:4rem;')
-            div.c-text-content.u-flex.u-margin-bottom-lg.u-context.c-approach(style='z-index:10;')
-                h3 Design
-                span.u-block 🌀 Interface Design
-                span.u-block 🌄 Brand Identity
-                span.u-block 👉 Art Direction
+//-
+    section.u-bg-black.u-color-white.u-context
+        div.c-contain
+            div.u-squiggle.u-position.u-top-0.u-left-halfway(role='presentation' style='transform: translate(-50%, -50%) rotate(45deg);')
 
-            div.c-text-content.u-flex.u-margin-bottom-lg.u-context.c-approach(style='z-index:10;')
-                h3 Technology
-                span.u-block ⌨️ Front-End Development
-                span.u-block 📱 Progressive Web Apps
-                span.u-block 💻 Responsive Websites
+            article.c-contain.u-margin-bottom-lg.c-text-content
+                p A think a small team like ours can make a big impact when you need it to. We take an iterative design approach to our work, meaning we communicating often, pivoting and adjusting until we get it right. This is a process; as we discover and learn more about you and your business goals, targets may sometime change. By designing iteratively, we can make sure things adapt gracefully along the way.
 
-            div.c-text-content.u-flex.u-margin-bottom-lg.u-context.c-approach(style='z-index:10;')
-                h3 Strategy
-                span.u-block ⚡️ Experience Strategy
-                span.u-block 🗺 Service Design
-                span.u-block 🔍 UX Research
-
-            div.c-text-content.u-flex.u-margin-bottom-lg.u-context.c-approach(style='z-index:10;')
-                h3 Mentorship
-                span.u-block 🤝 Team Building
-                span.u-block 🎨 Workshops
-                span.u-block 📝 Training
-
-    section.c-section.u-bg-primary.u-color-white.u-context
+    section.u-bg-primary.u-color-white.u-context
         div.u-squiggle.u-position.u-top-0.u-right-0(role='presentation' style='transform:translate(-150%, 100%) rotate(100deg);')
 
         h2.u-margin-bottom-lg Residents
@@ -74,7 +56,7 @@ div
                             a(href='#').u-margin-right-md LinkedIn
                             a(href='#') GitHub
 
-    section.c-section.u-bg-grey-dark.u-color-white.u-context
+    section.u-bg-grey-dark.u-color-white.u-context
         div.u-squiggle.u-position.u-top-0(role='presentation' style='transform: translate(-50%, -50%) rotate(-45deg);')
 
         h2.u-margin-bottom-lg Housemates

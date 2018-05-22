@@ -14,10 +14,12 @@ body {
 
 h1,
 %h1 {
-    font-weight: $hh-font-weight-thin;
+    opacity: 0.85;
+
+    font-weight: $hh-font-weight-bold;
     font-size: $hh-font-size-xlarge;
     line-height: $hh-baseline-xlarge;
-    letter-spacing: -0.1rem;
+    letter-spacing: -($hh-spacing-xsmall / 10);
 }
 
 h2,

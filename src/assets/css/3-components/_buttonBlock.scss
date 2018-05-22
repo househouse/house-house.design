@@ -1,9 +1,9 @@
 .c-button-block {
-    min-height: ($hh-unit * 10);
-    padding: 0 $hh-spacing-small;
+    min-height: ($hh-unit * 11);
+    padding: 0 $hh-spacing-base;
     border: 0;
 
-    border-radius: 0.25em;
+    border-radius: 0.25rem;
 
     font-weight: $hh-font-weight-bold;
     letter-spacing: 1px;

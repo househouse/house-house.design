@@ -7,7 +7,7 @@ $hh-baseline-xsmall: ($hh-unit * 2); // 10px
 $hh-baseline-small: ($hh-unit * 4); // 20px
 $hh-baseline-base: ($hh-unit * 6); // 30px
 $hh-baseline-medium: ($hh-unit * 8); // 40px
-$hh-baseline-large: ($hh-unit * 12); // 60px
+$hh-baseline-large: ($hh-unit * 10); // 60px
 $hh-baseline-xlarge: ($hh-unit * 16); // 80px
 
 $hh-spacing-xsmall: ($hh-unit * 2); // 10px
@@ -33,25 +33,26 @@ $hh-font-size-xsmall: ($hh-unit * 2.4 ); // 12px
 $hh-font-size-small: ($hh-unit * 2.8 ); // 14px
 $hh-font-size-base: ($hh-unit * 3.2 ); // 16px
 $hh-font-size-medium: ($hh-unit * 4 ); // 20px
-$hh-font-size-large: ($hh-unit * 7 ); // 35px
+$hh-font-size-large: ($hh-unit * 6.4 ); // 32px
 $hh-font-size-xlarge: ($hh-unit * 12 ); // 60px
 
-$hh-font-family-primary: 'Walfork', -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
-$hh-font-family-secondary: 'Tiempos Text', 'Georgia', serif;
-$hh-font-family-headline: 'Tiempos Headline', 'Georgia', serif;
+$hh-font-family-primary: 'HH GT Walsheim', -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+$hh-font-family-secondary: 'HH Tiempos Text', 'Georgia', serif;
+$hh-font-family-headline: 'HH Tiempos Headline', 'Georgia', serif;
 $hh-font-family-code: 'Menlo', monospace;
 
 $hh-font-weight-thin: 300;
 $hh-font-weight-regular: 400;
 $hh-font-weight-bold: 700;
 
+$hh-animation-fast: all 0.15s ease-in-out;
+$hh-animation-slow: all 0.35s cubic-bezier(0.215, 0.615, 0.355, 1);
+
 $z1-depth: -1;
 $z2-depth: 1;
 $z3-depth: 10;
 $z4-depth: 100;
 $z5-depth: 1000;
-
-$hh-animation-fast: all 0.15s ease-in-out;
 
 
 // Global maps

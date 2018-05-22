@@ -27,14 +27,13 @@ footer.u-bg-black.u-color-white.u-context.u-padding-bottom-xlarge
                 li #[a(href='') Contact]
 
             ul.u-flexbox.u-margin-bottom-base.u-justify-end.u-text-size-small.u-baseline-small
+                li #[a(href='') Privacy & Security]
                 li #[a(href='') Vision & Values]
-                li #[a(href='') Privacy]
-                li #[a(href='') Security]
                 li #[a(href='') Code of Conduct]
 
             div.u-color-grey-dark.u-text-align-right.u-text-size-small.u-baseline-small
-                p © 2016–2018 House House: a design studio
-                p Made in Vancouver, Canada 🇨🇦
+                p © 2016–2018 House House • A Design Studio
+                p Made with love in Vancouver, Canada 🇨🇦
 
     LogoScript.u-stack-base.u-context
 </template>
@@ -62,6 +61,10 @@ export default {
     a:hover {
         color: var(--grey-light);
         text-decoration-color: var(--orange-dark);
+    }
+
+    h2 {
+        text-shadow: 1px 1px var(--blue-dark), 2px 2px 0 rgba(255, 255, 255, 0.4);
     }
 
     svg {

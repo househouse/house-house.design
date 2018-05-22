@@ -1,3 +1,21 @@
-.global-header {
-    
+
+
+.c-global-header__name {
+    @include --medium-up {
+        &:hover {
+            .c-global-header__title {
+            }
+
+            .c-global-header__subtitle {
+                opacity: 1;
+                transform: translate(0, -200%);
+            }
+        }
+    }
+}
+
+.c-global-header__subtitle {
+    opacity: 0;
+
+    transition: $hh-animation-slow;
 }

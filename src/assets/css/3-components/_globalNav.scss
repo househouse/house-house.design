@@ -1,25 +1,28 @@
 @import '../1-settings/_variables';
 @import '../1-settings/_responsive';
 
-$animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
-
 .c-nav-crumbs {
     position: fixed;
     z-index: 100;
 
     &.--large {
-        top: 10%;
-        right: 3rem;
-        left: calc(100% - 10rem);
+        top: $hh-spacing-base;
+        right: 5vw;
+        left: auto;
 
         display: none;
-        width: 3rem;
+        overflow: hidden;
+        width: 5rem;
+        max-height: 15rem;
         margin-right: 5%;
-        padding: $hh-spacing-small;
+        padding: $hh-spacing-base $hh-spacing-small;
 
         border-radius: 16px;
 
-        transition: $animation;
+        transform: scale(0.95);
+        transform-origin: top left;
+
+        transition: $hh-animation-slow;
     }
 
     &.--mobile {
@@ -52,17 +55,24 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
 
         a {
             text-decoration: none;
+
+            &:hover {
+                opacity: 0.7 !important;
+            }
         }
     }
 
     &.--large:hover {
         width: 10rem;
+        max-height: 30rem;
         background: var(--white);
     }
 
     @include break(768) {
         width: 8rem;
         margin-right: 5%;
+
+        border: 1px solid rgba(0, 0, 200, 0);
 
         transform: translateX(0);
 
@@ -76,10 +86,14 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
 
         &.isExpanded,
         &.--large:hover {
-            width: 14rem;
+            width: 15rem;
 
-            background: rgba(255, 255, 255, 1);
-            box-shadow: 0 0 10em rgba(0,0,0,0.1);
+            border: 1px solid rgba(0, 0, 200, 0.15);
+            box-shadow: 0 0 10em rgba(0, 0, 200, 0.15);
+
+            background: var(--white);
+
+            transform: scale(1);
         }
     }
 
@@ -106,20 +120,24 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
     line-height: 3rem;
     white-space: nowrap;
 
-    transition: $animation;
+    transition: $hh-animation-slow;
 
     .c-nav-crumbs.isExpanded &,
     .c-nav-crumbs.--large:hover & {
-        width: 8rem;
+        width: 11rem;
 
         @include break(768) {
             transform: translateX(0);
         }
     }
 
+    @include break(768) {
+        display: none;
+    }
+
     &,
     &::after {
-        transition: $animation;
+        transition: $hh-animation-slow;
     }
 
     svg {
@@ -147,7 +165,7 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
 
         transform: translate(-1rem, 0);
 
-        transition: $animation;
+        transition: $hh-animation-slow;
 
         .c-nav-crumbs.isExpanded &,
         .c-nav-crumbs.--large:hover & {
@@ -155,20 +173,9 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
         }
     }
 
-    .c-nav-crumbs__back:hover span {
-        color: #2770bf;
-    }
-
     .c-nav-crumbs.isExpanded & div,
     .c-nav-crumbs.--large:hover & div {
         background: rgba(65, 138, 216, 0.25);
-    }
-
-    .c-nav-crumbs.isExpanded & div svg path,
-    .c-nav-crumbs.isExpanded & div svg polyline,
-    .c-nav-crumbs.--large:hover & div svg path,
-    .c-nav-crumbs.--large:hover & div svg polyline {
-        stroke: #418ad8;
     }
 
     .c-nav-crumbs.isExpanded & span,
@@ -180,12 +187,11 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .c-nav-crumbs__major {
-    padding-top: 1rem;
     padding-left: 3rem;
 
     opacity: 0;
 
-    transition: $animation;
+    transition: $hh-animation-slow;
 
     pointer-events: none;
 
@@ -205,10 +211,11 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
     }
 
     li {
-        margin-bottom: 5px;
+        margin-bottom: $hh-spacing-xsmall;
+        line-height: $hh-baseline-base;
 
         &::after {
-            content: "";
+            content: '';
 
             position: absolute;
             left: 0.75rem;
@@ -219,22 +226,22 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
             border-radius: 50%;
             background-color: var(--grey-medium);
 
-            transition: $animation;
+            transition: $hh-animation-slow;
         }
 
         &:not(:last-child)::before {
-            content: "";
+            content: '';
 
             position: absolute;
             left: 1.2rem;
 
-            width: 0.125rem;
-            height: 2rem;
+            width: ($hh-spacing-xsmall / 5);
+            height: 2.25rem;
             margin-top: 1rem;
 
             background-color: var(--grey-medium);
 
-            transition: $animation;
+            transition: $hh-animation-slow;
         }
 
         a {
@@ -244,17 +251,13 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
 
             transform: translateY(-0.5rem);
 
-            transition: $animation;
+            transition: $hh-animation-slow;
 
             .c-nav-crumbs.isExpanded &,
             .c-nav-crumbs.--large:hover & {
                 opacity: 1;
 
                 transform: translateY(0);
-            }
-
-            &:hover {
-                color: red;
             }
         }
     }
@@ -263,16 +266,16 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
     .c-nav-crumbs.--large:hover & li::after {
         background: var(--blue-dark);
 
-        transform: translateY(6px);
+        transform: translateY(7px);
     }
 
     .c-nav-crumbs & li.isActive::after {
-        background: var(--blue-dark);
+        background: var(--grey-dark);
     }
 
-    .c-nav-crumbs.isExpanded & .active::after,
-    .c-nav-crumbs.--large:hover & .active::after {
-        background: #5a667f;
+    .c-nav-crumbs.isExpanded & li:nth-child(4)::after,
+    .c-nav-crumbs.--large:hover & li:nth-child(4)::after {
+        background: var(--orange-dark) !important;
     }
 }
 
@@ -285,10 +288,10 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
 
     transform: translateY(-10px);
 
-    transition: $animation;
+    transition: $hh-animation-slow;
 
     a {
-        transition: $animation;
+        transition: $hh-animation-slow;
 
         &:hover {
             color: #9098a9;

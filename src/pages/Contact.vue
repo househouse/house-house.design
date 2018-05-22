@@ -1,6 +1,7 @@
 <template lang="pug">
-div
-    section.c-section
+div#pageContact
+
+    section
         article.c-contain
 
             h1.c-title.u-margin-bottom-lg
@@ -11,9 +12,10 @@ div
                 p We’ve often got our heads down doing important work, but we’ll always make time to hear about your challenges and your ideas. So give us a shout, say a quick hello, and let’s make some magic happen.
 
                 p.u-flexbox.u-align-middle.u-justify-middle.u-padding-top-md.u-padding-bottom-md.u-color-black.u-uppercase.u-text-size-small.u-tracked-loose.u-bg-grey-light(style='border-radius:0.5rem; border:1px solid var(--grey-medium);')
-                    | 👍 We are ready to join your team in&nbsp;#[strong Q2]&nbsp;and&nbsp;#[strong Q3]&nbsp;2018
+                    | 👍 We are ready to join your team in&nbsp;
+                    | #[strong Q2]&nbsp;and&nbsp;#[strong Q3]&nbsp;2018
 
-    section.c-section.u-bg-grey-med
+    section.u-bg-grey-med
 
             div#contact-us.u-context
 
