@@ -48,8 +48,11 @@ ul {
     list-style-type: none;
 }
 
-a {
+a,
+router-link,
+.router-link {
     color: inherit;
+    cursor: pointer;
 }
 
 code,

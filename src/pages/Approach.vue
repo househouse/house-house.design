@@ -3,59 +3,31 @@ div#pageApproach
 
     section.u-padding-bottom-medium
         div.c-contain.u-color-black
-            h1.c-heading-c--1.u-margin-bottom-small.u-max-width-2of3
-                | #[span.u-visually-hidden House House is]
-                | a ready to doopity doo
+            h1.c-heading-c--1.u-margin-bottom-small.u-max-width-3of4
+                | #[span.u-visually-hidden House House:]
+                | Page title for “Approach”
 
 
     section.u-padding-bottom-large
         div.c-contain
 
             div.u-width-3of4
-                div.c-text-content.u-color-black.u-text-size-large.u-baseline-large
+                div.c-text-content.u-color-black.u-text-size-large.u-baseline-large.u-margin-bottom-medium
                     p
-                        | We’re organized a bit differently than the last agency you worked with, and we think that’s our biggest strength. With a tiny full-time staff and a big network, we can adapt to scale and changes—just as your teams and projects do.
+                        | We’re organized a bit differently than the last agency you worked with, and we think that’s our biggest strength.
+                        | With a tiny full-time staff and a big network, we can adapt to scale and changes—just as your teams and projects do.
+
+                div.c-text-content.u-text-family-secondary.u-text-size-medium.u-baseline-medium
+                    p
+                        | When filmmakers make movies, characters are portrayed by the actors who best embody the role.
+                        | Similarly, we’ll staff your project by choosing the designer who will best fit the requirements.
+                        | With our vertality and broad range of skills, the result is your team acquires the right number of folks handpicked for your specific situation.
+                    p
+                        | Our full-time residents we live and breathe the House House way.
+                        | Sometimes the addition of a single resident on your team is all you need.
 
 
 //-
-    section.u-bg-black.u-color-white.u-context
-        div.c-contain
-            div.u-squiggle.u-position.u-top-0.u-left-halfway(role='presentation' style='transform: translate(-50%, -50%) rotate(45deg);')
-
-            article.c-contain.u-margin-bottom-lg.c-text-content
-                p A think a small team like ours can make a big impact when you need it to. We take an iterative design approach to our work, meaning we communicating often, pivoting and adjusting until we get it right. This is a process; as we discover and learn more about you and your business goals, targets may sometime change. By designing iteratively, we can make sure things adapt gracefully along the way.
-
-    section.u-bg-primary.u-color-white.u-context
-        div.u-squiggle.u-position.u-top-0.u-right-0(role='presentation' style='transform:translate(-150%, 100%) rotate(100deg);')
-
-        h2.u-margin-bottom-lg Residents
-
-        div.u-flexbox
-            article.u-flex.u-margin-right-lg.c-contain.u-width-full.u-width-1of2--narrow-up
-                div.c-text-content
-                    p When filmmakers make movies, characters are portrayed by the actors who best embody the role. Similarly, we’ll staff your project by choosing the designer who will best fit the requirements. With our vertality and broad range of skills, the result is your team acquires the right number of folks handpicked for your specific situation.
-                    p We residents and housemates are versatile.
-                    p Our full-time residents we live and breathe the House House way. Sometimes the addition of a single resident on your team is all you need.
-
-            aside.u-flex.u-width-full.u-width-1of2--narrow-up
-                article.c-resident.c--ben.u-margin-bottom-lg
-                    div.c-resident__image
-                    div.c-resident__info.c-text-content
-                        h3.c-resident__name.u-margin-bottom-sm Ben Groulx
-                        p.c-resident__role.u-half-transparent Designer
-                        p.c-resident__links.u-text-size-small.u-bold
-                            a(href='#').u-margin-right-md LinkedIn
-                            a(href='#') GitHub
-
-                article.c-resident.c--sean
-                    div.c-resident__image
-                    div.c-resident__info.c-text-content
-                        h3.c-resident__name.u-margin-bottom-sm Sean Durfee
-                        p.c-resident__role.u-half-transparent Designer
-                        p.c-resident__links.u-text-size-small.u-bold
-                            a(href='#').u-margin-right-md LinkedIn
-                            a(href='#') GitHub
-
     section.u-bg-grey-dark.u-color-white.u-context
         div.u-squiggle.u-position.u-top-0(role='presentation' style='transform: translate(-50%, -50%) rotate(-45deg);')
 

@@ -208,6 +208,10 @@
         @include break(768) {
             transform: translateX(0);
         }
+
+        li:not(:last-child)::before {
+            opacity: 0.5;
+        }
     }
 
     li {

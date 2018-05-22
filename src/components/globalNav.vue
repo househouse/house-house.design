@@ -25,8 +25,8 @@ nav.c-nav.u-text-size-medium
             li(v-bind:class="{isActive: currentPath === 'housemates'}")
                 router-link.u-color-grey-dark(v-on:click.native='handleNavToggle', to='/housemates')
                     | Housemates
-            li(v-bind:class="{isActive: currentPath === 'start-project'}")
-                router-link.u-color-orange-medium(v-on:click.native='handleNavToggle', to='/start-project')
+            li(v-bind:class="{isActive: currentPath === 'contact'}")
+                router-link.u-color-orange-medium(v-on:click.native='handleNavToggle', to='/contact')
                     | Start a project
         ul.c-nav-crumbs__minor.u-context.u-text-size-base
             li
@@ -49,26 +49,26 @@ nav.c-nav.u-text-size-medium
                 | back
         ul.c-nav-crumbs__major.u-context
             li(v-bind:class="{isActive: currentPath === 'work'}")
-                router-link.u-color-blue-dark.u-text-weight-bold.u-text-family-secondary(v-on:click.native='handleNavToggle', to='/work')
+                router-link.u-block.u-color-blue-dark.u-text-weight-bold.u-text-family-secondary(v-on:click.native='handleNavToggle', to='/work')
                     | Work
             li(v-bind:class="{isActive: currentPath === 'approach'}")
-                router-link.u-color-blue-dark.u-text-weight-bold.u-text-family-secondary(v-on:click.native='handleNavToggle', to='/approach')
+                router-link.u-block.u-color-blue-dark.u-text-weight-bold.u-text-family-secondary(v-on:click.native='handleNavToggle', to='/approach')
                     | Approach
             li(v-bind:class="{isActive: currentPath === 'housemates'}")
-                router-link.u-color-blue-dark.u-text-weight-bold.u-text-family-secondary(v-on:click.native='handleNavToggle', to='/housemates')
+                router-link.u-block.u-color-blue-dark.u-text-weight-bold.u-text-family-secondary(v-on:click.native='handleNavToggle', to='/housemates')
                     | Housemates
-            li(v-bind:class="{isActive: currentPath === 'start-project'}")
-                router-link.u-color-orange-dark.u-text-weight-bold.u-text-family-secondary(v-on:click.native='handleNavToggle', to='/start-project')
+            li(v-bind:class="{isActive: currentPath === 'contact'}")
+                router-link.u-color-orange-dark.u-text-weight-bold.u-text-family-secondary(v-on:click.native='handleNavToggle', to='/contact')
                     | Start a project
         ul.c-nav-crumbs__minor.u-context.u-text-size-base
             li
-                router-link.u-color-purple-medium(v-on:click.native='handleNavToggle', to='/contact')
+                router-link.u-block.u-color-purple-medium(v-on:click.native='handleNavToggle', to='/contact')
                     | Contact us
             li
-                router-link.u-color-green-medium(v-on:click.native='handleNavToggle', to='/vision-values')
+                router-link.u-block.u-color-green-medium(v-on:click.native='handleNavToggle', to='/vision-values')
                     | Vision & Values
             li
-                router-link.u-color-blue-light(v-on:click.native='handleNavToggle', to='/privacy-security')
+                router-link.u-block.u-color-blue-light(v-on:click.native='handleNavToggle', to='/privacy-security')
                     | Privacy & Security
 </template>
 

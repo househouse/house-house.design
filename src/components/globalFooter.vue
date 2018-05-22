@@ -20,20 +20,32 @@ footer.u-bg-black.u-color-white.u-context.u-padding-bottom-xlarge
 
 
         div.u-flex.u-context.u-stack-over
-            ul.u-flexbox.u-margin-bottom-small.u-justify-end.u-text-size-medium
-                li #[a(href='') Work]
-                li #[a(href='') Approach]
-                li #[a(href='') Housemates]
-                li #[a(href='') Contact]
+            h2.u-visually-hidden Navigation
+            nav.u-flexbox.u-margin-bottom-small.u-justify-end.u-text-size-medium
+                router-link.u-block(v-on:click.native='handleNavToggle' to='/work')
+                    | Work
+                router-link.u-block(v-on:click.native='handleNavToggle' to='/approach')
+                    | Approach
+                router-link.u-block(v-on:click.native='handleNavToggle' to='/housemates')
+                    | Housemates
+                router-link.u-block(v-on:click.native='handleNavToggle' to='/contact')
+                    | Contact
 
-            ul.u-flexbox.u-margin-bottom-base.u-justify-end.u-text-size-small.u-baseline-small
-                li #[a(href='') Privacy & Security]
-                li #[a(href='') Vision & Values]
-                li #[a(href='') Code of Conduct]
+            h2.u-visually-hidden More Links:
+            nav.u-flexbox.u-margin-bottom-base.u-justify-end.u-text-size-small.u-baseline-small
+                router-link.u-block(v-on:click.native='handleNavToggle' to='/privacy-security')
+                    | Privacy & Security
+                router-link.u-block(v-on:click.native='handleNavToggle' to='/vision-values')
+                    | Vision & Values
+                router-link.u-block(v-on:click.native='handleNavToggle' to='/xxxxx')
+                    | Code of Conduct
 
             div.u-color-grey-dark.u-text-align-right.u-text-size-small.u-baseline-small
-                p © 2016–2018 House House • A Design Studio
-                p Made with love in Vancouver, Canada 🇨🇦
+                p
+                    | #[span.u-visually-hidden This site and its contents copyright]
+                    | © 2016–2018 House House • A Design Studio
+                p
+                    | Made with love in Vancouver, Canada 🇨🇦
 
     LogoScript.u-stack-base.u-context
 </template>
@@ -49,22 +61,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    li a {
+    nav a {
         margin-left: 2vw;
-        white-space: nowrap;
     }
 
-    a {
-        text-decoration-color: rgba(255, 255, 255, 0.4);
+    a,
+    .router-link {
+        text-decoration-color: rgba(255, 255, 255, 0.6);
+
+        &:hover {
+            color: var(--grey-light);
+            text-decoration-color: var(--orange-dark);
+        }
     }
 
-    a:hover {
-        color: var(--grey-light);
-        text-decoration-color: var(--orange-dark);
-    }
-
-    h2 {
-        text-shadow: 1px 1px var(--blue-dark), 2px 2px 0 rgba(255, 255, 255, 0.4);
+    .router-link-active,
+    .router-link-active:hover {
+        text-decoration: line-through;
     }
 
     svg {

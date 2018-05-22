@@ -1,21 +1,28 @@
 <template lang="pug">
 div#pageContact
 
-    section
-        article.c-contain
+    section.u-padding-bottom-medium
+        div.c-contain.u-color-black
+            h1.c-heading-c--1.u-margin-bottom-small.u-max-width-3of4
+                | #[span.u-visually-hidden House House ]
+                | Page title for “Contact”
 
-            h1.c-title.u-margin-bottom-lg
-                | #[span House House]
-                | is ready to hear you out
 
-            div.c-text-content.u-color-grey-dark
-                p We’ve often got our heads down doing important work, but we’ll always make time to hear about your challenges and your ideas. So give us a shout, say a quick hello, and let’s make some magic happen.
+    section.u-padding-bottom-large
+        div.c-contain
 
-                p.u-flexbox.u-align-middle.u-justify-middle.u-padding-top-md.u-padding-bottom-md.u-color-black.u-uppercase.u-text-size-small.u-tracked-loose.u-bg-grey-light(style='border-radius:0.5rem; border:1px solid var(--grey-medium);')
-                    | 👍 We are ready to join your team in&nbsp;
-                    | #[strong Q2]&nbsp;and&nbsp;#[strong Q3]&nbsp;2018
+            div.u-max-width-2of3
+                div.c-text-content.u-text-size-large.u-baseline-large.u-color-black
+                    p.u-margin-bottom-medium
+                        | We’ve often got our heads down doing important work, but we’ll always make time to hear about your challenges and your ideas. So give us a shout, say a quick hello, and let’s make some magic happen.
 
-    section.u-bg-grey-med
+                    p.u-flexbox.u-align-middle.u-justify-middle.u-padding-top-md.u-padding-bottom-md.u-color-black.u-uppercase.u-text-size-small.u-tracked-loose.u-bg-grey-light(style='border-radius:0.5rem;')
+                        | 👍 We are ready to join your team in&nbsp;
+                        | #[strong Q2]&nbsp;and&nbsp;#[strong Q3]&nbsp;2018
+
+
+    section.u-padding-bottom-large
+        div.c-contain
 
             div#contact-us.u-context
 
