@@ -1,11 +1,16 @@
 .c-contain {
-    max-width: 30em;
-}
+    max-width: $hh-content-area-wide;
 
-.c-section {
-    padding: 5%;
+    margin-right: auto;
+    margin-left: auto;
 
-    @include --medium-up {
-        padding: 5% 10%;
+    padding: 0 2%;
+
+    @include --wide-down {
+        padding: 0 5%;
+    }
+
+    @include --medium-down {
+        padding: 0 5%;
     }
 }

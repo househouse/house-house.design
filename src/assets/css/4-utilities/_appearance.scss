@@ -1,7 +1,20 @@
 // Utilities: Appearance
 // ============================================================================
 
-.u-circle {
+.u-shadow-thick,
+%u-shadow-thick {
+
+    border: 1px solid rgba(71, 69, 209, 0.15);
+    box-shadow: 0 0 $hh-spacing-large 0 rgba(71, 69, 209, 0.15);
+}
+
+.u-shadow-thin,
+%u-shadow-thin {
+    box-shadow: 0 0 $hh-spacing-large 0 rgba(71, 69, 209, 0.15);
+}
+
+.u-circle,
+%u-circle {
     border-radius: 100rem;
 
     @include --medium-up {
@@ -11,43 +24,30 @@
     }
 }
 
-.u-half-transparent {
-    opacity: $half-transparent;
-}
-
 .u-squiggle,
 %u-squiggle {
     width: 50%;
     max-width: 10rem;
     height: 1rem;
 
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 4'%3E%3Cpath fill='none' stroke='#f44631' stroke-width='1' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 4'%3E%3Cpath fill='none' stroke='red' stroke-width='1' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
     background-repeat: repeat-x;
     background-position: 100% 100%;
     background-size: auto 100%;
 }
 
-
-// Overlays
-// ---
-//
-// 1. Remove click events so if there are elements undeneath, they can still be
-//    targeted by a mouse or finger.
-// 2. Use both before/after pseudos so that both overlays can be placed on an
-//    element simultaneously.
-// 3. 2px, 0.125rem
-
-.u-gradient {
+.u-gradient,
+%u-gradient {
     &::before {
         content: '';
 
         position: absolute;
-        top: 50%;
+        top: 0;
         right: 0;
         bottom: 0;
         left: 0;
 
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--black));
 
         pointer-events: none;
     }

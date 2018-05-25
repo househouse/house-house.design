@@ -16,23 +16,23 @@ $attribute-map: (
 @mixin spacing($direction, $size) {
     @each $attribute in $attribute-map {
         .u-#{$attribute}-#{$direction}-#{$size} {
-            #{$attribute}-#{$direction}: #{map-get($size-map, $size)} !important;
+            #{$attribute}-#{$direction}: #{map-get($spacing-map, $size)} !important;
 
-            @include --small-only {
-                &--small-only {
-                    #{$attribute}-#{$direction}: #{map-get($size-map, $size)} !important;
+            @include --narrow-only {
+                &--narrow-only {
+                    #{$attribute}-#{$direction}: #{map-get($spacing-map, $size)} !important;
                 }
             }
 
-            @include --small-up {
-                &--small-up {
-                    #{$attribute}-#{$direction}: #{map-get($size-map, $size)} !important;
+            @include --narrow-up {
+                &--narrow-up {
+                    #{$attribute}-#{$direction}: #{map-get($spacing-map, $size)} !important;
                 }
             }
 
             @include --medium-up {
                 &--medium-up {
-                    #{$attribute}-#{$direction}: #{map-get($size-map, $size)} !important;
+                    #{$attribute}-#{$direction}: #{map-get($spacing-map, $size)} !important;
                 }
             }
         }
@@ -46,7 +46,7 @@ $attribute-map: (
 }
 
 @mixin generate-spacing-classes {
-    @each $size, $size-units in $size-map {
+    @each $size, $size-units in $spacing-map {
         @include direction-wrapper(#{$size});
     }
 }

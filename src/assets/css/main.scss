@@ -29,8 +29,8 @@
 
 @import '1-settings/variables';
 @import '1-settings/responsive';
-@import '1-settings/type-scale';
 @import '1-settings/type-families';
+
 
 // [2] Base
 // ---
@@ -42,6 +42,7 @@
 @import '2-base/general';
 @import '2-base/typography';
 
+
 // [3] Components
 // ---
 //
@@ -50,11 +51,19 @@
 // directly related to any HTML, JS, or JSX, it should be considered a utility
 // class (or series of classes.) Components use the c- namespace, e.g. c-logo.
 
-@import '3-components/title';
+@import '3-components/bgShapes';
+@import '3-components/buttonBlock';
+@import '3-components/buttonLink';
+@import '3-components/globalHeader';
+@import '3-components/globalNav';
+
 @import '3-components/contain';
+@import '3-components/heading';
 @import '3-components/network';
+@import '3-components/pill-group';
 @import '3-components/resident';
 @import '3-components/text-content';
+
 
 // [4] Utilities
 // ---
@@ -64,16 +73,17 @@
 // margins, padding, text alignment, display properties, positioning properties,
 // and more. Utility classes use a u- namespace, e.g. u-bg-black.
 
-@import '4-utilities/flex';
-@import '4-utilities/spacing';
 @import '4-utilities/appearance';
 @import '4-utilities/background';
+@import '4-utilities/baseline';
 @import '4-utilities/border';
 @import '4-utilities/color';
 @import '4-utilities/display';
+@import '4-utilities/flex';
 @import '4-utilities/layout';
-@import '4-utilities/measure';
+@import '4-utilities/spacing';
 @import '4-utilities/text';
+
 
 // [5] Animations
 // ---
@@ -84,9 +94,8 @@
 @import '5-animations/fade';
 @import '5-animations/scale-out';
 
-/*
 
-// Templates
+// [6] Templates
 // ---
 //
 // ⚠️ USE WITH EXTREME CAUTION: Sometimes, there are times that we need to write
@@ -94,8 +103,9 @@
 // they appear. These styles should be used as a last resort only!
 //
 // @import 'templates/home';
-
-// Third-Party Plugins
+//
+//
+// [7] Third-Party Plugins
 // ---
 //
 // Third-party integrations and plugins often do not let us control their
@@ -103,5 +113,3 @@
 // individual partials below.
 //
 // @import 'third-party/flickity';
-
-*/

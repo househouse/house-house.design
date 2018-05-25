@@ -1,7 +1,6 @@
 <template lang="pug">
 main
-    transition(name='_a-scale-out')
-        router-view
+    router-view
 </template>
 
 <script>
