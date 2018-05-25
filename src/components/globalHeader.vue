@@ -2,7 +2,7 @@
     header.c-global-header.u-padding-top-medium.u-margin-bottom-small
         div.c-contain
             router-link.c-global-header__name.u-context.u-text-no-underline(to='/')
-                span.c-global-header__title.u-color-blue-dark.u-text-size-xlarge.u-baseline-medium.u-text-weight-bold.u-text-family-headline
+                span.c-global-header__title.u-color-blue-dark.u-text-size-xlarge.u-baseline-medium.u-text-weight-bold.u-text-family-headline.u-no-wrap
                     | House House
 </template>
 

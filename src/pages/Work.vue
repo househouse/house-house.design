@@ -9,14 +9,13 @@ div#pageWork
 
 
     section.u-padding-bottom-large
-        div.c-contain.u-flexbox.u-align-end
+        div.c-contain.u-flexbox--medium-up.u-align-end
 
-            div.u-flex.u-padding-right-medium
+            div.u-padding-right-medium--medium-up
 
                 div.c-text-content.u-text-size-large.u-baseline-large.u-color-black
                     p.u-margin-bottom-medium
-                        | #[span(style='margin-left:-1.2em;') 👋 ]
-                        | We’re a group of freelance designers who typically direct or contribute to projects individually.
+                        | 👋  We’re a group of freelance designers who typically direct or contribute to projects individually.
                         | But when your team has gaps and a project needs a designer, we can assemble and deliver value in four areas:
                         | #[strong.u-color-blue-dark design support],
                         | #[strong.u-color-blue-light strategic consulting],

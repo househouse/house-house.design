@@ -1,14 +1,15 @@
 // Global typography styles
 // ==========
 
+html,
 body {
     font-family: $hh-font-family-primary;
     font-weight: $hh-font-weight-regular;
     font-size: $hh-font-size-base;
     line-height: $hh-baseline-base;
 
-    @include break(500) {
-        // font-size: 1em;
+    @include --medium-down {
+        font-size: ($hh-font-size-base / 1.25);
     }
 }
 
@@ -44,7 +45,8 @@ h6 {
 
 }
 
-ul {
+ul,
+ol {
     list-style-type: none;
 }
 

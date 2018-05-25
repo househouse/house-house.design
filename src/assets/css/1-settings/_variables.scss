@@ -4,17 +4,17 @@
 $hh-unit: (1rem / 3.2); // 5px
 
 $hh-baseline-xsmall: ($hh-unit * 2); // 10px
-$hh-baseline-small: ($hh-unit * 4); // 20px
-$hh-baseline-base: ($hh-unit * 6); // 30px
+$hh-baseline-small:  ($hh-unit * 4); // 20px
+$hh-baseline-base:   ($hh-unit * 6); // 30px
 $hh-baseline-medium: ($hh-unit * 8); // 40px
-$hh-baseline-large: ($hh-unit * 10); // 60px
+$hh-baseline-large:  ($hh-unit * 10); // 60px
 $hh-baseline-xlarge: ($hh-unit * 16); // 80px
 
 $hh-spacing-xsmall: ($hh-unit * 2); // 10px
-$hh-spacing-small: ($hh-unit * 4); // 20px
-$hh-spacing-base: ($hh-unit * 8 ); // 40px
+$hh-spacing-small:  ($hh-unit * 4); // 20px
+$hh-spacing-base:   ($hh-unit * 8); // 40px
 $hh-spacing-medium: ($hh-unit * 16); // 80px
-$hh-spacing-large: ($hh-unit * 24); // 120px
+$hh-spacing-large:  ($hh-unit * 24); // 120px
 $hh-spacing-xlarge: ($hh-unit * 32); // 160px
 
 $hh-dimension-none: 0;
@@ -26,24 +26,24 @@ $hh-dimension-3of4: (100%/1.33); // 75%
 $hh-dimension-full: (100%/1); // 100%
 
 $hh-content-area-narrow: ($hh-unit * 75); // 375px
-$hh-content-area-medium: ($hh-unit * 150); // 750px
-$hh-content-area-wide: ($hh-unit * 235); // 1175px
+$hh-content-area-medium: ($hh-unit * 125); // 750px
+$hh-content-area-wide: ($hh-unit * 250); // 1175px
 
 $hh-font-size-xsmall: ($hh-unit * 2.4 ); // 12px
-$hh-font-size-small: ($hh-unit * 2.8 ); // 14px
-$hh-font-size-base: ($hh-unit * 3.2 ); // 16px
+$hh-font-size-small:  ($hh-unit * 2.8 ); // 14px
+$hh-font-size-base:   ($hh-unit * 3.2 ); // 16px
 $hh-font-size-medium: ($hh-unit * 4 ); // 20px
-$hh-font-size-large: ($hh-unit * 6.4 ); // 32px
+$hh-font-size-large:  ($hh-unit * 6.4 ); // 32px
 $hh-font-size-xlarge: ($hh-unit * 12 ); // 60px
 
-$hh-font-family-primary: 'HH GT Walsheim', -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+$hh-font-family-primary:   'HH GT Walsheim', -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
 $hh-font-family-secondary: 'HH Tiempos Text', 'Georgia', serif;
-$hh-font-family-headline: 'HH Tiempos Headline', 'Georgia', serif;
-$hh-font-family-code: 'Menlo', monospace;
+$hh-font-family-headline:  'HH Tiempos Headline', 'Baskerville', serif;
+$hh-font-family-code:      'Menlo', monospace;
 
-$hh-font-weight-thin: 300;
+$hh-font-weight-thin:    300;
 $hh-font-weight-regular: 400;
-$hh-font-weight-bold: 700;
+$hh-font-weight-bold:    700;
 
 $hh-animation-fast: all 0.15s ease-in-out;
 $hh-animation-slow: all 0.35s cubic-bezier(0.215, 0.615, 0.355, 1);

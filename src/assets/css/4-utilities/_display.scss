@@ -24,7 +24,8 @@
     }
 }
 
-.u-inline-block {
+.u-inline-block,
+%u-inline-block {
     display: inline-block;
 
     @include --narrow-only {
@@ -57,24 +58,31 @@
 
     @include --narrow-only {
         &--narrow-only {
-            display: none;
+            display: none !important;
         }
     }
 
     @include --medium-only {
         &--medium-only {
-            display: none;
+            display: none !important;
         }
     }
 
     @include --narrow-up {
         &--narrow-up {
-            display: none;
+            display: none !important;
+        }
+    }
+
+    @include --medium-down {
+        &--medium-down {
+            display: none !important;
         }
     }
 }
 
-.u-visually-hidden {
+.u-visually-hidden,
+%u-visually-hidden {
     position: absolute;
 
     overflow: hidden;
@@ -90,7 +98,8 @@
 // ---
 
 @each $dimensions-name, $dimensions-value in $dimensions-map {
-    .u-width-#{$dimensions-name} {
+    .u-width-#{$dimensions-name},
+    %u-width-#{$dimensions-name} {
         width: $dimensions-value;
 
         @include --narrow-only {
@@ -114,7 +123,8 @@
 }
 
 @each $dimensions-name, $dimensions-value in $dimensions-map {
-    .u-max-width-#{$dimensions-name} {
+    .u-max-width-#{$dimensions-name},
+    %u-max-width-#{$dimensions-name} {
         max-width: $dimensions-value;
 
         @include --narrow-only {
@@ -137,7 +147,8 @@
     }
 }
 @each $dimensions-name, $dimensions-value in $dimensions-map {
-    .u-flex-basis-#{$dimensions-name} {
+    .u-flex-basis-#{$dimensions-name},
+    %u-flex-basis-#{$dimensions-name} {
         flex-basis: $dimensions-value;
 
         @include --narrow-only {
@@ -161,7 +172,8 @@
 }
 
 @each $dimensions-name, $dimensions-value in $dimensions-map {
-    .u-height-#{$dimensions-name} {
+    .u-height-#{$dimensions-name},
+    %u-height-#{$dimensions-name}, {
         height: $dimensions-value;
 
         @include --narrow-only {
@@ -188,7 +200,8 @@
 // Viewport Sizes
 // ---
 
-.u-full-vw {
+.u-full-vwm
+%u-full-vw {
     width: 100vw;
 
     @include --narrow-only {
@@ -210,7 +223,8 @@
     }
 }
 
-.u-full-vh {
+.u-full-vh,
+%u-full-vh {
     height: 100vh;
 
     @include --narrow-only {
@@ -245,6 +259,7 @@
 // Prevent Line Wrapping
 // ---
 
-.u-no-wrap {
+.u-no-wrap,
+%u-no-wrap {
     white-space: nowrap;
 }
