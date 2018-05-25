@@ -27,8 +27,58 @@ div#pageApproach
                         | Sometimes the addition of a single resident on your team is all you need.
 
 
-//-
     section.u-bg-grey-dark.u-color-white.u-context
+            div.c-text-content.u-flex.u-margin-bottom-lg.u-context.c-approach(style='z-index:10;')
+                h3 Technology
+                span.u-block ⌨️ Front-End Development
+                span.u-block 📱 Progressive Web Apps
+                span.u-block 💻 Responsive Websites
+
+            div.c-text-content.u-flex.u-margin-bottom-lg.u-context.c-approach(style='z-index:10;')
+                h3 Strategy
+                span.u-block ⚡️ Experience Strategy
+                span.u-block 🗺 Service Design
+                span.u-block 🔍 UX Research
+
+            div.c-text-content.u-flex.u-margin-bottom-lg.u-context.c-approach(style='z-index:10;')
+                h3 Mentorship
+                span.u-block 🤝 Team Building
+                span.u-block 🎨 Workshops
+                span.u-block 📝 Training
+
+    section.c-section.u-bg-primary.u-color-white.u-context
+        div.u-squiggle.u-position.u-top-0.u-right-0(role='presentation' style='transform:translate(-150%, 100%) rotate(100deg);')
+
+        h2.u-margin-bottom-lg Residents
+
+        div.u-flexbox
+            article.u-flex.u-margin-right-lg.c-contain.u-width-full.u-width-1of2--small-up
+                div.c-text-content
+                    p When filmmakers make movies, characters are portrayed by the actors who best embody the role. Similarly, we’ll staff your project by choosing the designer who will best fit the requirements. With our vertality and broad range of skills, the result is your team acquires the right number of folks handpicked for your specific situation.
+                    p We residents and housemates are versatile.
+                    p Our full-time residents we live and breathe the House House way. Sometimes the addition of a single resident on your team is all you need.
+
+            aside.u-flex.u-width-full.u-width-1of2--small-up
+                article.c-resident.c--ben.u-margin-bottom-lg
+                    div.c-resident__image
+                    div.c-resident__info.c-text-content
+                        h3.c-resident__name.u-margin-bottom-sm Ben Groulx
+                        p.c-resident__role.u-half-transparent Designer
+                        p.c-resident__links.u-text-size-small.u-bold
+                            a(href='https://www.linkedin.com/in/bengroulx/' target='_blank' rel='noopener').u-margin-right-md LinkedIn
+                            a(href='https://github.com/bengroulx' target='_blank' rel='noopener') GitHub
+
+                article.c-resident.c--sean
+                    div.c-resident__image
+                    div.c-resident__info.c-text-content
+                        h3.c-resident__name.u-margin-bottom-sm Sean Durfee
+                        p.c-resident__role.u-half-transparent Designer
+                        p.c-resident__links.u-text-size-small.u-bold
+                            a(href='https://www.linkedin.com/in/seandurfee' target='_blank' rel='noopener').u-margin-right-md LinkedIn
+                            a(href='https://github.com/durfee' target='_blank' rel='noopener') GitHub
+
+
+    section.c-section.u-bg-grey-dark.u-color-white.u-context
         div.u-squiggle.u-position.u-top-0(role='presentation' style='transform: translate(-50%, -50%) rotate(-45deg);')
 
         h2.u-margin-bottom-lg Housemates
