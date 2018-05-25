@@ -62,8 +62,8 @@ div
                         h3.c-resident__name.u-margin-bottom-sm Ben Groulx
                         p.c-resident__role.u-half-transparent Designer
                         p.c-resident__links.u-text-size-small.u-bold
-                            a(href='#').u-margin-right-md LinkedIn
-                            a(href='#') GitHub
+                            a(href='https://www.linkedin.com/in/bengroulx/' target='_blank' rel='noopener').u-margin-right-md LinkedIn
+                            a(href='https://github.com/bengroulx' target='_blank' rel='noopener') GitHub
 
                 article.c-resident.c--sean
                     div.c-resident__image
@@ -71,8 +71,8 @@ div
                         h3.c-resident__name.u-margin-bottom-sm Sean Durfee
                         p.c-resident__role.u-half-transparent Designer
                         p.c-resident__links.u-text-size-small.u-bold
-                            a(href='#').u-margin-right-md LinkedIn
-                            a(href='#') GitHub
+                            a(href='https://www.linkedin.com/in/seandurfee' target='_blank' rel='noopener').u-margin-right-md LinkedIn
+                            a(href='https://github.com/durfee' target='_blank' rel='noopener') GitHub
 
     section.c-section.u-bg-grey-dark.u-color-white.u-context
         div.u-squiggle.u-position.u-top-0(role='presentation' style='transform: translate(-50%, -50%) rotate(-45deg);')
