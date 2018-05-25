@@ -10,10 +10,26 @@ div#pageWork
 
     section.u-padding-bottom-large
         div.c-contain
-
             div.c-text-content.u-text-size-large.u-baseline-large.u-color-black.u-width-3of4
                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat eu fugiat nulla pariatur.
 
+
+    section.u-padding-bottom-large.u-padding-top-large.u-bg-gradient-whiteout.u-shadow-thick
+        div.c-contain
+            div.c-text-content.u-text-family-secondary.u-text-size-medium.u-baseline-medium
+                p This section should be about…
+                ul.u-text-list-bullets
+                    li the state of remote work
+                    li why remote work is the way of the future
+                    li increasingly, top talent (especially designers) are moving to freelance positions, or in-house
+
+    section.u-padding-bottom-large.u-padding-top-large.u-bg-grey-dark.u-color-white
+        div.c-contain
+            div.c-text-content.u-text-family-secondary.u-text-size-medium.u-baseline-medium
+                p This section should be about…
+                ul.u-text-list-bullets
+                    li design operations
+                    li repurpose this content: https://www.invisionapp.com/blog/design-operations-manager/
 
     section.u-padding-bottom-large.u-padding-top-large.u-bg-blue-dark.u-color-white
         div.c-contain

@@ -2,7 +2,7 @@
 
 footer.u-bg-black.u-color-white.u-context.u-padding-bottom-xlarge
 
-    div.c-contain.u-flexbox.u-align-middle
+    div.c-contain.u-flexbox--medium-up.u-align-middle
 
         div.u-flex-shrink
             div.u-bg-blue-dark.u-padding-top-base.u-padding-bottom-base.u-padding-right-medium.u-padding-left-base.u-context#question(style='transform:skew(20deg);')
@@ -16,7 +16,7 @@ footer.u-bg-black.u-color-white.u-context.u-padding-bottom-xlarge
                             | Questions? Chatty?
                         p.u-baseline-small
                             | 👋 email Ben at
-                            | #[a(href='mailto:hello@house-house.design') hello@house-house.design]
+                            | #[a(href='mailto:hello@house-house.design?subject=Something') hello@house-house.design]
 
 
         div.u-flex.u-context.u-stack-over
@@ -33,10 +33,10 @@ footer.u-bg-black.u-color-white.u-context.u-padding-bottom-xlarge
 
             h2.u-visually-hidden More Links:
             nav.u-flexbox.u-margin-bottom-base.u-justify-end.u-text-size-small.u-baseline-small
-                router-link.u-block(v-on:click.native='handleNavToggle' to='/privacy-security')
-                    | Privacy & Security
                 router-link.u-block(v-on:click.native='handleNavToggle' to='/vision-values')
                     | Vision & Values
+                router-link.u-block(v-on:click.native='handleNavToggle' to='/privacy-security')
+                    | Privacy & Security
                 router-link.u-block(v-on:click.native='handleNavToggle' to='/xxxxx')
                     | Code of Conduct
 
