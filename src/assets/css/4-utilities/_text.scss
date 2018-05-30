@@ -154,6 +154,12 @@
             text-align: center;
         }
     }
+
+    @include --medium-up {
+        &--medium-up {
+            text-align: center;
+        }
+    }
 }
 
 .u-text-align-right,

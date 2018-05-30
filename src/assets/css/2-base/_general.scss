@@ -7,30 +7,6 @@
     box-sizing: border-box;
 }
 
-html {
-    overflow-x: hidden;
-    overflow-y: scroll;
-}
-
-html,
-body {
-    height: 100%;
-
-    font-size: 16px;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-}
-
-html,
-body,
-main {
-    max-width: 100%;
-    min-height: 100%;
-}
-
 html,
 body,
 div,
@@ -132,6 +108,34 @@ nav,
 section,
 main {
     display: block;
+}
+
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    font-size: 16px;
+}
+
+html,
+body {
+    height: 100%;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+html,
+body,
+main {
+    max-width: 100%;
+    min-height: 100%;
+}
+
+body {
+
 }
 
 img {

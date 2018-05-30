@@ -35,6 +35,10 @@
     @media screen and (max-width: $hh-content-area-medium) { @content; }
 }
 
+@mixin --narrow-down {
+    @media screen and (max-width: $hh-content-area-narrow) { @content; }
+}
+
 
 // Minimum and maximum
 // ---
@@ -45,4 +49,13 @@
 
 @mixin --medium-only {
     @media screen and (min-width: $hh-content-area-narrow) and (max-width: $hh-content-area-medium) { @content; }
+}
+
+
+
+// Non-screens
+// ---
+
+@mixin --print {
+    @media print { @content; }
 }

@@ -4,13 +4,13 @@
     margin-right: auto;
     margin-left: auto;
 
-    padding: 0 2%;
+    padding: 0 5%;
 
-    @include --wide-down {
-        padding: 0 5%;
+    @include --narrow-up {
+        padding: 0 10%;
     }
 
-    @include --medium-down {
+    @include --medium-up {
         padding: 0 5%;
     }
 }

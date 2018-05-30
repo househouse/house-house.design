@@ -89,9 +89,9 @@
             width: 15rem;
 
             border: 1px solid rgba(0, 0, 200, 0.15);
-            box-shadow: 0 0 10em rgba(0, 0, 200, 0.15);
 
             background: var(--white);
+            box-shadow: 0 0 10em rgba(0, 0, 200, 0.15);
 
             transform: scale(1);
         }
@@ -147,7 +147,7 @@
 
         path,
         polyline {
-            stroke: white;
+            stroke: var(--white);
             stroke-width: 2;
             stroke-linejoin: round;
             stroke-linecap: round;

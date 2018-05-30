@@ -1,5 +1,11 @@
+$hh-button-block-height: ($hh-unit * 11);
+
 .c-button-block {
-    min-height: ($hh-unit * 11);
+    @extend %u-text-uppercase;
+    @extend %u-text-trackig-loose;
+    @extend %u-text-no-underline;
+
+    min-height: $hh-button-block-height;
     padding: 0 $hh-spacing-base;
     border: 0;
 
@@ -7,9 +13,7 @@
 
     font-weight: $hh-font-weight-bold;
     font-size: $hh-font-size-small;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-decoration: none;
+    line-height: $hh-button-block-height;
 
     transition: $hh-animation-fast;
 }
