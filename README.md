@@ -1,8 +1,8 @@
-# House House ([house-house.design](https://house-house.design))
+## House House ([house-house.design](https://house-house.design))
 
-House House is a multidisciplinary design studio in Vancouver, Canada.
+House House is a multidisciplinary studio of designers in Vancouver, Canada.
 
-
+***
 
 ## Contributing
 
@@ -16,23 +16,21 @@ House House is a multidisciplinary design studio in Vancouver, Canada.
   * [compat](https://github.com/amilajack/eslint-plugin-compat)
 * CSS linting with [Stylelint](http://stylelint.io)
 
->Note: There is also the [feature/modern-bundle](https://github.com/alexnoz/webpack-pug-scss-boilerplate/tree/feature/modern-bundle) branch where `webpack` produces [two production bundles](https://philipwalton.com/articles/deploying-es2015-code-in-production-today/) (legacy & modern). It is experimental so use it with caution.
-
-#### Prerequisites:
+#### Prerequisites
 - [Node.js](https://nodejs.org/en/)
 - [npm](https://docs.npmjs.com/cli/install)
 - [Yarn](https://npmjs.com/package/yarn/tutorial)
 
-#### Developing
+### Developing
 1. `git clone git@github.com:househouse/house-house.design.git`
 2. `cd house-house.design`
-3. `yarn install` to fetch all the dependencies
-4. `yarn start` to start the [webpack-dev-server](https://github.com/webpack/webpack-dev-server) (`localhost:8080` will be opened automatically)
+3. `npm install` to fetch all the dependencies
+4. `npm run dev` to start the [webpack-dev-server](https://github.com/webpack/webpack-dev-server) (`localhost:8080` will be opened automatically)
 5. 🎉 *Start developing*. When you are done…
-6. `yarn run build` to get the prod version
+6. `npm run build` to get the prod version
 
-#### Pushing to production
-We use [Now](//now.sh) for our blue-green deployment system. Bother @durfee to make new deployments.
+### Pushing to production
+We use [Now](https://zeit.co/now) for our blue-green deployment system. Bother [@durfee](https://github.com/durfee) to make new deployments.
 
 
 
@@ -41,5 +39,5 @@ We use [Now](//now.sh) for our blue-green deployment system. Bother @durfee to m
 ## Questions?
 
 [hello@house-house.design](mailto:hello@house-house.design)
-[@bengroulx](https://twitter.com/bengroulx)
-[@durfeee](https://twitter.com/Durfeee).
+[@bengroulx](https://github.com/bengroulx)
+[@durfee](https://github.com/durfee).
