@@ -1,17 +1,18 @@
 // Utilities: Display
 // ============================================================================
 
-.u-block {
+.u-block,
+%u-block {
     display: block;
 
-    @include --small-only {
-        &--small-only {
+    @include --narrow-only {
+        &--narrow-only {
             display: block;
         }
     }
 
-    @include --small-up {
-        &--small-up {
+    @include --narrow-up {
+        &--narrow-up {
             display: block;
         }
     }
@@ -23,17 +24,18 @@
     }
 }
 
-.u-inline-block {
+.u-inline-block,
+%u-inline-block {
     display: inline-block;
 
-    @include --small-only {
-        &--small-only {
+    @include --narrow-only {
+        &--narrow-only {
             display: inline-block;
         }
     }
 
-    @include --small-up {
-        &--small-up {
+    @include --narrow-up {
+        &--narrow-up {
             display: inline-block;
         }
     }
@@ -50,33 +52,37 @@
 // ---
 
 .u-hidden,
-%u-hidden {
+%u-hidden,
+[hidden] {
     display: none;
 
-    @include --small-only {
-        &--small-only {
-            display: none;
+    @include --narrow-only {
+        &--narrow-only {
+            display: none !important;
         }
     }
 
     @include --medium-only {
         &--medium-only {
-            display: none;
+            display: none !important;
         }
     }
 
-    @include --small-up {
-        &--small-up {
-            display: none;
+    @include --narrow-up {
+        &--narrow-up {
+            display: none !important;
+        }
+    }
+
+    @include --medium-down {
+        &--medium-down {
+            display: none !important;
         }
     }
 }
 
-[hidden] {
-    @extend %u-hidden;
-}
-
-.u-visually-hidden {
+.u-visually-hidden,
+%u-visually-hidden {
     position: absolute;
 
     overflow: hidden;
@@ -92,17 +98,18 @@
 // ---
 
 @each $dimensions-name, $dimensions-value in $dimensions-map {
-    .u-width-#{$dimensions-name} {
+    .u-width-#{$dimensions-name},
+    %u-width-#{$dimensions-name} {
         width: $dimensions-value;
 
-        @include --small-only {
-            &--small-only {
+        @include --narrow-only {
+            &--narrow-only {
                 width: $dimensions-value;
             }
         }
 
-        @include --small-up {
-            &--small-up {
+        @include --narrow-up {
+            &--narrow-up {
                 width: $dimensions-value;
             }
         }
@@ -116,17 +123,18 @@
 }
 
 @each $dimensions-name, $dimensions-value in $dimensions-map {
-    .u-max-width-#{$dimensions-name} {
+    .u-max-width-#{$dimensions-name},
+    %u-max-width-#{$dimensions-name} {
         max-width: $dimensions-value;
 
-        @include --small-only {
-            &--small-only {
+        @include --narrow-only {
+            &--narrow-only {
                 width: $dimensions-value;
             }
         }
 
-        @include --small-up {
-            &--small-up {
+        @include --narrow-up {
+            &--narrow-up {
                 max-width: $dimensions-value;
             }
         }
@@ -139,17 +147,18 @@
     }
 }
 @each $dimensions-name, $dimensions-value in $dimensions-map {
-    .u-flex-basis-#{$dimensions-name} {
+    .u-flex-basis-#{$dimensions-name},
+    %u-flex-basis-#{$dimensions-name} {
         flex-basis: $dimensions-value;
 
-        @include --small-only {
-            &--small-only {
+        @include --narrow-only {
+            &--narrow-only {
                 flex-basis: $dimensions-value;
             }
         }
 
-        @include --small-up {
-            &--small-up {
+        @include --narrow-up {
+            &--narrow-up {
                 flex-basis: $dimensions-value;
             }
         }
@@ -163,17 +172,18 @@
 }
 
 @each $dimensions-name, $dimensions-value in $dimensions-map {
-    .u-height-#{$dimensions-name} {
+    .u-height-#{$dimensions-name},
+    %u-height-#{$dimensions-name}, {
         height: $dimensions-value;
 
-        @include --small-only {
-            &--small-only {
+        @include --narrow-only {
+            &--narrow-only {
                 width: $dimensions-value;
             }
         }
 
-        @include --small-up {
-            &--small-up {
+        @include --narrow-up {
+            &--narrow-up {
                 width: $dimensions-value;
             }
         }
@@ -190,17 +200,18 @@
 // Viewport Sizes
 // ---
 
-.u-full-vw {
+.u-full-vwm
+%u-full-vw {
     width: 100vw;
 
-    @include --small-only {
-        &--small-only {
+    @include --narrow-only {
+        &--narrow-only {
             width: 100vw;
         }
     }
 
-    @include --small-up {
-        &--small-up {
+    @include --narrow-up {
+        &--narrow-up {
             width: 100vw;
         }
     }
@@ -212,17 +223,18 @@
     }
 }
 
-.u-full-vh {
+.u-full-vh,
+%u-full-vh {
     height: 100vh;
 
-    @include --small-only {
-        &--small-only {
+    @include --narrow-only {
+        &--narrow-only {
             height: 100vh;
         }
     }
 
-    @include --small-up {
-        &--small-up {
+    @include --narrow-up {
+        &--narrow-up {
             height: 100vh;
         }
     }
@@ -231,16 +243,6 @@
         &--medium-up {
             height: 100vh;
         }
-    }
-}
-
-
-// Bleed
-// --
-
-@each $direction in $directions-map {
-    .u-bleed-#{$direction} {
-        margin-#{$direction}: -$base-space;
     }
 }
 
@@ -248,7 +250,8 @@
 // Overflow
 // ---
 
-.u-clip {
+.u-clip,
+%u-clip {
     overflow: hidden;
 }
 
@@ -256,6 +259,7 @@
 // Prevent Line Wrapping
 // ---
 
-.u-no-wrap {
+.u-no-wrap,
+%u-no-wrap {
     white-space: nowrap;
 }

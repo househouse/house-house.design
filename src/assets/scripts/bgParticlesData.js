@@ -18,17 +18,17 @@ export default {
       }
     },
     "opacity": {
-      "value": 0.5,
+      "value": 0.9,
       "random": true,
       "anim": {
         "enable": true,
-        "speed": 0.5,
-        "opacity_min": 0.5,
+        "speed": 0.2,
+        "opacity_min": 0.6,
         "sync": false
       }
     },
     "size": {
-      "value": 10,
+      "value": 15,
       "random": true
     },
     "line_linked": {
