@@ -34,10 +34,10 @@ nav.c-nav.u-text-size-medium
                     | Contact us
             li
                 router-link.u-color-blue-light(v-on:click.native='handleNavToggle', to='/privacy-security')
-                    | Vision & Values
+                    | Vision &amp; Values
             li
                 router-link.u-color-green-medium(v-on:click.native='handleNavToggle', to='/vision-values')
-                    | Privacy & Security
+                    | Privacy &amp; Security
 
 
     nav.c-nav-crumbs.--large
@@ -66,10 +66,10 @@ nav.c-nav.u-text-size-medium
                     | Contact us
             li
                 router-link.u-block.u-color-green-medium(v-on:click.native='handleNavToggle', to='/vision-values')
-                    | Vision & Values
+                    | Vision &amp; Values
             li
                 router-link.u-block.u-color-blue-light(v-on:click.native='handleNavToggle', to='/privacy-security')
-                    | Privacy & Security
+                    | Privacy &amp; Security
 </template>
 
 <script>
