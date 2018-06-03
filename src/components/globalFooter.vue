@@ -15,7 +15,7 @@ footer.u-bg-black.u-color-white.u-context.u-padding-bottom-xlarge
                             | Questions? Chatty?
                         p.u-baseline-small
                             | 👋 email {{displayName}} at
-                            | #[a(href='mailto:hello@house-house.design?subject=Something') hello@house-house.design]
+                            | #[a(href='mailto:hello@house-house.design?subject=Hello+there%21') hello@house-house.design]
 
 
         div.u-flex.u-context.u-stack-over
