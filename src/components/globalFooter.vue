@@ -9,13 +9,12 @@ footer.u-bg-black.u-color-white.u-context.u-padding-bottom-xlarge
                 div.u-flexbox.u-align-middle(style='transform:skew(-20deg);')
 
                     div.u-flex-shrink.u-margin-right-base
-                        img.u-block.u-circle.u-shadow-thick(src='../assets/img/-ben.jpg' style='height:80px;')
-
+                        img.u-block.u-circle.u-shadow-thick(:src='displayPhoto' style='height:80px;')
                     div.u-flex
                         h2.c-heading.c--2.u-baseline-base.u-margin-bottom-small
                             | Questions? Chatty?
                         p.u-baseline-small
-                            | 👋 email Ben at
+                            | 👋 email {{displayName}} at
                             | #[a(href='mailto:hello@house-house.design?subject=Something') hello@house-house.design]
 
 
@@ -34,9 +33,9 @@ footer.u-bg-black.u-color-white.u-context.u-padding-bottom-xlarge
             h2.u-visually-hidden More Links:
             nav.u-flexbox.u-margin-bottom-base.u-justify-end.u-text-size-small.u-baseline-small
                 router-link.u-block(v-on:click.native='handleNavToggle' to='/vision-values')
-                    | Vision & Values
+                    | Vision &amp; Values
                 router-link.u-block(v-on:click.native='handleNavToggle' to='/privacy-security')
-                    | Privacy & Security
+                    | Privacy &amp; Security
                 router-link.u-block(v-on:click.native='handleNavToggle' to='/xxxxx')
                     | Code of Conduct
 
@@ -52,10 +51,34 @@ footer.u-bg-black.u-color-white.u-context.u-padding-bottom-xlarge
 
 <script>
 import LogoScript from '@/components/logoScript';
+import benImage from '@/assets/img/-ben.jpg';
+import seanImage from '@/assets/img/-sean.jpg';
 
 export default {
   components: {
     LogoScript,
+  },
+  data() {
+    return {
+      ben: benImage,
+      sean: seanImage,
+      displayPhoto: null,
+      displayName: null,
+    };
+  },
+  mounted() {
+    const randomNumber = Math.random();
+
+    const selectedPhoto = randomNumber > 0.5 ?
+      this.ben :
+      this.sean;
+
+    const selectedName = randomNumber > 0.5 ?
+      'Ben' :
+      'Sean';
+
+    this.displayPhoto = selectedPhoto;
+    this.displayName = selectedName;
   },
 };
 </script>
