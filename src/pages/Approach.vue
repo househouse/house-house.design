@@ -21,7 +21,7 @@ div#pageApproach
                     p
                         | When filmmakers make movies, characters are portrayed by the actors who best embody the role.
                         | Similarly, we’ll staff your project by choosing the designer who will best fit the requirements.
-                        | With our vertality and broad range of skills, the result is your team acquires the right number of folks handpicked for your specific situation.
+                        | The result is your team acquires the right number of folks handpicked for your specific situation.
                     p
                         | Our full-time residents we live and breathe the House House way.
                         | Sometimes the addition of a single resident on your team is all you need.

@@ -5,7 +5,7 @@ div#pageHome
         div.c-contain.u-color-black
             h1.c-heading-c--1.u-margin-bottom-small.u-max-width-2of3--medium-up
                 | #[span.u-visually-hidden House House is]
-                | A multidisciplinary #[span._u-color-grey-dark design] studio that scales as your team does too
+                | A multidisciplinary #[span._u-color-grey-dark design] studio that scales as your team does
             p.u-max-width-1of2--medium-up.u-text-family-secondary.u-text-size-medium.u-baseline-medium
                 | Need some extra hands to get organized, build a new digital product, or finally improve that service you’re offering? Grow your team’s abilities, capacity, and potential by adding a House House designer to your next project.
 
