@@ -43,8 +43,4 @@ export default {
 
 <style lang="scss">
 @import 'src/assets/css/main.scss';
-
-.a-fade-in {
-    opacity: 0;
-}
 </style>

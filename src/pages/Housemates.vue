@@ -11,8 +11,11 @@ div#pageWork
     section.u-padding-bottom-large
         div.c-contain
             div.c-text-content.u-text-size-large.u-baseline-large.u-color-black.u-width-3of4
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat eu fugiat nulla pariatur.
-
+                p
+                    | Every project is unique; while some may require a single specialized designer, others may need an entire team.
+                    | (Even within the same project your personel may change!)
+                    | And as we know in the world of tech: speed and agility are paramount.
+                    | Rather than spending weeks hiring a full-time designer or searching far and wide for the right delivery agency, House House designers can join your team and begin digging in right away.
 
     section.u-padding-bottom-large.u-padding-top-large.u-bg-gradient-whiteout.u-shadow-thick
         div.c-contain
