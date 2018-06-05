@@ -1,24 +1,28 @@
+@import '../1-settings/_variables';
 @import '../1-settings/_responsive';
-
-$animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
 
 .c-nav-crumbs {
     position: fixed;
     z-index: 100;
 
     &.--large {
-        top: 10%;
-        right: 3rem;
-        left: calc(100% - 10rem);
+        top: $hh-spacing-base;
+        right: 5vw;
+        left: auto;
 
         display: none;
-        width: 3rem;
+        overflow: hidden;
+        width: 5rem;
+        max-height: 15rem;
         margin-right: 5%;
-        padding: 0.5rem;
+        padding: $hh-spacing-base $hh-spacing-small;
 
         border-radius: 16px;
 
-        transition: $animation;
+        transform: scale(0.95);
+        transform-origin: top left;
+
+        transition: $hh-animation-slow;
     }
 
     &.--mobile {
@@ -51,17 +55,24 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
 
         a {
             text-decoration: none;
+
+            &:hover {
+                opacity: 0.7 !important;
+            }
         }
     }
 
     &.--large:hover {
         width: 10rem;
-        background: rgba(243, 246, 250, 0.9);
+        max-height: 30rem;
+        background: var(--white);
     }
 
     @include break(768) {
         width: 8rem;
-        margin-right: 7.5%;
+        margin-right: 5%;
+
+        border: 1px solid rgba(0, 0, 200, 0);
 
         transform: translateX(0);
 
@@ -75,9 +86,14 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
 
         &.isExpanded,
         &.--large:hover {
-            width: 12rem;
+            width: 15rem;
 
-            background: rgba(243, 246, 250, 0.85);
+            border: 1px solid rgba(0, 0, 200, 0.15);
+
+            background: var(--white);
+            box-shadow: 0 0 10em rgba(0, 0, 200, 0.15);
+
+            transform: scale(1);
         }
     }
 
@@ -85,7 +101,7 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
         width: 10rem;
 
         &.--large {
-            left: calc(100% - 20rem);
+            left: 75vw;
         }
     }
 }
@@ -98,26 +114,30 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
     width: 3rem;
     height: 3rem;
 
-    background: var(--indigo-dark);
+    background: var(--blue-dark);
     box-shadow: 0 0 2px var(--white);
 
     line-height: 3rem;
     white-space: nowrap;
 
-    transition: $animation;
+    transition: $hh-animation-slow;
 
     .c-nav-crumbs.isExpanded &,
     .c-nav-crumbs.--large:hover & {
-        width: 8rem;
+        width: 11rem;
 
         @include break(768) {
             transform: translateX(0);
         }
     }
 
+    @include break(768) {
+        display: none;
+    }
+
     &,
     &::after {
-        transition: $animation;
+        transition: $hh-animation-slow;
     }
 
     svg {
@@ -127,7 +147,7 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
 
         path,
         polyline {
-            stroke: white;
+            stroke: var(--white);
             stroke-width: 2;
             stroke-linejoin: round;
             stroke-linecap: round;
@@ -145,7 +165,7 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
 
         transform: translate(-1rem, 0);
 
-        transition: $animation;
+        transition: $hh-animation-slow;
 
         .c-nav-crumbs.isExpanded &,
         .c-nav-crumbs.--large:hover & {
@@ -153,20 +173,9 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
         }
     }
 
-    .c-nav-crumbs__back:hover span {
-        color: #2770bf;
-    }
-
     .c-nav-crumbs.isExpanded & div,
     .c-nav-crumbs.--large:hover & div {
         background: rgba(65, 138, 216, 0.25);
-    }
-
-    .c-nav-crumbs.isExpanded & div svg path,
-    .c-nav-crumbs.isExpanded & div svg polyline,
-    .c-nav-crumbs.--large:hover & div svg path,
-    .c-nav-crumbs.--large:hover & div svg polyline {
-        stroke: #418ad8;
     }
 
     .c-nav-crumbs.isExpanded & span,
@@ -178,12 +187,11 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .c-nav-crumbs__major {
-    padding-top: 1rem;
     padding-left: 3rem;
 
     opacity: 0;
 
-    transition: $animation;
+    transition: $hh-animation-slow;
 
     pointer-events: none;
 
@@ -200,13 +208,18 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
         @include break(768) {
             transform: translateX(0);
         }
+
+        li:not(:last-child)::before {
+            opacity: 0.5;
+        }
     }
 
     li {
-        margin-bottom: 5px;
+        margin-bottom: $hh-spacing-xsmall;
+        line-height: $hh-baseline-base;
 
         &::after {
-            content: "";
+            content: '';
 
             position: absolute;
             left: 0.75rem;
@@ -215,24 +228,23 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
             height: 1rem;
 
             border-radius: 50%;
-            background-color: var(--grey-med);
 
-            transition: $animation;
+            transition: $hh-animation-slow;
         }
 
         &:not(:last-child)::before {
-            content: "";
+            content: '';
 
             position: absolute;
             left: 1.2rem;
 
-            width: 0.125rem;
-            height: 2rem;
+            width: ($hh-spacing-xsmall / 5);
+            height: 2.25rem;
             margin-top: 1rem;
 
-            background-color: var(--grey-med);
+            background-color: var(--grey-medium);
 
-            transition: $animation;
+            transition: $hh-animation-slow;
         }
 
         a {
@@ -242,7 +254,7 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
 
             transform: translateY(-0.5rem);
 
-            transition: $animation;
+            transition: $hh-animation-slow;
 
             .c-nav-crumbs.isExpanded &,
             .c-nav-crumbs.--large:hover & {
@@ -250,27 +262,44 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
 
                 transform: translateY(0);
             }
-
-            &:hover {
-                color: red;
-            }
         }
+    }
+
+    .c-nav-crumbs & li::after {
+        border: 2px solid var(--grey-medium);
+        background-color: var(--grey-medium);
     }
 
     .c-nav-crumbs.isExpanded & li::after,
     .c-nav-crumbs.--large:hover & li::after {
-        background: var(--indigo-dark);
+        border-color: var(--blue-dark);
+        background-color: var(--white);
 
-        transform: translateY(6px);
+        transform: translateY($hh-spacing-xsmall / 1.75);
+    }
+
+    .c-nav-crumbs.isExpanded & li:nth-child(4)::after,
+    .c-nav-crumbs.--large:hover & li:nth-child(4)::after {
+        border-color: var(--orange-dark);
+    }
+
+    .c-nav-crumbs.isExpanded & li:not(:last-child)::before,
+    .c-nav-crumbs.--large:hover & li:not(:last-child)::before  {
+        opacity: 1;
+        background-color: var(--blue-dark);
+    }
+
+    .c-nav-crumbs.isExpanded & li:nth-child(3)::before,
+    .c-nav-crumbs.--large:hover & li:nth-child(3)::before {
+        background: linear-gradient(to bottom, var(--blue-dark) 10%, var(--orange-dark) 90%);
     }
 
     .c-nav-crumbs & li.isActive::after {
-        background: var(--indigo-dark);
+        border: 2px solid var(--blue-dark);
+        background-color: var(--blue-dark);
     }
 
-    .c-nav-crumbs.isExpanded & .active::after,
-    .c-nav-crumbs.--large:hover & .active::after {
-        background: #5a667f;
+    .c-nav-crumbs & li.isActive::before {
     }
 }
 
@@ -283,12 +312,10 @@ $animation: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
 
     transform: translateY(-10px);
 
-    transition: $animation;
+    transition: $hh-animation-slow;
 
     a {
-        font-size: 14px;
-
-        transition: $animation;
+        transition: $hh-animation-slow;
 
         &:hover {
             color: #9098a9;

@@ -1,23 +1,29 @@
 <template lang="pug">
 div#app
     globalNav
+    globalHeader
     globalContent
+    globalCTA
     globalFooter
     globalBackground
 </template>
 
 <script>
 import GlobalBackground from '@/components/globalBackground';
+import GlobalCTA from '@/components/globalCTA';
 import GlobalContent from '@/components/globalContent';
 import GlobalFooter from '@/components/globalFooter';
+import GlobalHeader from '@/components/globalHeader';
 import GlobalNav from '@/components/globalNav';
 
 export default {
   name: 'app',
   components: {
     GlobalBackground,
+    GlobalCTA,
     GlobalContent,
     GlobalFooter,
+    GlobalHeader,
     GlobalNav,
   },
   metaInfo: {
@@ -37,49 +43,4 @@ export default {
 
 <style lang="scss">
 @import 'src/assets/css/main.scss';
-
-.a-fade-in {
-    opacity: 0;
-}
-body {
-    background-color: var(--white);
-    color: var(--black);
-}
-a {
-    color: inherit;
-}
-.c-contain {
-    max-width: 30em;
-}
-.c-shapes {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-}
-
-.c-shapes__container {
-  position: absolute;
-  top: 0;
-  left: 0%;
-  transform-origin: center center;
-  transform: translate(50%, -50%);
-}
-
-@media screen and (min-width:600px) {
-  .c-shapes__container {
-    top: -5%;
-    left: -25%;
-    transform: rotate(55deg) scale(2);
-  }
-}
-
-.c-shapes__single {
-  fill: currentColor;
-  transition: all ease-out 2s 1s;
-}
 </style>

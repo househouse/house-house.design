@@ -1,36 +1,131 @@
 <template lang="pug">
-footer
-    aside.u-padding-top-md.u-padding-bottom-md.u-padding-left-md.u-padding-right-md.u-align-center.u-bg-grey-light.u-text-size-small
-        p.c-text-content
-            a#designInOpen(href='https://github.com/househouse/house-house.design/pull/21').u-color-grey-dark
-                | Things look a bit off? Content missing? We’re designing this website in the open so you can see it progress. Check it out &rarr;
 
-    div.c-section.u-flexbox--small-up.u-align-center--small-only
-        div.u-flex.c-text-content
-            p.u-text-size-small.u-margin-bottom-sm
-                a.u-margin-right-lg(href='https://linkedin.com/company/17940020/')
-                    span LinkedIn
-                a.u-margin-right-lg(href='https://github.com/househouse/')
-                    span GitHub
-                a(href='mailto:hello@house-house.design')
-                    span hello@
-        div.u-flex-shrink.c-text-content
-            p.u-text-size-small.u-margin-bottom-sm.u-color-black
-                | Made with love in Vancouver, Canada.
-            p.u-text-size-small.u-color-grey-dark
-                | © 2016—2018 House House
+footer.u-bg-black.u-color-white.u-context.u-padding-bottom-xlarge
+
+    div.c-contain.u-flexbox--medium-up.u-align-middle
+
+        div.u-flex-shrink
+            div.u-bg-blue-dark.u-padding-top-base.u-padding-bottom-base.u-padding-right-medium.u-padding-left-base.u-context#question(style='transform:skew(20deg);')
+                div.u-flexbox.u-align-middle(style='transform:skew(-20deg);')
+
+                    div.u-flex-shrink.u-margin-right-base
+                        img.u-block.u-circle.u-shadow-thick(:src='displayPhoto' style='height:80px;')
+                    div.u-flex
+                        h2.c-heading.c--2.u-baseline-base.u-margin-bottom-small
+                            | Questions? Chatty?
+                        p.u-baseline-small
+                            | 👋 email {{displayName}} at
+                            | #[a(href='mailto:hello@house-house.design?subject=Hello+there%21') hello@house-house.design]
+
+
+        div.u-flex.u-context.u-stack-over
+            h2.u-visually-hidden Navigation
+            nav.u-flexbox.u-margin-bottom-small.u-justify-end.u-text-size-medium
+                router-link.u-block(v-on:click.native='handleNavToggle' to='/work')
+                    | Work
+                router-link.u-block(v-on:click.native='handleNavToggle' to='/approach')
+                    | Approach
+                router-link.u-block(v-on:click.native='handleNavToggle' to='/housemates')
+                    | Housemates
+                router-link.u-block(v-on:click.native='handleNavToggle' to='/contact')
+                    | Contact
+
+            h2.u-visually-hidden More Links:
+            nav.u-flexbox.u-margin-bottom-base.u-justify-end.u-text-size-small.u-baseline-small
+                router-link.u-block(v-on:click.native='handleNavToggle' to='/vision-values')
+                    | Vision &amp; Values
+                router-link.u-block(v-on:click.native='handleNavToggle' to='/privacy-security')
+                    | Privacy &amp; Security
+                router-link.u-block(v-on:click.native='handleNavToggle' to='/xxxxx')
+                    | Code of Conduct
+
+            div.u-color-grey-dark.u-text-align-right.u-text-size-small.u-baseline-small
+                p
+                    | #[span.u-visually-hidden This site and its contents copyright]
+                    | © 2016–2018 House House • A Design Studio
+                p
+                    | Made with love in Vancouver, Canada 🇨🇦
+
+    LogoScript.u-stack-base.u-context
 </template>
 
 <script>
-    export default {};
+import LogoScript from '@/components/logoScript';
+import benImage from '@/assets/img/-ben.jpg';
+import seanImage from '@/assets/img/-sean.jpg';
+
+export default {
+  components: {
+    LogoScript,
+  },
+  data() {
+    return {
+      ben: benImage,
+      sean: seanImage,
+      displayPhoto: null,
+      displayName: null,
+    };
+  },
+  mounted() {
+    const randomNumber = Math.random();
+
+    const selectedPhoto = randomNumber > 0.5 ?
+      this.ben :
+      this.sean;
+
+    const selectedName = randomNumber > 0.5 ?
+      'Ben' :
+      'Sean';
+
+    this.displayPhoto = selectedPhoto;
+    this.displayName = selectedName;
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-    a {
-        padding-right: 0.25em;
-        padding-left: 0.25em;
+    nav a {
+        margin-left: 2vw;
     }
-    #designInOpen:hover {
-        opacity: 0.9;
+
+    a,
+    .router-link {
+        text-decoration-color: rgba(255, 255, 255, 0.6);
+
+        &:hover {
+            color: var(--grey-light);
+            text-decoration-color: var(--orange-dark);
+        }
+    }
+
+    .router-link-active,
+    .router-link-active:hover {
+        text-decoration: line-through;
+    }
+
+    svg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        fill: var(--white);
+
+        opacity: 0.1;
+    }
+
+    #question::after {
+        content: '';
+
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        width: 100vw;
+
+        transform: translate(-99%, 0);
+
+        display: block;
+
+        background: var(--blue-dark);
     }
 </style>

@@ -1,7 +1,6 @@
 <template lang="pug">
-aside(style='pointer-events:none;' role='presentation')
-    bgParticles
-    bgShapes
+bgParticles(style='pointer-events:none;' role='presentation')
+    //- bgShapes
 </template>
 
 <script>
