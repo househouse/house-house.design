@@ -3,6 +3,7 @@
         "stylelint-scss"
     ],
     "rules": {
-        "indentation": 4
+        "indentation": 4,
+        "declaration-no-important": false
     }
 }
