@@ -212,3 +212,51 @@
     display: block;
     flex: none;
 }
+
+
+// Flex Order
+// ---
+
+.u-order-1 {
+    order: 1;
+
+    @include --narrow-only {
+        &--narrow-only {
+            order: 1;
+        }
+    }
+
+    @include --narrow-up {
+        &--narrow-up {
+            order: 1;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            order: 1;
+        }
+    }
+}
+
+.u-order-2 {
+    order: 2;
+
+    @include --narrow-only {
+        &--narrow-only {
+            order: 2;
+        }
+    }
+
+    @include --narrow-up {
+        &--narrow-up {
+            order: 2;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            order: 2;
+        }
+    }
+}
