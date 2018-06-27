@@ -8,31 +8,139 @@
 .u-text-size-xsmall,
 %u-text-size-xsmall {
     font-size: $hh-font-size-xsmall !important;
+
+    @include --narrow-up {
+        &--narrow-up {
+            font-size: $hh-font-size-xsmall !important;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            font-size: $hh-font-size-xsmall !important;
+        }
+    }
+
+    @include --medium-only {
+        &--medium-only {
+            font-size: $hh-font-size-xsmall !important;
+        }
+    }
 }
 
 .u-text-size-small,
 %u-text-size-small {
     font-size: $hh-font-size-small !important;
+
+    @include --narrow-up {
+        &--narrow-up {
+            font-size: $hh-font-size-small !important;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            font-size: $hh-font-size-small !important;
+        }
+    }
+
+    @include --medium-only {
+        &--medium-only {
+            font-size: $hh-font-size-small !important;
+        }
+    }
 }
 
 .u-text-size-base,
 %u-text-size-base {
     font-size: $hh-font-size-base !important;
+
+    @include --narrow-up {
+        &--narrow-up {
+            font-size: $hh-font-size-base !important;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            font-size: $hh-font-size-base !important;
+        }
+    }
+
+    @include --medium-only {
+        &--medium-only {
+            font-size: $hh-font-size-base !important;
+        }
+    }
 }
 
 .u-text-size-medium,
 %u-text-size-medium {
     font-size: $hh-font-size-medium !important;
+
+    @include --narrow-up {
+        &--narrow-up {
+            font-size: $hh-font-size-medium !important;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            font-size: $hh-font-size-medium !important;
+        }
+    }
+
+    @include --medium-only {
+        &--medium-only {
+            font-size: $hh-font-size-medium !important;
+        }
+    }
 }
 
 .u-text-size-large,
 %u-text-size-large {
     font-size: $hh-font-size-large !important;
+
+    @include --narrow-up {
+        &--narrow-up {
+            font-size: $hh-font-size-large !important;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            font-size: $hh-font-size-large !important;
+        }
+    }
+
+    @include --medium-only {
+        &--medium-only {
+            font-size: $hh-font-size-large !important;
+        }
+    }
 }
 
 .u-text-size-xlarge,
 %u-text-size-xlarge {
     font-size: $hh-font-size-xlarge !important;
+
+    @include --narrow-up {
+        &--narrow-up {
+            font-size: $hh-font-size-xlarge !important;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            font-size: $hh-font-size-xlarge !important;
+        }
+    }
+
+    @include --medium-only {
+        &--medium-only {
+            font-size: $hh-font-size-xlarge !important;
+        }
+    }
 }
 
 
@@ -96,21 +204,21 @@
 %u-thin,
 .u-light,
 %u-light {
-    font-weight: $hh-font-weight-thin !important;; // 1
+    font-weight: $hh-font-weight-thin !important; // 1
 }
 
 .u-text-weight-regular,
 %u-text-weight-regular,
 .u-regular,
 %u-regular {
-    font-weight: $hh-font-weight-regular !important;; // 1
+    font-weight: $hh-font-weight-regular !important; // 1
 }
 
 .u-text-weight-bold,
 %u-text-weight-bold,
 .u-bold,
 %u-bold {
-    font-weight: $hh-font-weight-bold !important;; // 1
+    font-weight: $hh-font-weight-bold !important; // 1
 }
 
 .u-text-italic,

@@ -24,6 +24,16 @@
     }
 }
 
+.u-half-transparent {
+    opacity: 0.5;
+
+    @include --narrow-only {
+        &--narrow-only {
+            opacity: 0.45;
+        }
+    }
+}
+
 .u-squiggle,
 %u-squiggle {
     width: 50%;

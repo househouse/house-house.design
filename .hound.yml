@@ -1,16 +1,14 @@
-scss:
-  config_file: .stylelintrc.json
-  ignore_file: .stylelintignore
+sass-lint:
+  config_file: .sass-lint.yml
   enabled: true
+
+scss:
+  enabled: false
 
 eslint:
-  config_file: .eslintrc.js
-  ignore_file: .eslintignore
-  enabled: true
+  enabled: false
 
 jshint:
-  ignore_file: .jshintignore
-  config_file: .jshintrc
   enabled: false
 
 rubocop:
@@ -22,4 +20,4 @@ coffeescript:
 haml:
   enabled: false
 
-fail_on_violations: true
+fail_on_violations: false
