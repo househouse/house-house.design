@@ -109,9 +109,9 @@ linters:
     # Checks for consistent indentation of nested declarations and rule sets.
     Indentation:
         enabled: true
-        allow_non_nested_indentation: false
+        allow_non_nested_indentation: true
         character: space # or 'tab'
-        width: 4
+        width: 3
 
     # Lint leading zero on dimension values?
     # Configure: `exclude_zero` or `include_zero`
