@@ -11,7 +11,7 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.9.2",
     "particles.js": "^2.0.0",
     "pug": "^2.0.1",
     "sass-loader": "^6.0.7",
@@ -52,10 +52,13 @@
     "opn": "^5.1.0",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "ora": "^1.3.0",
+    "prettier-stylelint": "^0.4.2",
     "rimraf": "^2.6.2",
     "sass-lint": "^1.12.1",
     "semver": "^5.4.1",
     "shelljs": "^0.7.8",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-order": "^0.8.1",
     "sw-precache-webpack-plugin": "^0.11.4",
     "uglify-es": "^3.1.3",
     "url-loader": "^0.6.2",
