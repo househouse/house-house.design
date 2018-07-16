@@ -5,54 +5,78 @@ div#pageApproach
         div.c-contain.u-color-black
             h1.c-heading-c--1.u-margin-bottom-small.u-max-width-3of4
                 | #[span.u-visually-hidden House House:]
-                | Page title for “Approach”
+                | The Approach
 
     section.u-padding-bottom-large
-        div.c-contain
+        div.c-contain.u-flexbox--medium-up.u-align-end
 
-            div.u-width-3of4
-                div.c-text-content.u-color-black.u-text-size-large.u-baseline-large.u-margin-bottom-medium
-                    p
-                        | We’re organized a bit differently than the last agency you worked with, and we think that’s our biggest strength.
-                        | With a tiny full-time staff and a big network, we can adapt to scale and changes—just as your teams and projects must.
+            div.u-padding-right-medium--medium-up
 
-                div.c-text-content.u-text-family-secondary.u-text-size-medium.u-baseline-medium
-                    p
-                        | When filmmakers make movies, characters are portrayed by the actors who best embody the role.
-                        | Similarly, we’ll staff your project by choosing the designers who best fit the requirements.
-                        | Whether it’s design direction or support, your team acquires the right number of folks handpicked for your specific situation.
+                div.c-text-content.u-text-size-large.u-baseline-large.u-color-black
+                    p.u-margin-bottom-medium
+                        | 👋  We’re a group of freelance designers who typically direct or contribute to projects individually.
+                        | But when your team has gaps and a project needs a designer, we can assemble and deliver value in four areas:
+                        | #[strong.u-color-blue-dark design support],
+                        | #[strong.u-color-blue-light strategic consulting],
+                        | #[strong.u-color-purple-medium tech guidance], and
+                        | #[strong.u-color-green-medium mentorship offerings].
+                        | Every project poses unique challenges, but we approach them all the same way.
 
+                div.c-text-content.u-text-size-large.u-baseline-large.u-color-black
 
-    section.u-padding-bottom-xlarge.u-padding-top-xlarge.u-bg-blue-light.u-shadow-thick.u-border-top-blue-medium
-        div.c-contain
-            div.c-text-content.u-text-size-large.u-baseline-large.u-color-white.u-text-align-center
-                p
-                    | When you start a project with
-                    | #[strong.u-text-family-secondary House House]
-                    | you’ll be assigned a Housemate with the right mix of skills and experience who can bring your team
-                    | #[span.u-no-wrap up to speed].
+                    div.u-flexbox.u-text-align-center
+                        svg.u-margin-right-small(width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg")
+                            title Icon: Checkbox
+                            path(d="M9.091 14.091l-4.545-3.864 1.25-1.477 3.068 2.614 5.341-6.25 1.477 1.25-6.591 7.727zm10.909.227v-8.636c0-3.182-2.5-5.682-5.682-5.682h-8.636c-3.182 0-5.682 2.5-5.682 5.682v8.636c0 3.182 2.5 5.682 5.682 5.682h8.636c3.182 0 5.682-2.5 5.682-5.682zm-14.318 3.75c-2.159 0-3.75-1.591-3.75-3.75v-8.636c0-2.159 1.591-3.75 3.75-3.75h8.636c2.159 0 3.75 1.591 3.75 3.75v8.636c0 2.159-1.591 3.75-3.75 3.75h-8.636z" fill="currentColor" fill-rule="nonzero")
+                        h2.c-heading.c--3
+                            | Connect with users through story
+                    p.u-text-family-secondary.u-text-size-medium.u-baseline-medium.u-margin-bottom-base.u-color-grey-dark
+                        | Our process starts with your #[strong.u-text-italic.u-color-grey-dark story] — with us listening, working to unearth #[em who] is at the heart of your business.
+                        | We focus on story because it’s one of our most powerful ways to understand each other;
+                        | when we hear stories we empathize with the characters, from which we can devise utility, value, and meaning.
+                        | By following the same style of character arcs and storytelling structures, we’ll show you how your team can become a part of your users’ stories.
 
-                router-link(to='/housemates').c-button-link.c--purple.c--with-icon.u-text-secondary.u-text-size-medium.u-baseline-small
-                    <svg width="35" height="32" viewBox="0 0 35 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <title>Icon: Assembling</title>
-                        <path d="M0,5.09090909 C0,4.68945455 0.325818182,4.36363636 0.727272727,4.36363636 L4.36363636,4.36363636 L4.36363636,7.27272727 L0.727272727,7.27272727 C0.325818182,7.27272727 0,6.94690909 0,6.54545455 L0,5.09090909 Z M28.3636364,4.36363636 C28.7650909,4.36363636 29.0909091,4.68945455 29.0909091,5.09090909 L29.0909091,6.54545455 L29.0909091,23.2727273 L29.0909091,24.7272727 L29.0909091,27.6363636 L29.0909091,29.0909091 L29.0909091,31.2727273 C29.0909091,31.6741818 28.7650909,32 28.3636364,32 L26.9090909,32 C26.5076364,32 26.1818182,31.6741818 26.1818182,31.2727273 L26.1818182,29.0909091 L26.1818182,27.6363636 L26.1818182,24.7272727 L26.1818182,23.2727273 L26.1818182,7.27272727 L10.1818182,7.27272727 L10.1818182,4.36363636 L26.9090909,4.36363636 L28.3636364,4.36363636 Z" fill="var(--orange-dark)"/>
-                        <path d="M8.72727273,8.72727273 L8.72727273,24.7272727 L24.7272727,24.7272727 L24.7272727,27.6363636 L8,27.6363636 L6.54545455,27.6363636 C6.144,27.6363636 5.81818182,27.3105455 5.81818182,26.9090909 L5.81818182,25.4545455 L5.81818182,8.72727273 L5.81818182,7.27272727 L5.81818182,4.36363636 L5.81818182,2.90909091 L5.81818182,0.727272727 C5.81818182,0.325818182 6.144,0 6.54545455,0 L8,0 C8.40145455,0 8.72727273,0.325818182 8.72727273,0.727272727 L8.72727273,2.90909091 L8.72727273,4.36363636 L8.72727273,7.27272727 L8.72727273,8.72727273 Z M34.1818182,24.7272727 C34.5832727,24.7272727 34.9090909,25.0530909 34.9090909,25.4545455 L34.9090909,26.9090909 C34.9090909,27.3105455 34.5832727,27.6363636 34.1818182,27.6363636 L30.5454545,27.6363636 L30.5454545,24.7272727 L34.1818182,24.7272727 Z" fill="currentColor"/>
-                    </svg>
-                    | Learn about Housemates
+                    div.u-flexbox.u-text-align-center
+                        svg.u-margin-right-small(width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg")
+                            title Icon: Checkbox
+                            path(d="M9.091 14.091l-4.545-3.864 1.25-1.477 3.068 2.614 5.341-6.25 1.477 1.25-6.591 7.727zm10.909.227v-8.636c0-3.182-2.5-5.682-5.682-5.682h-8.636c-3.182 0-5.682 2.5-5.682 5.682v8.636c0 3.182 2.5 5.682 5.682 5.682h8.636c3.182 0 5.682-2.5 5.682-5.682zm-14.318 3.75c-2.159 0-3.75-1.591-3.75-3.75v-8.636c0-2.159 1.591-3.75 3.75-3.75h8.636c2.159 0 3.75 1.591 3.75 3.75v8.636c0 2.159-1.591 3.75-3.75 3.75h-8.636z" fill="currentColor" fill-rule="nonzero")
+                        h2.c-heading.c--3
+                            | Think big but embrace adaptation
+                    p.u-text-family-secondary.u-text-size-medium.u-baseline-medium.u-margin-bottom-base.u-color-grey-dark
+                        | We take an iterative design approach to our work, meaning we communicate often, pivoting and adjusting until we get it right. This is a process; as we discover and learn more about you and your business goals, targets may sometime change. By designing iteratively, we can come in with big ideas, but let your users and your goals massage and refine the idea until it’s tangible, making sure things adapt gracefully along the way.
 
+                    div.u-flexbox.u-text-align-center
+                        svg.u-margin-right-small(width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg")
+                            title Icon: Checkbox
+                            path(d="M9.091 14.091l-4.545-3.864 1.25-1.477 3.068 2.614 5.341-6.25 1.477 1.25-6.591 7.727zm10.909.227v-8.636c0-3.182-2.5-5.682-5.682-5.682h-8.636c-3.182 0-5.682 2.5-5.682 5.682v8.636c0 3.182 2.5 5.682 5.682 5.682h8.636c3.182 0 5.682-2.5 5.682-5.682zm-14.318 3.75c-2.159 0-3.75-1.591-3.75-3.75v-8.636c0-2.159 1.591-3.75 3.75-3.75h8.636c2.159 0 3.75 1.591 3.75 3.75v8.636c0 2.159-1.591 3.75-3.75 3.75h-8.636z" fill="currentColor" fill-rule="nonzero")
+                        h2.c-heading.c--3
+                            | Rely on what you know
+                    p.u-text-family-secondary.u-text-size-medium.u-baseline-medium.u-color-grey-dark
+                        | We’re here to cut through the cacophony and help you design with purpose and function, not add to the noise — that doesn’t help anyone. We’ll always aim to give you inclusive and sustainable solutions that have your audience’s interests at their heart. To do that well, we depend on our deep skills in multiple areas of service, experience, and visual design.
 
-            div.u-flexbox--medium-up.u-margin-top-medium
-                div.u-flex-expand.u-bg-white.u-shadow-thick.u-padding-top-base.u-padding-bottom-base.u-padding-left-base.u-padding-right-base.u-margin-right-small
-                    h3.u-margin-bottom-xsmall
-                        | Bricks
-                        | #[span.u-color-grey-medium / Flexible Pricing]
-                    p To determine the cost of a designer, we look at the problems you’re experiencing, the goals you want to reach, and the context surrounding it all. Only then can we properly figure out the best approaches and set you up for future success. Our first solution is called “#[strong bricks].” — half-days of work, or 3–5 hours; one calendar day is comprised of two bricks. Bricks allow you to slot a designer in when you think they will make the biggest impact.
+                    router-link(to='/approach').c-button-link.c--orange.u-text-size-base.u-baseline-small
+                        | Learn how we work
 
-                div.u-flex-expand.u-bg-white.u-shadow-thick.u-padding-top-base.u-padding-bottom-base.u-padding-left-base.u-padding-right-base.u-margin-left-small
-                    h3.u-margin-bottom-xsmall
-                        | Campaigns
-                        | #[span.u-color-grey-medium / Fixed-Rate Pricing]
-                    p Huge scope? Complex requirements? Extended timelines? Depending on the project, it may sometimes be more appropriate to estimate the project as a whole. During a projects’s RFP phase, proposal phase, or discovery phase, we’ll work with you to plan the type and amount of suppert you’ll need. Instead of us delivering your project and parting ways, our Housemates will coach, mentor, support, and work in and on your team, setting you up for long-term success.
+            div.u-flex-none.c-text-content.u-no-wrap
+                div.u-text-size-medium.u-baseline-medium
+                    ul.c-pill-group.c--blue-dark.u-margin-bottom-base
+                        li 🌀 Interface Design
+                        li 🌄 Brand Identity
+                        li 👉 Art Direction
+                    ul.c-pill-group.c--blue-light.u-margin-bottom-base
+                        li ⚡️ Experience Strategy
+                        li 🗺 Service Design
+                        li 🔍 UX Research
+                    ul.c-pill-group.c--purple-light.u-margin-bottom-base
+                        li ⌨️ Front-End Development
+                        li 📱 Progressive Web Apps
+                        li 💻 Responsive Websites
+                    ul.c-pill-group.c--green-light.u-margin-bottom-small
+                        li 🤝 Team Building
+                        li 🎨 Workshops
+                        li 📝 Training
+                    router-link(to='/approach').c-button-link.c--orange.u-text-size-base.u-baseline-small
+                        | Learn how we work
 </template>
 
 <script>
