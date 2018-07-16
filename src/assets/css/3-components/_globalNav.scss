@@ -233,6 +233,11 @@
         transform: translateY($hh-spacing-xsmall / 1.75);
     }
 
+    .c-nav-crumbs.isExpanded & li:nth-child(3)::before,
+    .c-nav-crumbs.--large:hover & li:nth-child(3)::before {
+        background: linear-gradient(to bottom, var(--blue-dark) 10%, var(--orange-dark) 90%);
+    }
+
     .c-nav-crumbs.isExpanded & li:nth-child(4)::after,
     .c-nav-crumbs.--large:hover & li:nth-child(4)::after {
         border-color: var(--orange-dark);
@@ -242,16 +247,6 @@
     .c-nav-crumbs.--large:hover & li:not(:last-child)::before {
         opacity: 1;
         background-color: var(--blue-dark);
-    }
-
-    .c-nav-crumbs.isExpanded & li:nth-child(3)::before,
-    .c-nav-crumbs.--large:hover & li:nth-child(3)::before {
-        background:
-            linear-gradient(
-        to bottom,
-            var(--blue-dark) 10%
-           var(--orange-dark) 90%
-        );
     }
 
     .c-nav-crumbs & li.isActive::after {
