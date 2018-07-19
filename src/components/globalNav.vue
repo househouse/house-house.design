@@ -54,7 +54,7 @@ nav.c-nav.u-text-size-medium
             li(v-bind:class="{isActive: currentPath === 'approach'}")
                 router-link.u-block.u-color-blue-dark.u-text-weight-bold.u-text-family-secondary(v-on:click.native='handleNavToggle', to='/approach')
                     | Approach
-            //- li(v-bind:class="{isActive: currentPath === 'housemates'}")
+            li(v-bind:class="{isActive: currentPath === 'housemates'}")
                 router-link.u-block.u-color-blue-dark.u-text-weight-bold.u-text-family-secondary(v-on:click.native='handleNavToggle', to='/housemates')
                     | Housemates
             li(v-bind:class="{isActive: currentPath === 'contact'}")

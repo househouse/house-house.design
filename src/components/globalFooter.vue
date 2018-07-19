@@ -1,6 +1,6 @@
 <template lang="pug">
 
-footer.u-bg-black.u-color-white.u-context.u-padding-bottom-xlarge
+footer.u-bg-black.u-color-white.u-context.u-clip.u-padding-bottom-medium.u-padding-bottom-xlarge--medium-up
 
     div.c-contain.u-flexbox--medium-up.u-align-middle
 

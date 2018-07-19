@@ -9,12 +9,12 @@ House House is a multidisciplinary studio of designers in Vancouver, Canada.
 ### Features
 * [Pug](https://pugjs.org) as a template engine
 * [SCSS](http://sass-lang.com) preprocessor for CSS ([autoprefixer](https://github.com/postcss/autoprefixer) included)
-* JS linting with [Eslint](https://eslint.org), extends [eslint-config-standard](https://github.com/standard/eslint-config-standard), includes the following plugins:
+* [Sass-Lint](http://stylelint.io) for Sass/CSS linting
+* [Eslint](https://eslint.org) for JS linting, extends [eslint-config-standard](https://github.com/standard/eslint-config-standard), includes the following plugins:
   * [import](https://github.com/benmosher/eslint-plugin-import)
   * [node](https://github.com/mysticatea/eslint-plugin-node)
   * [promise](https://github.com/xjamundx/eslint-plugin-promise)
   * [compat](https://github.com/amilajack/eslint-plugin-compat)
-* CSS linting with [Stylelint](http://stylelint.io)
 
 #### Prerequisites
 - [Node.js](https://nodejs.org/en/)
@@ -33,11 +33,10 @@ House House is a multidisciplinary studio of designers in Vancouver, Canada.
 We use [Now](https://zeit.co/now) for our blue-green deployment system. Bother [@durfee](https://github.com/durfee) to make new deployments.
 
 
-
 ***
 
 ## Questions?
 
 [hello@house-house.design](mailto:hello@house-house.design)
-[@bengroulx](https://github.com/bengroulx)
-[@durfee](https://github.com/durfee).
+—
+👨🏻‍💻 [@bengroulx](https://github.com/bengroulx) • 👨🏼‍💻 [@durfee](https://github.com/durfee).

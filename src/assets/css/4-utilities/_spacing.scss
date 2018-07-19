@@ -35,6 +35,18 @@ $attribute-map: (
                     #{$attribute}-#{$direction}: #{map-get($spacing-map, $size)} !important;
                 }
             }
+
+            @include --wide-up {
+                &--wide-up {
+                    #{$attribute}-#{$direction}: #{map-get($spacing-map, $size)} !important;
+                }
+            }
+
+            @include --medium-down {
+                &--medium-down {
+                    #{$attribute}-#{$direction}: #{map-get($spacing-map, $size)} !important;
+                }
+            }
         }
     }
 }

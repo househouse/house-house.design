@@ -1,10 +1,23 @@
-scss:
+sass-lint:
+  config_file: .sass-lint.yml
   enabled: true
 
 scss:
-  config_file: .scss-lint.yml
+  enabled: false
 
- jshint:
-  config_file: .jshintrc
+eslint:
+  enabled: false
 
-fail_on_violations: true
+jshint:
+  enabled: false
+
+rubocop:
+  enabled: false
+
+coffeescript:
+  enabled: false
+
+haml:
+  enabled: false
+
+fail_on_violations: false

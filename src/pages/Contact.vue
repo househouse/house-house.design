@@ -4,7 +4,7 @@ div#pageContact
     section.u-padding-bottom-medium
         div.c-contain.u-color-black
             h1.c-heading-c--1.u-margin-bottom-small.u-max-width-3of4
-                | #[span.u-visually-hidden House House ]
+                | #[span.u-visually-hidden House House]
                 | Say hello!
 
 
@@ -16,7 +16,8 @@ div#pageContact
                         | We’ve often got our heads down working, but we’ll always make time to hear about your challenges and your ideas. So give us a shout, say a quick hello, and let’s make some magic happen.
 
                     p.u-flexbox.u-align-middle.u-justify-middle.u-padding-top-small.u-padding-bottom-small.u-color-black.u-text-uppercase.u-text-trackig-loose.u-text-size-small.u-baseline-small.u-border-grey-base(style='border-radius:10rem; border-width:0.25rem;')
-                        | We are currently #[span(data-availability-badge)].
+                        span.u-block.u-text-align-center
+                          | We are currently taking new projects for #[strong.u-color-blue-light.u-no-wrap Q3/Q4 2018]
 
     section.u-padding-bottom-large.u-padding-top-medium.u-bg-white.u-shadow-thick#start
         div.c-contain
@@ -34,7 +35,7 @@ div#pageContact
                                 | Name
                                 span.u-color-orange-dark &thinsp;*
                                 span.u-margin-left-xsmall.u-color-grey-medium.u-text-family-secondary.u-text-italic.u-tracked-loose
-                                    | e.g. Minnie Mouse
+                                    | e.g. M. Mouse
 
                         div.u-border-left-grey-medium.u-context.u-width-1of2(style='height:5rem;').company-field
                             input.u-position.u-top-0.u-left-0.u-right-0.u-bottom-0.u-width-full.u-border-0.u-text-size-base.u-padding-left-base.u-bg-white#form-company(required='' type='text' name='_company')
@@ -61,12 +62,12 @@ div#pageContact
                             | Your Message
                             span.u-color-orange-dark &thinsp;*
 
-                div.u-bg-grey-base.u-padding-top-medium.u-padding-bottom-medium
+                // div.u-bg-grey-base.u-padding-top-medium.u-padding-bottom-medium
 
                 div.u-clip.u-text-align-right
-                    button.c-button-block.u-bg-grey-base.u-color-grey-dark#form-expand(name='expand' type='button')
+                    // button.c-button-block.u-bg-grey-base.u-color-grey-dark#form-expand(name='expand' type='button')
                         | Add Project Details
-                    div.u-inline-block.u-margin-right-small--medium-up.u-margin-left-small--medium-up.u-color-grey-medium
+                    // div.u-inline-block.u-margin-right-small--medium-up.u-margin-left-small--medium-up.u-color-grey-medium
                         | or
                     button.c-button-block.u-bg-orange-dark.u-color-white#form-submit(name='submit' type='submit')
                         | Send Message
