@@ -3,7 +3,7 @@
 
 .c-nav-crumbs {
   position: fixed;
-  z-index: 100;
+  z-index: 1000;
 
   &.--large {
     top: $hh-spacing-base;
@@ -28,16 +28,18 @@
     left: 1em;
     width: 3em;
     height: 3em;
+    cursor: pointer;
 
     &.isExpanded {
       top: 1em;
       right: 1em;
-      bottom: 1em;
+      bottom: auto;
       left: 1em;
       width: auto;
       height: auto;
-      background: var(--white);
+      background: rgba(255, 255, 255, 0.9);
       border-radius: $hh-spacing-xsmall;
+      padding-bottom: 0.5em;
     }
   }
 
@@ -102,6 +104,7 @@
   height: 3rem;
   background: var(--blue-dark);
   box-shadow: 0 0 2px var(--white);
+  border-radius: 5px;
   line-height: 3rem;
   white-space: nowrap;
   transition: $hh-animation-slow;
@@ -114,6 +117,8 @@
   .c-nav-crumbs.isExpanded &,
   .c-nav-crumbs.--large:hover & {
     width: 11rem;
+    box-shadow: none;
+    background: none;
 
     @include break(768) {
       transform: translateX(0);
@@ -146,6 +151,13 @@
     transition: $hh-animation-slow;
   }
 
+  .c-nav-crumbs.isExpanded & svg {
+    path,
+    polyline {
+      stroke: var(--blue-dark);
+    }
+  }
+
   .c-nav-crumbs.isExpanded & div,
   .c-nav-crumbs.--large:hover & div {
     background: rgba(65, 138, 216, 0.25);
@@ -155,6 +167,7 @@
   .c-nav-crumbs.--large:hover & span {
     opacity: 1;
     transform: translateX(0);
+    color: var(--blue-dark);
   }
 }
 
@@ -190,7 +203,7 @@
     &::after {
       content: '';
       position: absolute;
-      left: 0.75rem;
+      left: 1rem;
       width: 1rem;
       height: 1rem;
       border-radius: 50%;
@@ -200,7 +213,7 @@
     &:not(:last-child)::before {
       content: '';
       position: absolute;
-      left: 1.2rem;
+      left: 1.425rem;
       width: ($hh-spacing-xsmall / 5);
       height: 2.25rem;
       margin-top: 1rem;
