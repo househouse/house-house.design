@@ -131,11 +131,12 @@
   svg {
     margin-left: 1rem;
     fill: none;
+    vertical-align: middle;
 
     path,
     polyline {
       stroke: var(--white);
-      stroke-width: 2;
+      stroke-width: 3;
       stroke-linejoin: round;
       stroke-linecap: round;
     }

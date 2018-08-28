@@ -1,13 +1,12 @@
 <template lang="pug">
     nav(v-bind:class="[{isExpanded: isExpanded}, 'c-nav-crumbs --mobile']")
         div.c-nav-crumbs__back(v-show='!isExpanded', @click='handleNavToggle')
-            svg(width='16px', height='14px', viewbox='0 0 16 14')
-                path(d='M1,7 L15,7')
-                polyline(points='7 1 1 7 7 13')
+            svg(xmlns="http://www.w3.org/2000/svg", width='18', height='18', viewbox='0 0 18 18')
+                path(d="M1.5 1.5 L14.5 1.5 L14.5 14.5 L1.5 14.5 z")
             span.c-nav-crumbs__home
                 | Navigation
         div.c-nav-crumbs__back(v-show="isExpanded", @click="handleNavToggle")
-            svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 16 16", width="16", height="16")
+            svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 18 18", width="18", height="18")
                 path(d="M1.1 1.1 L15 15")
                 path(d="M15 1.1 L1.1 15")
             span.c-nav-crumbs__home
