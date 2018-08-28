@@ -247,17 +247,13 @@
     transform: translateY($hh-spacing-xsmall / 1.75);
   }
 
-  // FIXME: Ref: L:238-L:252
-  // This is brittle code as it directly relies on a specific dom structure.
-  // Let's see if we can write it so that the styles can be scoped more widely
-  // so minor changes don't necessitate a css re-write. — @durfee
-  .c-nav-crumbs.isExpanded & li:nth-child(3)::before,
-  .c-nav-crumbs.--large:hover & li:nth-child(3)::before {
+  .c-nav-crumbs.isExpanded & li:nth-last-child(2)::before,
+  .c-nav-crumbs.--large:hover & li:nth-last-child(2)::before {
     background: linear-gradient(to bottom, var(--blue-dark) 10%, var(--orange-dark) 90%);
   }
 
-  .c-nav-crumbs.isExpanded & li:nth-child(4)::after,
-  .c-nav-crumbs.--large:hover & li:nth-child(4)::after {
+  .c-nav-crumbs.isExpanded & li:last-child::after,
+  .c-nav-crumbs.--large:hover & li:last-child::after {
     border-color: var(--orange-dark);
   }
 
