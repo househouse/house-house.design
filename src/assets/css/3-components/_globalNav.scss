@@ -2,283 +2,288 @@
 @import '../1-settings/_responsive';
 
 .c-nav-crumbs {
-    position: fixed;
-    z-index: 100;
+  position: fixed;
+  z-index: 100;
 
-    &.--large {
-        top: $hh-spacing-base;
-        right: 5vw;
-        left: auto;
-        display: none;
-        overflow: hidden;
-        width: 5rem;
-        max-height: 15rem;
-        margin-right: 5%;
-        padding: $hh-spacing-base $hh-spacing-small;
-        border-radius: 16px;
-        transform: scale(0.95);
-        transform-origin: top left;
-        transition: $hh-animation-slow;
+  &.--large {
+    top: $hh-spacing-base;
+    right: 5vw;
+    left: auto;
+    display: none;
+    overflow: hidden;
+    width: 5rem;
+    max-height: 15rem;
+    margin-right: 5%;
+    padding: $hh-spacing-base $hh-spacing-small;
+    border-radius: 16px;
+    transform: scale(0.95);
+    transform-origin: top left;
+    transition: $hh-animation-slow;
+  }
+
+  &.--mobile {
+    top: 1em;
+    right: auto;
+    bottom: auto;
+    left: 1em;
+    width: 3em;
+    height: 3em;
+
+    &.isExpanded {
+      top: 1em;
+      right: 1em;
+      bottom: 1em;
+      left: 1em;
+      width: auto;
+      height: auto;
+      background: var(--white);
+      border-radius: $hh-spacing-xsmall;
     }
+  }
+
+  ul {
+    display: block;
+    white-space: nowrap;
+    list-style: none;
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        opacity: 0.7 !important;
+      }
+    }
+  }
+
+  &.--large:hover {
+    width: 10rem;
+    max-height: 30rem;
+    background: var(--white);
+  }
+
+  @include break(768) {
+    width: 8rem;
+    margin-right: 5%;
+    border: 1px solid rgba(0, 0, 200, 0);
+    transform: translateX(0);
 
     &.--mobile {
-        top: 1em;
-        right: auto;
-        bottom: auto;
-        left: 1em;
-        width: 3em;
-        height: 3em;
-
-        &.isExpanded {
-            top: 1em;
-            right: 1em;
-            bottom: 1em;
-            left: 1em;
-            width: auto;
-            height: auto;
-            background: var(--white);
-        }
+      display: none;
     }
 
-    ul {
-        display: block;
-        white-space: nowrap;
-        list-style: none;
-
-        a {
-            text-decoration: none;
-
-            &:hover {
-                opacity: 0.7 !important;
-            }
-        }
+    &.--large {
+      display: block;
     }
 
+    &.isExpanded,
     &.--large:hover {
-        width: 10rem;
-        max-height: 30rem;
-        background: var(--white);
+      width: 15rem;
+      border: 1px solid rgba(0, 0, 200, 0.15);
+      background: var(--white);
+      box-shadow: 0 0 10em rgba(0, 0, 200, 0.15);
+      transform: scale(1);
     }
+  }
 
-    @include break(768) {
-        width: 8rem;
-        margin-right: 5%;
-        border: 1px solid rgba(0, 0, 200, 0);
-        transform: translateX(0);
+  @include break(900) {
+    width: 10rem;
 
-        &.--mobile {
-            display: none;
-        }
-
-        &.--large {
-            display: block;
-        }
-
-        &.isExpanded,
-        &.--large:hover {
-            width: 15rem;
-            border: 1px solid rgba(0, 0, 200, 0.15);
-            background: var(--white);
-            box-shadow: 0 0 10em rgba(0, 0, 200, 0.15);
-            transform: scale(1);
-        }
+    &.--large {
+      left: 75vw;
     }
-
-    @include break(900) {
-        width: 10rem;
-
-        &.--large {
-            left: 75vw;
-        }
-    }
+  }
 }
 
 .c-nav-crumbs__back {
-    position: relative;
-    display: block;
-    overflow: hidden;
-    width: 3rem;
-    height: 3rem;
-    background: var(--blue-dark);
-    box-shadow: 0 0 2px var(--white);
-    line-height: 3rem;
-    white-space: nowrap;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 3rem;
+  height: 3rem;
+  background: var(--blue-dark);
+  box-shadow: 0 0 2px var(--white);
+  line-height: 3rem;
+  white-space: nowrap;
+  transition: $hh-animation-slow;
+
+  &,
+  &::after {
     transition: $hh-animation-slow;
+  }
 
-    &,
-    &::after {
-        transition: $hh-animation-slow;
-    }
-
-    .c-nav-crumbs.isExpanded &,
-    .c-nav-crumbs.--large:hover & {
-        width: 11rem;
-
-        @include break(768) {
-            transform: translateX(0);
-        }
-    }
+  .c-nav-crumbs.isExpanded &,
+  .c-nav-crumbs.--large:hover & {
+    width: 11rem;
 
     @include break(768) {
-        display: none;
+      transform: translateX(0);
     }
-    svg {
-        margin-left: 1rem;
-        fill: none;
+  }
 
-        path,
-        polyline {
-            stroke: var(--white);
-            stroke-width: 2;
-            stroke-linejoin: round;
-            stroke-linecap: round;
-        }
-    }
+  @include break(768) {
+    display: none;
+  }
+  svg {
+    margin-left: 1rem;
+    fill: none;
 
-    span {
-        display: inline-block;
-        padding-right: 1rem;
-        padding-left: 1rem;
-        opacity: 0;
-        color: rgba(255, 255, 255, 0);
-        transform: translate(-1rem, 0);
-        transition: $hh-animation-slow;
+    path,
+    polyline {
+      stroke: var(--white);
+      stroke-width: 2;
+      stroke-linejoin: round;
+      stroke-linecap: round;
     }
+  }
 
-    .c-nav-crumbs.isExpanded & div,
-    .c-nav-crumbs.--large:hover & div {
-        background: rgba(65, 138, 216, 0.25);
-    }
+  span {
+    display: inline-block;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    opacity: 0;
+    color: rgba(255, 255, 255, 0);
+    transform: translate(-1rem, 0);
+    transition: $hh-animation-slow;
+  }
 
-    .c-nav-crumbs.isExpanded & span,
-    .c-nav-crumbs.--large:hover & span {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  .c-nav-crumbs.isExpanded & div,
+  .c-nav-crumbs.--large:hover & div {
+    background: rgba(65, 138, 216, 0.25);
+  }
+
+  .c-nav-crumbs.isExpanded & span,
+  .c-nav-crumbs.--large:hover & span {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .c-nav-crumbs__major {
-    padding-left: 3rem;
-    opacity: 0;
-    transition: $hh-animation-slow;
-    pointer-events: none;
+  padding-left: 3rem;
+  opacity: 0;
+  transition: $hh-animation-slow;
+  pointer-events: none;
+
+  @include break(768) {
+    opacity: 1;
+  }
+
+  .c-nav-crumbs.isExpanded &,
+  .c-nav-crumbs.--large:hover & {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 
     @include break(768) {
-        opacity: 1;
+      transform: translateX(0);
     }
 
-    .c-nav-crumbs.isExpanded &,
-    .c-nav-crumbs.--large:hover & {
+    li:not(:last-child)::before {
+      opacity: 0.5;
+    }
+  }
+
+  li {
+    margin-bottom: $hh-spacing-xsmall;
+    line-height: $hh-baseline-base;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0.75rem;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      transition: $hh-animation-slow;
+    }
+
+    &:not(:last-child)::before {
+      content: '';
+      position: absolute;
+      left: 1.2rem;
+      width: ($hh-spacing-xsmall / 5);
+      height: 2.25rem;
+      margin-top: 1rem;
+      background-color: var(--grey-medium);
+      transition: $hh-animation-slow;
+    }
+
+    a {
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(-0.5rem);
+      transition: $hh-animation-slow;
+
+      .c-nav-crumbs.isExpanded &,
+      .c-nav-crumbs.--large:hover & {
         opacity: 1;
         transform: translateY(0);
-        pointer-events: auto;
-
-        @include break(768) {
-            transform: translateX(0);
-        }
-
-        li:not(:last-child)::before {
-            opacity: 0.5;
-        }
+      }
     }
+  }
 
-    li {
-        margin-bottom: $hh-spacing-xsmall;
-        line-height: $hh-baseline-base;
+  .c-nav-crumbs & li::after {
+    border: 2px solid var(--grey-medium);
+    background-color: var(--grey-medium);
+  }
 
-        &::after {
-            content: '';
-            position: absolute;
-            left: 0.75rem;
-            width: 1rem;
-            height: 1rem;
-            border-radius: 50%;
-            transition: $hh-animation-slow;
-        }
+  .c-nav-crumbs.isExpanded & li::after,
+  .c-nav-crumbs.--large:hover & li::after {
+    border-color: var(--blue-dark);
+    background-color: var(--white);
+    transform: translateY($hh-spacing-xsmall / 1.75);
+  }
 
-        &:not(:last-child)::before {
-            content: '';
-            position: absolute;
-            left: 1.2rem;
-            width: ($hh-spacing-xsmall / 5);
-            height: 2.25rem;
-            margin-top: 1rem;
-            background-color: var(--grey-medium);
-            transition: $hh-animation-slow;
-        }
+  // FIXME: Ref: L:238-L:252
+  // This is brittle code as it directly relies on a specific dom structure.
+  // Let's see if we can write it so that the styles can be scoped more widely
+  // so minor changes don't necessitate a css re-write. — @durfee
+  .c-nav-crumbs.isExpanded & li:nth-child(3)::before,
+  .c-nav-crumbs.--large:hover & li:nth-child(3)::before {
+    background: linear-gradient(to bottom, var(--blue-dark) 10%, var(--orange-dark) 90%);
+  }
 
-        a {
-            display: inline-block;
-            opacity: 0;
-            transform: translateY(-0.5rem);
-            transition: $hh-animation-slow;
+  .c-nav-crumbs.isExpanded & li:nth-child(4)::after,
+  .c-nav-crumbs.--large:hover & li:nth-child(4)::after {
+    border-color: var(--orange-dark);
+  }
 
-            .c-nav-crumbs.isExpanded &,
-            .c-nav-crumbs.--large:hover & {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    }
+  .c-nav-crumbs.isExpanded & li:not(:last-child)::before,
+  .c-nav-crumbs.--large:hover & li:not(:last-child)::before {
+    opacity: 1;
+    background-color: var(--blue-dark);
+  }
 
-    .c-nav-crumbs & li::after {
-        border: 2px solid var(--grey-medium);
-        background-color: var(--grey-medium);
-    }
-
-    .c-nav-crumbs.isExpanded & li::after,
-    .c-nav-crumbs.--large:hover & li::after {
-        border-color: var(--blue-dark);
-        background-color: var(--white);
-        transform: translateY($hh-spacing-xsmall / 1.75);
-    }
-
-    .c-nav-crumbs.isExpanded & li:nth-child(3)::before,
-    .c-nav-crumbs.--large:hover & li:nth-child(3)::before {
-        background: linear-gradient(to bottom, var(--blue-dark) 10%, var(--orange-dark) 90%);
-    }
-
-    .c-nav-crumbs.isExpanded & li:nth-child(4)::after,
-    .c-nav-crumbs.--large:hover & li:nth-child(4)::after {
-        border-color: var(--orange-dark);
-    }
-
-    .c-nav-crumbs.isExpanded & li:not(:last-child)::before,
-    .c-nav-crumbs.--large:hover & li:not(:last-child)::before {
-        opacity: 1;
-        background-color: var(--blue-dark);
-    }
-
-    .c-nav-crumbs & li.isActive::after {
-        border: 2px solid var(--blue-dark);
-        background-color: var(--blue-dark);
-    }
+  .c-nav-crumbs & li.isActive::after {
+    border: 2px solid var(--blue-dark);
+    background-color: var(--blue-dark);
+  }
 }
 
 .c-nav-crumbs__minor {
-    position: absolute;
-    padding-left: 3rem;
-    opacity: 0;
-    transform: translateY(-10px);
+  position: absolute;
+  padding-left: 3rem;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: $hh-animation-slow;
+
+  a {
     transition: $hh-animation-slow;
 
-    a {
-        transition: $hh-animation-slow;
-
-        &:hover {
-            color: #9098a9;
-        }
+    &:hover {
+      color: #9098a9;
     }
+  }
 
-    .c-nav-crumbs.isExpanded &,
-    .c-nav-crumbs.--large:hover & {
-        position: relative;
-        opacity: 1;
-        transform: translateY(0);
-        pointer-events: auto;
+  .c-nav-crumbs.isExpanded &,
+  .c-nav-crumbs.--large:hover & {
+    position: relative;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 
-        @include break(768) {
-            transform: translateY(0) translateX(0);
-        }
+    @include break(768) {
+      transform: translateY(0) translateX(0);
     }
+  }
 }
