@@ -14,7 +14,7 @@ import GlobalCTA from '@/components/globalCTA';
 import GlobalContent from '@/components/globalContent';
 import GlobalFooter from '@/components/globalFooter';
 import GlobalHeader from '@/components/globalHeader';
-import GlobalNav from '@/components/globalNav';
+import GlobalNav from '@/components/Navigation/globalNav';
 
 export default {
   name: 'app',

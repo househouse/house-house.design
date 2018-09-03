@@ -24,7 +24,7 @@ div#pageWork
                         a.c-faux-link__overlay(href='http://vancouverdesignwk.com/', aria-hidden='true') Find out more about VDW
                         .u-context.u-stack-basic.u-margin-bottom-lg.u-color-light
                             h2.u-bold
-                                span VDW
+                                span VDW 2017
                         .c-card__image.u-position.u-top-0.u-bottom-0.u-left-0.u-right-0.u-stack-under.u-bg-cover.u-bg-center.js-card-visible.u-bg-vdw(role='presentation')
         .u-flexbox--narrow-up.u-flex-wrap
             .u-float-start.u-width-1of2--narrow-up.u-max-width-1of3--medium-up.u-flex-basis-1of3--medium-up

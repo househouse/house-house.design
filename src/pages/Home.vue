@@ -22,7 +22,7 @@ div#pageHome
                     p.u-text-family-secondary.u-text-size-medium.u-baseline-medium
                         | Working with House House means having access to our
                         | resident group of design thinkers and doers. We become
-                        | an extension of your team, scaling up and down as you&nbsp;do.
+                        | an extension of your team, scaling up and down as&nbsp;you&nbsp;do.
                     router-link(to='/housemates').c-button-link.c--purple.c--with-icon.u-text-secondary.u-text-size-medium.u-baseline-small
                         <svg width="35" height="32" viewBox="0 0 35 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>Icon: Assembling</title>
@@ -61,9 +61,9 @@ div#pageHome
                     h2.c-heading.c--3.u-color-black
                         | Connecting you with the right skills
                     p.u-text-family-secondary.u-text-size-medium.u-baseline-medium
-                        | We Residents and Housemates think in code, in motion,
-                        | in imagery, in words; from content strategy to
-                        | JavaScript hacking to icon animation, there’s a House
+                        | Residents and Housemates think in code, in motion,
+                        | in imagery, in words. From content strategy to
+                        | JavaScript development to icon animation, there’s a House
                         | House designer with the right experience and skills
                         | who can integrate into your upcoming project.
                     router-link(to='/work').c-button-link.c--blue.c--with-icon.u-text-secondary.u-text-size-medium.u-baseline-small
@@ -108,8 +108,8 @@ export default {
 
 <style>
 h1 {
-	background: linear-gradient(135deg, var(--black) 0%, rgba(0,0,100,0.8) 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  background: linear-gradient(135deg, var(--black) 0%, rgba(0, 0, 100, 0.8) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 </style>
