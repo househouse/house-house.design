@@ -327,14 +327,17 @@
 
 .u-text-list-bullets,
 %u-text-list-bullets {
-    list-style: disc;
-
     li {
+        position: relative;
         margin-left: $hh-spacing-small;
+
+        &::before {
+            content: "◉";
+            position: absolute;
+            left: -($hh-spacing-small);
+            color: var(--orange-dark);
+            font-weight: bold;
+            transform: scale(0.65) translate(-25%, 0);
+        }
     }
-}
-
-.u-text-list-bullets,
-%u-text-list-bullets {
-
 }

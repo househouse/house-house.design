@@ -2,10 +2,9 @@
 div#pageWork
 
     section.u-padding-bottom-medium
-        div.c-contain.u-color-black
+        div.c-contain.u-color-blue-light
             h1.c-heading-c--1.u-margin-bottom-small.u-max-width-3of4
-                | #[span.u-visually-hidden House House: ]
-                | The Work
+                | ↳ Work
 
 
     section.u-clip.u-color-white
