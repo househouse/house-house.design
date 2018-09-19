@@ -5,7 +5,7 @@ footer.u-bg-black.u-color-white.u-context.u-clip.u-padding-bottom-medium.u-paddi
     div.c-contain--narrow-up.u-flexbox--medium-up.u-align-middle
 
         div.u-flex.u-margin-bottom-base
-            div.u-bg-blue-dark.u-padding-top-base.u-padding-bottom-base.u-padding-left-xsmall--narrow-up.u-padding-right-xsmall--narrow-up.u-padding-right-base--medium-up.u-context.x-question-outer#question
+            div.u-bg-blue-dark.u-padding-top-base.u-padding-bottom-base.u-padding-left-xsmall--narrow-up.u-padding-left-base--medium-up.u-padding-right-xsmall--narrow-up.u-padding-right-base--medium-up.u-context.x-question-outer#question
                 div.u-flexbox.u-align-middle.u-text-align-center.x-question-inner
 
                     div.u-flex-none.u-margin-right-small--narrow-only.x-question-photo
@@ -85,9 +85,13 @@ export default {
 
 <style lang="scss" scoped>
     nav a {
-        margin-left: 2vw;
-        @media screen and (max-width: 25rem) {
+        @media screen and (max-width: 45rem) {
           height: 40px;
+          margin-right: 2vw;
+        }
+
+        @media screen and (min-width: 46rem) {
+          margin-left: 2vw;
         }
     }
 
