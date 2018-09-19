@@ -5,7 +5,7 @@ div#pageHome
         div.c-contain.u-color-black
             h1.c-heading-c--1.u-margin-bottom-small.u-max-width-2of3--medium-up
                 | #[span.u-visually-hidden House House]
-                | is a #[span._u-color-grey-dark design] studio that scales with your team and project needs.
+                | A design studio and freelancer community.
             ul.u-max-width-1of2--medium-up.u-text-list-bullets.u-text-family-secondary.u-text-size-medium.u-baseline-medium
                 li
                     | Grow your team’s abilities, capacity, and potential by adding some
