@@ -68,10 +68,10 @@ div#pageHome
                     h2.c-heading.c--3.u-color-black
                         | Connecting you with the right skills
                     p.u-text-family-secondary.u-text-size-medium.u-baseline-medium
-                        | Residents and Housemates think in code, in motion,
-                        | in imagery, in words. From content strategy to
-                        | JavaScript development to icon animation, there’s a House
-                        | House designer with the right experience and skills
+                        | We Housemates think in code, in motion, in imagery, in
+                        | words; from content strategy to JavaScript development
+                        | to icon animation, there’s a design-thinking person at
+                        | House House with the right experience and skills
                         | who can integrate into your upcoming project.
                     router-link(to='/work').c-button-link.c--blue.c--with-icon.u-text-secondary.u-text-size-medium.u-baseline-small
                         <svg width="33" height="32" viewBox="0 0 33 32" xmlns="http://www.w3.org/2000/svg">
