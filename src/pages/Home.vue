@@ -1,13 +1,19 @@
 <template lang="pug">
 div#pageHome
 
-    section.u-padding-bottom-medium.u-padding-bottom-large--medium-up.u-context
+    section.u-padding-bottom-medium.u-padding-bottom-xlarge--medium-up.u-context
         div.c-contain.u-color-black
             h1.c-heading-c--1.u-margin-bottom-small.u-max-width-2of3--medium-up
-                | #[span.u-visually-hidden House House is]
-                | A multidisciplinary #[span._u-color-grey-dark design] studio that scales as your team does
-            p.u-max-width-1of2--medium-up.u-text-family-secondary.u-text-size-medium.u-baseline-medium
-                | Need some extra hands to get organized, build a new digital product, or finally improve that service you’re offering? Grow your team’s abilities, capacity, and potential by adding a House House designer to your #[span.u-no-wrap next project].
+                | #[span.u-visually-hidden House House]
+                | A design studio and freelancer community.
+            ul.u-max-width-1of2--medium-up.u-text-list-bullets.u-text-family-secondary.u-text-size-medium.u-baseline-medium
+                li
+                    | Grow your team’s abilities, capacity, and potential by adding some
+                    | extra Housemate hands to your next project
+                    | #[span.u-no-wrap or sprint, #[em.u-color-grey-dark or…]]
+                li
+                    | Hire our team of design and development consultants, strategists, and producers
+                    | to turn your digital product ideas into #[span.u-no-wrap a reality].
 
 
     section.u-padding-bottom-medium.u-padding-bottom-xlarge--medium-up.u-padding-top-medium.u-padding-top-xlarge--medium-up.u-bg-gradient-whiteout.u-shadow-thick
@@ -20,9 +26,10 @@ div#pageHome
                     h2.c-heading.c--3.u-color-black
                         | Flexible, so you don’t have to be
                     p.u-text-family-secondary.u-text-size-medium.u-baseline-medium
-                        | Working with House House means having access to our
-                        | resident group of design thinkers and doers. We become
-                        | an extension of your team, scaling up and down as&nbsp;you&nbsp;do.
+                        | Working with House House means having access to a community
+                        | of talented design thinkers and doers — designers, developers,
+                        | writers, strategists — ready to help you figure out your next
+                        | project.
                     router-link(to='/housemates').c-button-link.c--purple.c--with-icon.u-text-secondary.u-text-size-medium.u-baseline-small
                         <svg width="35" height="32" viewBox="0 0 35 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>Icon: Assembling</title>
@@ -42,7 +49,7 @@ div#pageHome
                         | Startups and enterprises alike go through pivots,
                         | shifts, and changes. Hiring the right designer can be
                         | a lengthy process, and contracting always leaves you
-                        | a new set of challenges. House House designers are
+                        | a new set of challenges. Housemates are
                         | partnered to your team, ensuring quick ramp-up and
                         | contextualization.
                     router-link(to='/approach').c-button-link.c--green.c--with-icon.u-text-secondary.u-text-size-medium.u-baseline-small
@@ -61,10 +68,10 @@ div#pageHome
                     h2.c-heading.c--3.u-color-black
                         | Connecting you with the right skills
                     p.u-text-family-secondary.u-text-size-medium.u-baseline-medium
-                        | Residents and Housemates think in code, in motion,
-                        | in imagery, in words. From content strategy to
-                        | JavaScript development to icon animation, there’s a House
-                        | House designer with the right experience and skills
+                        | We Housemates think in code, in motion, in imagery, in
+                        | words; from content strategy to JavaScript development
+                        | to icon animation, there’s a design-thinking person at
+                        | House House with the right experience and skills
                         | who can integrate into your upcoming project.
                     router-link(to='/work').c-button-link.c--blue.c--with-icon.u-text-secondary.u-text-size-medium.u-baseline-small
                         <svg width="33" height="32" viewBox="0 0 33 32" xmlns="http://www.w3.org/2000/svg">
@@ -107,9 +114,4 @@ export default {
 </script>
 
 <style>
-h1 {
-  background: linear-gradient(135deg, var(--black) 0%, rgba(0, 0, 100, 0.8) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 </style>

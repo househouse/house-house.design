@@ -2,10 +2,9 @@
 div#pageWork
 
     section.u-padding-bottom-medium
-        div.c-contain.u-color-black
+        div.c-contain.u-color-purple-dark
             h1.c-heading-c--1.u-margin-bottom-small.u-max-width-3of4
-                | #[span.u-visually-hidden House House is]
-                | The Housemates
+                | ↳ Housemates
 
     section.u-padding-bottom-large
         div.c-contain
@@ -22,7 +21,7 @@ div#pageWork
                         | Similarly, we’ll staff your project by choosing the designers who best fit the requirements.
                         | Whether it’s design direction or support, your team acquires the right number of folks handpicked for your specific situation.
 
-    section.u-padding-bottom-xlarge.u-padding-top-xlarge.u-bg-green-light.u-shadow-thick.u-border-top-green-medium
+    section.u-padding-bottom-xlarge.u-padding-top-xlarge.u-bg-purple-medium.u-shadow-thick.u-border-top-purple-dark
         div.c-contain
             div.c-text-content.u-text-size-large.u-baseline-large.u-color-white.u-text-align-center
                 p
@@ -43,7 +42,7 @@ div#pageWork
                     h3.u-margin-bottom-xsmall
                         | Campaigns
                         | #[span.u-color-grey-medium / Fixed-Rate Pricing]
-                    p Huge scope? Complex requirements? Extended timelines? Depending on the project, it may sometimes be more appropriate to estimate the project as a whole. During a projects’s RFP phase, proposal phase, or discovery phase, we’ll work with you to plan the type and amount of suppert you’ll need. Instead of us delivering your project and parting ways, our Housemates will coach, mentor, support, and work in and on your team, setting you up for long-term success.
+                    p Huge scope? Complex requirements? Extended timelines? Depending on the project, it may sometimes be more appropriate to estimate the project as a whole. During a projects’s RFP phase, proposal phase, or discovery phase, we’ll work with you to plan the type and amount of support you’ll need. Instead of us delivering your project and parting ways, our Housemates will coach, mentor, support, and work in and on your team, setting you up for long-term success.
 
     div(hidden)
         section.u-padding-bottom-large

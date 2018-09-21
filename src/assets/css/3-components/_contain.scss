@@ -8,6 +8,15 @@
 
     @include --narrow-up {
         padding: 0 10%;
+
+        &--narrow-up {
+          max-width: $hh-content-area-wide;
+
+          margin-right: auto;
+          margin-left: auto;
+
+          padding: 0 5%;
+        }
     }
 
     @include --medium-up {

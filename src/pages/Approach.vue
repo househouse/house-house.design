@@ -2,10 +2,9 @@
 div#pageApproach
 
     section.u-padding-bottom-medium
-        div.c-contain.u-color-black
+        div.c-contain.u-color-green-dark
             h1.c-heading-c--1.u-margin-bottom-small.u-max-width-3of4
-                | #[span.u-visually-hidden House House:]
-                | The Approach
+                | ↳ Approach
 
     section.u-padding-bottom-large
         div.c-contain.u-flexbox--medium-up.u-align-end
@@ -57,9 +56,6 @@ div#pageApproach
                         | We’ll always aim to give you inclusive and sustainable solutions that have your audience’s interests at their heart.
                         | To do that well, we depend on our deep skills in multiple areas of service, experience, and visual design.
 
-                    router-link(to='/approach').c-button-link.c--orange.u-text-size-base.u-baseline-small
-                        | Learn how we work
-
             div.u-flex-none.c-text-content.u-no-wrap
                 div.u-text-size-medium.u-baseline-medium
                     ul.c-pill-group.c--blue-dark.u-margin-bottom-base
@@ -78,8 +74,8 @@ div#pageApproach
                         li 🤝 Team Building
                         li 🎨 Workshops
                         li 📝 Training
-                    router-link(to='/approach').c-button-link.c--orange.u-text-size-base.u-baseline-small
-                        | Learn how we work
+                    router-link(to='/work').c-button-link.c--orange.u-text-size-base.u-baseline-small
+                        | See what we’ve done ⇗
 </template>
 
 <script>

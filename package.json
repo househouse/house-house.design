@@ -13,6 +13,7 @@
   "dependencies": {
     "node-sass": "^4.9.2",
     "particles.js": "^2.0.0",
+    "prettier": "^1.14.3",
     "pug": "^2.0.1",
     "sass-loader": "^6.0.7",
     "vue": "^2.5.2",

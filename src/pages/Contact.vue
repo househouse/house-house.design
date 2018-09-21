@@ -2,10 +2,9 @@
 div#pageContact
 
     section.u-padding-bottom-medium
-        div.c-contain.u-color-black
+        div.c-contain.u-color-orange-dark
             h1.c-heading-c--1.u-margin-bottom-small.u-max-width-3of4
-                | #[span.u-visually-hidden House House]
-                | Say hello!
+              | ↳ Start a project
 
 
     section.u-padding-bottom-large
