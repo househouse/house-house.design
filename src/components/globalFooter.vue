@@ -36,12 +36,12 @@ footer.u-bg-black.u-color-white.u-context.u-clip.u-padding-bottom-medium.u-paddi
                     | Vision &amp; Values
                 // router-link.u-block(v-on:click.native='handleNavToggle' to='/privacy-security')
                     | Privacy &amp; Security
-                a.u-block(href='https://paper.dropbox.com/doc/Our-Code-of-Conduct-j62RafLNgIaUjUsOGeVwA')
-                    | Code of Conduct
                 a.u-block(href='https://linkedin.com/company/house-house')
                     | LinkedIn
                 a.u-block(href='https://github.com/househouse')
                     | GitHub
+                a.u-block(href='https://paper.dropbox.com/doc/Our-Code-of-Conduct-j62RafLNgIaUjUsOGeVwA')
+                    | Our Code of Conduct
 
             div.u-margin-bottom-base.u-color-grey-dark.u-text-align-left.u-text-align-right--medium-up.u-text-size-small.u-baseline-small
                 p
