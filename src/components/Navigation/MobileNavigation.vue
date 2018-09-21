@@ -19,7 +19,7 @@
                 li(v-bind:class="{isActive: currentPath === route.path}")
                     router-link.u-block.u-color-blue-dark.u-text-weight-bold.u-text-family-secondary(v-on:click.native='handleNavToggle', v-bind:to='route.path')
                         | {{ route.name }}
-        ul.c-nav-crumbs__minor.u-context.u-text-size-base
+        // ul.c-nav-crumbs__minor.u-context.u-text-size-base
             li
                 router-link.u-color-purple-medium(v-on:click.native='handleNavToggle', to='/contact')
                     | Contact us

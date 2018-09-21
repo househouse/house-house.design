@@ -32,12 +32,16 @@ footer.u-bg-black.u-color-white.u-context.u-clip.u-padding-bottom-medium.u-paddi
 
             h2.u-visually-hidden More Links:
             nav.u-flexbox--narrow-up.u-margin-bottom-base.u-justify-end--medium-up.u-text-size-small.u-text-align-center.u-baseline-small
-                router-link.u-block(v-on:click.native='handleNavToggle' to='/vision-values')
+                // router-link.u-block(v-on:click.native='handleNavToggle' to='/vision-values')
                     | Vision &amp; Values
-                router-link.u-block(v-on:click.native='handleNavToggle' to='/privacy-security')
+                // router-link.u-block(v-on:click.native='handleNavToggle' to='/privacy-security')
                     | Privacy &amp; Security
-                router-link.u-block(v-on:click.native='handleNavToggle' to='/xxxxx')
-                    | Code of Conduct
+                a.u-block(href='https://linkedin.com/company/house-house')
+                    | LinkedIn
+                a.u-block(href='https://github.com/househouse')
+                    | GitHub
+                a.u-block(href='https://paper.dropbox.com/doc/Our-Code-of-Conduct-j62RafLNgIaUjUsOGeVwA')
+                    | Our Code of Conduct
 
             div.u-margin-bottom-base.u-color-grey-dark.u-text-align-left.u-text-align-right--medium-up.u-text-size-small.u-baseline-small
                 p
