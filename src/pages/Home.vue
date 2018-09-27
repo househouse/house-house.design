@@ -23,8 +23,8 @@ div#pageHome
                 p.u-margin-bottom-xsmall.u-color-grey-dark
                     | We recently helped the tattoo removal startup explore and build a bespoke web app.
                 router-link(to='#').c-button-link.c--orange
-                    | Learn more
-
+                    | Learn more ⇗
+                    
     section.u-padding-bottom-medium.u-padding-bottom-xlarge--medium-up.u-padding-top-medium.u-padding-top-xlarge--medium-up.u-bg-gradient-whiteout.u-shadow-thick
         div.c-contain
 
