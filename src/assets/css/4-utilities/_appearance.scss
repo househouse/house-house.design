@@ -24,6 +24,16 @@
     }
 }
 
+.u-corners {
+    border-radius: 0.25rem;
+
+    @include --medium-up {
+        &--medium-up {
+            border-radius: 0.25rem;
+        }
+    }
+}
+
 .u-half-transparent {
     opacity: 0.5;
 

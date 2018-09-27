@@ -1,4 +1,5 @@
-.c-resident {
+.c-resident,
+%c-resident {
   @extend %u-context;
   z-index: 10;
 
