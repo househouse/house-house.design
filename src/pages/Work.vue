@@ -5,7 +5,7 @@ div#pageWork
         div.c-contain.u-color-blue-light
             h1.c-heading-c--1.u-margin-bottom-small.u-max-width-3of4
                 | ↳ Work
-
+    //- TODO: Each of these sections should be factored out into layout components
     section.u-padding-top-base.u-padding-top-large--medium-up.u-bg-blue-medium.u-color-white
         div.c-contain
             div.u-flexbox--medium-up
@@ -13,7 +13,7 @@ div#pageWork
                 div.u-flex.u-order-1--medium-up
                     article.c-card.c--no-padding.c-faux-link.x-triumf.u-context.u-clip.u-margin-bottom-base.u-margin-bottom-none--medium-up
                         div.c-card__image.u-position.u-top-0.u-bottom-0.u-left-0.u-right-0.u-bg-cover.u-bg-top.u-bg-triumf(role='presentation')
-                        a.c-faux-link__overlay(href='#') Find out more about TRIUMF
+                        //- a.c-faux-link__overlay(href='#') Find out more about TRIUMF
 
                 div.u-flex-shrink.u-order-2--medium-up.u-width-1of4--medium-up.u-margin-left-base--medium-up.u-padding-bottom-base
                     p.u-margin-bottom-small
@@ -53,13 +53,13 @@ div#pageWork
 
                 div.u-flex.u-order-2--medium-up
 
-                    article.c-card.c--no-padding.c-faux-link.x-blancink.u-context.u-clip.u-margin-bottom-base.u-margin-bottom-large--medium-up
+                    article.c-card.c--no-padding.c-faux-link.x-blancink.u-context.u-clip.u-margin-bottom-base.u-margin-bottom-medium--medium-up
                         div.c-card__image.u-position.u-top-0.u-bottom-0.u-left-0.u-right-0.u-bg-cover.u-bg-top.u-bg-blancink(role='presentation')
-                        a.c-faux-link__overlay(href='https://mobify.com') Find out more about Blanc Ink
+                        a.c-faux-link__overlay(href='https://blancink.com') Find out more about blanc ink
 
                 div.u-flex-shrink.u-order-1--medium-up.u-width-1of4--medium-up.u-margin-right-base--medium-up.u-padding-bottom-base
                     p.u-margin-bottom-xlarge
-                        | We provided ongoing product design support for the blanc ink app.
+                        | For the past two years, we’ve supported the blanc ink team by helping them iterate and design their marketing tool. After the first iteration provided a proof of concept, they came back to us and together we designed and built their market-ready web app.
                     div.u-half-transparent
                         p.u-margin-bottom-xsmall.u-text-size-small Supporting the team at #[span.u-visually-hidden Blanc Ink]
                         p.u-text-size-large.u-text-bold blanc ink
@@ -72,11 +72,12 @@ div#pageWork
 
                     article.c-card.c--no-padding.c-faux-link.x-sedna.u-context.u-clip.u-margin-bottom-base.u-margin-bottom-none--medium-up
                         div.c-card__image.u-position.u-top-0.u-bottom-0.u-left-0.u-right-0.u-bg-cover.u-bg-top.u-bg-sedna(role='presentation')
-                        a.c-faux-link__overlay(href='https://mobify.com') Find out more about SEDNA
+                        a.c-faux-link__overlay(href='https://sedna.com') Find out more about SEDNA
 
                 div.u-flex-shrink.u-order-2--medium-up.u-width-1of4--medium-up.u-margin-left-base--medium-up.u-padding-bottom-base
                     p.u-margin-bottom-xlarge
-                        | We provided ongoing product design support for the SEDNA app.
+                        | We're embeded with the product team at SEDNA, helping them design and ship enterprise collaborative email for shipping companies.
+                        | We're leading product and visual design, working to build the foundation for their design system, and establish best practices for their growing team.
                     div.u-half-transparent
                         p.u-margin-bottom-xsmall.u-text-size-small Supporting the team at #[span.u-visually-hidden SEDNA]
                         p.u-text-size-large.u-text-bold SEDNA
@@ -88,7 +89,7 @@ div#pageWork
                 div.u-flex.u-order-2--medium-up
                     article.c-card.c--no-padding.c-faux-link.x-imby.u-context.u-clip.u-margin-bottom-base.u-margin-bottom-none--medium-up
                         div.c-card__image.u-position.u-top-0.u-bottom-0.u-left-0.u-right-0.u-bg-cover.u-bg-top.u-bg-imby(role='presentation')
-                        a.c-faux-link__overlay(href='https://mobify.com') Find out more about IMBY
+                        a.c-faux-link__overlay(href='https://imbyx.com/') Find out more about IMBY
 
                 div.u-flex-shrink.u-order-1--medium-up.u-width-1of4--medium-up.u-margin-right-base--medium-up.u-padding-bottom-base
                     p.u-margin-bottom-large--medium-up
@@ -114,7 +115,7 @@ div#pageWork
 
                 div.u-flex-shrink.u-order-2--medium-up.u-width-1of4--medium-up.u-margin-left-base--medium-up
                     p.u-margin-bottom-large--medium-up
-                        | We built a flexible, readable site for #[Connect for Kids] by designing for a vast user base. Our task was to design and build a site that loaded quickly, where content was readable, and was understood by wide-ranged audience including kids, seniors, and ESL folks.
+                        | We built a flexible, readable site for #[Connect for Kids] by designing for a vast user base. Our task was to design and build a site that loaded quickly, where content was readable, and was understood by wide-ranged, multi-national audience of kids and parents.
 
                     div.u-margin-top-base.u-half-transparent
                         p.u-margin-bottom-xsmall.u-text-size-small
