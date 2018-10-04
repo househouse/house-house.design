@@ -1,0 +1,13 @@
+.c-card,
+%c-card {
+    border-radius: 0.25rem 0.25rem 0 0;
+
+    &:not(.c--no-padding) {
+        padding-top: 25vh;
+    }
+}
+
+.c-card__image {
+    background: rgba(0, 0, 0, 0.25);
+    transition: all 0.7s ease-out;
+}

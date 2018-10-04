@@ -1,4 +1,5 @@
-.c-pill-group {
+.c-pill-group,
+%c-pill-group {
     @extend %u-context;
 
     padding-left: $hh-spacing-small;

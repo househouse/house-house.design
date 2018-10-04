@@ -5,51 +5,122 @@ div#pageWork
         div.c-contain.u-color-blue-light
             h1.c-heading-c--1.u-margin-bottom-small.u-max-width-3of4
                 | ↳ Work
+    //- TODO: Each of these sections should be factored out into layout components
+    section.u-padding-top-base.u-padding-top-large--medium-up.u-bg-blue-medium.u-color-white
+        div.c-contain
+            div.u-flexbox--medium-up
+
+                div.u-flex.u-order-1--medium-up
+                    article.c-card.c--no-padding.c-faux-link.x-triumf.u-context.u-clip.u-margin-bottom-base.u-margin-bottom-none--medium-up
+                        div.c-card__image.u-position.u-top-0.u-bottom-0.u-left-0.u-right-0.u-bg-cover.u-bg-top.u-bg-triumf(role='presentation')
+                        //- a.c-faux-link__overlay(href='#') Find out more about TRIUMF
+
+                div.u-flex-shrink.u-order-2--medium-up.u-width-1of4--medium-up.u-margin-left-base--medium-up.u-padding-bottom-base
+                    p.u-margin-bottom-small
+                        | We teamed up with TRIUMF to create the look of #[em Discovery, Acclerated] for the next five years.
+                        | In collaboration with the team at Briteweb, we established and assembled the pieces of Canada’s particle accelerator’s visual design language — or rather, the #[em atoms] and the #[em molecules] of it.
+                        | We were tasked with defining a new library of patterns and elements to be use across digital products, uniting the brand under a cohesive visual language.
+                    div.u-margin-top-base.u-half-transparent
+                        p.u-text-size-small
+                            | in collaboration with #[span.u-visually-hidden Briteweb]
+                        <svg width="150" height="30" viewBox="0 0 158 32" xmlns="http://www.w3.org/2000/svg"><g fill-rule="evenodd"><path d="M49.343 22.93c.966 0 1.778-.326 2.435-.976.657-.65.983-1.46.983-2.424s-.325-1.774-.976-2.43c-.652-.655-1.464-.98-2.44-.98h-5.638v6.81h5.637zM43.706 7.833v5.625h5.19c.806 0 1.485-.27 2.02-.806.536-.534.8-1.206.8-2.01 0-.805-.264-1.477-.8-2.01-.535-.536-1.214-.8-2.02-.8h-5.19zM40.443 25.75V5.013h8.453c1.678 0 3.114.55 4.3 1.664 1.188 1.107 1.784 2.38 1.784 3.818 0 .826-.17 1.586-.513 2.28-.343.695-.685 1.18-1.022 1.45l-.535.418c.077.04.182.105.326.193.138.094.392.292.762.595.364.304.68.64.944 1.004.27.37.513.843.74 1.427.226.584.342 1.19.342 1.813 0 1.664-.635 3.086-1.916 4.287-1.27 1.19-2.86 1.79-4.765 1.79h-8.9zM66.337 13.905c-1.132 0-2.032.363-2.7 1.09-.673.728-1.01 1.747-1.01 3.06v7.695h-2.97V11.536h2.97v1.47l.188-.186c.088-.088.27-.226.552-.425.28-.198.58-.374.894-.534.31-.16.713-.302 1.2-.434.49-.132.982-.193 1.473-.193h.74v2.815c-.398-.093-.845-.143-1.336-.143M70.147 25.75h2.975V11.536h-2.975V25.75zm2.77-17.382c-.336.336-.766.507-1.274.507-.514 0-.94-.17-1.276-.507-.336-.34-.508-.76-.508-1.272 0-.513.17-.937.507-1.273.337-.342.762-.507 1.276-.507.508 0 .938.165 1.275.507.337.336.508.76.508 1.273 0 .512-.17.93-.508 1.272zM79.19 6.792h2.667v4.744h2.97v2.66h-2.97v7.372c0 .535.17.965.508 1.306.336.336.76.502 1.275.502.22 0 .458-.023.7-.072.25-.044.437-.1.575-.16l.216-.055v2.66c-.59.193-1.286.292-2.086.292-2.772 0-4.152-1.482-4.147-4.44v-7.405H76.22v-2.66h1.49c.99 0 1.48-.596 1.48-1.78V6.792zM91.138 14.71c-.735.627-1.22 1.448-1.475 2.45h8.25c-.178-1.002-.625-1.823-1.348-2.45-.73-.634-1.635-.948-2.728-.948-1.07 0-1.97.314-2.7.947zm-1.607 4.963c.156 1.003.652 1.873 1.49 2.606.835.732 1.83 1.096 2.977 1.096.828 0 1.607-.188 2.325-.562.723-.375 1.23-.744 1.53-1.097l.452-.55 1.927 1.922c-.06.076-.148.186-.27.324-.12.138-.38.375-.773.71-.398.33-.817.623-1.264.882-.442.254-1.022.49-1.728.705-.713.222-1.44.332-2.198.332-2.02 0-3.76-.744-5.222-2.22-1.464-1.482-2.198-3.256-2.198-5.333 0-1.996.712-3.703 2.137-5.125 1.424-1.42 3.136-2.132 5.13-2.132 1.997 0 3.66.66 4.984 1.983 1.33 1.328 1.993 2.986 1.993 4.986l-.16 1.47H89.53zM114.563 11.536l3.258 9.773 3.275-9.774h3.12L119.31 25.75h-2.82l-3.263-9.47-3.263 9.47h-2.82l-4.904-14.214h3.12l3.274 9.773 3.257-9.774M130.182 14.71c-.734.627-1.22 1.448-1.474 2.45h8.25c-.178-1.002-.625-1.823-1.35-2.45-.728-.634-1.633-.948-2.726-.948-1.07 0-1.97.314-2.7.947zm-1.606 4.963c.154 1.003.65 1.873 1.49 2.606.834.732 1.828 1.096 2.976 1.096.828 0 1.607-.188 2.324-.562.724-.375 1.232-.744 1.53-1.097l.453-.55 1.925 1.922c-.06.076-.148.186-.27.324-.12.138-.38.375-.773.71-.398.33-.817.623-1.264.882-.442.254-1.022.49-1.728.705-.713.222-1.442.332-2.198.332-2.02 0-3.76-.744-5.223-2.22-1.464-1.482-2.198-3.256-2.198-5.333 0-1.996.712-3.703 2.137-5.125 1.423-1.42 3.135-2.132 5.127-2.132 2 0 3.66.66 4.986 1.983 1.33 1.328 1.993 2.986 1.993 4.986l-.16 1.47h-11.13zM153.636 21.987c.866-.925 1.303-2.038 1.303-3.344s-.438-2.424-1.304-3.35c-.873-.925-1.866-1.388-2.993-1.388-1.126 0-2.125.463-3.003 1.388-.873.926-1.31 2.044-1.31 3.35s.437 2.42 1.31 3.344c.878.926 1.877 1.388 3.003 1.388 1.127 0 2.12-.462 2.993-1.388m2.203-8.594c1.38 1.443 2.07 3.19 2.07 5.245 0 2.05-.69 3.795-2.083 5.24-1.385 1.442-3.014 2.164-4.89 2.164-.53 0-1.05-.066-1.558-.193-.51-.122-.94-.282-1.3-.47-.352-.186-.672-.38-.948-.578-.27-.198-.47-.352-.585-.468l-.216-.22v1.636h-2.958V5.013h2.96v8.154c.132-.132.325-.314.58-.534.247-.22.778-.513 1.578-.866.8-.358 1.618-.534 2.446-.534 1.888 0 3.522.716 4.903 2.16M3.538 7.553l5.61-4.016c.22-.16.447-.192.597-.192.185 0 .367.05.527.146l10.98 6.55c.31.184.502.52.502.88 0 .357-.192.693-.5.878l-3.364 2.006-6.023-3.593c-.656-.388-1.39-.583-2.122-.583-.847 0-1.693.26-2.41.774l-4.226 3.025v-5.04c0-.33.16-.64.428-.832zm18.713 8.85l-3.03 1.81 2.033 1.21c.31.186.5.522.5.88 0 .36-.19.695-.5.88l-10.983 6.55c-.158.094-.34.144-.525.144-.15 0-.376-.033-.6-.193l-5.608-4.016c-.268-.192-.428-.502-.428-.83V17.77c0-.33.16-.64.428-.832l5.608-4.016c.222-.16.448-.192.6-.192.185 0 .366.05.525.145l4.59 2.736-4.588 2.737c-.16.095-.34.145-.527.145-.15 0-.377-.033-.6-.192l-2.583-1.85-2.085 1.486v.84l2.857 2.045c.718.514 1.564.775 2.41.775.734 0 1.467-.194 2.123-.584l10.98-6.548c1.25-.745 2.016-2.09 2.016-3.543 0-1.454-.765-2.8-2.015-3.545L11.868.827c-.657-.39-1.39-.585-2.123-.585-.848 0-1.693.26-2.41.774l-5.61 4.017C.642 5.807 0 7.056 0 8.385v5.067c0 .788.283 1.51.694 2.16C.284 16.26 0 16.98 0 17.77v5.067c0 1.33.642 2.578 1.725 3.353l5.61 4.016c.717.513 1.562.774 2.41.774.732 0 1.466-.194 2.122-.586l10.98-6.547c1.25-.745 2.016-2.09 2.016-3.544 0-1.452-.765-2.797-2.015-3.543l-.597-.356z"></path></g></svg>
+                        p.u-margin-top-base.u-text-size-small
+                            | to support the team at #[span.u-visually-hidden TRIUMF]
+                        <svg width="150" height="28" viewBox="0 0 1556 283" xmlns="http://www.w3.org/2000/svg"><title>TRIUMF logo</title><path d="m407.01 69.703h-71.993v-42.503h196.797v42.503h-71.994v187.41h-52.81zm142.184-42.506h129.534c43.075 0 70.318 28.659 70.318 63.426 0 27.057-11.114 47.334-38.021 57.653v.658c25.901 6.755 33.315 30.247 35.004 53.765.993 14.478.322 41.858 10.082 54.424h-52.822c-6.047-14.515-5.711-36.73-8.406-55.07-3.701-24.151-13.46-34.779-40.033-34.779h-52.822v89.849h-52.834zm52.834 104.017h57.863c23.878 0 36.333-9.672 36.333-32.88 0-22.189-12.455-31.862-36.333-31.862h-57.863zm172.99 125.908v-229.926h52.835v229.926zm289.554-86.943c0 62.147-38.37 92.408-102.614 92.408-64.941 0-102.279-29.627-102.279-92.408v-142.982h52.822v142.982c0 25.119 6.717 49.891 49.457 49.891 37.674 0 49.784-15.446 49.784-49.891v-142.982h52.83zm30.72-142.982h74.35l56.19 158.119h.67l53.14-158.119h74.36v229.926h-49.45v-162.949h-.68l-58.87 162.949h-40.7l-58.87-161.347h-.7v161.347h-49.44v-229.926zm290.87-.004h168.89v42.504h-116.07v53.145h100.59v39.275h-100.59v95.014h-52.82zm-1253.12 218.368c11.551 21.503 40.6 25.536 64.013 24.896.157.857.408 1.651.718 2.458-24.975 7.161-90.554 22.362-105.906-10.398-15.77-33.592 30.894-92.624 43.66-106.337.738.297 1.523.507 2.369.667-3.701 18.32-13.602 72.398-4.854 88.714zm94.834-44.386c24.438.774 42.452-22.334 53.613-42.887.798.272 1.632.482 2.465.593-6.275 25.178-25.875 89.488-61.958 86.383-37.024-3.154-64.877-73.036-70.402-90.909.631-.485 1.213-1.07 1.784-1.728 14.027 12.398 55.987 47.965 74.498 48.548zm8.939-104.164c12.899-20.754 1.851-47.907-10.401-67.82.642-.559 1.224-1.169 1.748-1.853 18.712 18.017 64.678 67.126 43.947 96.769-21.266 30.451-95.783 19.6-114.06 15.428-.121-.77-.312-1.576-.599-2.396 17.752-5.959 69.601-24.419 79.365-40.128zm-85.905-59.832c-11.552-21.541-40.601-25.537-64.002-24.909-.168-.856-.419-1.663-.73-2.457 24.988-7.162 90.554-22.338 105.918 10.41 15.771 33.592-30.893 92.611-43.659 106.324-.738-.296-1.524-.519-2.37-.667 3.69-18.32 13.603-72.422 4.843-88.701zm-94.831 44.373c-24.439-.774-42.453 22.322-53.602 42.9-.799-.297-1.632-.495-2.477-.605 6.274-25.191 25.875-89.501 61.959-86.396 37.023 3.166 64.888 73.036 70.4 90.934-.63.473-1.225 1.057-1.771 1.716-14.039-12.386-55.987-47.978-74.509-48.549zm-8.933 104.17c-12.898 20.755-1.85 47.895 10.389 67.808-.63.572-1.224 1.169-1.747 1.84-18.701-18.016-64.667-67.1-43.936-96.768 21.253-30.426 95.772-19.576 114.048-15.404.108.758.324 1.565.599 2.384-17.74 5.959-69.589 24.42-79.353 40.14z"></path></svg>
+
+    section.u-padding-top-base.u-padding-top-large--medium-up.u-bg-orange-medium.u-color-white
+        div.c-contain
+            div.u-flexbox--medium-up
+
+                div.u-flex.u-order-2--medium-up
+                    article.c-card.c--no-padding.c-faux-link.x-mobify.u-context.u-clip.u-margin-bottom-base.u-margin-bottom-none--medium-up
+                        div.c-card__image.u-position.u-top-0.u-bottom-0.u-left-0.u-right-0.u-bg-cover.u-bg-top.u-bg-mobify(role='presentation')
+                        a.c-faux-link__overlay(href='https://mobify.com') Find out more about Mobify
+
+                div.u-flex-shrink.u-order-1--medium-up.u-width-1of4--medium-up.u-margin-right-base--medium-up
+                    p.u-margin-bottom-large--medium-up
+                        | We created a vibrant new corporate homepage (and a few supporting ones) for the #1 provider of ecommerce PWAs.
+                        | We were tasked with briding their existing brand image with new direction from the internal design team.
+                    div.u-margin-top-base.u-half-transparent
+                        p.u-margin-bottom-xsmall.u-text-size-small
+                            | in collaboration with #[span.u-visually-hidden Mobify]
+                        <svg width="150" height="46" viewBox="0 0 90 23" xmlns="http://www.w3.org/2000/svg"><title>Mobify</title><g class="c-logo__spark"><path class="c-logo__spark-light-orange" d="M13.28 15.279s-3.285-3.474-5.298-4.02c-2-.592-6.615.643-6.615.643l.611 3.362 4.845.001 4.197 2.607 2.26-2.592z"></path><path class="c-logo__spark-dark-orange" d="M6.824 15.264l6.456.015s-3.285-3.474-5.298-4.02c-2-.592-6.615.643-6.615.643l5.458 3.362z"></path><path class="c-logo__spark-light-blue" d="M6.769 1.042l-2.448 4.261-4.321 2.331 1.111 3.256s4.647-1.112 6.125-2.585c1.511-1.438 2.752-6.059 2.752-6.059l-3.219-1.204z"></path><path class="c-logo__spark-dark-blue" d="M4.321 5.304l-3.209 5.587s4.646-1.112 6.125-2.585c1.511-1.438 2.752-6.059 2.752-6.059l-5.667 3.058z"></path><path class="c-logo__spark-light-red" d="M14.216 8.108l.145-4.914-3.372-.664s-1.361 4.587-.827 6.605c.488 2.03 3.863 5.417 3.863 5.417l2.651-2.19-2.461-4.254z"></path><path class="c-logo__spark-dark-red" d="M14.216 8.107l-3.226-5.577s-1.361 4.587-.827 6.605c.488 2.03 3.863 5.417 3.863 5.417l.189-6.445z"></path></g><g class="c-logo__wordmark"><path d="M22.994 1.384h2.835l4.482 7.648 4.409-7.648h2.835l.547 16.176h-2.98l-.305-11.197-3.876 6.6h-1.429l-3.901-6.43-.244 11.027h-2.859l.487-16.176zm16.514 10.487c0-.825.149-1.605.448-2.341.299-.736.715-1.379 1.248-1.929s1.175-.987 1.926-1.31c.751-.323 1.578-.485 2.483-.485.904 0 1.732.162 2.483.485.751.324 1.393.761 1.926 1.31.533.55.949 1.193 1.248 1.929.299.736.448 1.516.448 2.341 0 .825-.15 1.606-.448 2.342-.299.736-.715 1.383-1.248 1.941s-1.175.999-1.926 1.322c-.751.323-1.579.485-2.483.485-.905 0-1.732-.162-2.483-.485-.751-.323-1.393-.764-1.926-1.322-.533-.558-.949-1.205-1.248-1.941-.299-.736-.448-1.517-.448-2.342zm6.105 3.615c.549 0 1.026-.109 1.429-.328.404-.218.739-.505 1.005-.861.267-.356.464-.744.594-1.165.129-.42.194-.841.194-1.262 0-.404-.065-.821-.194-1.25-.129-.428-.327-.817-.594-1.165-.266-.348-.602-.631-1.005-.849-.404-.218-.88-.328-1.429-.328s-1.026.109-1.429.328c-.404.218-.739.502-1.005.849-.266.348-.464.736-.593 1.165-.129.429-.194.845-.194 1.25 0 .421.064.841.194 1.262.129.421.327.809.593 1.165.267.356.602.643 1.005.861.404.218.88.328 1.429.328zm7.622-14.098h2.859v5.581c.194-.194.565-.412 1.114-.655.549-.243 1.211-.364 1.987-.364.824 0 1.554.154 2.193.461.638.307 1.183.72 1.635 1.238.452.518.795 1.132 1.03 1.844.234.712.351 1.464.351 2.257 0 .858-.15 1.662-.448 2.414-.299.752-.727 1.407-1.284 1.965s-1.232 1.003-2.023 1.335c-.792.331-1.68.497-2.665.497-.985 0-1.894-.081-2.726-.243-.832-.162-1.506-.331-2.023-.51v-15.821zm2.859 13.855c.226.081.46.142.703.182.242.041.622.061 1.139.061.581 0 1.09-.101 1.526-.303.436-.202.807-.473 1.114-.813.307-.34.537-.732.691-1.177.153-.445.23-.902.23-1.371 0-.437-.053-.857-.157-1.262-.105-.404-.271-.764-.497-1.08-.226-.315-.513-.566-.86-.752-.347-.186-.763-.279-1.248-.279-.872 0-1.53.223-1.975.667-.444.445-.666 1.056-.666 1.832v4.295zm30.693-9.007l-2.859 7.789-3.246-7.789h-5.865v-1.65c0-.679.261-1.201.592-1.565.331-.364.827-.546 1.392-.546.51 0 1.01.331 1.068.356l.723-2.459c-.163-.063-.322-.115-.489-.154-.63-.146-1.313-.218-1.83-.218-3.663 0-4.148 2.967-4.148 4.537v1.699h-1.884v2.157h1.884v9.166h2.692v-9.166h3.549l4.133 9.104s-.642 1.763-.946 2.145c-1.11 1.398-2.348.67-2.437.603l-.491 2.095.349.145c.428.154.965.23 1.611.23.743 0 1.357-.162 1.841-.485.485-.324.892-.74 1.224-1.25.331-.51.609-1.064.836-1.662.226-.599.452-1.159.678-1.725l4.749-11.358h-3.125zm-21.254-3.428c0-.978.792-1.771 1.769-1.771.977 0 1.769.793 1.769 1.771 0 .978-.792 1.771-1.769 1.771-.977 0-1.769-.793-1.769-1.771zm.355 14.751h2.859v-11.323h-2.859v11.323z"></path></g></svg>
 
 
-    section.u-clip.u-color-white
-        .u-flexbox--narrow-up.u-flex-wrap
-            .u-float-start.u-width-1of2--narrow-up
-                .u-bg-dark.u-height-full
-                    article.c-card.c-faux-link.u-context.u-clip.u-corners.u-gradient.u-text-align-center.u-stack-basic
-                        a.c-faux-link__overlay(href='https://medium.com/house-house/house-house-blanc-ink-3050b75adc4f', aria-hidden='true') Find out more about Blanc Ink
-                        .u-context.u-stack-basic.u-margin-bottom-lg.u-color-light
-                            h2.u-bold
-                                span blanc ink
-                        .c-card__image.u-position.u-top-0.u-bottom-0.u-left-0.u-right-0.u-stack-under.u-bg-cover.u-bg-center.js-card-visible.u-bg-bi(role='presentation')
-            .u-float-start.u-width-1of2--narrow-up
-                .u-bg-dark.u-height-full
-                    article.c-card.c-faux-link.u-context.u-clip.u-corners.u-gradient.u-text-align-center.u-stack-basic
-                        a.c-faux-link__overlay(href='http://vancouverdesignwk.com/', aria-hidden='true') Find out more about VDW
-                        .u-context.u-stack-basic.u-margin-bottom-lg.u-color-light
-                            h2.u-bold
-                                span VDW 2017
-                        .c-card__image.u-position.u-top-0.u-bottom-0.u-left-0.u-right-0.u-stack-under.u-bg-cover.u-bg-center.js-card-visible.u-bg-vdw(role='presentation')
-        .u-flexbox--narrow-up.u-flex-wrap
-            .u-float-start.u-width-1of2--narrow-up.u-max-width-1of3--medium-up.u-flex-basis-1of3--medium-up
-                .u-bg-dark.u-height-full
-                    article.c-card.c-faux-link.u-context.u-clip.u-corners.u-gradient.u-text-align-center.u-stack-basic
-                        a.c-faux-link__overlay(href='http://lawnpartyfilms.com/', aria-hidden='true') Find out more about Lawn Party Films
-                        .u-context.u-stack-basic.u-margin-bottom-lg.u-color-light
-                            h2.u-bold
-                                span Lawn Party Films
-                        .c-card__image.u-position.u-top-0.u-bottom-0.u-left-0.u-right-0.u-stack-under.u-bg-cover.u-bg-center.js-card-visible.u-bg-lpf(role='presentation')
-            .u-float-start.u-width-1of2--narrow-up.u-max-width-1of3--medium-up.u-flex-basis-1of3--medium-up
-                .u-bg-dark.u-height-full
-                    article.c-card.c-faux-link.u-context.u-clip.u-corners.u-gradient.u-text-align-center.u-stack-basic
-                        a.c-faux-link__overlay(href='http://ultrafastoptics2017.org/', aria-hidden='true') Find out more about Ultrafast Optics
-                        .u-context.u-stack-basic.u-margin-bottom-lg.u-color-light
-                            h2.u-bold
-                                span Ultrafast Optics
-                        .c-card__image.u-position.u-top-0.u-bottom-0.u-left-0.u-right-0.u-stack-under.u-bg-cover.u-bg-center.js-card-visible.u-bg-ufo(role='presentation')
-            .u-float-start.u-width-full--narrow-up.u-max-width-1of3--medium-up.u-flex-basis-1of3--medium-up
-                .u-bg-dark.u-height-full
-                    article.c-card.c-faux-link.u-context.u-clip.u-corners.u-gradient.u-text-align-center.u-stack-basic
-                        a.c-faux-link__overlay(href='https://www.youtube.com/watch?v=68F7ta8kk9w', aria-hidden='true') Find out more about Ask Will
-                        .u-context.u-stack-basic.u-margin-bottom-lg.u-color-light
-                            h2.u-bold
-                                span Ask Will
-                        .c-card__image.u-position.u-top-0.u-bottom-0.u-left-0.u-right-0.u-stack-under.u-bg-cover.u-bg-center.js-card-visible.u-bg-askwill(role='presentation')
+    section.u-padding-top-base.u-padding-top-large--medium-up.u-bg-grey-dark.u-color-white
+        div.c-contain
+            div.u-flexbox--medium-up
+
+                div.u-flex.u-order-2--medium-up
+
+                    article.c-card.c--no-padding.c-faux-link.x-blancink.u-context.u-clip.u-margin-bottom-base.u-margin-bottom-medium--medium-up
+                        div.c-card__image.u-position.u-top-0.u-bottom-0.u-left-0.u-right-0.u-bg-cover.u-bg-top.u-bg-blancink(role='presentation')
+                        a.c-faux-link__overlay(href='https://blancink.com') Find out more about blanc ink
+
+                div.u-flex-shrink.u-order-1--medium-up.u-width-1of4--medium-up.u-margin-right-base--medium-up.u-padding-bottom-base
+                    p.u-margin-bottom-xlarge
+                        | For the past two years, we’ve supported the blanc ink team by helping them iterate and design their marketing tool. After the first iteration provided a proof of concept, they came back to us and together we designed and built their market-ready web app.
+                    div.u-half-transparent
+                        p.u-margin-bottom-xsmall.u-text-size-small Supporting the team at #[span.u-visually-hidden Blanc Ink]
+                        p.u-text-size-large.u-text-bold blanc ink
+
+    section.u-padding-top-base.u-padding-top-large--medium-up.u-bg-blue-light.u-color-white
+        div.c-contain
+            div.u-flexbox--medium-up
+
+                div.u-flex.u-order-1--medium-up
+
+                    article.c-card.c--no-padding.c-faux-link.x-sedna.u-context.u-clip.u-margin-bottom-base.u-margin-bottom-none--medium-up
+                        div.c-card__image.u-position.u-top-0.u-bottom-0.u-left-0.u-right-0.u-bg-cover.u-bg-top.u-bg-sedna(role='presentation')
+                        a.c-faux-link__overlay(href='https://sedna.com') Find out more about SEDNA
+
+                div.u-flex-shrink.u-order-2--medium-up.u-width-1of4--medium-up.u-margin-left-base--medium-up.u-padding-bottom-base
+                    p.u-margin-bottom-xlarge
+                        | We're embeded with the product team at SEDNA, helping them design and ship enterprise collaborative email for shipping companies.
+                        | We're leading product and visual design, working to build the foundation for their design system, and establish best practices for their growing team.
+                    div.u-half-transparent
+                        p.u-margin-bottom-xsmall.u-text-size-small Supporting the team at #[span.u-visually-hidden SEDNA]
+                        p.u-text-size-large.u-text-bold SEDNA
+
+    section.u-padding-top-base.u-padding-top-large--medium-up.u-bg-black.u-color-white
+        div.c-contain
+            div.u-flexbox--medium-up
+
+                div.u-flex.u-order-2--medium-up
+                    article.c-card.c--no-padding.c-faux-link.x-imby.u-context.u-clip.u-margin-bottom-base.u-margin-bottom-none--medium-up
+                        div.c-card__image.u-position.u-top-0.u-bottom-0.u-left-0.u-right-0.u-bg-cover.u-bg-top.u-bg-imby(role='presentation')
+                        a.c-faux-link__overlay(href='https://imbyx.com/') Find out more about IMBY
+
+                div.u-flex-shrink.u-order-1--medium-up.u-width-1of4--medium-up.u-margin-right-base--medium-up.u-padding-bottom-base
+                    p.u-margin-bottom-large--medium-up
+                        | We provided a bold, stylish new direction for IMBY’s marketing site.
+                        | With direction from the internal UX team at IMBY and the strategic brand strategy from Briteweb, we were able to quickly set guidelines and restrictions on the site, and use that as a foundation for a new design system.
+                    div.u-margin-top-base.u-half-transparent
+                        p.u-text-size-small
+                            | in collaboration with #[span.u-visually-hidden Briteweb]
+                        <svg width="150" height="30" viewBox="0 0 158 32" xmlns="http://www.w3.org/2000/svg"><g fill-rule="evenodd"><path d="M49.343 22.93c.966 0 1.778-.326 2.435-.976.657-.65.983-1.46.983-2.424s-.325-1.774-.976-2.43c-.652-.655-1.464-.98-2.44-.98h-5.638v6.81h5.637zM43.706 7.833v5.625h5.19c.806 0 1.485-.27 2.02-.806.536-.534.8-1.206.8-2.01 0-.805-.264-1.477-.8-2.01-.535-.536-1.214-.8-2.02-.8h-5.19zM40.443 25.75V5.013h8.453c1.678 0 3.114.55 4.3 1.664 1.188 1.107 1.784 2.38 1.784 3.818 0 .826-.17 1.586-.513 2.28-.343.695-.685 1.18-1.022 1.45l-.535.418c.077.04.182.105.326.193.138.094.392.292.762.595.364.304.68.64.944 1.004.27.37.513.843.74 1.427.226.584.342 1.19.342 1.813 0 1.664-.635 3.086-1.916 4.287-1.27 1.19-2.86 1.79-4.765 1.79h-8.9zM66.337 13.905c-1.132 0-2.032.363-2.7 1.09-.673.728-1.01 1.747-1.01 3.06v7.695h-2.97V11.536h2.97v1.47l.188-.186c.088-.088.27-.226.552-.425.28-.198.58-.374.894-.534.31-.16.713-.302 1.2-.434.49-.132.982-.193 1.473-.193h.74v2.815c-.398-.093-.845-.143-1.336-.143M70.147 25.75h2.975V11.536h-2.975V25.75zm2.77-17.382c-.336.336-.766.507-1.274.507-.514 0-.94-.17-1.276-.507-.336-.34-.508-.76-.508-1.272 0-.513.17-.937.507-1.273.337-.342.762-.507 1.276-.507.508 0 .938.165 1.275.507.337.336.508.76.508 1.273 0 .512-.17.93-.508 1.272zM79.19 6.792h2.667v4.744h2.97v2.66h-2.97v7.372c0 .535.17.965.508 1.306.336.336.76.502 1.275.502.22 0 .458-.023.7-.072.25-.044.437-.1.575-.16l.216-.055v2.66c-.59.193-1.286.292-2.086.292-2.772 0-4.152-1.482-4.147-4.44v-7.405H76.22v-2.66h1.49c.99 0 1.48-.596 1.48-1.78V6.792zM91.138 14.71c-.735.627-1.22 1.448-1.475 2.45h8.25c-.178-1.002-.625-1.823-1.348-2.45-.73-.634-1.635-.948-2.728-.948-1.07 0-1.97.314-2.7.947zm-1.607 4.963c.156 1.003.652 1.873 1.49 2.606.835.732 1.83 1.096 2.977 1.096.828 0 1.607-.188 2.325-.562.723-.375 1.23-.744 1.53-1.097l.452-.55 1.927 1.922c-.06.076-.148.186-.27.324-.12.138-.38.375-.773.71-.398.33-.817.623-1.264.882-.442.254-1.022.49-1.728.705-.713.222-1.44.332-2.198.332-2.02 0-3.76-.744-5.222-2.22-1.464-1.482-2.198-3.256-2.198-5.333 0-1.996.712-3.703 2.137-5.125 1.424-1.42 3.136-2.132 5.13-2.132 1.997 0 3.66.66 4.984 1.983 1.33 1.328 1.993 2.986 1.993 4.986l-.16 1.47H89.53zM114.563 11.536l3.258 9.773 3.275-9.774h3.12L119.31 25.75h-2.82l-3.263-9.47-3.263 9.47h-2.82l-4.904-14.214h3.12l3.274 9.773 3.257-9.774M130.182 14.71c-.734.627-1.22 1.448-1.474 2.45h8.25c-.178-1.002-.625-1.823-1.35-2.45-.728-.634-1.633-.948-2.726-.948-1.07 0-1.97.314-2.7.947zm-1.606 4.963c.154 1.003.65 1.873 1.49 2.606.834.732 1.828 1.096 2.976 1.096.828 0 1.607-.188 2.324-.562.724-.375 1.232-.744 1.53-1.097l.453-.55 1.925 1.922c-.06.076-.148.186-.27.324-.12.138-.38.375-.773.71-.398.33-.817.623-1.264.882-.442.254-1.022.49-1.728.705-.713.222-1.442.332-2.198.332-2.02 0-3.76-.744-5.223-2.22-1.464-1.482-2.198-3.256-2.198-5.333 0-1.996.712-3.703 2.137-5.125 1.423-1.42 3.135-2.132 5.127-2.132 2 0 3.66.66 4.986 1.983 1.33 1.328 1.993 2.986 1.993 4.986l-.16 1.47h-11.13zM153.636 21.987c.866-.925 1.303-2.038 1.303-3.344s-.438-2.424-1.304-3.35c-.873-.925-1.866-1.388-2.993-1.388-1.126 0-2.125.463-3.003 1.388-.873.926-1.31 2.044-1.31 3.35s.437 2.42 1.31 3.344c.878.926 1.877 1.388 3.003 1.388 1.127 0 2.12-.462 2.993-1.388m2.203-8.594c1.38 1.443 2.07 3.19 2.07 5.245 0 2.05-.69 3.795-2.083 5.24-1.385 1.442-3.014 2.164-4.89 2.164-.53 0-1.05-.066-1.558-.193-.51-.122-.94-.282-1.3-.47-.352-.186-.672-.38-.948-.578-.27-.198-.47-.352-.585-.468l-.216-.22v1.636h-2.958V5.013h2.96v8.154c.132-.132.325-.314.58-.534.247-.22.778-.513 1.578-.866.8-.358 1.618-.534 2.446-.534 1.888 0 3.522.716 4.903 2.16M3.538 7.553l5.61-4.016c.22-.16.447-.192.597-.192.185 0 .367.05.527.146l10.98 6.55c.31.184.502.52.502.88 0 .357-.192.693-.5.878l-3.364 2.006-6.023-3.593c-.656-.388-1.39-.583-2.122-.583-.847 0-1.693.26-2.41.774l-4.226 3.025v-5.04c0-.33.16-.64.428-.832zm18.713 8.85l-3.03 1.81 2.033 1.21c.31.186.5.522.5.88 0 .36-.19.695-.5.88l-10.983 6.55c-.158.094-.34.144-.525.144-.15 0-.376-.033-.6-.193l-5.608-4.016c-.268-.192-.428-.502-.428-.83V17.77c0-.33.16-.64.428-.832l5.608-4.016c.222-.16.448-.192.6-.192.185 0 .366.05.525.145l4.59 2.736-4.588 2.737c-.16.095-.34.145-.527.145-.15 0-.377-.033-.6-.192l-2.583-1.85-2.085 1.486v.84l2.857 2.045c.718.514 1.564.775 2.41.775.734 0 1.467-.194 2.123-.584l10.98-6.548c1.25-.745 2.016-2.09 2.016-3.543 0-1.454-.765-2.8-2.015-3.545L11.868.827c-.657-.39-1.39-.585-2.123-.585-.848 0-1.693.26-2.41.774l-5.61 4.017C.642 5.807 0 7.056 0 8.385v5.067c0 .788.283 1.51.694 2.16C.284 16.26 0 16.98 0 17.77v5.067c0 1.33.642 2.578 1.725 3.353l5.61 4.016c.717.513 1.562.774 2.41.774.732 0 1.466-.194 2.122-.586l10.98-6.547c1.25-.745 2.016-2.09 2.016-3.544 0-1.452-.765-2.797-2.015-3.543l-.597-.356z"></path></g></svg>
+
+                        p.u-margin-top-base.u-text-size-small
+                            | to support the team at #[span.u-visually-hidden IMBY]
+                        <svg width="125" height="50" viewBox="0 0 161 64" xmlns="http://www.w3.org/2000/svg"><path d="m165.58804 29.7977528c-1.016611-1.235955-2.598007-1.7977528-4.179402-1.7977528-1.355482 0-2.710964.4494382-3.840532 1.4606742-1.129568.7865168-1.807309 2.1348314-2.033222 3.483146-.451828 2.9213483 1.468438 5.6179776 4.405315 6.0674158.338871 0 .677741.1123595 1.016612.1123595 1.468438 0 2.82392-.5617977 3.953488-1.4606742 1.129568-.8988764 1.807309-2.1348314 2.033223-3.5955056.225913-1.5730337-.225914-3.1460674-1.355482-4.2696629zm-10.730897 13.4831461 9.827242-.1123596-4.857142 34.8314607h-9.827243zm69.901398 2.2239151c2.034548 2.2566102 2.5997 5.5286949 2.034548 9.9290846l-3.164852 22.4532709h-9.833646l3.051821-21.8891183c.565152-3.8362373-.904243-5.7543559-4.295155-5.7543559-2.825761.1128305-5.877582 1.2411356-9.042433 3.6105762 0 .4513221-.113031 1.0154746-.113031 1.5796271l-3.051821 22.4532709h-9.833646l3.051821-21.7762878c.565152-3.8362373-.904243-5.6415254-4.182125-5.6415254-2.938791.1128305-6.103642 1.3539661-9.268494 3.8362373l-3.277882 23.6944064h-9.833646l4.860308-34.9774571h9.833646l-.565152 3.8362372c3.390912-3.0464237 7.686068-4.7388813 12.207284-4.8517118 1.921517 0 3.956065.451322 5.651521 1.4667966 1.695456.9026441 2.938791 2.3694406 3.616973 4.1747288 2.147578-1.8052882 4.521217-3.1592542 7.007886-4.1747288 2.147578-.902644 4.634247-1.3539661 7.007886-1.4667966 3.164851-.1128305 6.103642 1.1283051 8.138189 3.4977457zm75.960657-2.504814h10.280802l-27.04298 49h-8.716332l7.487106-14.3718245-10.727794-34.6281755h10.280802l6.369628 23.3117783zm-34.464758 4.4726998c2.454423 3.6265423 3.235376 8.1597201 2.454423 13.5995335-.557823 4.7598368-2.565988 9.2930147-5.801364 12.8062275-2.789117 3.1732245-6.91701 5.0998251-11.156468 5.0998251-1.338776.1133294-2.677552-.2266589-3.904764-.7933061l-1.004082-7.9330613c.892517.3399883 2.008164.5666472 3.012246.5666472 2.342859 0 4.574152-1.1332944 6.024493-3.059895 1.785035-2.1532595 2.900682-4.9864957 3.235376-7.8197318.446259-2.3799184.22313-4.8731662-.780953-7.0264257-.780952-1.4732828-2.342858-2.2665889-4.016328-2.2665889l-17.180961-.1133295 6.91701 6.7997668-1.785035 15.5261342-9.036739 5.2131545h-2.231294l6.470752-49.0716503h9.706127l-2.119729 17.1127464c3.012247-2.6065773 6.91701-4.0798601 10.821774-4.0798601 4.127894-.2266589 8.144222 1.8132712 10.375516 5.4398135zm-25.771442 15.5261341c-.780953.1133295-1.338776.6799767-1.338776 1.3599534s.557823 1.3599533 1.338776 1.3599533c.669388 0 1.338776-.5666472 1.338776-1.3599533 0-.6799767-.557823-1.3599534-1.338776-1.3599534z" transform="translate(-150 -28)"/></svg>
+
+    section.u-padding-top-base.u-padding-top-large--medium-up.u-bg-green-dark.u-color-white
+        div.c-contain
+            div.u-flexbox--medium-up
+
+                div.u-flex.u-order-1--medium-up
+                    article.c-card.c--no-padding.c-faux-link.x-connectforkids.u-context.u-clip.u-margin-bottom-base.u-margin-bottom-none--medium-up
+                        div.c-card__image.u-position.u-top-0.u-bottom-0.u-left-0.u-right-0.u-bg-cover.u-bg-top.u-bg-connectforkids(role='presentation')
+                        a.c-faux-link__overlay(href='https://connectforkids.ca/') Find out more about Connect For Kids
+
+                div.u-flex-shrink.u-order-2--medium-up.u-width-1of4--medium-up.u-margin-left-base--medium-up
+                    p.u-margin-bottom-large--medium-up
+                        | We built a flexible, readable site for #[Connect for Kids] by designing for a vast user base. Our task was to design and build a site that loaded quickly, where content was readable, and was understood by wide-ranged, multi-national audience of kids and parents.
+
+                    div.u-margin-top-base.u-half-transparent
+                        p.u-margin-bottom-xsmall.u-text-size-small
+                            | In collaboration with #[span.u-visually-hidden Denim &amp; Steel]
+                            p.u-text-size-large.u-text-bold Denim &amp; Steel
 </template>
 
 <script>
@@ -62,4 +133,59 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+#pageWork > section {
+}
+
+.c-card {
+  box-shadow: 0;
+}
+
+.x-sedna,
+.x-imby,
+.x-_____ {
+    height: 40vh;
+
+    @media screen and (min-width: 45rem) {
+        height: 45rem;
+    }
+}
+
+.x-blancink {
+    height: 0;
+    padding-bottom: 80%;
+}
+
+.x-triumf  {
+    height: 40vh;
+
+    @media screen and (min-width: 45rem) {
+        height: 0;
+        padding-bottom: 130%;
+    }
+
+    @media screen and (min-width: 70rem) {
+        height: 0;
+        padding-bottom: 116%;
+    }
+}
+
+.x-mobify {
+  height: 40vh;
+
+  @media screen and (min-width: 45rem) {
+      height: 0;
+      padding-bottom: 120%;
+  }
+
+  @media screen and (min-width: 70rem) {
+      height: 0;
+      padding-bottom: 120%;
+  }
+}
+
+
+.x-connectforkids {
+    height: 40rem;
+}
 </style>
