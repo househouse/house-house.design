@@ -1,4 +1,5 @@
-.c-text-content {
+.c-text-content,
+%c-text-content {
     > *:not(:last-child) {
         margin-bottom: $hh-spacing-small;
     }

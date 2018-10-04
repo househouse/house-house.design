@@ -1,6 +1,7 @@
 $hh-button-block-height: ($hh-unit * 11);
 
-.c-button-block {
+.c-button-block,
+%c-button-block {
     @extend %u-text-uppercase;
     @extend %u-text-trackig-loose;
     @extend %u-text-no-underline;

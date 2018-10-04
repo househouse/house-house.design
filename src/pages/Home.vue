@@ -1,8 +1,8 @@
 <template lang="pug">
 div#pageHome
 
-    section.u-padding-bottom-medium.u-padding-bottom-xlarge--medium-up.u-context
-        div.c-contain.u-color-black
+    section.u-padding-bottom-medium.u-padding-bottom-xlarge--medium-up.u-color-black
+        div.c-contain.u-context
             h1.c-heading-c--1.u-margin-bottom-small.u-max-width-2of3--medium-up
                 | #[span.u-visually-hidden House House]
                 | A design studio and freelancer community.
@@ -15,6 +15,15 @@ div#pageHome
                     | Hire our team of design and development consultants, strategists, and producers
                     | to turn your digital product ideas into #[span.u-no-wrap a reality].
 
+            div.u-position.u-top-0.u-right-0.u-bg-cover.u-bg-blancink-device.x-device
+
+            div.u-position.u-bottom-0.u-right-0.x-device-description.u-text-size-small.u-baseline-small
+                p.u-margin-bottom-xsmall.u-color-grey-medium.u-text-weight-bold.u-no-break
+                    | ◀ blanc ink
+                p.u-margin-bottom-xsmall.u-color-grey-dark
+                    | We helped the tattoo removal startup explore and build a bespoke web app.
+                //- router-link(to='#').c-button-link.c--orange
+                    | Learn more ⇗
 
     section.u-padding-bottom-medium.u-padding-bottom-xlarge--medium-up.u-padding-top-medium.u-padding-top-xlarge--medium-up.u-bg-gradient-whiteout.u-shadow-thick
         div.c-contain
@@ -113,5 +122,60 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+
+.x-device,
+.x-device-description {
+  display: none;
+  transition: all ease-in-out 400ms;
+}
+
+.x-device {
+    width: 21.875rem;
+    height: 43.5rem;
+
+    @media screen and (min-width: 47rem) {
+        display: block;
+        transform: translate(-5vw, 5rem) scale(0.8) rotate(5deg);
+    }
+
+    @media screen and (min-width: 53rem) {
+        transform: translate(-40%, 3rem) scale(0.8) rotate(-5deg);
+    }
+
+    @media screen and (min-width: 63rem) {
+        transform: translate(-50%, 5rem) scale(0.7) rotate(-5deg);
+    }
+
+    @media screen and (min-width: 73rem) {
+        transform: translate(-60%, -5%) scale(0.9) rotate(6deg);
+    }
+
+    @media screen and (min-width: 113rem) {
+        transform: translate(-50%, -5%) scale(0.95) rotate(6deg);
+    }
+}
+
+.x-device-description {
+
+    @media screen and (min-width: 53rem) {
+        display: block;
+        max-width: 10rem;
+        transform: translate(0, 0) rotate(-5deg);
+    }
+
+    @media screen and (min-width: 63rem) {
+        transform: translate(-3rem, 2rem) rotate(-5deg);
+    }
+
+    @media screen and (min-width: 73rem) {
+        max-width: 12rem;
+        transform: translate(-1.5rem, 2rem) rotate(6deg);
+    }
+
+    @media screen and (min-width: 113rem) {
+        transform: translate(1.5rem, 5rem) rotate(6deg);
+    }
+}
+
 </style>
