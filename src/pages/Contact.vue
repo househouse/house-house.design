@@ -12,7 +12,7 @@ div#pageContact
             div.u-max-width-2of3
                 div.c-text-content.u-text-size-large.u-baseline-large.u-color-black
                     p.u-margin-bottom-base
-                        | We’ve often got our heads down working, but we’ll always make time to hear about your challenges and your ideas. So give us a shout, say a quick hello, and let’s make some magic happen.
+                        | 👩🏻‍💻 We’ve often got our heads down working, but we’ll always make time to hear about your challenges and your ideas. So give us a shout, say a quick hello, and let’s make some magic happen.
 
                     p.u-flexbox.u-align-middle.u-justify-middle.u-padding-top-small.u-padding-bottom-small.u-color-black.u-text-uppercase.u-text-trackig-loose.u-text-size-small.u-baseline-small.u-border-grey-base(style='border-radius:10rem; border-width:0.25rem;')
                         span.u-block.u-text-align-center
