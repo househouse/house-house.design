@@ -28,12 +28,11 @@ export default {
   },
   metaInfo: {
     title: 'House House', // if no subcomponents specify a metaInfo.title, this title will be used
-    description: 'A design studio and freelancer community.',
     titleTemplate: '%s • A Design Studio', // all titles will be injected into this template
     meta: [
       { charset: 'utf-8' },
       { name: 'google-site-verification', content: 'XQrarlvRzShmAo5O_AzT_Wuinw1JiNI4IXWGltMtxkA' },
-      { name: 'description', content: 'Hello!' },
+      { name: 'description', content: 'A design studio and freelancer community' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'author', content: 'Ben Groulx, Sean Durfee' },
       { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
