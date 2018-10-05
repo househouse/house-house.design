@@ -1,9 +1,18 @@
 .c-card,
 %c-card {
-    border-radius: 0.25rem 0.25rem 0 0;
+    border: 3vw solid rgba(255, 255, 255, 0.05);
+    border-bottom: 0;
+    border-radius: 1.5rem 1.5rem 0 0;
+    box-shadow: 0 0 3vw rgba(0, 0, 0, 0.05);
+    opacity: 0.95;
+    transition: 200ms linear;
 
     &:not(.c--no-padding) {
         padding-top: 25vh;
+    }
+
+    &:hover {
+      opacity: 1;
     }
 }
 
