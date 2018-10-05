@@ -28,6 +28,7 @@ export default {
   },
   metaInfo: {
     title: 'House House', // if no subcomponents specify a metaInfo.title, this title will be used
+    description: 'A design studio and freelancer community.',
     titleTemplate: '%s • A Design Studio', // all titles will be injected into this template
     meta: [
       { charset: 'utf-8' },
