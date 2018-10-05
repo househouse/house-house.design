@@ -12,8 +12,8 @@ div#pageWork
             div.u-width-3of4
                 div.c-text-content.u-color-black.u-text-size-large.u-baseline-large.u-margin-bottom-medium
                     p
-                        | We’re organized a bit differently than the last agency you worked with, and we think that’s our biggest strength.
-                        | With a tiny full-time staff and a big network, we can adapt to scale and changes—just as your teams and projects must.
+                        | 🏡 We’re organized a bit differently than the last agency you worked with, and we think that’s our biggest strength.
+                        | With a tiny full-time staff and a big network, we can adapt to scale and changes — just as your teams and projects must.
 
                 div.c-text-content.u-text-family-secondary.u-text-size-medium.u-baseline-medium
                     p
@@ -26,19 +26,19 @@ div#pageWork
             div.c-text-content.u-text-size-large.u-baseline-large.u-color-white.u-text-align-center
                 p
                     | When you start a project with
-                    | #[strong.u-text-family-secondary House House]
+                    | #[strong.u-text-family-secondary.u-no-wrap House House]
                     | you’ll be assigned a Housemate with the right mix of skills and experience who can bring your team
                     | #[span.u-no-wrap up to speed].
 
 
             div.u-flexbox--medium-up.u-margin-top-medium
-                div.u-flex-expand.u-bg-white.u-shadow-thick.u-padding-top-base.u-padding-bottom-base.u-padding-left-base.u-padding-right-base.u-margin-right-small
+                div.u-flex-expand.u-bg-white.u-shadow-thick.u-padding-top-base.u-padding-bottom-base.u-padding-left-base.u-padding-right-base.u-margin-right-small--medium-up.u-margin-bottom-small--medium-down
                     h3.u-margin-bottom-xsmall
                         | Bricks
                         | #[span.u-color-grey-medium / Flexible Pricing]
                     p To determine the cost of a designer, we look at the problems you’re experiencing, the goals you want to reach, and the context surrounding it all. Only then can we properly figure out the best approaches and set you up for future success. Our first solution is called “#[strong bricks]” — half-days of work, or 3–5 hours; one calendar day is comprised of two bricks. Bricks allow you to slot a designer in when you think they will make the biggest impact.
 
-                div.u-flex-expand.u-bg-white.u-shadow-thick.u-padding-top-base.u-padding-bottom-base.u-padding-left-base.u-padding-right-base.u-margin-left-small
+                div.u-flex-expand.u-bg-white.u-shadow-thick.u-padding-top-base.u-padding-bottom-base.u-padding-left-base.u-padding-right-base.u-margin-left-small--medium-up
                     h3.u-margin-bottom-xsmall
                         | Campaigns
                         | #[span.u-color-grey-medium / Fixed-Rate Pricing]
