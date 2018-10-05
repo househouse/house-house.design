@@ -1,8 +1,8 @@
 <template lang="pug">
 
-footer.u-bg-black.u-color-white.u-context.u-clip.u-padding-bottom-medium.u-padding-bottom-xlarge--medium-up
+footer.u-bg-black.u-bg-center.u-bg-cover.u-bg-group.u-color-white.u-context.u-clip
 
-    div.c-contain--narrow-up.u-flexbox--medium-up.u-align-middle
+    div.c-contain--narrow-up.u-flexbox--medium-up.u-align-middle.u-context.u-stack-over
 
         div.u-flex.u-margin-bottom-base
             div.u-bg-blue-dark.u-padding-top-base.u-padding-bottom-base.u-padding-left-xsmall--narrow-up.u-padding-left-base--medium-up.u-padding-right-xsmall--narrow-up.u-padding-right-base--medium-up.u-context.x-question-outer#question
@@ -43,7 +43,7 @@ footer.u-bg-black.u-color-white.u-context.u-clip.u-padding-bottom-medium.u-paddi
                 a.u-block(href='https://paper.dropbox.com/doc/Our-Code-of-Conduct-j62RafLNgIaUjUsOGeVwA')
                     | Our Code of Conduct
 
-            div.u-margin-bottom-base.u-color-grey-dark.u-text-align-left.u-text-align-right--medium-up.u-text-size-small.u-baseline-small
+            div.u-margin-bottom-base.u-color-grey-medium.u-text-align-left.u-text-align-right--medium-up.u-text-size-small.u-baseline-small
                 p
                     | #[span.u-visually-hidden This site and its contents copyright]
                     | © 2016–2018 House House • A Design Studio
@@ -88,85 +88,97 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    nav a {
-        @media screen and (max-width: 45rem) {
-          height: 40px;
-          margin-right: 2vw;
-        }
+footer {
+    padding-bottom: 30%;
 
-        @media screen and (min-width: 46rem) {
-          margin-left: 2vw;
-        }
+    @media screen and (min-width: 48rem) {
+        padding-bottom: 20%;
     }
 
-    a,
-    .router-link {
-        text-decoration-color: rgba(255, 255, 255, 0.6);
-
-        &:hover {
-            color: var(--grey-light);
-            text-decoration-color: var(--orange-dark);
-        }
-    }
-
-    .router-link-active,
-    .router-link-active:hover {
-        text-decoration: line-through;
-    }
-
-    svg {
+    &::after {
+        content: '';
         position: absolute;
+        top: 0;
         bottom: 0;
+        left: 0;
         right: 0;
-
-        fill: var(--white);
-
-        opacity: 0.1;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.5), var(--black));
     }
+}
+
+nav a {
+    @media screen and (max-width: 45rem) {
+      height: 40px;
+      margin-right: 2vw;
+    }
+
+    @media screen and (min-width: 46rem) {
+      margin-left: 2vw;
+    }
+}
+
+a,
+.router-link {
+    text-decoration-color: rgba(255, 255, 255, 0.6);
+
+    &:hover {
+        color: var(--grey-light);
+        text-decoration-color: var(--orange-dark);
+    }
+}
+
+.router-link-active,
+.router-link-active:hover {
+    text-decoration: line-through;
+}
+
+svg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    fill: var(--white);
+
+    opacity: 0.2;
+}
+
+@media screen and (min-width: 40rem) {
 
     .x-question-outer {
+        transform: skew(20deg);
 
+        &::before,
+        &::after {
+          content: '';
 
-    }
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          top: 0;
 
-    @media screen and (min-width: 40rem) {
-
-        .x-question-outer {
-            transform: skew(20deg);
-
-            &::after {
-                content: '';
-
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                top: 0;
-                width: 100vw;
-
-                transform: translate(-99%, 0);
-
-
-                display: block;
-
-                background: var(--blue-dark);
-            }
+          display: block;
         }
 
-        .x-question-inner {
-            transform:skew(-20deg);
+        &::after {
+            width: 100vw;
+
+            transform: translate(-99%, 0);
+
+            background: var(--blue-dark);
         }
     }
 
-    .x-question-photo {
-        width: 5rem;
-        height: 5rem;
-
-        @media screen and (max-width: 30rem) {
-            display: none;
-        }
+    .x-question-inner {
+        transform:skew(-20deg);
     }
+}
 
+.x-question-photo {
+    width: 5rem;
+    height: 5rem;
 
-
-
+    @media screen and (max-width: 30rem) {
+        display: none;
+    }
+}
 </style>
