@@ -222,6 +222,10 @@
       transition: $hh-animation-slow;
     }
 
+    &:last-child a {
+      color: var(--orange-dark) !important;
+    }
+
     a {
       display: inline-block;
       opacity: 0;
@@ -233,6 +237,7 @@
         opacity: 1;
         transform: translateY(0);
       }
+
     }
   }
 
