@@ -17,6 +17,11 @@
         width: $hh-spacing-xsmall;
     }
 
+    @include --medium-only {
+        min-width: 50%;
+        float: left;
+    }
+
     &.c--blue-dark::before {
         background-color: var(--blue-dark);
     }
