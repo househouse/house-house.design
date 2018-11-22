@@ -21,20 +21,20 @@ footer.u-bg-black.u-bg-center.u-bg-cover.u-bg-group.u-color-white.u-context.u-cl
         div.u-flex.u-context.u-stack-over
             h2.u-visually-hidden Navigation
             nav.u-flexbox--narrow-up.u-margin-bottom-small.u-justify-end--medium-up.u-text-size-medium.u-text-align-center
-                router-link.u-block(v-on:click.native='handleNavToggle' to='/work')
+                router-link.u-block(to='/work')
                     | Work
-                router-link.u-block(v-on:click.native='handleNavToggle' to='/approach')
+                router-link.u-block(to='/approach')
                     | Approach
-                router-link.u-block(v-on:click.native='handleNavToggle' to='/housemates')
+                router-link.u-block(to='/housemates')
                     | Housemates
-                router-link.u-block(v-on:click.native='handleNavToggle' to='/contact')
+                router-link.u-block(to='/contact')
                     | Contact
 
             h2.u-visually-hidden More Links:
             nav.u-flexbox--narrow-up.u-margin-bottom-base.u-justify-end--medium-up.u-text-size-small.u-text-align-center.u-baseline-small
-                // router-link.u-block(v-on:click.native='handleNavToggle' to='/vision-values')
+                // router-link.u-block(to='/vision-values')
                     | Vision &amp; Values
-                // router-link.u-block(v-on:click.native='handleNavToggle' to='/privacy-security')
+                // router-link.u-block(to='/privacy-security')
                     | Privacy &amp; Security
                 a.u-block(href='https://linkedin.com/company/house-house')
                     | LinkedIn
