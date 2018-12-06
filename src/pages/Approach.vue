@@ -58,7 +58,7 @@ div#pageApproach
             div.u-flex-none.c-text-content.u-no-wrap.u-margin-top-medium
                 div.u-text-size-medium.u-baseline-medium.u-clip
                     ul.c-pill-group.c--blue-dark.u-margin-bottom-base
-                        li 🌀 Interface Design
+                        li(@click="showModal") 🌀 Interface Design
                         li 🌄 Brand Identity
                         li 👉 Art Direction
                     ul.c-pill-group.c--blue-light.u-margin-bottom-base
@@ -82,15 +82,43 @@ div#pageApproach
                             <path d="M24.75 11.13c0 4.61-3.694 8.348-8.25 8.348s-8.25-3.738-8.25-8.348c0-4.61 3.694-8.348 8.25-8.348s8.25 3.738 8.25 8.348m2.75 0c0-6.147-4.925-11.13-11-11.13s-11 4.984-11 11.13c0 6.147 4.925 11.13 11 11.13s11-4.984 11-11.13" fill="currentColor"/></g>
                         </svg>
                         | See previous projects
+
+    modal(v-show="isModalVisible" @close="closeModal")
+        div(slot="header")
+            h2.c-heading.c--3 🌀 Interface Design
+        div.c-text-content(slot="body")
+            p.u-bold Intuitive digital experiences, created with intention and based on your brand story.
+            p User interface design works when no one notices it's there. Getting to that place requires an iterative, design-centric approach that uses techniques blending psychology with technology. The end-user (your beloved audience) does what you want them to do (consensually, of course) without an awareness of the system itself.
+            p That invisibility and intuitiveness requires a team who takes the time to learn exactly what your brand story is, what your audience needs and then has the experience to deliver.
+            p Housemates know how to ask the right questions, learn your story to find out the exact steps to take, the correct digital path, and what that environment should look (and feel) like to deliver the perfect experience—the kind where no help desk is required.
+            p Housemates come to each project with reams of happy clients behind them. Experience borne from years of working with teams to create an invisible but super-usable boundary between users and the code running the system. Our approach is iterative; we learn your story as we find the best paths for your audience to take through it.
 </template>
 
 <script>
-export default {
-  name: 'Approach',
-  metaInfo: {
-    title: 'Approach • House House', // title will be injected into parent titleTemplate
-  },
-};
+  import modal from '../components/modal';
+
+  export default {
+    name: 'Approach',
+    metaInfo: {
+      title: 'Approach • House House', // title will be injected into parent titleTemplate
+    },
+    components: {
+      modal,
+    },
+    data() {
+      return {
+        isModalVisible: false,
+      };
+    },
+    methods: {
+      showModal() {
+        this.isModalVisible = true;
+      },
+      closeModal() {
+        this.isModalVisible = false;
+      },
+    },
+  };
 </script>
 
 <style>
