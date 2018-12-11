@@ -1,14 +1,18 @@
 <template lang="pug">
 transition(name="modal-slide")
-    article.c-modal.u-stack-modal.u-flexbox.u-flex-column(role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription")
+
+    article.u-stack-modal.u-flexbox.u-flex-column.c-modal(role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription")
+
         header.c-modal__header.u-flexbox.u-align-center.u-justify-between(id="modalTitle")
-            h2.u-padding-top-xsmall
+            h2.c-heading.c--3.u-padding-top-xsmall
                 slot(name="header") Default Headline
             button.c-modal__close.u-flexbox.u-text-size-large(type="button" @click="close") ×
+
         section.c-modal__body.c-text-content(id="modalDescription" v-scroll-lock="open")
-            slot(name="body") Default body text; replace me!
+            slot(name="body") Default body text
+
         footer.c-modal__footer
-            slot(name="footer") Default footer text; replace me!
+            slot(name="footer") Default footer text
 </template>
 
 
