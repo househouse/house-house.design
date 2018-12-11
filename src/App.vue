@@ -16,6 +16,8 @@ import GlobalFooter from '@/components/globalFooter';
 import GlobalHeader from '@/components/globalHeader';
 import GlobalNav from '@/components/Navigation/globalNav';
 
+import VScrollLock from 'v-scroll-lock';
+
 export default {
   name: 'app',
   components: {
@@ -25,6 +27,7 @@ export default {
     GlobalFooter,
     GlobalHeader,
     GlobalNav,
+    VScrollLock,
   },
   metaInfo: {
     title: 'House House', // if no subcomponents specify a metaInfo.title, this title will be used
