@@ -59,21 +59,21 @@ div#pageApproach
 
                 div.u-text-size-medium.u-baseline-medium.u-clip
                     ul.c-pill-group.c--blue-dark.u-margin-bottom-base
-                        li(@click="toggleModalInterface") 🌀 Interface Design
-                        li(@click="toggleModalBrand")  🌄 Brand Identity
-                        li(@click="toggleModalDirection")  👉 Digital Art Direction
+                        li(@click="toggleModalInterface") 🌀 #[span Interface Design]
+                        li(@click="toggleModalBrand")  🌄 #[span Brand Identity]
+                        li(@click="toggleModalDirection")  👉 #[span Digital Art Direction]
                     ul.c-pill-group.c--blue-light.u-margin-bottom-base
-                        li(@click="toggleModalStrategy")  ⚡️ Experience Strategy
-                        li(@click="toggleModalService")  🗺 Service Design
-                        li(@click="toggleModalResearch")  🔍 UX Research
+                        li(@click="toggleModalStrategy")  ⚡️ #[span Experience Strategy]
+                        li(@click="toggleModalService")  🗺 #[span Service Design]
+                        li(@click="toggleModalResearch")  🔍 #[span UX Research]
                     ul.c-pill-group.c--purple-light.u-margin-bottom-base
-                        li(@click="toggleModalFED")  ⌨️ Front-End Development
-                        li(@click="toggleModalPWA")  📱 Progressive Web Apps
-                        li(@click="toggleModalRWD")  💻 Responsive Websites
+                        li(@click="toggleModalFED")  ⌨️ #[span Front-End Development]
+                        li(@click="toggleModalPWA")  📱 #[span Progressive Web Apps]
+                        li(@click="toggleModalRWD")  💻 #[span Responsive Websites]
                     ul.c-pill-group.c--green-light.u-margin-bottom-small
-                        li(@click="toggleModalTeambuilding")  🤝 Team Building
-                        li(@click="toggleModalWorkshops")  🎨 Workshops
-                        li(@click="toggleModalTraining")  📝 Training
+                        li(@click="toggleModalTeambuilding")  🤝 #[span Team Building]
+                        li(@click="toggleModalWorkshops")  🎨 #[span Workshops]
+                        li(@click="toggleModalTraining")  📝 #[span Training]
 
                 div.u-text-size-base.u-baseline-small(style='clear:both;')
                     router-link(to='/work').c-button-link.c--blue.c--with-icon.u-text-secondary.u-text-size-medium.u-baseline-small
@@ -300,11 +300,14 @@ export default {
 <style lang="scss" scoped>
 #pageApproach {
   .c-pill-group {
-    li:hover {
-      cursor: pointer;
-      opacity: 0.9;
+    li span {
       text-decoration: underline;
-      text-decoration-color: var(--orange-dark);
+      text-decoration-color: rgba(0, 0, 0, 0.15);
+      &:hover {
+        cursor: pointer;
+        color: var(--black);
+        text-decoration-color: var(--orange-dark);
+      }
     }
   }
 }

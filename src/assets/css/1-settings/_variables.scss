@@ -45,8 +45,8 @@ $hh-font-weight-thin:    300;
 $hh-font-weight-regular: 400;
 $hh-font-weight-bold:    700;
 
-$hh-animation-fast: all 0.15s ease-in-out;
-$hh-animation-slow: all 0.35s cubic-bezier(0.215, 0.615, 0.355, 1);
+$hh-animation-fast: all 150ms ease-in-out;
+$hh-animation-slow: all 350ms cubic-bezier(0.215, 0.615, 0.355, 1);
 
 $z1-depth: -1;
 $z2-depth: 1;
