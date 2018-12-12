@@ -59,21 +59,21 @@ div#pageApproach
 
                 div.u-text-size-medium.u-baseline-medium.u-clip
                     ul.c-pill-group.c--blue-dark.u-margin-bottom-base
-                        li(@click="showModalInterface") 🌀 Interface Design
-                        li(@click="showModalBrand")  🌄 Brand Identity
-                        li(@click="showModalDirection")  👉 Digital Art Direction
+                        li(@click="toggleModalInterface") 🌀 Interface Design
+                        li(@click="toggleModalBrand")  🌄 Brand Identity
+                        li(@click="toggleModalDirection")  👉 Digital Art Direction
                     ul.c-pill-group.c--blue-light.u-margin-bottom-base
-                        li(@click="showModalStrategy")  ⚡️ Experience Strategy
-                        li(@click="showModalService")  🗺 Service Design
-                        li(@click="showModalResearch")  🔍 UX Research
+                        li(@click="toggleModalStrategy")  ⚡️ Experience Strategy
+                        li(@click="toggleModalService")  🗺 Service Design
+                        li(@click="toggleModalResearch")  🔍 UX Research
                     ul.c-pill-group.c--purple-light.u-margin-bottom-base
-                        li(@click="showModalFED")  ⌨️ Front-End Development
-                        li(@click="showModalPWA")  📱 Progressive Web Apps
-                        li(@click="showModalRWD")  💻 Responsive Websites
+                        li(@click="toggleModalFED")  ⌨️ Front-End Development
+                        li(@click="toggleModalPWA")  📱 Progressive Web Apps
+                        li(@click="toggleModalRWD")  💻 Responsive Websites
                     ul.c-pill-group.c--green-light.u-margin-bottom-small
-                        li(@click="showModalTeambuilding")  🤝 Team Building
-                        li(@click="showModalWorkshops")  🎨 Workshops
-                        li(@click="showModalTraining")  📝 Training
+                        li(@click="toggleModalTeambuilding")  🤝 Team Building
+                        li(@click="toggleModalWorkshops")  🎨 Workshops
+                        li(@click="toggleModalTraining")  📝 Training
 
                 div.u-text-size-base.u-baseline-small(style='clear:both;')
                     router-link(to='/work').c-button-link.c--blue.c--with-icon.u-text-secondary.u-text-size-medium.u-baseline-small
@@ -85,7 +85,7 @@ div#pageApproach
                         </svg>
                         | See previous projects
 
-    modal(v-show="isModalInterfaceVisible" @close="closeModalInterface" class="c--right c--blue-dark")
+    modal(v-show="isModalInterfaceVisible" @close="toggleModalInterface" class="c--right c--blue-dark")
         div.u-color-white(slot="header") 🌀 Interface Design
         div.c-text-content(slot="body")
             div.u-text-align-center
@@ -97,7 +97,7 @@ div#pageApproach
             p Housemates come to each project with reams of happy clients behind them. Experience borne from years of working with teams to create an invisible but super-usable boundary between users and the code running the system. Our approach is iterative; we learn your story as we find the best paths for your audience to take through it.
         router-link.c-button-block.c--small.u-bg-orange-dark.u-color-white(to='/contact' slot="footer") Start a UI project &rarr;
 
-    modal(v-show="isModalBrandVisible" @close="closeModalBrand" class="c--right c--blue-dark")
+    modal(v-show="isModalBrandVisible" @close="toggleModalBrand" class="c--right c--blue-dark")
         div.u-color-white(slot="header") 🌄 Brand Identity
         div.c-text-content(slot="body")
             div.u-text-align-center
@@ -108,7 +108,7 @@ div#pageApproach
             p Housemates lead you through questions designed to unearth what you already know about your brand and then use our skills to communicate that vision to your audience. We then take that knowledge and translate it into a set of tangible assets which cohesively communicate your brand identity (who you are) to the world.
         router-link.c-button-block.c--small.u-bg-orange-dark.u-color-white(to='/contact' slot="footer") Start a design project &rarr;
 
-    modal(v-show="isModalDirectionVisible" @close="closeModalDirection" class="c--right c--blue-dark")
+    modal(v-show="isModalDirectionVisible" @close="toggleModalDirection" class="c--right c--blue-dark")
         div.u-color-white(slot="header") 👉 Digital Art Direction
         div.c-text-content(slot="body")
             div.u-text-align-center
@@ -121,7 +121,7 @@ div#pageApproach
             p Housemates approach art direction through the lenses of story and design. We use design thinking to hack through the brambles and find the clear path you'll follow as your project unfolds.
         router-link.c-button-block.c--small.u-bg-orange-dark.u-color-white(to='/contact' slot="footer") Start a design project &rarr;
 
-    modal(v-show="isModalStrategyVisible" @close="closeModalStrategy" class="c--right c--blue-light")
+    modal(v-show="isModalStrategyVisible" @close="toggleModalStrategy" class="c--right c--blue-light")
         div.u-color-white(slot="header") ⚡️ Experience Strategy
         div.c-text-content(slot="body")
             div.u-text-align-center
@@ -136,7 +136,7 @@ div#pageApproach
             p Your customer experience needs the thoughtful, empathic, and strategic approach that Housemates are steeped in. Story-based, well-designed and method-focused.
         router-link.c-button-block.c--small.u-bg-orange-dark.u-color-white(to='/contact' slot="footer") Start a strategy project &rarr;
 
-    modal(v-show="isModalResearchVisible" @close="closeModalResearch" class="c--right c--blue-light")
+    modal(v-show="isModalResearchVisible" @close="toggleModalResearch" class="c--right c--blue-light")
         div.u-color-white(slot="header") 🔍 UX Research
         div.c-text-content(slot="body")
             div.u-text-align-center
@@ -148,7 +148,7 @@ div#pageApproach
             p We'll iterate and modify our research until we're certain that those people who most want to your product can do so effortlessly and with absolute joy.
         router-link.c-button-block.c--small.u-bg-orange-dark.u-color-white(to='/contact' slot="footer") Start a research project &rarr;
 
-    modal(v-show="isModalServiceVisible" @close="closeModalService" class="c--right c--blue-light")
+    modal(v-show="isModalServiceVisible" @close="toggleModalService" class="c--right c--blue-light")
         div.u-color-white(slot="header") 🗺 Service Design
         div.c-text-content(slot="body")
             div.u-text-align-center
@@ -160,7 +160,7 @@ div#pageApproach
             p Housemates combine their design skills with their background in behavioural and social psychology to collaborate with clients, finding their unique process and then guiding them in strategic execution of services for the people who need them.
         router-link.c-button-block.c--small.u-bg-orange-dark.u-color-white(to='/contact' slot="footer") Start a design project &rarr;
 
-    modal(v-show="isModalFEDVisible" @close="closeModalFED" class="c--right c--purple-light")
+    modal(v-show="isModalFEDVisible" @close="toggleModalFED" class="c--right c--purple-light")
         div.u-color-white(slot="header") ⌨️ Front-End Dev
         div.c-text-content(slot="body")
             div.u-text-align-center
@@ -171,7 +171,7 @@ div#pageApproach
             p This process requires us to be designers who excel at solving problems in the most efficient, elegant way, always thinking of performance while at the same time ensuring that the design looks and feels lovely to the humans who will use it.
         router-link.c-button-block.c--small.u-bg-orange-dark.u-color-white(to='/contact' slot="footer") Start a web or app project &rarr;
 
-    modal(v-show="isModalPWAVisible" @close="closeModalPWA" class="c--right c--purple-light")
+    modal(v-show="isModalPWAVisible" @close="toggleModalPWA" class="c--right c--purple-light")
         div.u-color-white(slot="header") 📱 Progressive Web Apps
         div.c-text-content(slot="body")
             div.u-text-align-center
@@ -182,7 +182,7 @@ div#pageApproach
             p Given these parameters, Housemates then create a PWA that functions within the style and needs of the client. The end result is performant and useful online and offline and on any device.
         router-link.c-button-block.c--small.u-bg-orange-dark.u-color-white(to='/contact' slot="footer") Start a PWA project &rarr;
 
-    modal(v-show="isModalRWDVisible" @close="closeModalRWD" class="c--right c--purple-light")
+    modal(v-show="isModalRWDVisible" @close="toggleModalRWD" class="c--right c--purple-light")
         div.u-color-white(slot="header") 💻 Responsive Websites
         div.c-text-content(slot="body")
             div.u-text-align-center
@@ -192,7 +192,7 @@ div#pageApproach
             p Our websites express our brand identity and as such, they need to flexibly fit to any device an end-user might find them on. This ethos means Housemates never stop learning web design and development—always staying at the edge of the best in web site design and development.
         router-link.c-button-block.c--small.u-bg-orange-dark.u-color-white(to='/contact' slot="footer") Start a responsive web project &rarr;
 
-    modal(v-show="isModalTeambuildingVisible" @close="closeModalTeambuilding" class="c--right c--green-light")
+    modal(v-show="isModalTeambuildingVisible" @close="toggleModalTeambuilding" class="c--right c--green-light")
         div.u-color-white(slot="header") 🤝 Team Building
         div.c-text-content(slot="body")
             div.u-text-align-center
@@ -204,7 +204,7 @@ div#pageApproach
             p Housemates take team building very seriously; so seriously that we integrate play-based work principles into our team building sessions and — so much so that we have taken time to study human behaviour and learn how teams work (and play) well together.
         router-link.c-button-block.c--small.u-bg-orange-dark.u-color-white(to='/contact' slot="footer") Schedule activities &rarr;
 
-    modal(v-show="isModalWorkshopsVisible" @close="closeModalWorkshops" class="c--right c--green-light")
+    modal(v-show="isModalWorkshopsVisible" @close="toggleModalWorkshops" class="c--right c--green-light")
         div.u-color-white(slot="header") 🎨 Workshops
         div.c-text-content(slot="body")
             div.u-text-align-center
@@ -216,7 +216,7 @@ div#pageApproach
             p Training in design-thinking, mindfulness, and practical approaches to behavioural change results in facilitation that works. And it's fun, too.
         router-link.c-button-block.c--small.u-bg-orange-dark.u-color-white(to='/contact' slot="footer") Schedule a workshop &rarr;
 
-    modal(v-show="isModalTrainingVisible" @close="closeModalTraining" class="c--right c--green-light")
+    modal(v-show="isModalTrainingVisible" @close="toggleModalTraining" class="c--right c--green-light")
         div.u-color-white(slot="header") 📝 Training
         div.c-text-content(slot="body")
             div.u-text-align-center
@@ -256,77 +256,41 @@ export default {
     };
   },
   methods: {
-    showModalInterface() {
-      this.isModalInterfaceVisible = true;
+    toggleModalInterface() {
+      this.isModalInterfaceVisible = !this.isModalInterfaceVisible;
     },
-    closeModalInterface() {
-      this.isModalInterfaceVisible = false;
+    toggleModalBrand() {
+      this.isModalBrandVisible = !this.isModalBrandVisible;
     },
-    showModalBrand() {
-      this.isModalBrandVisible = true;
+    toggleModalDirection() {
+      this.isModalDirectionVisible = !this.isModalDirectionVisible;
     },
-    closeModalBrand() {
-      this.isModalBrandVisible = false;
+    toggleModalStrategy() {
+      this.isModalStrategyVisible = !this.isModalStrategyVisible;
     },
-    showModalDirection() {
-      this.isModalDirectionVisible = true;
+    toggleModalResearch() {
+      this.isModalResearchVisible = !this.isModalResearchVisible;
     },
-    closeModalDirection() {
-      this.isModalDirectionVisible = false;
+    toggleModalService() {
+      this.isModalServiceVisible = !this.isModalServiceVisible;
     },
-    showModalStrategy() {
-      this.isModalStrategyVisible = true;
+    toggleModalFED() {
+      this.isModalFEDVisible = !this.isModalFEDVisible;
     },
-    closeModalStrategy() {
-      this.isModalStrategyVisible = false;
+    toggleModalPWA() {
+      this.isModalPWAVisible = !this.isModalPWAVisible;
     },
-    showModalResearch() {
-      this.isModalResearchVisible = true;
+    toggleModalRWD() {
+      this.isModalRWDVisible = !this.isModalRWDVisible;
     },
-    closeModalResearch() {
-      this.isModalResearchVisible = false;
+    toggleModalTeambuilding() {
+      this.isModalTeambuildingVisible = !this.isModalTeambuildingVisible;
     },
-    showModalService() {
-      this.isModalServiceVisible = true;
+    toggleModalWorkshops() {
+      this.isModalWorkshopsVisible = !this.isModalWorkshopsVisible;
     },
-    closeModalService() {
-      this.isModalServiceVisible = false;
-    },
-    showModalFED() {
-      this.isModalFEDVisible = true;
-    },
-    closeModalFED() {
-      this.isModalFEDVisible = false;
-    },
-    showModalPWA() {
-      this.isModalPWAVisible = true;
-    },
-    closeModalPWA() {
-      this.isModalPWAVisible = false;
-    },
-    showModalRWD() {
-      this.isModalRWDVisible = true;
-    },
-    closeModalRWD() {
-      this.isModalRWDVisible = false;
-    },
-    showModalTeambuilding() {
-      this.isModalTeambuildingVisible = true;
-    },
-    closeModalTeambuilding() {
-      this.isModalTeambuildingVisible = false;
-    },
-    showModalWorkshops() {
-      this.isModalWorkshopsVisible = true;
-    },
-    closeModalWorkshops() {
-      this.isModalWorkshopsVisible = false;
-    },
-    showModalTraining() {
-      this.isModalTrainingVisible = true;
-    },
-    closeModalTraining() {
-      this.isModalTrainingVisible = false;
+    toggleModalTraining() {
+      this.isModalTrainingVisible = !this.isModalTrainingVisible;
     },
   },
 };
@@ -335,13 +299,13 @@ export default {
 
 <style lang="scss" scoped>
 #pageApproach {
-    .c-pill-group {
-        li:hover {
-          cursor: pointer;
-          opacity: 0.9;
-          text-decoration: underline;
-          text-decoration-color: var(--orange-dark);
-        }
+  .c-pill-group {
+    li:hover {
+      cursor: pointer;
+      opacity: 0.9;
+      text-decoration: underline;
+      text-decoration-color: var(--orange-dark);
     }
+  }
 }
 </style>
