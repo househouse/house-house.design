@@ -1042,6 +1042,10 @@ body-parser@1.18.2:
     raw-body "2.3.2"
     type-is "~1.6.15"
 
+body-scroll-lock@^2.4.6:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/body-scroll-lock/-/body-scroll-lock-2.6.1.tgz#3782ff37404886faaee366968ceee40c3964d8f2"
+
 boolbase@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
@@ -7330,6 +7334,13 @@ uuid@^3.0.1, uuid@^3.1.0, uuid@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
 
+v-scroll-lock@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/v-scroll-lock/-/v-scroll-lock-1.0.1.tgz#0f55f6c400a28d220766c263b02d36fe19fdb72b"
+  dependencies:
+    body-scroll-lock "^2.4.6"
+    vue "^2.5.16"
+
 validate-npm-package-license@^3.0.1:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/validate-npm-package-license/-/validate-npm-package-license-3.0.4.tgz#fc91f6b9c7ba15c857f4cb2c5defeec39d4f410a"
@@ -7439,6 +7450,10 @@ vue-template-compiler@^2.5.2:
 vue-template-es2015-compiler@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.6.0.tgz#dc42697133302ce3017524356a6c61b7b69b4a18"
+
+vue@^2.5.16:
+  version "2.5.20"
+  resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.20.tgz#79fff9ccaa10cc37e7a7239b4c7adfac94df81ba"
 
 vue@^2.5.2:
   version "2.5.17"
