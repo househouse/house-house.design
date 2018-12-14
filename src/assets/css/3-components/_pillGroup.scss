@@ -4,6 +4,11 @@
 
     padding-left: $hh-spacing-small;
 
+    @include --medium-only {
+        min-width: 50%;
+        float: left;
+    }
+
     &::before {
         @extend %u-position;
         @extend %u-circle;
@@ -15,11 +20,6 @@
         left: 0;
 
         width: $hh-spacing-xsmall;
-    }
-
-    @include --medium-only {
-        min-width: 50%;
-        float: left;
     }
 
     &.c--blue-dark::before {

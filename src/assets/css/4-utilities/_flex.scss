@@ -189,6 +189,27 @@
     }
 }
 
+.u-justify-between {
+    justify-content: space-between;
+
+    @include --narrow-only {
+        &--narrow-only {
+            justify-content: space-between;
+        }
+    }
+
+    @include --narrow-up {
+        &--narrow-up {
+            justify-content: space-between;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            justify-content: space-between;
+        }
+    }
+}
 
 // Flexbox Children
 // ---
