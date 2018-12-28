@@ -16,6 +16,8 @@ import GlobalFooter from '@/components/globalFooter';
 import GlobalHeader from '@/components/globalHeader';
 import GlobalNav from '@/components/Navigation/globalNav';
 
+import VScrollLock from 'v-scroll-lock';
+
 export default {
   name: 'app',
   components: {
@@ -25,13 +27,13 @@ export default {
     GlobalFooter,
     GlobalHeader,
     GlobalNav,
+    VScrollLock,
   },
   metaInfo: {
     title: 'House House', // if no subcomponents specify a metaInfo.title, this title will be used
     titleTemplate: '%s • A Design Studio', // all titles will be injected into this template
     meta: [
       { charset: 'utf-8' },
-      { name: 'google-site-verification', content: 'XQrarlvRzShmAo5O_AzT_Wuinw1JiNI4IXWGltMtxkA' },
       { name: 'description', content: 'A design studio and freelancer community' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'author', content: 'Ben Groulx, Sean Durfee' },

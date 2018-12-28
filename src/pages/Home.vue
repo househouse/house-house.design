@@ -98,7 +98,7 @@ div#pageHome
                 | housecss
             p.u-text-family-secondary.u-text-size-medium.u-baseline-medium.u-max-width-1of2--medium-up
                 | Build your next web project quickly by removing the
-                | uncertainty and grunt-work around writing base styles.
+                | uncertainty and grunt-work around writing base&nbsp;styles.
             div.u-flexbox.u-align-start
                 a.c-button-link.c--purple.c--with-icon.u-text-secondary.u-text-size-medium.u-baseline-small.u-no-wrap(href='https://npmjs.com/package/housecss' target='_blank')
                     <svg width="39" height="32" viewBox="0 0 39 32" xmlns="http://www.w3.org/2000/svg">

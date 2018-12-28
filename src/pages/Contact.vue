@@ -16,7 +16,7 @@ div#pageContact
 
                     p.u-flexbox.u-align-middle.u-justify-middle.u-padding-top-small.u-padding-bottom-small.u-color-black.u-text-uppercase.u-text-trackig-loose.u-text-size-small.u-baseline-small.u-border-grey-base(style='border-radius:10rem; border-width:0.25rem;')
                         span.u-block.u-text-align-center
-                          | We are currently taking new projects for #[strong.u-color-blue-light.u-no-wrap Q3/Q4 2018]
+                          | We are currently taking new projects for #[strong.u-color-blue-light.u-no-wrap Q1/Q2 2019]
 
     section.u-padding-bottom-large.u-padding-top-medium.u-bg-white.u-shadow-thick#start
         div.c-contain
@@ -91,45 +91,45 @@ export default {
 
 <style scoped>
 ::placeholder {
-    color: var(--grey-medium);
-    font-family: monospace;
-    font-style: normal;
+  color: var(--grey-medium);
+  font-family: monospace;
+  font-style: normal;
 }
 
 :-ms-input-placeholder {
-    color: var(--grey-medium);
-    font-family: monospace;
-    font-style: normal;
+  color: var(--grey-medium);
+  font-family: monospace;
+  font-style: normal;
 }
 
 ::-ms-input-placeholder {
-    color: var(--grey-medium);
-    font-family: monospace;
-    font-style: normal;
+  color: var(--grey-medium);
+  font-family: monospace;
+  font-style: normal;
 }
 
 .company-field::before {
-    content: '@';
-    position: absolute;
-    top: calc(50% - 1rem);
-    left: -1rem;
-    z-index: 200;
-    display: inline-block;
-    width: 2rem;
-    height: 2rem;
-    border: 1px solid var(--grey-medium);
-    background-color: var(--white);
-    border-radius: 100%;
-    color: var(--grey-medium);
-    text-align: center;
+  content: "@";
+  position: absolute;
+  top: calc(50% - 1rem);
+  left: -1rem;
+  z-index: 200;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--grey-medium);
+  background-color: var(--white);
+  border-radius: 100%;
+  color: var(--grey-medium);
+  text-align: center;
 }
 
 label {
-    white-space: nowrap;
-    cursor: text;
+  white-space: nowrap;
+  cursor: text;
 }
 
-input[type='checkbox'] {
+input[type="checkbox"] {
   cursor: pointer;
   width: 100%;
   height: 100%;
@@ -137,7 +137,7 @@ input[type='checkbox'] {
   opacity: 0;
 }
 
-input[type='checkbox']:checked ~ .c-accordion__content {
+input[type="checkbox"]:checked ~ .c-accordion__content {
   max-height: 0;
   opacity: 0;
 }
@@ -148,5 +148,4 @@ input[type='checkbox']:checked ~ .c-accordion__content {
   transform: translate(0, 0);
   transition: all 0.25s ease-in-out;
 }
-
 </style>
