@@ -46,7 +46,7 @@ footer.u-bg-black.u-bg-center.u-bg-cover.u-bg-group.u-color-white.u-context.u-cl
             div.u-margin-bottom-base.u-color-grey-medium.u-text-align-left.u-text-align-right--medium-up.u-text-size-small.u-baseline-small
                 p
                     | #[span.u-visually-hidden This site and its contents copyright]
-                    | © 2016–2018 House House • A Design Studio
+                    | © 2016–2019 House House • A Design Studio
                 p
                     | Made with love in Vancouver, Canada 🇨🇦
 
