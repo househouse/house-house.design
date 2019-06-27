@@ -12,6 +12,7 @@
     "core-js": "^2.6.5",
     "node-sass": "^4.12.0",
     "particles.js": "^2.0.0",
+    "prerender-spa-plugin": "^3.4.0",
     "pug": "^2.0.4",
     "pug-plain-loader": "^1.0.0",
     "register-service-worker": "^1.6.2",

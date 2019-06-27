@@ -27,8 +27,7 @@ export default {
     GlobalContent,
     GlobalCTA,
     GlobalFooter,
-    GlobalBackground,
-    // VScrollLock,
+    GlobalBackground
   },
   metaInfo: {
     title: 'House House', // if no subcomponents specify a metaInfo.title, this title will be used
