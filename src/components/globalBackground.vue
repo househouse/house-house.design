@@ -4,8 +4,9 @@ bgParticles(style='pointer-events:none;' role='presentation')
 </template>
 
 <script>
-import BgParticles from '@/components/bgParticles';
-import BgShapes from '@/components/bgShapes';
+
+import BgParticles from '../components/bgParticles';
+import BgShapes from '../components/bgShapes';
 
 export default {
   components: {

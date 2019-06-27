@@ -1,5 +1,8 @@
 {
-    "version": 2,
-    "builds": [{ "src": "package.json", "use": "@now/static-build" }],
-    "public": false
+  "name": "house-house-mktg",
+  "version": 2,
+  "builds": [{ "src": "package.json", "use": "@now/static-build" }],
+  "alias": ["house-house.design"],
+  "scope": "househouse",
+  "public": false
 }

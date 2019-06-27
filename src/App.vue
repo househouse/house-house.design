@@ -1,33 +1,32 @@
-<template lang="pug">
-div#app
-    globalNav
-    globalHeader
-    globalContent
-    globalCTA
-    globalFooter
-    globalBackground
+
+<template>
+  <div id="app">
+    <global-nav/>
+    <global-header/>
+    <global-content/>
+    <global-c-t-a/>
+    <global-footer/>
+    <global-background/>
+  </div>
 </template>
 
 <script>
-import GlobalBackground from '@/components/globalBackground';
-import GlobalCTA from '@/components/globalCTA';
-import GlobalContent from '@/components/globalContent';
-import GlobalFooter from '@/components/globalFooter';
-import GlobalHeader from '@/components/globalHeader';
-import GlobalNav from '@/components/Navigation/globalNav';
-
-import VScrollLock from 'v-scroll-lock';
+import GlobalBackground from './components/globalBackground.vue';
+import GlobalCTA from './components/globalCTA.vue';
+import GlobalContent from './components/globalContent.vue';
+import GlobalFooter from './components/globalFooter.vue';
+import GlobalHeader from './components/globalHeader.vue';
+import GlobalNav from './components/Navigation/globalNav.vue';
 
 export default {
   name: 'app',
   components: {
-    GlobalBackground,
-    GlobalCTA,
-    GlobalContent,
-    GlobalFooter,
     GlobalHeader,
     GlobalNav,
-    VScrollLock,
+    GlobalContent,
+    GlobalCTA,
+    GlobalFooter,
+    GlobalBackground
   },
   metaInfo: {
     title: 'House House', // if no subcomponents specify a metaInfo.title, this title will be used
@@ -44,5 +43,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import 'src/assets/css/main.scss';
+@import "src/assets/css/main.scss";
 </style>

@@ -89,96 +89,95 @@ export default {
 
 <style lang="scss" scoped>
 footer {
-    padding-bottom: 30%;
+  padding-bottom: 30%;
 
-    @media screen and (min-width: 48rem) {
-        padding-bottom: 20%;
-    }
+  @media screen and (min-width: 48rem) {
+    padding-bottom: 20%;
+  }
 
-    &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.5), var(--black));
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), var(--black));
+  }
 }
 
 nav a {
-    @media screen and (max-width: 45rem) {
-      height: 40px;
-      margin-right: 2vw;
-    }
+  @media screen and (max-width: 45rem) {
+    height: 40px;
+    margin-right: 2vw;
+  }
 
-    @media screen and (min-width: 46rem) {
-      margin-left: 2vw;
-    }
+  @media screen and (min-width: 46rem) {
+    margin-left: 2vw;
+  }
 }
 
 a,
 .router-link {
-    text-decoration-color: rgba(255, 255, 255, 0.6);
+  text-decoration-color: rgba(255, 255, 255, 0.6);
 
-    &:hover {
-        color: var(--grey-light);
-        text-decoration-color: var(--orange-dark);
-    }
+  &:hover {
+    color: var(--grey-light);
+    text-decoration-color: var(--orange-dark);
+  }
 }
 
 .router-link-active,
 .router-link-active:hover {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 svg {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 
-    fill: var(--white);
+  fill: var(--white);
 
-    opacity: 0.2;
+  opacity: 0.2;
 }
 
 @media screen and (min-width: 40rem) {
+  .x-question-outer {
+    transform: skew(20deg);
 
-    .x-question-outer {
-        transform: skew(20deg);
+    &::before,
+    &::after {
+      content: "";
 
-        &::before,
-        &::after {
-          content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      top: 0;
 
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          top: 0;
-
-          display: block;
-        }
-
-        &::after {
-            width: 100vw;
-
-            transform: translate(-99%, 0);
-
-            background: var(--blue-dark);
-        }
+      display: block;
     }
 
-    .x-question-inner {
-        transform:skew(-20deg);
+    &::after {
+      width: 100vw;
+
+      transform: translate(-99%, 0);
+
+      background: var(--blue-dark);
     }
+  }
+
+  .x-question-inner {
+    transform: skew(-20deg);
+  }
 }
 
 .x-question-photo {
-    width: 5rem;
-    height: 5rem;
+  width: 5rem;
+  height: 5rem;
 
-    @media screen and (max-width: 30rem) {
-        display: none;
-    }
+  @media screen and (max-width: 30rem) {
+    display: none;
+  }
 }
 </style>
