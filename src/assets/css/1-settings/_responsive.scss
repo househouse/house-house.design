@@ -1,0 +1,61 @@
+// Custom media queries
+// ==========
+
+@mixin break($screen) {
+    @media (min-width: $screen+'px') {
+        @content;
+    }
+}
+
+
+// Minimum, scale upwards
+// ---
+
+@mixin --narrow-up {
+    @media screen and (min-width: $hh-content-area-narrow) { @content; }
+}
+
+@mixin --medium-up {
+    @media screen and (min-width: $hh-content-area-medium) { @content; }
+}
+
+@mixin --wide-up {
+    @media screen and (min-width: $hh-content-area-wide) { @content; }
+}
+
+
+// Maximum, scale downwards
+// ---
+
+@mixin --wide-down {
+    @media screen and (max-width: $hh-content-area-wide) { @content; }
+}
+
+@mixin --medium-down {
+    @media screen and (max-width: $hh-content-area-medium) { @content; }
+}
+
+@mixin --narrow-down {
+    @media screen and (max-width: $hh-content-area-narrow) { @content; }
+}
+
+
+// Minimum and maximum
+// ---
+
+@mixin --narrow-only {
+    @media screen and (max-width: $hh-content-area-narrow) { @content; }
+}
+
+@mixin --medium-only {
+    @media screen and (min-width: $hh-content-area-narrow) and (max-width: $hh-content-area-medium) { @content; }
+}
+
+
+
+// Non-screens
+// ---
+
+@mixin --print {
+    @media print { @content; }
+}

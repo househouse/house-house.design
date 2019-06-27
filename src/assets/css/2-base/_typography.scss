@@ -1,0 +1,73 @@
+// Global typography styles
+// ==========
+
+body {
+    font-family: $hh-font-family-primary;
+    font-weight: $hh-font-weight-regular;
+    font-size: $hh-font-size-base;
+    line-height: $hh-baseline-base;
+}
+
+h1,
+%h1 {
+    opacity: 0.85;
+
+    font-weight: $hh-font-weight-bold;
+    font-size: $hh-font-size-large;
+    line-height: $hh-baseline-medium;
+
+    @include --medium-up {
+        font-size: $hh-font-size-xlarge;
+        line-height: $hh-baseline-xlarge;
+        letter-spacing: -($hh-spacing-xsmall / 10);
+    }
+}
+
+h2,
+%h2 {
+    font-weight: $hh-font-weight-thin;
+    font-size: $hh-font-size-large;
+    line-height: $hh-baseline-large;
+}
+
+h3,
+%h3 {
+    font-weight: $hh-font-weight-bold;
+    font-size: $hh-font-size-base;
+    line-height: $hh-baseline-small;
+    letter-spacing: ($hh-spacing-xsmall / 5);
+    text-transform: uppercase;
+}
+
+h4,
+h5,
+h6 {
+
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a,
+router-link,
+.router-link {
+    color: inherit;
+    cursor: pointer;
+}
+
+code,
+pre {
+    font-family: var(--font--code);
+}
+
+q,
+blockquote {
+    quote: none;
+
+    &::before,
+    &::after {
+        content: '';
+    }
+}

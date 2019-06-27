@@ -1,0 +1,115 @@
+// Global variables
+// ==========
+
+$hh-unit: (1rem / 3.2); // 5px
+
+$hh-baseline-xsmall: ($hh-unit * 2);  // 10px
+$hh-baseline-small:  ($hh-unit * 4);  // 20px
+$hh-baseline-base:   ($hh-unit * 6);  // 30px
+$hh-baseline-medium: ($hh-unit * 8);  // 40px
+$hh-baseline-large:  ($hh-unit * 10); // 60px
+$hh-baseline-xlarge: ($hh-unit * 16); // 80px
+
+$hh-spacing-xsmall: ($hh-unit * 2);  // 10px
+$hh-spacing-small:  ($hh-unit * 4);  // 20px
+$hh-spacing-base:   ($hh-unit * 8);  // 40px
+$hh-spacing-medium: ($hh-unit * 16); // 80px
+$hh-spacing-large:  ($hh-unit * 24); // 120px
+$hh-spacing-xlarge: ($hh-unit * 32); // 160px
+
+$hh-dimension-none: 0;
+$hh-dimension-1of4: (100%/4);    // 25%
+$hh-dimension-1of3: (100%/3);    // 33%
+$hh-dimension-1of2: (100%/2);    // 50%
+$hh-dimension-2of3: (100%/1.52); // 66%
+$hh-dimension-3of4: (100%/1.33); // 75%
+$hh-dimension-full: (100%/1);    // 100%
+
+$hh-content-area-narrow: ($hh-unit * 90);  // 430px
+$hh-content-area-medium: ($hh-unit * 154); // 770px
+$hh-content-area-wide:   ($hh-unit * 250); // 1175px
+
+$hh-font-size-xsmall: ($hh-unit * 2.4); // 12px
+$hh-font-size-small:  ($hh-unit * 2.8); // 14px
+$hh-font-size-base:   ($hh-unit * 3.2); // 16px
+$hh-font-size-medium: ($hh-unit * 4.0); // 20px
+$hh-font-size-large:  ($hh-unit * 6.4); // 32px
+$hh-font-size-xlarge: ($hh-unit * 12);  // 60px
+
+$hh-font-family-primary:   'HH GT Walsheim', -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+$hh-font-family-secondary: 'HH Tiempos Text', 'Georgia', serif;
+$hh-font-family-headline:  'HH Tiempos Headline', $hh-font-family-secondary;
+$hh-font-family-code:      'Menlo', monospace;
+
+$hh-font-weight-thin:    300;
+$hh-font-weight-regular: 400;
+$hh-font-weight-bold:    700;
+
+$hh-animation-fast: all 150ms ease-in-out;
+$hh-animation-slow: all 350ms cubic-bezier(0.215, 0.615, 0.355, 1);
+
+$z1-depth: -1;
+$z2-depth: 1;
+$z3-depth: 10;
+$z4-depth: 100;
+$z5-depth: 1000;
+
+
+// Global maps
+// ==========
+
+$spacing-map: (
+    xsmall: $hh-spacing-xsmall,
+    small:  $hh-spacing-small,
+    base:   $hh-spacing-base,
+    medium: $hh-spacing-medium,
+    large:  $hh-spacing-large,
+    xlarge: $hh-spacing-xlarge,
+    none:   0,
+);
+
+$dimensions-map: (
+    none: $hh-dimension-none,
+    1of4: $hh-dimension-1of4,
+    1of3: $hh-dimension-1of3,
+    1of2: $hh-dimension-1of2,
+    2of3: $hh-dimension-2of3,
+    3of4: $hh-dimension-3of4,
+    full: $hh-dimension-full,
+);
+
+$z-map: (
+    under: $z1-depth,
+    base:  $z2-depth,
+    over:  $z3-depth,
+    shade: $z4-depth,
+    modal: $z5-depth,
+);
+
+$color-map: (
+    white:         var(--white),
+    grey-light:    var(--grey-light),
+    grey-base:     var(--grey-base),
+    grey-medium:   var(--grey-medium),
+    grey-dark:     var(--grey-dark),
+    black:         var(--black),
+    blue-light:    var(--blue-light),
+    blue-medium:   var(--blue-medium),
+    blue-dark:     var(--blue-dark),
+    purple-light:  var(--purple-light),
+    purple-medium: var(--purple-medium),
+    purple-dark:   var(--purple-dark),
+    orange-light:  var(--orange-light),
+    orange-medium: var(--orange-medium),
+    orange-dark:   var(--orange-dark),
+    green-light:   var(--green-light),
+    green-medium:  var(--green-medium),
+    green-dark:    var(--green-dark),
+);
+
+$directions-map: (
+    top,
+    left,
+    right,
+    bottom,
+);

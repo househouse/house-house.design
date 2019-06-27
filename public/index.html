@@ -1,17 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-ca">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>house-house-mktg</title>
+    <!-- Looking for Site content metadata? Check `metaInfo` in App.vue -->
+    <meta
+      name="google-site-verification"
+      content="XQrarlvRzShmAo5O_AzT_Wuinw1JiNI4IXWGltMtxkA"
+    />
+
+    <!-- METADATA CONTENT-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@bengroulx, @durfeee" />
+    <meta name="og:url" content="https://house-house.design" />
+    <meta name="og:type" content="website" />
+    <meta name="og:site_name" content="House House" />
+
+    <!-- APP INSTALLATION -->
+    <link
+      rel="mask-icon"
+      href="<%= htmlWebpackPlugin.files.publicPath %>static/img/safari-pinned-tab.svg"
+      color="#4745d1"
+    />
+    <link
+      rel="manifest"
+      href="<%= htmlWebpackPlugin.files.publicPath %>static/manifest.json"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="House House" />
+    <meta name="theme-color" content="#4745d1" />
+    <meta name="msapplication-TileColor" content="#4745d1" />
+
+    <!-- APP ICONS -->
+    <meta
+      name="msapplication-TileImage"
+      content="<%= htmlWebpackPlugin.files.publicPath %>static/img/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="<%= htmlWebpackPlugin.files.publicPath %>static/img/apple-icon-114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="<%= htmlWebpackPlugin.files.publicPath %>static/img/apple-icon-144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="<%= htmlWebpackPlugin.files.publicPath %>static/img/apple-icon-152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="<%= htmlWebpackPlugin.files.publicPath %>static/img/apple-icon-180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="<%= htmlWebpackPlugin.files.publicPath %>static/img/android-icon-512.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="384x384"
+      href="<%= htmlWebpackPlugin.files.publicPath %>static/img/android-icon-384.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="256x256"
+      href="<%= htmlWebpackPlugin.files.publicPath %>static/img/android-icon-256.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="<%= htmlWebpackPlugin.files.publicPath %>static/img/android-icon-192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="<%= htmlWebpackPlugin.files.publicPath %>static/img/favicon-16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="<%= htmlWebpackPlugin.files.publicPath %>static/img/favicon-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="<%= htmlWebpackPlugin.files.publicPath %>static/img/favicon-96.png"
+    />
+
+    <!--[if IE]>
+      <link
+        rel="shortcut icon"
+        href="<%= htmlWebpackPlugin.files.publicPath %>static/img/favicon.ico"
+      />
+    <![endif]-->
+
+    <% for (var chunk of webpack.chunks) { for (var file of chunk.files) { if
+    (file.match(/\.(js|css)$/)) { %>
+    <link
+      href="<%= htmlWebpackPlugin.files.publicPath + file %>"
+      rel="<%= chunk.initial?'preload':'prefetch' %>"
+      as="<%= file.match(/\.css$/)?'style':'script' %>"
+    />
+    <% }}} %>
+
+    <style>
+      :root {
+        --white: #ffffff;
+        --grey-light: #f3f6fa;
+        --grey-base: #e6e9ee;
+        --grey-medium: #b0bbcb;
+        --grey-dark: #54657f;
+        --black: #101030;
+        --blue-light: #37a1fc;
+        --blue-medium: #3c69d9;
+        --blue-dark: #4745d1;
+        --purple-light: #b083c8;
+        --purple-medium: #9857ac;
+        --purple-dark: #8b3384;
+        --orange-light: #fd9a59;
+        --orange-medium: #fc6932;
+        --orange-dark: #f44631;
+        --green-light: #72c87c;
+        --green-medium: #60b584;
+        --green-dark: #419f77;
+      }
+    </style>
   </head>
-  <body>
+
+  <body class="u-bg-grey-light u-color-grey-dark">
+    <div id="app">
+      <!-- TODO: how can we further optimize SEO? -->
+    </div>
+
     <noscript>
-      <strong>We're sorry but house-house-mktg doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <!-- TODO: add non-js fallback -->
+      <p>
+        We haven’t optimized the site for non-JavaScript users yet. We’re
+        working on it as furiously as we can!
+      </p>
     </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+
+    <!-- TODO: only include in production
+    <%= htmlWebpackPlugin.options.serviceWorkerLoader %>
+    -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-87162611-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-87162611-1');
+    </script>
   </body>
 </html>

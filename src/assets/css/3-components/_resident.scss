@@ -1,0 +1,88 @@
+.c-resident,
+%c-resident {
+  @extend %u-context;
+  z-index: 10;
+
+  width: 100%;
+
+  transition: $hh-animation-fast;
+
+  @include break(600) {
+    display: flex;
+
+    &:hover &__image {
+      border-radius: 1rem;
+      box-shadow: 0 1rem 5rem rgba(0, 0, 100, 0.3);
+
+      transform: scale(1.05) translateX(-5%) rotate(-3deg);
+
+      &::after {
+        transform: translate(-4rem, 4rem);
+      }
+    }
+  }
+
+  &__image,
+  &__info {
+    @include break(600) {
+      width: 50%;
+    }
+  }
+
+  &__image {
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+    min-height: 10rem;
+    border-radius: 0.25rem;
+
+    background-position: center;
+    background-size: cover;
+
+    &,
+    &::after {
+      z-index: -1;
+      transition: all 0.3s cubic-bezier(0, 0, 0.3, 1);
+    }
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      width: 4rem;
+      height: 4rem;
+
+      background-image: url('data:image/svg+xml;utf8,<svg style="fill:#4745d1;" width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><path fill-opacity="0.3" d="M0 0h20v20h-20z"/><path fill-opacity="0.3" d="M20 20h20v20h-20z"/><path fill-opacity="0.6" d="M0 20h20v20h-20z"/><path fill-opacity="0.9" d="M0 40h20v20h-20z"/><path fill-opacity="0.9" d="M20 60h20v20h-20z"/><path fill-opacity="1.0" d="M0 60h20v20h-20z"/><path fill-opacity="0.6" d="M20 40h20v20h-20z"/><path fill-opacity="0.6" d="M40 60h20v20h-20z"/><path fill-opacity="0.3" d="M40 40h20v20h-20z"/><path fill-opacity="0.3" d="M60 60h20v20h-20z"/></svg>');
+      background-size: cover;
+    }
+
+    .c--ben & {
+      background-image: url('/assets/img/-ben.jpg');
+    }
+
+    .c--sean & {
+      background-image: url('/assets/img/-sean.jpg');
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+
+    @include break(800) {
+      padding-top: 18%;
+    }
+  }
+
+  &__name,
+  &__role {
+    line-height: 1;
+  }
+}

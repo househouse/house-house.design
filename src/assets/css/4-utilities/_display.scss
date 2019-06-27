@@ -1,0 +1,265 @@
+// Utilities: Display
+// ============================================================================
+
+.u-block,
+%u-block {
+    display: block;
+
+    @include --narrow-only {
+        &--narrow-only {
+            display: block;
+        }
+    }
+
+    @include --narrow-up {
+        &--narrow-up {
+            display: block;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            display: block;
+        }
+    }
+}
+
+.u-inline-block,
+%u-inline-block {
+    display: inline-block;
+
+    @include --narrow-only {
+        &--narrow-only {
+            display: inline-block;
+        }
+    }
+
+    @include --narrow-up {
+        &--narrow-up {
+            display: inline-block;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            display: inline-block;
+        }
+    }
+}
+
+
+// Visibility
+// ---
+
+.u-hidden,
+%u-hidden,
+[hidden] {
+    display: none;
+
+    @include --narrow-only {
+        &--narrow-only {
+            display: none !important;
+        }
+    }
+
+    @include --medium-only {
+        &--medium-only {
+            display: none !important;
+        }
+    }
+
+    @include --narrow-up {
+        &--narrow-up {
+            display: none !important;
+        }
+    }
+
+    @include --medium-down {
+        &--medium-down {
+            display: none !important;
+        }
+    }
+}
+
+.u-visually-hidden,
+%u-visually-hidden {
+    position: absolute;
+
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+}
+
+
+// Fluid Sizes
+// ---
+
+@each $dimensions-name, $dimensions-value in $dimensions-map {
+    .u-width-#{$dimensions-name},
+    %u-width-#{$dimensions-name} {
+        width: $dimensions-value;
+
+        @include --narrow-only {
+            &--narrow-only {
+                width: $dimensions-value;
+            }
+        }
+
+        @include --narrow-up {
+            &--narrow-up {
+                width: $dimensions-value;
+            }
+        }
+
+        @include --medium-up {
+            &--medium-up {
+                width: $dimensions-value;
+            }
+        }
+    }
+}
+
+@each $dimensions-name, $dimensions-value in $dimensions-map {
+    .u-max-width-#{$dimensions-name},
+    %u-max-width-#{$dimensions-name} {
+        max-width: $dimensions-value;
+
+        @include --narrow-only {
+            &--narrow-only {
+                width: $dimensions-value;
+            }
+        }
+
+        @include --narrow-up {
+            &--narrow-up {
+                max-width: $dimensions-value;
+            }
+        }
+
+        @include --medium-up {
+            &--medium-up {
+                max-width: $dimensions-value;
+            }
+        }
+    }
+}
+@each $dimensions-name, $dimensions-value in $dimensions-map {
+    .u-flex-basis-#{$dimensions-name},
+    %u-flex-basis-#{$dimensions-name} {
+        flex-basis: $dimensions-value;
+
+        @include --narrow-only {
+            &--narrow-only {
+                flex-basis: $dimensions-value;
+            }
+        }
+
+        @include --narrow-up {
+            &--narrow-up {
+                flex-basis: $dimensions-value;
+            }
+        }
+
+        @include --medium-up {
+            &--medium-up {
+                flex-basis: $dimensions-value;
+            }
+        }
+    }
+}
+
+@each $dimensions-name, $dimensions-value in $dimensions-map {
+    .u-height-#{$dimensions-name},
+    %u-height-#{$dimensions-name}, {
+        height: $dimensions-value;
+
+        @include --narrow-only {
+            &--narrow-only {
+                width: $dimensions-value;
+            }
+        }
+
+        @include --narrow-up {
+            &--narrow-up {
+                width: $dimensions-value;
+            }
+        }
+
+        @include --medium-up {
+            &--medium-up {
+                width: $dimensions-value;
+            }
+        }
+    }
+}
+
+
+// Viewport Sizes
+// ---
+
+.u-full-vwm
+%u-full-vw {
+    width: 100vw;
+
+    @include --narrow-only {
+        &--narrow-only {
+            width: 100vw;
+        }
+    }
+
+    @include --narrow-up {
+        &--narrow-up {
+            width: 100vw;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            width: 100vw;
+        }
+    }
+}
+
+.u-full-vh,
+%u-full-vh {
+    height: 100vh;
+
+    @include --narrow-only {
+        &--narrow-only {
+            height: 100vh;
+        }
+    }
+
+    @include --narrow-up {
+        &--narrow-up {
+            height: 100vh;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            height: 100vh;
+        }
+    }
+}
+
+
+// Overflow
+// ---
+
+.u-clip,
+%u-clip {
+    overflow: hidden;
+}
+
+
+// Prevent Line Wrapping
+// ---
+
+.u-no-wrap,
+%u-no-wrap {
+    white-space: nowrap;
+}

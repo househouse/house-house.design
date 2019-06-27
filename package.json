@@ -9,7 +9,16 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
-    "vue": "^2.6.10"
+    "node-sass": "^4.12.0",
+    "particles.js": "^2.0.0",
+    "pug": "^2.0.4",
+    "pug-plain-loader": "^1.0.0",
+    "register-service-worker": "^1.6.2",
+    "sass-loader": "^7.1.0",
+    "v-scroll-lock": "^1.0.1",
+    "vue": "^2.6.10",
+    "vue-meta": "^2.0.4",
+    "vue-router": "^3.0.6"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.8.0",
