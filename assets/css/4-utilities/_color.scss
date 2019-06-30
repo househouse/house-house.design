@@ -1,0 +1,17 @@
+// Utilities: Text Color
+// ============================================================================
+
+@each $color-name, $color-value in $color-map {
+    .u-color-#{$color-name} {
+        color: $color-value !important;
+    }
+}
+@each $color-name, $color-value in $color-map {
+    .u-fill-#{$color-name} {
+        color: $color-value !important;
+    }
+}
+
+.u-fill-cc {
+    fill: currentColor;
+}

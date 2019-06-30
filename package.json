@@ -1,57 +1,27 @@
 {
-  "name": "house-house-mktg",
-  "version": "0.1.0",
+  "name": "house-house.design",
+  "version": "1.0.0",
+  "description": "The House House Design marketing site",
+  "author": "@durfee",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "now-build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
   },
   "dependencies": {
-    "core-js": "^2.6.5",
+    "@nuxtjs/pwa": "^2.6.0",
     "node-sass": "^4.12.0",
-    "particles.js": "^2.0.0",
-    "prerender-spa-plugin": "^3.4.0",
-    "pug": "^2.0.4",
-    "pug-plain-loader": "^1.0.0",
-    "register-service-worker": "^1.6.2",
+    "nuxt": "^2.0.0",
     "sass-loader": "^7.1.0",
-    "v-scroll-lock": "^1.0.1",
-    "vue": "^2.6.10",
-    "vue-meta": "^2.0.4",
-    "vue-router": "^3.0.6"
+    "tachyons": "^4.11.1",
+    "vue-svg-loader": "^0.12.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.8.0",
-    "@vue/cli-plugin-eslint": "^3.8.0",
-    "@vue/cli-service": "^3.8.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "vue-template-compiler": "^2.6.10"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ]
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "nodemon": "^1.18.9",
+    "prettier": "^1.16.4"
+  }
 }
