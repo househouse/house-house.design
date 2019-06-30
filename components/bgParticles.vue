@@ -6,21 +6,10 @@
 </template>
 
 <script>
-import 'particles.js';
+// import 'particles.js';
 /* global particlesJS */
 
 export default {
-  mounted() {
-    this.$nextTick(() => {
-      this.initParticleJS();
-    });
-  },
-  methods: {
-    initParticleJS() {
-      window.addEventListener()
-      particlesJS.load('js-particles', 'assets/particles.json');
-    },
-  },
 };
 </script>
 
