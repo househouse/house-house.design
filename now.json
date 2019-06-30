@@ -1,8 +1,18 @@
 {
   "name": "house-house-mktg",
   "version": 2,
-  "builds": [{ "src": "package.json", "use": "@now/static-build" }],
-  "alias": ["house-house.design"],
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build"
+    }
+  ],
+  "alias": [
+    "house-house.design"
+  ],
   "scope": "househouse",
-  "public": false
+  "public": false,
+  "env": {
+    "GOOGLE_SITE_VERIFICATION_CODE": "XQrarlvRzShmAo5O_AzT_Wuinw1JiNI4IXWGltMtxkA"
+  }
 }
