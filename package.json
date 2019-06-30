@@ -1,6 +1,6 @@
 {
   "name": "house-house.design",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "description": "The House House Design marketing site",
   "author": "@durfee",
   "private": true,
@@ -8,7 +8,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "now-build": "nuxt generate"
   },
   "dependencies": {
     "@nuxtjs/pwa": "^2.6.0",
