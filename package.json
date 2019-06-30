@@ -15,6 +15,7 @@
     "@nuxtjs/pwa": "^2.6.0",
     "node-sass": "^4.12.0",
     "nuxt": "^2.0.0",
+    "particles.js": "^2.0.0",
     "sass-loader": "^7.1.0",
     "tachyons": "^4.11.1",
     "vue-svg-loader": "^0.12.0"
