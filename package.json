@@ -1,8 +1,8 @@
 {
   "name": "house-house.design",
   "version": "3.0.0",
-  "description": "The House House Design marketing site",
-  "author": "@durfee",
+  "description": "A design studio and freelancer community",
+  "author": "@durfee, @bengroulx",
   "private": true,
   "scripts": {
     "dev": "nuxt",
