@@ -1,6 +1,6 @@
 <template>
   <aside
-    class="u-bg-black u-color-white u-padding-bottom-medium u-padding-bottom-xlarge--medium-up u-padding-top-medium u-padding-top-xlarge--medium-up"
+    class="u-bg-blue-dark u-color-white u-padding-bottom-medium u-padding-bottom-xlarge--medium-up u-padding-top-medium u-padding-top-xlarge--medium-up"
     id="globalCTA"
   >
     <div

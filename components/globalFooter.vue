@@ -1,5 +1,5 @@
 <template>
-  <footer class="u-bg-black u-bg-center u-bg-cover u-bg-group u-color-white u-context u-clip">
+  <footer class="u-bg-blue-dark u-bg-center u-bg-cover u-bg-group u-color-white u-context u-clip">
     <div class="c-contain--narrow-up u-flexbox--medium-up u-align-middle u-context u-stack-over">
       <div class="u-flex u-margin-bottom-base">
         <div
@@ -31,14 +31,14 @@
         <nav
           class="u-flexbox--narrow-up u-margin-bottom-small u-justify-end--medium-up u-text-size-medium u-text-align-center"
         >
-          <nuxt-link class="u-block" to="/work">Work</nuxt-link>
-          <nuxt-link class="u-block" to="/approach">Approach</nuxt-link>
-          <nuxt-link class="u-block" to="/housemates">Housemates</nuxt-link>
-          <nuxt-link class="u-block" to="/contact">Contact</nuxt-link>
+          <nuxt-link class="u-block u-padding-top-small" to="/work">Work</nuxt-link>
+          <nuxt-link class="u-block u-padding-top-small" to="/approach">Approach</nuxt-link>
+          <nuxt-link class="u-block u-padding-top-small" to="/housemates">Housemates</nuxt-link>
+          <nuxt-link class="u-block u-padding-top-small" to="/contact">Contact</nuxt-link>
         </nav>
         <h2 class="u-visually-hidden">More Links:</h2>
         <nav
-          class="u-flexbox--narrow-up u-margin-bottom-base u-justify-end--medium-up u-text-size-small u-text-align-center u-baseline-small"
+          class="u-flexbox--narrow-up u-margin-bottom-small u-justify-end--medium-up u-text-size-small u-text-align-center u-baseline-small"
         >
           <a class="u-block" href="https://linkedin.com/company/house-house">LinkedIn</a>
           <a class="u-block" href="https://github.com/househouse">GitHub</a>
@@ -53,7 +53,7 @@
           <p>
             <span class="u-visually-hidden">This site and its contents copyright</span> © 2016–2019 House House • A Design Studio
           </p>
-          <p>Made with love in Vancouver, Canada 🇨🇦</p>
+          <p>Based in Vancouver and London 🇨🇦 🇬🇧 </p>
         </div>
       </div>
     </div>
@@ -151,9 +151,17 @@ svg {
   opacity: 0.2;
 }
 
+.x-question-outer {
+  transform: skew(10deg) translate(3rem, 0);
+}
+
+.x-question-inner {
+  transform: skew(-10deg);
+}
+
 @media screen and (min-width: 40rem) {
   .x-question-outer {
-    transform: skew(20deg);
+    transform: skew(20deg) translate(-2.5rem, 0);
 
     &::before,
     &::after {
