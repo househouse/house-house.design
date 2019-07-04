@@ -1,15 +1,14 @@
 <template>
   <div id="pageWork">
-    <section class="u-padding-bottom-medium">
-      <div class="c-contain u-color-purple-dark">
-        <h1 class="c-heading-c--1 u-margin-bottom-small u-max-width-3of4">↳ Housemates</h1>
+    <section class="u-padding-bottom-base u-bg-blue-dark">
+      <div class="c-contain">
+        <h1 class="c-heading-c--1 u-margin-bottom-small u-max-width-3of4 u-color-white">↳ Housemates</h1>
       </div>
     </section>
-    <section class="u-padding-bottom-large">
+    <section class="u-padding-top-medium u-padding-bottom-large">
       <div class="c-contain">
-        <div class="u-width-3of4">
-          <div
-            class="c-text-content u-color-black u-text-size-large u-baseline-large u-margin-bottom-medium"
+        <div class="u-width-3of4--medium-up">
+          <div class="c-text-content u-color-black u-text-size-large u-baseline-large u-margin-bottom-medium"
           >
             <p>
               🏡 We’re organized a bit differently than the last agency you worked with, and we think that’s our biggest strength. With a tiny full-time staff and a big network, we can adapt to scale and changes — just as your teams and projects

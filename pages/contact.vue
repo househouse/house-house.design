@@ -1,11 +1,11 @@
 <template>
   <div id="pageContact">
-    <section class="u-padding-bottom-medium">
-      <div class="c-contain u-color-orange-dark">
-        <h1 class="c-heading-c--1 u-margin-bottom-small u-max-width-3of4">↳ Start a project</h1>
+    <section class="u-padding-bottom-base u-bg-blue-dark">
+      <div class="c-contain">
+        <h1 class="c-heading-c--1 u-margin-bottom-small u-max-width-3of4 u-color-white">↳ Start a project</h1>
       </div>
     </section>
-    <section class="u-padding-bottom-large">
+    <section class="u-padding-top-medium u-padding-bottom-large">
       <div class="c-contain">
         <div class="u-max-width-2of3">
           <div class="c-text-content u-text-size-large u-baseline-large u-color-black">

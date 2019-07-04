@@ -1,12 +1,12 @@
 <template>
   <div id="pageApproach">
-    <section class="u-padding-bottom-medium">
-      <div class="c-contain u-color-green-dark">
-        <h1 class="c-heading-c--1 u-margin-bottom-small u-max-width-3of4">↳ Approach</h1>
+    <section class="u-padding-bottom-base u-bg-blue-dark">
+      <div class="c-contain">
+        <h1 class="c-heading-c--1 u-margin-bottom-small u-width-3of4--medium-up u-color-white">↳ Approach</h1>
       </div>
     </section>
-    <section class="u-padding-bottom-large">
-      <div class="c-contain u-flexbox--medium-up u-align-end">
+    <section class="u-padding-top-medium u-padding-bottom-large">
+      <div class="c-contain u-flexbox--wide-up u-align-end">
         <div class="u-padding-right-medium--medium-up">
           <div class="c-text-content u-text-size-large u-baseline-large u-color-black">
             <p class="u-margin-bottom-medium">

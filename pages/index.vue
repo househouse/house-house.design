@@ -1,23 +1,23 @@
 <template>
-  <div id="pageHome">
-    <section class="u-padding-bottom-medium u-padding-bottom-xlarge--medium-up u-color-black">
+  <div id="pageHome" class="u-bg-blue-dark">
+    <section class="u-padding-bottom-medium u-padding-bottom-xlarge--medium-up u-color-white">
       <div class="c-contain u-context">
         <h1 class="c-heading-c--1 u-margin-bottom-small u-max-width-2of3--medium-up">
           <span class="u-visually-hidden">House House</span> A design studio and freelancer community.
         </h1>
         <ul
-          class="u-max-width-1of2--medium-up u-text-list-bullets u-text-family-secondary u-text-size-medium u-baseline-medium"
+          class="u-max-width-1of2--medium-up u-text-list-bullets u-text-family-secondary u-text-size-medium u-baseline-base"
         >
-          <li>
+          <li class="u-margin-top-small">
             Grow your team’s abilities, capacity, and potential by adding some extra Housemate hands to your next project
             <span
               class="u-no-wrap"
             >
               or sprint,
-              <em class="u-color-grey-dark">or…</em>
+              <em class="u-color-grey-medium">or…</em>
             </span>
           </li>
-          <li>
+          <li class="u-margin-top-small">
             Hire our team of design and development consultants, strategists, and producers to turn your digital product ideas into
             <span
               class="u-no-wrap"
@@ -29,17 +29,15 @@
           class="u-position u-bottom-0 u-right-0 x-device-description u-text-size-small u-baseline-small"
         >
           <p
-            class="u-margin-bottom-xsmall u-color-grey-medium u-text-weight-bold u-no-break"
+            class="u-margin-bottom-xsmall u-color-blue-light u-text-weight-bold u-no-break"
           >◀ blanc ink</p>
           <p
-            class="u-margin-bottom-xsmall u-color-grey-dark"
+            class="u-margin-bottom-xsmall u-color-grey-base"
           >We helped the tattoo removal startup explore and build a bespoke web app.</p>
         </div>
       </div>
     </section>
-    <section
-      class="u-padding-bottom-medium u-padding-bottom-xlarge--medium-up u-padding-top-medium u-padding-top-xlarge--medium-up u-bg-gradient-whiteout u-shadow-thick"
-    >
+    <section class="u-padding-bottom-medium u-padding-bottom-xlarge--medium-up u-padding-top-medium u-padding-top-xlarge--medium-up u-bg-white u-shadow-thick">
       <div class="c-contain">
         <article
           class="u-flexbox--medium-up u-align-end u-margin-bottom-medium u-margin-bottom-xlarge--medium-up"
