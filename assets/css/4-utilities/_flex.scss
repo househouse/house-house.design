@@ -25,6 +25,12 @@
             display: flex;
         }
     }
+
+    @include --wide-up {
+        &--wide-up {
+            display: flex;
+        }
+    }
 }
 
 .u-flex-column {
