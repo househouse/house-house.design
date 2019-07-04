@@ -5,7 +5,7 @@
         <h1 class="c-heading-c--1 u-margin-bottom-small u-max-width-3of4 u-color-white">↳ Start a project</h1>
       </div>
     </section>
-    <section class="u-padding-top-medium u-padding-bottom-large">
+    <section class="u-padding-top-medium u-padding-bottom-large u-bg-grey-light">
       <div class="c-contain">
         <div class="u-max-width-2of3">
           <div class="c-text-content u-text-size-large u-baseline-large u-color-black">

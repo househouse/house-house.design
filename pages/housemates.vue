@@ -15,7 +15,7 @@
               must.
             </p>
           </div>
-          <div class="c-text-content u-text-family-secondary u-text-size-medium u-baseline-medium">
+          <div class="c-text-content u-color-grey-dark u-text-family-secondary u-text-size-medium u-baseline-medium">
             <p>
               When filmmakers make movies, characters are portrayed by the actors who best embody the role. Similarly, we’ll staff your project by choosing the designers who best fit the requirements. Whether it’s design direction or support, your
               team acquires the right number of folks handpicked for your specific situation.

@@ -5,7 +5,7 @@
         <h1 class="c-heading-c--1 u-margin-bottom-small u-width-3of4--medium-up u-color-white">↳ Approach</h1>
       </div>
     </section>
-    <section class="u-padding-top-medium u-padding-bottom-large">
+    <section class="u-padding-top-medium u-padding-bottom-large u-bg-grey-light">
       <div class="c-contain u-flexbox--wide-up u-align-end">
         <div class="u-padding-right-medium--medium-up">
           <div class="c-text-content u-text-size-large u-baseline-large u-color-black">

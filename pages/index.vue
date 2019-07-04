@@ -37,7 +37,7 @@
         </div>
       </div>
     </section>
-    <section class="u-padding-bottom-medium u-padding-bottom-xlarge--medium-up u-padding-top-medium u-padding-top-xlarge--medium-up u-bg-white u-shadow-thick">
+    <section class="u-padding-bottom-medium u-padding-bottom-xlarge--medium-up u-padding-top-medium u-padding-top-xlarge--medium-up u-bg-grey-light u-color-grey-dark u-shadow-thick">
       <div class="c-contain">
         <article
           class="u-flexbox--medium-up u-align-end u-margin-bottom-medium u-margin-bottom-xlarge--medium-up"
