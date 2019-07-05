@@ -23,9 +23,10 @@
 
   &.--mobile {
     top: 1em;
-    right: auto;
+    right: 1em;
     bottom: auto;
-    left: 1em;
+    left: auto;
+
     width: 3em;
     height: 3em;
     cursor: pointer;
@@ -270,7 +271,7 @@
   }
 
   .c-nav-crumbs & li.isActive::after {
-    border: 2px solid var(--blue-dark);
+    border: 2px solid var(--grey-medium);
     background-color: var(--blue-dark);
   }
 }

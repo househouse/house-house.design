@@ -1,9 +1,9 @@
 <template>
-  <footer class="u-bg-black u-bg-center u-bg-cover u-bg-group u-color-white u-context u-clip">
+  <footer class="u-context u-clip u-bg-blue-dark u-bg-center u-bg-cover u-bg-group u-color-white">
     <div class="c-contain--narrow-up u-flexbox--medium-up u-align-middle u-context u-stack-over">
       <div class="u-flex u-margin-bottom-base">
         <div
-          class="u-bg-blue-dark u-padding-top-base u-padding-bottom-base u-padding-left-xsmall--narrow-up u-padding-left-base--medium-up u-padding-right-xsmall--narrow-up u-padding-right-base--medium-up u-context x-question-outer"
+          class="u-border-white u-padding-top-base u-padding-bottom-base u-padding-left-xsmall--narrow-up u-padding-left-base--medium-up u-padding-right-xsmall--narrow-up u-padding-right-base--medium-up u-context x-question-outer"
           id="question"
         >
           <div class="u-flexbox u-align-middle u-text-align-center x-question-inner">
@@ -31,14 +31,14 @@
         <nav
           class="u-flexbox--narrow-up u-margin-bottom-small u-justify-end--medium-up u-text-size-medium u-text-align-center"
         >
-          <nuxt-link class="u-block" to="/work">Work</nuxt-link>
-          <nuxt-link class="u-block" to="/approach">Approach</nuxt-link>
-          <nuxt-link class="u-block" to="/housemates">Housemates</nuxt-link>
-          <nuxt-link class="u-block" to="/contact">Contact</nuxt-link>
+          <nuxt-link class="u-block u-padding-top-small" to="/work">Work</nuxt-link>
+          <nuxt-link class="u-block u-padding-top-small" to="/approach">Approach</nuxt-link>
+          <nuxt-link class="u-block u-padding-top-small" to="/housemates">Housemates</nuxt-link>
+          <nuxt-link class="u-block u-padding-top-small" to="/contact">Contact</nuxt-link>
         </nav>
         <h2 class="u-visually-hidden">More Links:</h2>
         <nav
-          class="u-flexbox--narrow-up u-margin-bottom-base u-justify-end--medium-up u-text-size-small u-text-align-center u-baseline-small"
+          class="u-flexbox--narrow-up u-margin-bottom-small u-justify-end--medium-up u-text-size-small u-text-align-center u-baseline-small"
         >
           <a class="u-block" href="https://linkedin.com/company/house-house">LinkedIn</a>
           <a class="u-block" href="https://github.com/househouse">GitHub</a>
@@ -48,12 +48,12 @@
           >Our Code of Conduct</a>
         </nav>
         <div
-          class="u-margin-bottom-base u-color-grey-medium u-text-align-left u-text-align-right--medium-up u-text-size-small u-baseline-small"
+          class="u-margin-bottom-base u-color-grey-medium u-text-align-center u-text-align-left--narrow-up u-text-align-right--medium-up u-text-size-small u-baseline-small"
         >
           <p>
             <span class="u-visually-hidden">This site and its contents copyright</span> © 2016–2019 House House • A Design Studio
           </p>
-          <p>Made with love in Vancouver, Canada 🇨🇦</p>
+          <p>Based in Vancouver and London 🇨🇦 🇬🇧 </p>
         </div>
       </div>
     </div>
@@ -101,7 +101,7 @@ footer {
   padding-bottom: 30%;
 
   @media screen and (min-width: 48rem) {
-    padding-bottom: 20%;
+    padding-bottom: 15%;
   }
 
   &::after {
@@ -111,7 +111,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), var(--black));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), var(--blue-dark));
   }
 }
 
@@ -154,26 +154,6 @@ svg {
 @media screen and (min-width: 40rem) {
   .x-question-outer {
     transform: skew(20deg);
-
-    &::before,
-    &::after {
-      content: '';
-
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      top: 0;
-
-      display: block;
-    }
-
-    &::after {
-      width: 100vw;
-
-      transform: translate(-99%, 0);
-
-      background: var(--blue-dark);
-    }
   }
 
   .x-question-inner {

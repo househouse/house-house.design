@@ -1,11 +1,11 @@
 <template>
-  <div class="u-color-white" id="pageWork">
-    <section class="u-padding-bottom-medium">
-      <div class="c-contain u-color-blue-light">
-        <h1 class="c-heading-c--1 u-margin-bottom-small u-max-width-3of4">↳ Work</h1>
+  <div class="" id="pageWork">
+    <section class="u-padding-bottom-base u-bg-blue-dark">
+      <div class="c-contain">
+        <h1 class="c-heading-c--1 u-margin-bottom-small u-max-width-3of4 u-color-white">↳ Work</h1>
       </div>
     </section>
-    <section class="u-padding-top-base u-padding-top-large--medium-up u-bg-blue-medium">
+    <section class="u-padding-top-base u-padding-top-medium--medium-up u-bg-grey-light">
       <div class="c-contain">
         <div class="u-flexbox--medium-up">
           <div class="u-flex u-order-2--medium-up">
@@ -48,7 +48,7 @@
         </div>
       </div>
     </section>
-    <section class="u-padding-top-base u-padding-top-large--medium-up u-bg-orange-medium">
+    <section class="u-padding-top-base u-padding-top-large--medium-up u-bg-grey-medium">
       <div class="c-contain">
         <div class="u-flexbox--medium-up">
           <div class="u-flex u-order-1--medium-up">
@@ -79,7 +79,7 @@
         </div>
       </div>
     </section>
-    <section class="u-padding-top-base u-padding-top-large--medium-up u-bg-black">
+    <section class="u-padding-top-base u-padding-top-large--medium-up u-bg-black u-color-white">
       <div class="c-contain">
         <div class="u-flexbox--medium-up">
           <div class="u-flex u-order-2--medium-up">
@@ -112,7 +112,7 @@
         </div>
       </div>
     </section>
-    <section class="u-padding-top-base u-padding-top-large--medium-up u-bg-blue-light">
+    <section class="u-padding-top-base u-padding-top-large--medium-up u-bg-grey-dark u-color-white">
       <div class="c-contain">
         <div class="u-flexbox--medium-up">
           <div class="u-flex u-order-1--medium-up">
@@ -144,7 +144,7 @@
         </div>
       </div>
     </section>
-    <section class="u-padding-top-base u-padding-top-large--medium-up u-bg-grey-dark">
+    <section class="u-padding-top-base u-padding-top-large--medium-up u-bg-grey-light">
       <div class="c-contain">
         <div class="u-flexbox--medium-up">
           <div class="u-flex u-order-2--medium-up">
@@ -181,7 +181,7 @@
         </div>
       </div>
     </section>
-    <section class="u-padding-top-base u-padding-top-large--medium-up u-bg-green-dark">
+    <section class="u-padding-top-base u-padding-top-large--medium-up u-bg-grey-medium">
       <div class="c-contain">
         <div class="u-flexbox--medium-up">
           <div class="u-flex u-order-1--medium-up">

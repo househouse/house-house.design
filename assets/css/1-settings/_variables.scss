@@ -6,7 +6,7 @@ $hh-unit: (1rem / 3.2); // 5px
 $hh-baseline-xsmall: ($hh-unit * 2);  // 10px
 $hh-baseline-small:  ($hh-unit * 4);  // 20px
 $hh-baseline-base:   ($hh-unit * 6);  // 30px
-$hh-baseline-medium: ($hh-unit * 8);  // 40px
+$hh-baseline-medium: ($hh-unit * 7);  // 35px
 $hh-baseline-large:  ($hh-unit * 10); // 60px
 $hh-baseline-xlarge: ($hh-unit * 16); // 80px
 
@@ -37,8 +37,8 @@ $hh-font-size-large:  ($hh-unit * 6.4); // 32px
 $hh-font-size-xlarge: ($hh-unit * 12);  // 60px
 
 $hh-font-family-primary:   'HH GT Walsheim', -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
-$hh-font-family-secondary: 'HH Tiempos Text', 'Georgia', serif;
-$hh-font-family-headline:  'HH Tiempos Headline', $hh-font-family-secondary;
+$hh-font-family-secondary: 'HH Proxima Nova', -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+$hh-font-family-headline:  'HH Tiempos Headline', 'Times New Roman', 'Times', serif;
 $hh-font-family-code:      'Menlo', monospace;
 
 $hh-font-weight-thin:    300;

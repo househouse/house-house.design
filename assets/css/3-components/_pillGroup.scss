@@ -4,9 +4,14 @@
 
     padding-left: $hh-spacing-small;
 
-    @include --medium-only {
+    @include --narrow-up {
         min-width: 50%;
         float: left;
+    }
+
+    @include --wide-up {
+        min-width: 0%;
+        float: none;
     }
 
     &::before {

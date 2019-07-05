@@ -144,6 +144,12 @@
                 max-width: $dimensions-value;
             }
         }
+
+        @include --wide-up {
+            &--wide-up {
+                max-width: $dimensions-value !important;
+            }
+        }
     }
 }
 @each $dimensions-name, $dimensions-value in $dimensions-map {

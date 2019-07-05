@@ -1,6 +1,27 @@
 // @import url("https://use.typekit.net/nxg7whm.css");
 
 @font-face {
+    font-family: 'HH Proxima Nova';
+    font-style: normal;
+    font-weight: $hh-font-weight-regular;
+
+    src:
+    url('../../static/fonts/proxima-nova--regular.woff2') format('woff2'),
+    url('../../static/fonts/proxima-nova--regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'HH Proxima Nova';
+    font-style: normal;
+    font-weight: $hh-font-weight-bold;
+    font-display: optional;
+
+    src:
+    url('../../static/fonts/proxima-nova--bold.woff2') format('woff2'),
+    url('../../static/fonts/proxima-nova--bold.woff') format('woff');
+}
+
+@font-face {
     font-family: 'HH Tiempos Headline';
     font-style: italic;
     font-weight: $hh-font-weight-bold;

@@ -1,37 +1,38 @@
 <template>
   <div id="pageWork">
-    <section class="u-padding-bottom-medium">
-      <div class="c-contain u-color-purple-dark">
-        <h1 class="c-heading-c--1 u-margin-bottom-small u-max-width-3of4">↳ Housemates</h1>
+
+    <section class="u-padding-bottom-base u-bg-blue-dark">
+      <div class="c-contain">
+        <h1 class="c-heading-c--1 u-margin-bottom-small u-max-width-3of4 u-color-white">↳ Housemates</h1>
       </div>
     </section>
-    <section class="u-padding-bottom-large">
+
+    <section class="u-padding-top-medium u-padding-bottom-large u-bg-grey-light">
       <div class="c-contain">
-        <div class="u-width-3of4">
-          <div
-            class="c-text-content u-color-black u-text-size-large u-baseline-large u-margin-bottom-medium"
-          >
+
+        <div class="u-width-3of4--medium-up">
+          <div class="c-text-content u-color-black u-text-size-large u-baseline-large u-margin-bottom-base">
             <p>
               🏡 We’re organized a bit differently than the last agency you worked with, and we think that’s our biggest strength. With a tiny full-time staff and a big network, we can adapt to scale and changes — just as your teams and projects
               must.
             </p>
           </div>
-          <div class="c-text-content u-text-family-secondary u-text-size-medium u-baseline-medium">
+
+          <div class="c-text-content u-color-grey-dark u-text-family-secondary u-text-size-medium u-baseline-medium">
             <p>
               When filmmakers make movies, characters are portrayed by the actors who best embody the role. Similarly, we’ll staff your project by choosing the designers who best fit the requirements. Whether it’s design direction or support, your
               team acquires the right number of folks handpicked for your specific situation.
             </p>
           </div>
         </div>
+
       </div>
     </section>
-    <section
-      class="u-padding-bottom-xlarge u-padding-top-xlarge u-bg-purple-medium u-shadow-thick u-border-top-purple-dark"
-    >
+
+    <section class="u-padding-bottom-xlarge u-padding-top-xlarge u-bg-purple-medium u-shadow-thick u-border-top-purple-dark">
       <div class="c-contain">
-        <div
-          class="c-text-content u-text-size-large u-baseline-large u-color-white u-text-align-center"
-        >
+
+        <div class="c-text-content u-text-size-large u-baseline-large u-color-white u-text-align-center">
           <p>
             When you start a project with
             <strong
@@ -42,10 +43,11 @@
             >up to speed</span>.
           </p>
         </div>
+
         <div class="u-flexbox--medium-up u-margin-top-medium">
-          <div
-            class="u-flex-expand u-bg-white u-shadow-thick u-padding-top-base u-padding-bottom-base u-padding-left-base u-padding-right-base u-margin-right-small--medium-up u-margin-bottom-small--medium-down"
-          >
+
+          <div class="u-flex-expand u-bg-white u-shadow-thick u-padding-top-base u-padding-bottom-base u-padding-left-base u-padding-right-base u-margin-right-small--medium-up u-margin-bottom-small--medium-down">
+
             <h3 class="u-margin-bottom-xsmall">
               Bricks
               <span class="u-color-grey-medium">/ Flexible Pricing</span>
@@ -56,9 +58,8 @@
               <strong>bricks</strong>” — half-days of work, or 3–5 hours; one calendar day is comprised of two bricks. Bricks allow you to slot a designer in when you think they will make the biggest impact.
             </p>
           </div>
-          <div
-            class="u-flex-expand u-bg-white u-shadow-thick u-padding-top-base u-padding-bottom-base u-padding-left-base u-padding-right-base u-margin-left-small--medium-up"
-          >
+
+          <div class="u-flex-expand u-bg-white u-shadow-thick u-padding-top-base u-padding-bottom-base u-padding-left-base u-padding-right-base u-margin-left-small--medium-up">
             <h3 class="u-margin-bottom-xsmall">
               Campaigns
               <span class="u-color-grey-medium">/ Fixed-Rate Pricing</span>
@@ -68,9 +69,12 @@
               with you to plan the type and amount of support you’ll need. Instead of us delivering your project and parting ways, our Housemates will coach, mentor, support, and work in and on your team, setting you up for long-term success.
             </p>
           </div>
+
         </div>
+
       </div>
     </section>
+
     <div hidden="hidden">
       <section class="u-padding-bottom-large">
         <div class="c-contain">
