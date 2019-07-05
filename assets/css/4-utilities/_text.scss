@@ -236,13 +236,13 @@
 
     @include --narrow-only {
         &--narrow-only {
-            text-align: left;
+            text-align: left !important;
         }
     }
 
     @include --narrow-up {
         &--narrow-up {
-            text-align: left;
+            text-align: left !important;
         }
     }
 }
@@ -253,19 +253,19 @@
 
     @include --narrow-only {
         &--narrow-only {
-            text-align: center;
+            text-align: center !important;
         }
     }
 
     @include --narrow-up {
         &--narrow-up {
-            text-align: center;
+            text-align: center !important;
         }
     }
 
     @include --medium-up {
         &--medium-up {
-            text-align: center;
+            text-align: center !important;
         }
     }
 }
@@ -276,19 +276,19 @@
 
     @include --narrow-only {
         &--narrow-only {
-            text-align: right;
+            text-align: right !important;
         }
     }
 
     @include --narrow-up {
         &--narrow-up {
-            text-align: right;
+            text-align: right !important;
         }
     }
 
     @include --medium-up {
         &--medium-up {
-            text-align: right;
+            text-align: right !important;
         }
     }
 }
