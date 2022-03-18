@@ -17,10 +17,6 @@
                 --color-action: #FF9E68;
                 --color-text: #FEFEFE;
                 --color-text-faded: rgba(255, 255, 255, 0.6);
-                --space-xs: 0.2em;
-                --space-sm: 0.5em;
-                --space-md: 1em;
-                --space-lg: 5vw;
             }
         </style>
         <style>
@@ -105,7 +101,7 @@
                 font-family: "Source Serif Pro", serif, "Apple Color Emoji";
                 font-style: normal;
                 font-weight: 400;
-                font-size: 1rem;
+                font-size: 1em;
                 font-variant: common-ligatures;
                 animation: multicolour;
                 animation-duration: 30s;
@@ -124,18 +120,18 @@
             }
 
             .text-large {
-                font-size: 1.5rem;
+                font-size: 1.5em;
             }
 
             @media screen and (min-width: 30em) {
                 .text-large {
-                    font-size: 2.25rem;
+                    font-size: 2.25em;
                 }
             }
 
             @media screen and (min-width: 50em) {
                 .text-large {
-                    font-size: 3rem;
+                    font-size: 3em;
                 }
             }
 
@@ -176,12 +172,12 @@
 
             main {
                 padding: 10vh 10vw;
-                max-width: 90rem;
+                max-width: 90em;
                 margin: auto;
             }
 
             section {
-                margin-bottom: 5rem;
+                margin-bottom: 5em;
             }
 
             section:after {
@@ -216,12 +212,12 @@
             }
 
             section li {
-                margin-right: 1rem;
+                margin-right: 1em;
                 counter-increment: list-number;
         }
 
             section li::before {
-                padding-right: 0.5rem;
+                padding-right: 0.5em;
                 content: counter(list-number, decimal-leading-zero);
                 color: var(--color-text-faded);
                 font-family: "Roboto Mono", monospace;
@@ -246,7 +242,7 @@
 
             section > *+*,
             footer > *+* {
-                margin-top: 1rem;
+                margin-top: 1em;
             }
 
             header {
