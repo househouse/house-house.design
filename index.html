@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A network of independent designers, researchers, developers, and engineers.">
+        <meta name="keywords" content="design, ui, ux, mobile, front-end, html, css, interface, vancouver, canada">
+        <meta name="author" content="Ben Groulx, Sean Durfee">
+        <title>House House Design • Digital Design & Strategy</title>
+        <style>
+            :root {
+                --color-background-01: #534D99;
+                --color-background-02: #4F3275;
+                --color-background-03: #195580;
+                --color-background-04: #19806D;
+                --color-action: #FF9E68;
+                --color-text: #FEFEFE;
+                --color-text-faded: rgba(255, 255, 255, 0.6);
+            }
+        </style>
+        <style>
+            @font-face {
+              font-family: "Source Serif Pro";
+              font-display: swap;
+              font-style: normal;
+              font-weight: 900;
+              src: url("https://fonts.gstatic.com/s/sourceserifpro/v11/neIXzD-0qpwxpaWvjeD0X88SAOeasfcZtSKqxKcsdrOPbQ.woff2") format("woff2");
+              unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+            @font-face {
+              font-family: "Source Serif Pro";
+              font-display: swap;
+              font-style: normal;
+              font-weight: 900;
+              src: url("https://fonts.gstatic.com/s/sourceserifpro/v11/neIXzD-0qpwxpaWvjeD0X88SAOeasfcZtSyqxKcsdrM.woff2") format("woff2");
+              unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+            @font-face {
+              font-family: "Source Serif Pro";
+              font-display: swap;
+              font-style: normal;
+              font-weight: 300;
+              src: url("https://fonts.gstatic.com/s/sourceserifpro/v11/neIXzD-0qpwxpaWvjeD0X88SAOeasd8ctSKqxKcsdrOPbQ.woff2") format("woff2");
+              unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+            @font-face {
+              font-family: "Source Serif Pro";
+              font-display: swap;
+              font-style: normal;
+              font-weight: 300;
+              src: url("https://fonts.gstatic.com/s/sourceserifpro/v11/neIXzD-0qpwxpaWvjeD0X88SAOeasd8ctSyqxKcsdrM.woff2") format("woff2");
+              unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+            @font-face {
+              font-family: "Source Serif Pro";
+              font-display: swap;
+              font-style: normal;
+              font-weight: 400;
+              src: url("https://fonts.gstatic.com/s/sourceserifpro/v11/neIQzD-0qpwxpaWvjeD0X88SAOeauXo-oAGIyY0Wfw.woff2") format("woff2");
+              unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+            @font-face {
+              font-family: "Source Serif Pro";
+              font-display: swap;
+              font-style: normal;
+              font-weight: 400;
+              src: url("https://fonts.gstatic.com/s/sourceserifpro/v11/neIQzD-0qpwxpaWvjeD0X88SAOeauXQ-oAGIyY0.woff2") format("woff2");
+              unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+            @font-face {
+              font-family: "Roboto Mono";
+              font-display: swap;
+              font-style: normal;
+              font-weight: var(--text-regular);
+              src: url("https://fonts.gstatic.com/s/robotomono/v13/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW-AJi8SJQtQ4Y.woff") format("woff");
+              unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+            @font-face {
+              font-family: "Roboto Mono";
+              font-display: swap;
+              font-style: normal;
+              font-weight: var(--text-regular);
+              src: url("https://fonts.gstatic.com/s/robotomono/v13/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW-AJi8SJQt.woff") format("woff");
+              unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+        </style>
+        <style media="screen">
+            *,
+            *::after,
+            *::before {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-weight: inherit;
+            }
+
+            body {
+                background-color: var(--color-background-01);
+                color: var(--color-text);
+                font-family: "Source Serif Pro", serif, "Apple Color Emoji";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1em;
+                font-variant: common-ligatures;
+                animation: multicolour;
+                animation-duration: 30s;
+                animation-delay: 5s;
+                animation-iteration-count: infinite;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            .text-thin {
+                font-weight: 300;
+            }
+
+            .text-thick {
+                font-weight: 900;
+            }
+
+            .text-large {
+                font-size: 1.5em;
+            }
+
+            @media screen and (min-width: 30em) {
+                .text-large {
+                    font-size: 2.25em;
+                }
+            }
+
+            @media screen and (min-width: 50em) {
+                .text-large {
+                    font-size: 3em;
+                }
+            }
+
+            .text-small {
+                font-size: 1.25em;
+            }
+
+            @media screen and (min-width: 30em) {
+                .text-small {
+                    font-size: 1.25em;
+                }
+            }
+
+            @media screen and (min-width: 50em) {
+                .text-small {
+                    font-size: 1.5em;
+                }
+            }
+
+            .text-subtle {
+                color: var(--color-text-faded);
+            }
+
+            .text-heading {
+                color: var(--color-text-faded);
+                font-family: "Roboto Mono", monospace;
+                font-size: 1em;
+                letter-spacing: 0.2em;
+                text-transform: uppercase;
+            }
+
+            .text-smcp {
+                opacity: 0.9;
+                font-size: 0.7em;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+            }
+
+            main {
+                padding: 10vh 10vw;
+                max-width: 90em;
+                margin: auto;
+            }
+
+            section {
+                margin-bottom: 5em;
+            }
+
+            section:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            a {
+                color: inherit;
+                text-decoration-color: var(--color-text-faded);
+            }
+
+            a:hover {
+                color: var(--color-action);
+                text-decoration-color: var(--color-text);
+                text-decoration: underline;
+            }
+
+            a:active {
+                color: var(--color-action);
+                text-decoration-color: var(--color-text-faded);
+                text-decoration: none;
+            }
+
+            section ol,
+            section ul {
+                display: flex;
+                flex-wrap: wrap;
+                list-style: none;
+                counter-reset: list-number;
+            }
+
+            section li {
+                margin-right: 1em;
+                counter-increment: list-number;
+        }
+
+            section li::before {
+                padding-right: 0.5em;
+                content: counter(list-number, decimal-leading-zero);
+                color: var(--color-text-faded);
+                font-family: "Roboto Mono", monospace;
+                font-size: 0.75em;
+            }
+
+            @media screen and (min-width: 60em) {
+                section:not(.introduction) {
+                    padding-right: 40%;
+                }
+            }
+
+            .introduction {
+                margin: 10vh 0;
+            }
+
+            @media screen and (min-width: 50em) {
+                .introduction {
+                    margin: 20vh 0;
+                }
+            }
+
+            section > *+*,
+            footer > *+* {
+                margin-top: 1em;
+            }
+
+            header {
+                display: flex;
+                flex-direction: row;
+                flex: none;
+                flex-grow: 0;
+                align-self: stretch;
+                align-items: center;
+                line-height: 1;
+            }
+
+            header hr {
+                border: 0;
+                border-bottom: 0.05em solid var(--color-text-faded);
+                flex: none;
+                flex-grow: 1;
+                margin: 0px 20px;
+                height: 0;
+                max-width: 100%;
+            }
+
+            header *:nth-child(3) {
+                transform: matrix(-1, 0, 0, 1, 0, 0);
+                animation: flipflip;
+                animation-duration: 3s;
+                animation-direction: alternate-reverse;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-out;
+            }
+
+            footer {
+                margin: 20vh 0 10vh;
+                text-align: right;
+            }
+
+            @keyframes flipflip {
+                20%, 100% {
+                    transform: matrix(-1, 0, 0, 1, 0, 0);
+                }
+                0% {
+                    transform: matrix(1, 0, 0, 1, 0, 0);
+                }
+            }
+
+            @keyframes multicolour {
+                0% {
+                    background-color: var(--color-background-01);
+                }
+                25% {
+                    background-color: var(--color-background-02);
+                }
+                50% {
+                    background-color: var(--color-background-03);
+                }
+                75% {
+                    background-color: var(--color-background-04);
+                }
+                100% {
+                    background-color: var(--color-background-01);
+                }
+            }
+        </style>
+    </head>
+    <body>
+		<main>
+            <header class="text-large">
+                <span class="text-thick">House</span>
+                <hr>
+                <span class="text-thick">House</span>
+            </header>
+            <h1 class="introduction text-large">
+                <span class="text-thick">Hello friend!</span>
+                <span class="text-thin">We’re ready to help you improve design systems, build user-focused websites and apps, and scale high-performing technologies.</span>
+            </h1>
+            <section>
+                <h2 class="text-heading">TL;DR</h2>
+                <p class="text-small"><span class="text-smcp text-thick">House House Design</span> is a network of independent designers, researchers, developers, and engineers, affectionately calling ourselves housemates. We provide product design, strategic consulting, and tech guidance to startups, nonprofits, and government agencies. Hire us housemates as individuals or as a bespoke team tuned to your project’s unique&nbsp;requirements.</p>
+            </section>
+            <section>
+                <h2 class="text-heading">Services</h2>
+                <ol class="text-small">
+                    <li>Interface Design</li>
+                    <li>Brand Design</li>
+                    <li>Art Direction</li>
+                    <li>UX & Strategy</li>
+                    <li>Service Design</li>
+                    <li>User Research</li>
+                    <li>Responsive Websites</li>
+                    <li>Progressive Web Apps</li>
+                    <li>Front-Ends</li>
+                    <li>Workshops</li>
+                    <li>Training</li>
+                </ol>
+            </section>
+            <section>
+                <h2 class="text-heading">Operations</h2>
+                <p class="text-small">
+                    Primarily based out of Vancouver and Victoria, BC c.2016, on the traditional lands of the Lil̓wat7úl, Sḵwx̱wú7mesh, xʷməθkʷəy̓əm, Səl̓ilwətaɁɬ, W̱SÁNEĆ, and Lək̓ʷəŋən peoples, where sovereignty was never ceded. Housemates are located across North America and Europe, routinely working on projects&nbsp;remotely.
+                </p>
+            </section>
+            <section>
+                <h2 class="text-heading">Current & Past Partners</h2>
+                <ol class="text-small">
+                    <li>Nettwerk Music Group</li>
+                    <li>Briteweb</li>
+                    <li>College Advising Corps</li>
+                    <li>University of British Columbia</li>
+                    <li>BC Children’s Hospital Foundation</li>
+                    <li>Happy City</li>
+                    <li>Elastic Path</li>
+                    <li>Mobify (Salesforce)</li>
+                </ol>
+            </section>
+            <section>
+                <h2 class="text-heading">Next Steps</h2>
+                <p class="text-small">
+                    We take on select projects only.
+                    Email <a href="https://linkedin.com/in/bengroulx/">Ben</a>
+                    or <a href="https://linkedin.com/in/seandurfee/">Sean</a>
+                    to see if a housemates’ approach, expertise, and schedule meshes with your&nbsp;vision.
+                </p>
+            </section>
+            <footer>
+                <p class="text-large text-thick"><a href="mailto:hello@house-house.design">hello@house-house.design</a></p>
+                <p class="text-small text-subtle">Question about invoicing? <a href="mailto:billing@house-house.design">billing@house-house.design</a></p>
+            </footer>
+		</main>
+    </body>
+</html>
